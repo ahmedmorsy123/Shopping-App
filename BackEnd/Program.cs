@@ -9,9 +9,7 @@ namespace ShoppingAppDB
     {
         static async Task Main(string[] args)
         {
-
             Console.WriteLine("hello");
-
 
         }
     }

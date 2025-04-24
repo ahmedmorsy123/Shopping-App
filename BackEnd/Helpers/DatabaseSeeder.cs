@@ -96,7 +96,6 @@ namespace ShoppingAppDB.Helpers
                 .RuleFor(u => u.PasswordHash, f => BCrypt.Net.BCrypt.HashPassword("Password123!"))
                 .RuleFor(u => u.CreatedAt, f => f.Date.Past(3))
                 .RuleFor(u => u.LastLogin, f => f.Date.Recent(30))
-                .RuleFor(u => u.IsActive, f => f.Random.Bool(0.95f))
                 .Generate(count);
 
             await _context.Users.AddRangeAsync(users);

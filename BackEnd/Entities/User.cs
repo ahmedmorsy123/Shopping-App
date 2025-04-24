@@ -18,11 +18,8 @@ namespace ShoppingAppDB.Entities
         public string PasswordHash { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? LastLogin { get; set; }
-        public bool IsActive { get; set; }
 
-        public Cart Cart { get; set; } 
+        public Cart? Cart { get; set; } 
         public List<Order> Orders { get; set; } = new List<Order>();
     }
-
-
 }

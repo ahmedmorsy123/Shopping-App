@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShoppingAppDB.Data;
 
@@ -11,9 +12,11 @@ using ShoppingAppDB.Data;
 namespace ShoppingAppDB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250424190448_add the table valued functions")]
+    partial class addthetablevaluedfunctions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,17 +57,16 @@ namespace ShoppingAppDB.Migrations
             modelBuilder.Entity("ShoppingAppDB.Entities.CartDetails", b =>
                 {
                     b.Property<int>("ProductId")
-                        .HasColumnType("int")
-                        .HasColumnName("ProductId");
+                        .HasColumnType("int");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ProductName");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Quentity")
-                        .HasColumnType("int")
-                        .HasColumnName("Quentity");
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable((string)null);
 
@@ -153,7 +155,7 @@ namespace ShoppingAppDB.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18, 2)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.ToTable((string)null);
 
@@ -275,6 +277,11 @@ namespace ShoppingAppDB.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
                     b.Property<DateTime?>("LastLogin")
                         .HasColumnType("datetime2");
 
@@ -302,6 +309,17 @@ namespace ShoppingAppDB.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ShoppingAppDB.Entities.CartDetails", b =>
+                {
+                    b.HasOne("ShoppingAppDB.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("ShoppingAppDB.Entities.CartItem", b =>
@@ -388,7 +406,8 @@ namespace ShoppingAppDB.Migrations
 
             modelBuilder.Entity("ShoppingAppDB.Entities.User", b =>
                 {
-                    b.Navigation("Cart");
+                    b.Navigation("Cart")
+                        .IsRequired();
 
                     b.Navigation("Orders");
                 });

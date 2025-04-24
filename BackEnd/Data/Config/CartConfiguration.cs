@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShoppingAppDB.Entities;
+using System.Reflection.Emit;
 
 namespace ShoppingAppDB.Data.Config
 {
