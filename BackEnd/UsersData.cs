@@ -10,23 +10,23 @@ using System.Threading.Tasks;
 
 namespace ShoppingAppDB
 {
-    public class UserDto
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string? Email { get; set; }
-        public string? Password { get; set; } = null;
-
-        public UserDto(int id, string name, string? email, string? password = null)
-        {
-            Id = id;
-            Name = name;
-            Email = email;
-            Password = password;
-        } 
-    }
     public class UsersData
     {
+        public class UserDto
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public string? Email { get; set; }
+            public string? Password { get; set; } = null;
+
+            public UserDto(int id, string name, string? email, string? password = null)
+            {
+                Id = id;
+                Name = name;
+                Email = email;
+                Password = password;
+            }
+        }
         public static  UserDto? GetUserById(int id)
         {
             UserDto? userDto;
@@ -57,7 +57,7 @@ namespace ShoppingAppDB
             }
         }
 
-        public static async Task<bool> AddUser(UserDto user)
+        public static async Task<int> AddUser(UserDto user)
         {
             using (var context = new AppDbContext())
             {
@@ -71,9 +71,43 @@ namespace ShoppingAppDB
                 context.Users.Add(userToAdd);
                 await context.SaveChangesAsync();
 
-                return true;
+                return userToAdd.Id;
 
             }
         }
+
+        public static async Task<bool> UpdateUser(UserDto user)
+        {
+            using (var context = new AppDbContext())
+            {
+                var userToUpdate = context.Users.Where(u => u.Id == user.Id).FirstOrDefault();
+                if (userToUpdate != null)
+                {
+                    userToUpdate.Name = user.Name;
+                    userToUpdate.Email = user.Email;
+                    userToUpdate.PasswordHash = PasswordService.HashPassword(user.Password);
+                    await context.SaveChangesAsync();
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public static bool DeleteUser(int userId)
+        {
+            using (var context = new AppDbContext())
+            {
+                var userToDelete = context.Users.Find(userId);
+                if (userToDelete != null)
+                {
+                    context.Users.Remove(userToDelete);
+                    context.SaveChanges();
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        
     }
 }

@@ -18,15 +18,7 @@ namespace ShoppingAppDB.Data
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
-        public IQueryable<CartDetails> GetCartItems(int cartId)
-        {
-            return this.Set<CartDetails>().FromSqlInterpolated($"select * from GetCartItems({cartId})");
-        }
-
-        public IQueryable<OrderDetails> GetOrderItems(int orderId)
-        {
-            return this.Set<OrderDetails>().FromSqlInterpolated($"select * from GetOrderItems({orderId})");
-        }
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var config = new ConfigurationBuilder()
@@ -40,19 +32,7 @@ namespace ShoppingAppDB.Data
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
 
-            modelBuilder.Entity<CartDetails>()
-                .ToFunction("GetCartItems")
-                .HasNoKey();
-
-            modelBuilder.Entity<OrderDetails>()
-                .ToFunction("GetOrderItems")
-                .HasNoKey();
-
-            modelBuilder.Entity<OrderDetails>(entity =>
-            {
-                entity.Property(e => e.UnitPrice)
-                    .HasColumnType("decimal(18, 2)"); 
-            });
+            
         }
     }
 }

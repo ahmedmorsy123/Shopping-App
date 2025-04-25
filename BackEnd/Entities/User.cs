@@ -20,6 +20,6 @@ namespace ShoppingAppDB.Entities
         public DateTime? LastLogin { get; set; }
 
         public Cart? Cart { get; set; } 
-        public List<Order> Orders { get; set; } = new List<Order>();
+        public List<Order>? Orders { get; set; }
     }
 }
