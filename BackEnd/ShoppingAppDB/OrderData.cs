@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShoppingAppDB.Data;
+using ShoppingAppDB.Entities;
 using static ShoppingAppDB.ProductData;
 
 namespace ShoppingAppDB
@@ -17,6 +18,29 @@ namespace ShoppingAppDB
 
         }
 
+        //public static void AddOrder(OrderDto order)
+        //{
+        //    using (var context = new AppDbContext())
+        //    {
+        //        context.Orders.Add(new Order()
+        //        {
+        //            UserId = UsersData.GetCurrentUser().Id,
+        //            OrderDate = order.CreatedAt,
+        //            TotalPrice = order.TotalPrice,
+        //            Status = order.Status,
+        //            ShippingAddress = order.ShippingAddress,
+        //            PaymentMethod = order.PaymentMethod,
+        //            OrderItems = order.OrderItems.Select(oi => new OrderItem()
+        //            {
+        //                ProductId = oi.productName,
+        //                Quantity = oi.quantity,
+        //                UnitPrice = oi.price
+        //            }).ToList()
+        //        });
+        //        context.SaveChanges();
+        //    }
+        //}
+        
         public static List<OrderDto>? GetUserOrders(int UserId)
         {
             var user = UsersData.GetUserById(UserId);

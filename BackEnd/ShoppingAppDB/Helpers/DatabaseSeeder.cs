@@ -5,221 +5,275 @@ using ShoppingAppDB.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ShoppingAppDB.Helpers
+namespace ShoppingAppDB.Data.Seeder
 {
     public class DatabaseSeeder
     {
-        private static readonly AppDbContext _context = new AppDbContext();
-        private static readonly Random _random = new Random();
+        private readonly AppDbContext _context;
+        private readonly Random _random = new Random();
 
-
-
-        public static async Task SeedAsync(int userCount = 100, int categoriesCount = 10, int productsCount = 200)
+        public DatabaseSeeder(AppDbContext context)
         {
-            // Clear existing data (if needed)
-            // await ClearDataAsync();
-
-            // Seed data in order of dependencies
-            await SeedCategoriesAsync(categoriesCount);
-            await SeedProductsAsync(productsCount);
-            await SeedUsersAsync(userCount);
-            await SeedCartsAndItemsAsync();
-            await SeedOrdersAsync();
-
-            Console.WriteLine("Database seeding completed successfully!");
+            _context = context;
         }
 
-        private static async Task ClearDataAsync()
-        {
-            // Be careful with this method as it will delete ALL data
-            _context.OrderItems.RemoveRange(_context.OrderItems);
-            _context.Orders.RemoveRange(_context.Orders);
-            _context.CartItems.RemoveRange(_context.CartItems);
-            _context.Carts.RemoveRange(_context.Carts);
-            _context.Products.RemoveRange(_context.Products);
-            _context.ProductCategories.RemoveRange(_context.ProductCategories);
-            _context.Users.RemoveRange(_context.Users);
 
-            await _context.SaveChangesAsync();
-            Console.WriteLine("Database cleared successfully!");
+        public void Seed(int userCount = 10, int categoryCount = 5, int productCount = 50)
+        {
+
+            // Seed in proper order to maintain relationships
+            SeedUsers(userCount);
+            SeedCarts();
+            SeedProductCategories(categoryCount);
+            SeedProducts(productCount, categoryCount);
+            SeedCartItemsRandom();
+            SeedOrdersRandom();
+            SeedOrderItemsRandom();
+
+            // Save all changes
+            _context.SaveChanges();
         }
 
-        private static async Task SeedCategoriesAsync(int count)
+        private void SeedUsers(int count)
         {
-            if (await _context.ProductCategories.AnyAsync())
-                return;
-
-            var categories = new Faker<ProductCategory>()
-                .RuleFor(c => c.CategoryName, f => f.Commerce.Categories(1)[0] + " " + f.Commerce.ProductAdjective())
-                .RuleFor(c => c.Description, f => f.Commerce.ProductDescription())
-                .Generate(count);
-
-            await _context.ProductCategories.AddRangeAsync(categories);
-            await _context.SaveChangesAsync();
-            Console.WriteLine($"{count} categories seeded successfully!");
-        }
-
-        private static async Task SeedProductsAsync(int count)
-        {
-            if (await _context.Products.AnyAsync())
-                return;
-
-            var categories = await _context.ProductCategories.ToListAsync();
-
-            var products = new Faker<Product>()
-                .RuleFor(p => p.Name, f => f.Commerce.ProductName())
-                .RuleFor(p => p.Description, f => f.Commerce.ProductDescription())
-                .RuleFor(p => p.Price, f => decimal.Parse(f.Commerce.Price(5, 1000)))
-                .RuleFor(p => p.Weight, f => f.Random.Decimal(0.1m, 50m))
-                .RuleFor(p => p.Quantity, f => f.Random.Int(10, 1000))
-                .RuleFor(p => p.CreatedAt, f => f.Date.Past(2))
-                .RuleFor(p => p.IsActive, f => f.Random.Bool(0.9f))
-                .RuleFor(p => p.CategoryId, f => f.PickRandom(categories).Id)
-                .Generate(count);
-
-            await _context.Products.AddRangeAsync(products);
-            await _context.SaveChangesAsync();
-            Console.WriteLine($"{count} products seeded successfully!");
-        }
-
-        private static async Task SeedUsersAsync(int count)
-        {
-            if (await _context.Users.AnyAsync())
-                return;
-
-            var users = new Faker<User>()
-                .RuleFor(u => u.Name, f => f.Name.FullName())
-                .RuleFor(u => u.Email, f => f.Internet.Email())
-                .RuleFor(u => u.PasswordHash, f => BCrypt.Net.BCrypt.HashPassword("Password123!"))
-                .RuleFor(u => u.CreatedAt, f => f.Date.Past(3))
-                .RuleFor(u => u.LastLogin, f => f.Date.Recent(30))
-                .Generate(count);
-
-            await _context.Users.AddRangeAsync(users);
-            await _context.SaveChangesAsync();
-            Console.WriteLine($"{count} users seeded successfully!");
-        }
-
-        private static async Task SeedCartsAndItemsAsync()
-        {
-            if (await _context.Carts.AnyAsync())
-                return;
-
-            var users = await _context.Users.ToListAsync();
-            var products = await _context.Products.ToListAsync();
-            var faker = new Faker();
-
-            // Create carts for about 30% of users
-            var cartsToCreate = users.Take(users.Count / 3).ToList();
-
-            foreach (var user in cartsToCreate)
+            if (!_context.Users.Any())
             {
-                var cart = new Cart
-                {
-                    UserId = user.Id,
-                    CreatedAt = DateTime.Now.AddDays(-faker.Random.Int(1, 30)),
-                    UpdatedAt = DateTime.Now,
-                    CartItems = new List<CartItem>()
-                };
+                var userFaker = new Faker<User>()
+                    .RuleFor(u => u.Name, f => f.Name.FullName())
+                    .RuleFor(u => u.Email, (f, u) => f.Random.Bool(0.9f) ? f.Internet.Email(u.Name) : "default@example.com") // Default email for null cases
+                    .RuleFor(u => u.PasswordHash, f => f.Internet.Password(12, false, "", "!@#$%^&*"))
+                    .RuleFor(u => u.CreatedAt, f => f.Date.Between(DateTime.Now.AddYears(-2), DateTime.Now.AddMonths(-1)))
+                    .RuleFor(u => u.LastLogin, (f, u) => f.Random.Bool(0.8f) ? f.Date.Between(u.CreatedAt, DateTime.Now) : null); // 20% null LastLogin
 
-                // Add 1-5 random products to each cart
-                var itemCount = faker.Random.Int(1, 5);
-                var selectedProducts = faker.Random.Shuffle(products).Take(itemCount).ToList();
+                var users = userFaker.Generate(count);
+                _context.Users.AddRange(users);
+                _context.SaveChanges();
+            }
+        }
 
-                foreach (var product in selectedProducts)
+        private void SeedCarts()
+        {
+            if (!_context.Carts.Any())
+            {
+                var users = _context.Users.ToList();
+                var cartFaker = new Faker<Cart>()
+                    .RuleFor(c => c.CreatedAt, f => f.Date.Between(DateTime.Now.AddMonths(-6), DateTime.Now.AddDays(-10)))
+                    .RuleFor(c => c.UpdatedAt, (f, c) => f.Date.Between(c.CreatedAt, DateTime.Now));
+
+                foreach (var user in users)
                 {
-                    cart.CartItems.Add(new CartItem
+                    var faker = new Faker();
+
+                    if (faker.Random.Bool(0.9f))
                     {
-                        ProductId = product.Id,
-                        Quantity = faker.Random.Int(1, 10)
-                    });
+                        var cart = cartFaker.Generate();
+                        cart.UserId = user.Id;
+                        _context.Carts.Add(cart);
+                    }
                 }
 
-                _context.Carts.Add(cart);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            Console.WriteLine($"{cartsToCreate.Count} carts with items seeded successfully!");
         }
 
-        private static async Task SeedOrdersAsync()
+        private void SeedProductCategories(int count)
         {
-            if (await _context.Orders.AnyAsync())
-                return;
-
-            var users = await _context.Users.ToListAsync();
-            var products = await _context.Products.ToListAsync();
-            var faker = new Faker();
-
-            // Create orders for about 70% of users (some with multiple orders)
-            var ordersToCreate = new List<Order>();
-
-            foreach (var user in users.Take((int)(users.Count * 0.7)))
+            if (!_context.ProductCategories.Any())
             {
-                // Each user may have 1-3 orders
-                var orderCount = faker.Random.Int(1, 3);
-
-                for (int i = 0; i < orderCount; i++)
-                {
-                    var orderDate = faker.Date.Between(DateTime.Now.AddYears(-1), DateTime.Now);
-                    var order = new Order
+                var commonCategories = new List<string>
                     {
-                        UserId = user.Id,
-                        OrderDate = orderDate,
-                        Status = GetRandomOrderStatus(orderDate),
-                        ShippingAddress = faker.Address.FullAddress(),
-                        PaymentMethod = faker.PickRandom("Credit Card", "PayPal", "Bank Transfer", "Cash on Delivery"),
-                        OrderItems = new List<OrderItem>()
+                        "Electronics", "Clothing", "Books", "Home & Kitchen",
+                        "Sports", "Beauty", "Toys", "Jewelry", "Automotive", "Garden",
+                        "Office Supplies", "Pets", "Food & Groceries", "Health", "Music"
                     };
 
-                    // Add 1-10 random products to each order
-                    var itemCount = faker.Random.Int(1, 10);
-                    var selectedProducts = faker.Random.Shuffle(products).Take(itemCount).ToList();
-                    decimal totalPrice = 0;
+                var categoryFaker = new Faker<ProductCategory>()
+                    .RuleFor(c => c.CategoryName, f =>
+                    {
+                        if (commonCategories.Count > 0)
+                        {
+                            var name = commonCategories[0];
+                            commonCategories.RemoveAt(0);
+                            return name;
+                        }
 
-                    foreach (var product in selectedProducts)
+                        // Generate up to 10 categories and pick the first valid one
+                        var generatedCategories = f.Commerce.Categories(10).Where(x => !string.IsNullOrEmpty(x)).ToList();
+                        return generatedCategories.FirstOrDefault() ?? f.Commerce.ProductAdjective(); // Fallback if all are invalid
+                    })
+                    .RuleFor(c => c.Description, f => f.Random.Bool(0.9f) ? f.Commerce.ProductDescription() : null);
+
+                var categories = categoryFaker.Generate(count).Where(x => !string.IsNullOrEmpty(x.CategoryName)).ToList();
+                _context.ProductCategories.AddRange(categories);
+                _context.SaveChanges();
+            }
+        }
+
+        private void SeedProducts(int totalProductCount, int categoryCount)
+        {
+            if (!_context.Products.Any())
+            {
+                var categories = _context.ProductCategories.ToList();
+                var allProducts = new List<Product>();
+
+                int baseProductsPerCategory = totalProductCount / categoryCount;
+                int remainingProducts = totalProductCount % categoryCount;
+
+                foreach (var category in categories)
+                {
+                    int productsForThisCategory = baseProductsPerCategory;
+                    if (remainingProducts > 0)
+                    {
+                        productsForThisCategory++;
+                        remainingProducts--;
+                    }
+
+                    var productFaker = new Faker<Product>()
+                        .RuleFor(p => p.CategoryId, f => category.Id)
+                        .RuleFor(p => p.Name, f => f.Commerce.ProductName())
+                        .RuleFor(p => p.Description, f => f.Random.Bool(0.9f) ? f.Commerce.ProductDescription() : null)
+                        .RuleFor(p => p.Weight, f => Math.Round(f.Random.Decimal(0.1M, 10M), 2))
+                        .RuleFor(p => p.Price, f => Math.Round(f.Random.Decimal(5M, 1000M), 2))
+                        .RuleFor(p => p.Quantity, f => f.Random.Int(0, 500))
+                        .RuleFor(p => p.CreatedAt, f => f.Date.Between(DateTime.Now.AddYears(-1), DateTime.Now))
+                        .RuleFor(p => p.IsActive, f => f.Random.Bool(0.9f));
+
+                    var products = productFaker.Generate(productsForThisCategory);
+                    allProducts.AddRange(products);
+                }
+
+                _context.Products.AddRange(allProducts);
+                _context.ChangeTracker.Entries();
+                _context.SaveChanges();
+            }
+        }
+
+        private void SeedCartItemsRandom()
+        {
+            if (!_context.CartItems.Any())
+            {
+                var carts = _context.Carts.ToList();
+                var activeProducts = _context.Products.Where(p => p.IsActive).ToList();
+                var allCartItems = new List<CartItem>();
+
+                var faker = new Faker();
+
+                foreach (var cart in carts)
+                {
+                    int itemCount = faker.Random.Int(0, 5);
+
+                    if (itemCount > 0)
+                    {
+                        var cartProducts = activeProducts
+                            .OrderBy(x => Guid.NewGuid())
+                            .Take(Math.Min(itemCount, activeProducts.Count))
+                            .ToList();
+
+                        foreach (var product in cartProducts)
+                        {
+                            var cartItem = new CartItem
+                            {
+                                CartId = cart.Id,
+                                ProductId = product.Id,
+                                Quantity = faker.Random.Int(1, 5)
+                            };
+                            allCartItems.Add(cartItem);
+                        }
+                    }
+                }
+
+                _context.CartItems.AddRange(allCartItems);
+            }
+            _context.SaveChanges();
+        }
+
+        private void SeedOrdersRandom()
+        {
+            if (!_context.Orders.Any())
+            {
+                var users = _context.Users.ToList();
+                var allOrders = new List<Order>();
+
+                var orderStatuses = new[] { "Pending", "Processing", "Shipped", "Delivered", "Cancelled" };
+                var paymentMethods = new[] { "Credit Card", "PayPal", "Bank Transfer", null };
+
+                var faker = new Faker();
+
+                foreach (var user in users)
+                {
+                    if (faker.Random.Bool(0.8f))
+                    {
+                        int orderCount = faker.Random.Int(1, 5);
+
+                        for (int i = 0; i < orderCount; i++)
+                        {
+                            var orderDate = faker.Date.Between(DateTime.Now.AddYears(-1), DateTime.Now);
+
+                            var order = new Order
+                            {
+                                UserId = user.Id,
+                                OrderDate = orderDate,
+                                TotalPrice = Math.Round(faker.Random.Decimal(10M, 2000M), 2),
+                                Status = faker.PickRandom(orderStatuses),
+                                ShippingAddress = faker.Random.Bool(0.9f) ? faker.Address.FullAddress() : null,
+                                PaymentMethod = faker.PickRandom(paymentMethods)
+                            };
+
+                            allOrders.Add(order);
+                        }
+                    }
+                }
+
+                _context.Orders.AddRange(allOrders);
+                _context.SaveChanges();
+            }
+        }
+
+        private void SeedOrderItemsRandom()
+        {
+            if (!_context.OrderItems.Any())
+            {
+                var orders = _context.Orders.ToList();
+                var activeProducts = _context.Products.Where(p => p.IsActive).ToList();
+                var allOrderItems = new List<OrderItem>();
+                var faker = new Faker();
+
+                foreach (var order in orders)
+                {
+                    int itemCount = faker.Random.Int(1, 8);
+
+                    var orderProducts = activeProducts
+                        .OrderBy(x => Guid.NewGuid())
+                        .Take(Math.Min(itemCount, activeProducts.Count))
+                        .ToList();
+
+                    decimal orderTotal = 0;
+
+                    foreach (var product in orderProducts)
                     {
                         var quantity = faker.Random.Int(1, 5);
-                        var unitPrice = product.Price * (1 - faker.Random.Decimal(0, 0.15m)); // Small discount
+                        var unitPrice = product.Price;
 
-                        order.OrderItems.Add(new OrderItem
+                        var orderItem = new OrderItem
                         {
+                            OrderId = order.Id,
                             ProductId = product.Id,
                             Quantity = quantity,
                             UnitPrice = unitPrice
-                        });
+                        };
 
-                        totalPrice += unitPrice * quantity;
+                        orderTotal += unitPrice * quantity;
+                        allOrderItems.Add(orderItem);
                     }
 
-                    order.TotalPrice = totalPrice;
-                    ordersToCreate.Add(order);
+                    order.TotalPrice = Math.Round(orderTotal, 2);
                 }
+
+                _context.OrderItems.AddRange(allOrderItems);
+                _context.SaveChanges();
             }
-
-            await _context.Orders.AddRangeAsync(ordersToCreate);
-            await _context.SaveChangesAsync();
-            Console.WriteLine($"{ordersToCreate.Count} orders with items seeded successfully!");
         }
-
-        private static string GetRandomOrderStatus(DateTime orderDate)
-        {
-            // Logic to determine status based on date
-            var daysAgo = (DateTime.Now - orderDate).TotalDays;
-
-            if (daysAgo > 30)
-                return "Delivered";
-            if (daysAgo > 14)
-                return _random.Next(100) < 90 ? "Delivered" : "Shipped";
-            if (daysAgo > 7)
-                return _random.Next(100) < 70 ? "Shipped" : "Processing";
-            if (daysAgo > 3)
-                return _random.Next(100) < 60 ? "Processing" : "Pending";
-
-            return _random.Next(100) < 80 ? "Pending" : "Processing";
-        }
+   
     }
 }

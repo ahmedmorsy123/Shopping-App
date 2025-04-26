@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public int CategoryId { get; set; }
-        public ProductCategory Category { get; set; } = new ProductCategory();
+        public ProductCategory Category { get; set; }
         public string Name { get; set; }
         public string? Description { get; set; }
         public decimal Weight { get; set; }

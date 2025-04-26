@@ -21,11 +21,14 @@ namespace ShoppingAppDB.Data
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            // to make the path in the current layer not in the api layer
+            var configPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "ShoppingAppDB", "appsettings.json"); 
             var config = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
+                .AddJsonFile(configPath)
                 .Build();
 
-            optionsBuilder.UseSqlServer(config.GetSection("constr").Value)
+
+            optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"))
                 .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

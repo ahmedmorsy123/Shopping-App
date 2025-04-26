@@ -11,7 +11,7 @@ namespace ShoppingAppDB.Data.Config
             builder.HasKey(x => x.Id);
             builder.Property(x => x.CategoryId).IsRequired();
             builder.Property(x => x.Name).IsRequired().HasMaxLength(50);
-            builder.Property(x => x.Description).IsRequired().HasMaxLength(255);
+            builder.Property(x => x.Description).IsRequired(false).HasMaxLength(255);
             builder.Property(x => x.Weight).IsRequired().HasColumnType("decimal(18,2)");
             builder.Property(x => x.Price).IsRequired().HasColumnType("decimal(18,2)");
             builder.Property(x => x.Quantity).IsRequired();
@@ -20,6 +20,8 @@ namespace ShoppingAppDB.Data.Config
 
 
             builder.HasOne(x => x.Category).WithMany(x => x.Products).HasForeignKey(x => x.CategoryId);
+
+            builder.HasQueryFilter(x => x.IsActive);
 
             builder.ToTable("Products");
 
