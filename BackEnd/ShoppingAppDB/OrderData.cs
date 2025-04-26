@@ -20,32 +20,59 @@ namespace ShoppingAppDB
 
         }
 
-        public static int AddOrder(OrderDto order)
+        public static OrderDto AddOrder(string shippingAddress, string paymentMethod)
         {
             using (var context = new AppDbContext())
             {
                 var orderToAdd = new Order();
-                orderToAdd.UserId = _currentUser.Id;
-                orderToAdd.OrderDate = order.CreatedAt;
-                orderToAdd.TotalPrice = order.TotalPrice;
-                orderToAdd.Status = order.Status;
-                orderToAdd.ShippingAddress = order.ShippingAddress;
-                orderToAdd.PaymentMethod = order.PaymentMethod;
+                orderToAdd.UserId = UsersData._currentUser.Id;
+                orderToAdd.OrderDate = DateTime.Now;
+                orderToAdd.TotalPrice = 0;
+                orderToAdd.Status = "Pending";
+                orderToAdd.ShippingAddress = shippingAddress;
+                orderToAdd.PaymentMethod = paymentMethod;
                 context.Orders.Add(orderToAdd);
                 context.SaveChanges();
 
-                foreach(var item in order.OrderItems)
+                var cartItems = context.CartItems
+                    .Where(ci => ci.Cart.UserId == UsersData._currentUser.Id)
+                    .Include(ci => ci.Product)
+                    .ToList();
+                foreach (var item in cartItems)
                 {
                     var orderItemToAdd = new OrderItem();
                     orderItemToAdd.OrderId = orderToAdd.Id;
-                    orderItemToAdd.ProductId = item.Id;
-                    orderItemToAdd.Quantity = item.quantity;
-                    orderItemToAdd.UnitPrice = item.price;
+                    orderItemToAdd.ProductId = item.ProductId;
+                    orderItemToAdd.Quantity = item.Quantity;
+                    orderItemToAdd.UnitPrice = item.Product.Price;
                     context.OrderItems.Add(orderItemToAdd);
                     context.SaveChanges();
+                    orderToAdd.TotalPrice += item.Product.Price * item.Quantity;
+
+
                 }
-                
-                return orderToAdd.Id;
+
+                CartData.DeleteCart(CartData.GetCartIdByUserId(UsersData._currentUser.Id));
+
+                return new OrderDto()
+                {
+                    Id = orderToAdd.Id,
+                    CreatedAt = orderToAdd.OrderDate,
+                    TotalPrice = orderToAdd.TotalPrice,
+                    Status = orderToAdd.Status,
+                    ShippingAddress = orderToAdd.ShippingAddress,
+                    PaymentMethod = orderToAdd.PaymentMethod,
+                    OrderItems = orderToAdd.OrderItems
+                    .Select(oi => new ProductDto()
+                    {
+                        Id = oi.Product.Id,
+                        productName = oi.Product.Name,
+                        productCategory = context.ProductCategories.FirstOrDefault(pc => pc.Id == oi.Product.CategoryId).CategoryName,
+                        productDescription = oi.Product.Description,
+                        quantity = oi.Quantity,
+                        price = oi.Product.Price
+                    }).ToList()
+                };
             }
         }
 
@@ -106,5 +133,19 @@ namespace ShoppingAppDB
 
             return OrderItems.Count == 0 ? null : OrderItems;
         }
+
+        public static void CancelOrder(int orderId)
+        {
+            using (var context = new AppDbContext())
+            {
+                var order = context.Orders.Find(orderId);
+                if (order != null)
+                {
+                    order.Status = "Canceled";
+                    context.SaveChanges();
+                }
+            }
+        }
+
     }
 }

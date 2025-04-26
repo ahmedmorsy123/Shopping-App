@@ -17,7 +17,7 @@ namespace ShoppingAppDB
         }
 
 
-        public static List<ProductDto>? GetAllProducts()
+        public static List<ProductDto> GetAllProducts()
         {
             var products = new List<ProductDto>();
 
@@ -26,17 +26,44 @@ namespace ShoppingAppDB
                 products = context.Products.AsNoTracking()
                     .Include(p => p.Category)
                     .Select(p => new ProductDto()
-                {
-                    Id = p.Id,
-                    productCategory = p.Category.CategoryName,
-                    productDescription = p.Description,
-                    productName = p.Name,
-                    Weight = p.Weight,
-                    price = p.Price
-                }).ToList();
+                    {
+                        Id = p.Id,
+                        productName = p.Name,
+                        productCategory = p.Category.CategoryName,
+                        productDescription = p.Description,
+                        Weight = p.Weight,
+                        price = p.Price
+                    }).ToList();
             }
 
             return products;
         }
+
+        public static List<ProductDto> GetProductsPaginated(int pageNumber, int pageSize = 10)
+        {
+
+            var products = new List<ProductDto>();
+
+            using (var context = new AppDbContext())
+            {
+                products = context.Products.AsNoTracking()
+                    .Include(p => p.Category)
+                    .Select(p => new ProductDto()
+                    {
+                        Id = p.Id,
+                        productName = p.Name,
+                        productCategory = p.Category.CategoryName,
+                        productDescription = p.Description,
+                        Weight = p.Weight,
+                        price = p.Price
+                    })
+                    .Skip((pageNumber - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToList();
+            }
+
+            return products;
+        }
+
     }
 }

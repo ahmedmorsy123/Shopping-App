@@ -46,7 +46,7 @@ namespace ShoppingAppAPI.Controllers
 
         [HttpPost("AddUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         public ActionResult<UserDto> AddUser(UserDto user)
         {
             int id = Users.AddUser(user);

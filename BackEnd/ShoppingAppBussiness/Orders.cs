@@ -10,14 +10,20 @@ namespace ShoppingAppBussiness
             return OrderData.GetUserOrders(UserId);
         }
 
-        public static int AddOrder(OrderDto order)
+        public static OrderDto AddOrder(string shippingAddress, string paymentMethod)
         {
-            return OrderData.AddOrder(order);
+            return OrderData.AddOrder(shippingAddress, paymentMethod);
         }
 
         public static OrderDto? GetOrderById(int id)
         {
             return OrderData.GetOrderById(id);
         }
+
+        public static void CancelOrder(int id)
+        {
+            OrderData.CancelOrder(id);
+        }
+
     }
 }

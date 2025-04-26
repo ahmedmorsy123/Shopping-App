@@ -30,15 +30,30 @@ namespace ShoppingAppAPI.Controllers
             return Ok(order);
         }
 
-        [HttpPost("AddOrders")]
+        [HttpPost("MakeOrders")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<OrderDto> AddOrders(OrderDto order)
+        public ActionResult<OrderDto> AddOrders(string shippingAddress, string paymentMethod)
         {
             if(Users.GetCurrentUser() == null) return BadRequest("Please Login First");
-            int id = Orders.AddOrder(order);
-            order.Id = id;
+
+            if(!Carts.CurrentUserHaveCart()) return BadRequest("Please Add Cart First");
+
+            OrderDto order = Orders.AddOrder(shippingAddress, paymentMethod);
+   
             return CreatedAtAction(nameof(GetUserOrders), new { id = order.Id }, order);
+        }
+
+        // cancle order
+        [HttpDelete("CancelOrder")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult CancelOrder(int orderId)
+        {
+            var result = Orders.GetOrderById(orderId);
+            if (result == null) return NotFound("Thre is no order with this id");
+            Orders.CancelOrder(orderId);
+            return Ok();
         }
     }
 }
