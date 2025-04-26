@@ -8,12 +8,6 @@ namespace ShoppingAppAPI.Controllers
     [ApiController]
     public class ProductsAPI : ControllerBase
     {
-        [HttpGet("GetAllProducts")]
-        public ActionResult<IEnumerable<ProductDto>> GetAllProducts()
-        {
-            return Ok(Products.GetAllProducts());
-        }
-
         [HttpGet("GetAllProductsPaginated")]
         public ActionResult<IEnumerable<ProductDto>> GetProductsPaginated(int page)
         {

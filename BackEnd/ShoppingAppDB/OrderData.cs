@@ -46,10 +46,12 @@ namespace ShoppingAppDB
                     orderItemToAdd.Quantity = item.Quantity;
                     orderItemToAdd.UnitPrice = item.Product.Price;
                     context.OrderItems.Add(orderItemToAdd);
+
+                    context.Products.Where(p => p.Id == item.ProductId).FirstOrDefault().Quantity -= item.Quantity;
+
                     context.SaveChanges();
+
                     orderToAdd.TotalPrice += item.Product.Price * item.Quantity;
-
-
                 }
 
                 CartData.DeleteCart(CartData.GetCartIdByUserId(UsersData._currentUser.Id));

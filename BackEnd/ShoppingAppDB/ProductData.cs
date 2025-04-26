@@ -17,28 +17,6 @@ namespace ShoppingAppDB
         }
 
 
-        public static List<ProductDto> GetAllProducts()
-        {
-            var products = new List<ProductDto>();
-
-            using (var context = new AppDbContext())
-            {
-                products = context.Products.AsNoTracking()
-                    .Include(p => p.Category)
-                    .Select(p => new ProductDto()
-                    {
-                        Id = p.Id,
-                        productName = p.Name,
-                        productCategory = p.Category.CategoryName,
-                        productDescription = p.Description,
-                        Weight = p.Weight,
-                        price = p.Price
-                    }).ToList();
-            }
-
-            return products;
-        }
-
         public static List<ProductDto> GetProductsPaginated(int pageNumber, int pageSize = 10)
         {
 

@@ -30,8 +30,10 @@ namespace ShoppingAppAPI.Controllers
         public ActionResult<UserDto> UpdateUser(UserDto user, string oldPassword)
         {
             bool result = Users.UpdateUser(user, oldPassword);
-            if (result == false) return NotFound("Thre is no user with this id");
-            return Ok(user);
+            if (result == false) return NotFound("Thre is no user with this id or wrong password or you are not logged in");
+             
+            UserDto UpdatedUser = Users.GetUserById(user.Id);
+            return Ok(UpdatedUser);
         }
 
         [HttpDelete("DeleteUser")]
