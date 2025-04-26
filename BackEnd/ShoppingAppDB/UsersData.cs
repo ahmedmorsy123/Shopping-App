@@ -18,19 +18,19 @@ namespace ShoppingAppDB
             public int Id { get; set; }
             public string Name { get; set; }
             public string? Email { get; set; }
-            public string? PasswordHash { get; set; } = null;
+            public string? Password { get; set; } = null;
 
             public UserDto(int id, string name, string? email, string? password = null)
             {
                 Id = id;
                 Name = name;
                 Email = email;
-                PasswordHash = password;
+                Password = password;
             }
         }
 
 
-        private static UserDto? _currentUser;
+        public static UserDto? _currentUser;
 
         public static UserDto? GetCurrentUser()
         {
@@ -68,7 +68,7 @@ namespace ShoppingAppDB
 
                 userToAdd.Name = user.Name;
                 userToAdd.Email = user.Email;
-                userToAdd.PasswordHash = HashPassword(user.PasswordHash);
+                userToAdd.PasswordHash = HashPassword(user.Password);
                 userToAdd.CreatedAt = DateTime.Now;
                 userToAdd.LastLogin = DateTime.Now;
                 context.Users.Add(userToAdd);
@@ -82,7 +82,7 @@ namespace ShoppingAppDB
         public static bool UpdateUser(UserDto user, string oldPassword)
         {
             if(_currentUser == null) return false;
-            if(!VerifyPassword(oldPassword, _currentUser.PasswordHash)) return false;
+            if(!VerifyPassword(oldPassword, _currentUser.Password)) return false;
 
             using (var context = new AppDbContext())
             {
@@ -91,7 +91,7 @@ namespace ShoppingAppDB
                 {
                     userToUpdate.Name = user.Name;
                     userToUpdate.Email = user.Email;
-                    userToUpdate.PasswordHash = HashPassword(user.PasswordHash);
+                    userToUpdate.PasswordHash = HashPassword(user.Password);
                     context.SaveChanges();
                     return true;
                 }

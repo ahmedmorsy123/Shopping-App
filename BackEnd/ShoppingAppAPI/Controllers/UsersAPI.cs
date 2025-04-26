@@ -10,7 +10,7 @@ namespace ShoppingAppAPI.Controllers
     public class UsersAPI : ControllerBase
     {
 
-        [HttpGet]
+        [HttpGet("getUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<IEnumerable<UserDto>> GetUser(int id)
@@ -24,7 +24,7 @@ namespace ShoppingAppAPI.Controllers
             
         }
 
-        [HttpPut]
+        [HttpPut("UpdateUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<UserDto> UpdateUser(UserDto user, string oldPassword)
@@ -34,7 +34,7 @@ namespace ShoppingAppAPI.Controllers
             return Ok(user);
         }
 
-        [HttpDelete]
+        [HttpDelete("DeleteUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult DeleteUser(int id)
@@ -44,7 +44,7 @@ namespace ShoppingAppAPI.Controllers
             return Ok();
         }
 
-        [HttpPost]
+        [HttpPost("AddUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<UserDto> AddUser(UserDto user)
