@@ -56,8 +56,6 @@ namespace Shopping_App.APIs
 
             return user;
         }
-
-
         public static async Task<User> UpdateUser(User user, string oldPassword)
         {
             // i need to login first
@@ -66,15 +64,17 @@ namespace Shopping_App.APIs
             {
                 var updateData = new
                 {
-                    user = user,
-                    oldPassword = oldPassword
+                    user.Id,
+                    user.Name,
+                    user.Email,
+                    user.Password,
                 };
 
                 string jsonPayload = JsonSerializer.Serialize(updateData);
 
                 var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
 
-                var response = await httpClient.PutAsync("http://localhost:5002/api/Users/updateUser", content);
+                var response = await httpClient.PutAsync($"http://localhost:5002/api/Users/UpdateUser?oldPassword={oldPassword}", content);
 
                 var responseBody = await response.Content.ReadAsStringAsync();
                 if (response.IsSuccessStatusCode)
@@ -101,6 +101,139 @@ namespace Shopping_App.APIs
                 return null;
             }
             return updatedUser;
+        }
+
+        public static async Task DeleteUser(int id)
+        {
+            try
+            {
+                var response = await httpClient.DeleteAsync($"http://localhost:5002/api/Users/DeleteUser?id={id}");
+                var responseBody = await response.Content.ReadAsStringAsync();
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine(responseBody);
+                    return;
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                MessageBox.Show($"HTTP Request Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static async Task<User> AddUser(User user)
+        {
+            User addedUser = null;
+            try
+            {
+                string jsonPayload = JsonSerializer.Serialize(user);
+
+                var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync("http://localhost:5002/api/Users/AddUser", content);
+
+                var responseBody = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                {
+                    addedUser = JsonSerializer.Deserialize<User>(responseBody, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                }
+                else
+                {
+                    Console.WriteLine(responseBody);
+                }
+            }
+            catch (HttpRequestException ex) {
+                MessageBox.Show($"HTTP Request Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (JsonException ex)
+            {
+                MessageBox.Show($"Error deserializing JSON: {ex.Message}", "JSON Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return addedUser;
+
+        }
+
+        public static async Task<User> CurrentUser()
+        {
+            User CurrentUser = null;
+            try
+            {
+                var response = await httpClient.GetAsync("http://localhost:5002/api/Users/CurrentUser\r\n");
+                var responseBody = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                {
+                    CurrentUser = JsonSerializer.Deserialize<User>(responseBody, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                }
+                else
+                {
+                    Console.WriteLine(responseBody);
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                MessageBox.Show($"HTTP Request Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return CurrentUser;
+        }
+
+        public static async Task<User> Login(string username, string password)
+        {
+            User User = null;
+            try
+            {
+                string JsonPayload = JsonSerializer.Serialize(new { userName = username, password = password });
+                var content = new StringContent(JsonPayload, Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync($"http://localhost:5002/api/Users/Login?userName={username}&password={password}", null);
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine(responseBody);
+                    User = JsonSerializer.Deserialize<User>(responseBody, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                }
+                else
+                {
+                    Console.WriteLine(responseBody);
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                MessageBox.Show($"HTTP Request Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (JsonException ex)
+            {
+                MessageBox.Show($"Error deserializing JSON in Login: {ex.Message}", "JSON Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return User;
+        }
+
+        public static async Task Logout()
+        {
+            try
+            {
+                var response = await httpClient.PostAsync("http://localhost:5002/api/Users/Logout", null);
+                var responseBody = await response.Content.ReadAsStringAsync();
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine(responseBody);
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                MessageBox.Show($"HTTP Request Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

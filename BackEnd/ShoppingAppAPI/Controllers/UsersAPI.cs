@@ -74,12 +74,12 @@ namespace ShoppingAppAPI.Controllers
         {
             bool result = Users.Login(userName, password);
             if (result == false) return Unauthorized("Invalid user name or password");
-            return Ok("User Login Successfully");
+            return Ok(Users.GetCurrentUser());
         }
 
         [HttpPost("Logout")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<UserDto> Logout()
+        public ActionResult Logout()
         {
             Users.Logout();
             return Ok("User Logout Successfully");

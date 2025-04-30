@@ -93,6 +93,7 @@ namespace ShoppingAppDB
                     userToUpdate.Email = user.Email;
                     userToUpdate.PasswordHash = HashPassword(user.Password);
                     context.SaveChanges();
+                    UsersData.SetCurrentUser(new UserDto(user.Id, user.Name, user.Email, user.Password));
                     return true;
                 }
                 return false;
