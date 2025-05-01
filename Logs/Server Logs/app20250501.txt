@@ -1,0 +1,15 @@
+2025-05-01 22:36:01.009 +03:00 [INF] Starting web host
+2025-05-01 22:36:03.133 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-01 22:36:03.219 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-01 22:36:03.219 +03:00 [INF] Hosting environment: Development
+2025-05-01 22:36:03.219 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-01 22:36:26.109 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-01 22:36:26.142 +03:00 [INF] UsersAPI LoginAPI
+2025-05-01 22:36:26.143 +03:00 [INF] UsersBL Login
+2025-05-01 22:36:26.154 +03:00 [INF] UserDA Login
+2025-05-01 22:36:27.281 +03:00 [INF] UserDA Verifying password
+2025-05-01 22:36:27.527 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-01 22:36:27.528 +03:00 [INF] UserDA Set the current user
+2025-05-01 22:36:27.528 +03:00 [INF] UserDA Current user logged in successfully with id 501
+2025-05-01 22:36:27.533 +03:00 [INF] UsersAPI User logged in successfully
+2025-05-01 22:36:27.533 +03:00 [INF] UsersBL GetCurrentUser
