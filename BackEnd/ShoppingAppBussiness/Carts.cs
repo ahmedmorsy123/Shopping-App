@@ -5,9 +5,9 @@ namespace ShoppingAppBussiness
 {
     public class Carts
     {
-        public static CartDto? GetUserCart(int UserId)
+        public static CartDto? GetCurrentUserCart()
         {
-            return CartData.GetUserCart(UserId);
+            return CartData.GetCurrentUserCart();
         }
 
         public static bool UpdateCart(CartDto cart)

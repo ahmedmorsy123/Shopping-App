@@ -16,7 +16,7 @@ namespace ShoppingAppDB
             public string Status { get; set; }
             public string? ShippingAddress { get; set; }
             public string? PaymentMethod { get; set; }
-            public List<ProductDto>? OrderItems { get; set; }
+            public List<ProductDto> OrderItems { get; set; }
 
         }
 
@@ -118,6 +118,7 @@ namespace ShoppingAppDB
                     .ThenInclude(oi => oi.Product)
                     .Select(o => new OrderDto()
                     {
+                        Id = o.Id,
                         CreatedAt = o.OrderDate,
                         TotalPrice = o.TotalPrice,
                         Status = o.Status,

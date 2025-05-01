@@ -8,28 +8,32 @@ namespace ShoppingAppAPI.Controllers
     [ApiController]
     public class CartsAPI : ControllerBase
     { 
-        [HttpGet("GetUserCart")]
+        [HttpGet("GetCurrentUserCart")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<IEnumerable<CartDto>> GetUserCart(int userId)
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<IEnumerable<CartDto>> GetCurrentUserCart()
         {
-            var cart = Carts.GetUserCart(userId);
-            if (cart == null) return NotFound("Thre is no cart for this user or user is not logged in");
+            if(Users.GetCurrentUser() == null) return BadRequest("Please Login First");
+            var cart = Carts.GetCurrentUserCart();
+            if (cart == null) return NotFound("Thre is no cart for this user");
             return Ok(cart);
         }
 
-        [HttpPut("UpdateUserCart")]
+        [HttpPut("UpdateCart")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<CartDto> UpdateUserCart(CartDto cart)
+        public ActionResult<CartDto> UpdateCart(CartDto cart)
         {
+            if (Users.GetCurrentUser() == null) return BadRequest("Please Login First");
+
             bool result = Carts.UpdateCart(cart);
+            int id = cart.CartId;
             if (result == false)
             {
-                if (Users.GetCurrentUser() == null) return BadRequest("Please Login First");
-
-                Carts.AddCart(cart);
+                id = Carts.AddCart(cart);
             }
+            cart.CartId = id;
             return Ok(cart);
         }
 
@@ -42,7 +46,7 @@ namespace ShoppingAppAPI.Controllers
 
             int id = Carts.AddCart(cart);
             cart.CartId = id;
-            return CreatedAtAction(nameof(GetUserCart), new { id = cart.CartId }, cart);
+            return CreatedAtAction(nameof(GetCurrentUserCart), cart);
         }
 
         [HttpDelete("DeleteCart")]

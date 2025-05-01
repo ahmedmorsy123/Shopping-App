@@ -196,7 +196,6 @@ namespace Shopping_App.APIs
 
                 if (response.IsSuccessStatusCode)
                 {
-                    Console.WriteLine(responseBody);
                     User = JsonSerializer.Deserialize<User>(responseBody, new JsonSerializerOptions
                     {
                         PropertyNameCaseInsensitive = true

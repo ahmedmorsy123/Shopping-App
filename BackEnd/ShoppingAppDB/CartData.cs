@@ -15,16 +15,15 @@ namespace ShoppingAppDB
             public List<ProductDto> Products { get; set; }
         }
 
-        public static CartDto? GetUserCart(int UserId)
+        public static CartDto? GetCurrentUserCart()
         {
-            var user = UsersData.GetUserById(UserId);
-            if (user == null) return null;
+            if (UsersData._currentUser == null) return null;
             CartDto? cart;
 
             using (var context = new AppDbContext())
             {
                 cart = context.Carts.AsNoTracking()
-                    .Where(c => c.UserId == user.Id)
+                    .Where(c => c.UserId == UsersData._currentUser.Id)
                     .Include(c => c.CartItems)
                     .ThenInclude(ci => ci.Product)
                     .Select(c => new CartDto()

@@ -10,13 +10,16 @@ namespace ShoppingAppAPI.Controllers
     [ApiController]
     public class OrdersAPI : ControllerBase
     {
-        [HttpGet("GetUserOrders")]
+        [HttpGet("GetCurrentUserOrders")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<IEnumerable<OrderDto>> GetUserOrders(int userId) 
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<IEnumerable<OrderDto>> GetUserOrders() 
         {
+            if (Users.GetCurrentUser() == null) return BadRequest("Please Login First");
+            int userId = Users.GetCurrentUser().Id;
             var orders = Orders.GetUserOrders(userId);
-            if (orders == null) return NotFound();
+            if (orders == null) return NotFound("There is no orders for this user");
             return Ok(orders);
         }
 
@@ -40,11 +43,12 @@ namespace ShoppingAppAPI.Controllers
             if(!Carts.CurrentUserHaveCart()) return BadRequest("Please Add Cart First");
 
             OrderDto order = Orders.AddOrder(shippingAddress, paymentMethod);
+
+            if (order == null) return BadRequest("Order was not created");
    
             return CreatedAtAction(nameof(GetUserOrders), new { id = order.Id }, order);
         }
 
-        // cancle order
         [HttpDelete("CancelOrder")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
