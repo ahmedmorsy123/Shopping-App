@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using ShoppingAppDB.Data;
 
 namespace ShoppingAppDB
@@ -16,10 +18,17 @@ namespace ShoppingAppDB
             public decimal price { get; set; }
         }
 
+        private ILogger<ProductData> _logger;
+        private const string _prefix = "ProductDA ";
 
-        public static List<ProductDto> GetProductsPaginated(int pageNumber, int pageSize = 10)
+        public ProductData(ILogger<ProductData> logger)
         {
+            _logger = logger;
+        }
 
+        public List<ProductDto> GetProductsPaginated(int pageNumber, int pageSize = 10)
+        {
+            _logger.LogInformation($"{_prefix}Get Products Paginated");
             var products = new List<ProductDto>();
 
             using (var context = new AppDbContext())
@@ -39,7 +48,7 @@ namespace ShoppingAppDB
                     .Take(pageSize)
                     .ToList();
             }
-
+            _logger.LogInformation($"{_prefix}Returned {products.Count} products, page {pageNumber}, pageSize {pageSize}");
             return products;
         }
 

@@ -1,28 +1,43 @@
-﻿using ShoppingAppDB;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog.Context;
+using ShoppingAppDB;
 using static ShoppingAppDB.OrderData;
 
 namespace ShoppingAppBussiness
 {
     public class Orders
     {
-        public static List<OrderDto>? GetUserOrders(int UserId)
+        private ILogger<Orders> _logger;
+        private readonly OrderData _orderData;
+        private const string _prefix = "OrdersBL ";
+        public Orders(ILogger<Orders> logger, OrderData orderData)
         {
-            return OrderData.GetUserOrders(UserId);
+            _logger = logger;
+            _orderData = orderData;
+        }
+        public List<OrderDto>? GetUserOrders(int UserId)
+        {
+            _logger.LogInformation($"{_prefix}GetUserOrders");
+            return _orderData.GetUserOrders(UserId);
         }
 
-        public static OrderDto AddOrder(string shippingAddress, string paymentMethod)
+        public OrderDto AddOrder(string shippingAddress, string paymentMethod)
         {
-            return OrderData.AddOrder(shippingAddress, paymentMethod);
+            _logger.LogInformation($"{_prefix}AddOrder");
+            return _orderData.AddOrder(shippingAddress, paymentMethod);
         }
 
-        public static OrderDto? GetOrderById(int id)
+        public OrderDto? GetOrderById(int id)
         {
-            return OrderData.GetOrderById(id);
+            _logger.LogInformation($"{_prefix}GetOrderById");
+            return _orderData.GetOrderById(id);
         }
 
-        public static void CancelOrder(int id)
+        public void CancelOrder(int id)
         {
-            OrderData.CancelOrder(id);
+            _logger.LogInformation($"{_prefix}CancelOrder");
+            _orderData.CancelOrder(id);
         }
 
     }

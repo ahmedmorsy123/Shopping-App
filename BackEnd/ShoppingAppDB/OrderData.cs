@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using ShoppingAppDB.Data;
 using ShoppingAppDB.Entities;
 using static ShoppingAppDB.ProductData;
-using static ShoppingAppDB.UsersData;
+using static ShoppingAppDB.UserData;
 
 namespace ShoppingAppDB
 {
@@ -20,12 +22,25 @@ namespace ShoppingAppDB
 
         }
 
-        public static OrderDto AddOrder(string shippingAddress, string paymentMethod)
+        private ILogger<OrderData> _logger;
+        private CartData _cartData;
+        private UserData _userData;
+        private const string _prefix = "OrderDA ";
+
+        public OrderData(ILogger<OrderData> logger, CartData cartData, UserData userData)
         {
+            _logger = logger;
+            _cartData = cartData;
+            _userData = userData;
+        }
+
+        public OrderDto AddOrder(string shippingAddress, string paymentMethod)
+        {
+            _logger.LogInformation($"{_prefix}Add Order");
             using (var context = new AppDbContext())
             {
                 var orderToAdd = new Order();
-                orderToAdd.UserId = UsersData._currentUser.Id;
+                orderToAdd.UserId = UserData._currentUser.Id;
                 orderToAdd.OrderDate = DateTime.Now;
                 orderToAdd.TotalPrice = 0;
                 orderToAdd.Status = "Pending";
@@ -33,9 +48,10 @@ namespace ShoppingAppDB
                 orderToAdd.PaymentMethod = paymentMethod;
                 context.Orders.Add(orderToAdd);
                 context.SaveChanges();
+                _logger.LogInformation($"{_prefix}Order Added with id {orderToAdd.Id}");
 
                 var cartItems = context.CartItems
-                    .Where(ci => ci.Cart.UserId == UsersData._currentUser.Id)
+                    .Where(ci => ci.Cart.UserId == UserData._currentUser.Id)
                     .Include(ci => ci.Product)
                     .ToList();
                 foreach (var item in cartItems)
@@ -50,11 +66,11 @@ namespace ShoppingAppDB
                     context.Products.Where(p => p.Id == item.ProductId).FirstOrDefault().Quantity -= item.Quantity;
 
                     context.SaveChanges();
-
+                    _logger.LogInformation($"{_prefix}OrderItem Added with id {orderItemToAdd.Id}");
                     orderToAdd.TotalPrice += item.Product.Price * item.Quantity;
                 }
 
-                CartData.DeleteCart(CartData.GetCartIdByUserId(UsersData._currentUser.Id));
+                _cartData.DeleteCart(_cartData.GetCartIdByUserId(UserData._currentUser.Id));
 
                 return new OrderDto()
                 {
@@ -78,8 +94,9 @@ namespace ShoppingAppDB
             }
         }
 
-        public static OrderDto? GetOrderById(int id)
+        public OrderDto? GetOrderById(int id)
         {
+            _logger.LogInformation($"{_prefix}Get Order By Id");
             using (var context = new AppDbContext())
             {
                 return context.Orders.AsNoTracking()
@@ -104,10 +121,15 @@ namespace ShoppingAppDB
             }
         }
 
-        public static List<OrderDto>? GetUserOrders(int UserId)
+        public List<OrderDto>? GetUserOrders(int UserId)
         {
-            var user = UsersData.GetUserById(UserId);
-            if (user == null) return null;
+            _logger.LogInformation($"{_prefix}Get User Orders");
+            var user = _userData.GetUserById(UserId);
+            if (user == null)
+            {
+                _logger.LogWarning($"{_prefix}User Not Found");
+                return null;
+            }
             List<OrderDto> OrderItems;
 
             using (var context = new AppDbContext())
@@ -137,8 +159,9 @@ namespace ShoppingAppDB
             return OrderItems.Count == 0 ? null : OrderItems;
         }
 
-        public static void CancelOrder(int orderId)
+        public void CancelOrder(int orderId)
         {
+            _logger.LogInformation($"{_prefix}Cancel Order");
             using (var context = new AppDbContext())
             {
                 var order = context.Orders.Find(orderId);
@@ -146,6 +169,11 @@ namespace ShoppingAppDB
                 {
                     order.Status = "Canceled";
                     context.SaveChanges();
+                    _logger.LogInformation($"{_prefix}Order Canceled");
+                }
+                else
+                {
+                    _logger.LogWarning($"{_prefix}Order Not Found");
                 }
             }
         }

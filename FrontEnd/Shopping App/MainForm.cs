@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,7 @@ namespace Shopping_App
         static readonly HttpClient httpClient = new HttpClient();
         public MainForm()
         {
-           
+            Log.Information("MainForm constructor called.");
             
         }
 

@@ -1,38 +1,55 @@
-﻿using ShoppingAppDB;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog.Context;
+using ShoppingAppDB;
 using static ShoppingAppDB.CartData;
 
 namespace ShoppingAppBussiness
 {
     public class Carts
     {
-        public static CartDto? GetCurrentUserCart()
+        private ILogger<Carts> _logger;
+        private readonly CartData _cartData;
+        private const string _prefix = "CartsBL ";
+        public Carts(ILogger<Carts> logger, CartData cartData)
         {
-            return CartData.GetCurrentUserCart();
+            _logger = logger;
+            _cartData = cartData;
+        }
+        public CartDto? GetCurrentUserCart()
+        {
+            _logger.LogInformation($"{_prefix}Get Current User Cart");
+            return _cartData.GetCurrentUserCart();
         }
 
-        public static bool UpdateCart(CartDto cart)
+        public bool UpdateCart(CartDto cart)
         {
-            return CartData.UpdateCart(cart);
+            _logger.LogInformation($"{_prefix}Update Cart");
+            return _cartData.UpdateCart(cart);
         }
 
-        public static int AddCart(CartDto cart)
+        public int AddCart(CartDto cart)
         {
-            return CartData.AddCart(cart);
+            _logger.LogInformation($"{_prefix}Add Cart");
+            return _cartData.AddCart(cart);
         }
 
-        public static bool DeleteCart(int cartId)
+        public bool DeleteCart(int cartId)
         {
-            return CartData.DeleteCart(cartId);
+            _logger.LogInformation($"{_prefix}Delete Cart");
+            return _cartData.DeleteCart(cartId);
         }
 
-        public static int GetCartIdByUserId(int userId)
+        public int GetCartIdByUserId(int userId)
         {
-            return CartData.GetCartIdByUserId(userId);
+            _logger.LogInformation($"{_prefix}Get Cart Id By User Id");
+            return _cartData.GetCartIdByUserId(userId);
         }
 
-        public static bool CurrentUserHaveCart()
+        public bool CurrentUserHaveCart()
         {
-            return CartData.CurrentUserHaveCart();
+            _logger.LogInformation($"{_prefix}Current User Have Cart");
+            return _cartData.CurrentUserHaveCart();
         }
     }
 }

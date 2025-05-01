@@ -1,42 +1,60 @@
-﻿using ShoppingAppDB;
-using static ShoppingAppDB.UsersData;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog.Context;
+using ShoppingAppDB;
+using static ShoppingAppDB.UserData;
 
 namespace ShoppingAppBussiness
 {
     public class Users
     {
-        public static UserDto? GetUserById(int id)
+        private ILogger<Users> _logger;
+        private readonly UserData _userData;
+        private const string _prefix = "UsersBL ";
+        public Users(ILogger<Users> logger, UserData userData)
         {
-            return UsersData.GetUserById(id);
+            _logger = logger;
+            _userData = userData;
+        }
+        public UserDto? GetUserById(int id)
+        {
+            _logger.LogInformation($"{_prefix}GetUserById");
+            return _userData.GetUserById(id);
         }
 
-        public static int AddUser(UserDto user)
+        public int AddUser(UserDto user)
         {
-            return UsersData.AddUser(user);
+            _logger.LogInformation($"{_prefix}AddUser");
+            return _userData.AddUser(user);
         }
 
-        public static bool UpdateUser(UserDto user, string oldPassword)
+        public bool UpdateUser(UserDto user, string oldPassword)
         {
-            return UsersData.UpdateUser(user, oldPassword);
+            _logger.LogInformation($"{_prefix}UpdateUser");
+            return _userData.UpdateUser(user, oldPassword);
         }
 
-        public static bool DeleteUser(int userId)
+        public bool DeleteUser(int userId)
         {
-            return UsersData.DeleteUser(userId);
+            _logger.LogInformation($"{_prefix}DeleteUser");
+            return _userData.DeleteUser(userId);
         }
-        public static bool Login(string username, string password)
+        public bool Login(string username, string password)
         {
-            return UsersData.Login(username, password);
-        }
-
-        public static void Logout()
-        {
-            UsersData.ClearCurrentUser();
+            _logger.LogInformation($"{_prefix}Login");
+            return _userData.Login(username, password);
         }
 
-        public static UserDto? GetCurrentUser()
+        public void Logout()
         {
-            return UsersData.GetCurrentUser();
+            _logger.LogInformation($"{_prefix}Logout");
+            _userData.ClearCurrentUser();
+        }
+
+        public UserDto? GetCurrentUser()
+        {
+            _logger.LogInformation($"{_prefix}GetCurrentUser");
+            return _userData.GetCurrentUser();
         }
     }
 

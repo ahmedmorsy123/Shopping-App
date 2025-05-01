@@ -1,7 +1,9 @@
-﻿using Shopping_App.APIs;
+﻿using Serilog;
+using Shopping_App.APIs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Shopping_App.APIs.Carts;
@@ -17,25 +19,32 @@ namespace Shopping_App
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static async Task Main()
+        static void Main()
         {
-            await Users.Login("Ahmed", "3420");
+            // Configure Serilog
+            Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Debug() 
+                .WriteTo.File("C:/Users/ENG Ahmed/source/repos/ShoppingAppDB/Logs/Client Logs/Client.txt", 
+                rollingInterval: RollingInterval.Day, 
+                outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+                .CreateLogger();
 
-            Cart newCart = new Cart();
-            newCart.CartId = 4050;
-
-
-            var products = (await Products.GetProductsAsPaginated(55)).Take(2).ToList();
-            newCart.Products = products;
-
-            var cart = await Carts.UpdateCart(newCart);
-
-            Console.WriteLine($"cart is null: {cart == null}");
-            Console.WriteLine($"cartId: {cart.CartId}, cartCreatedAt: {cart.CreatedAt}, cartUpdatedAt: {cart.UpdatedAt}, cartProducts: {cart.Products.Count}");
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            try
+            {
+                Log.Information("Application starting.");
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new MainForm()); 
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "Application terminated unexpectedly.");
+                MessageBox.Show("An unexpected error occurred. See the log file for details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
         }
     }
 }
