@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Serilog;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
@@ -24,11 +25,12 @@ namespace Shopping_App.APIs
 
         public static async Task<List<Product>> GetProductsAsPaginated(int pageNumber)
         {
+            Log.Information("Get Products As Paginated");
             List<Product> products = new List<Product>();
 
             try
             {
-
+                Log.Information("Making get request");
                 var response = await httpClient.GetAsync($"http://localhost:5002/api/Products/GetAllProductsPaginated?page={pageNumber}");
                 var responseBody = await response.Content.ReadAsStringAsync();
 
@@ -41,11 +43,13 @@ namespace Shopping_App.APIs
             }
             catch (HttpRequestException ex)
             {
+                Log.Error(ex, "Http request error");
                 MessageBox.Show($"HTTP Request Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
             catch (JsonException ex)
             {
+                Log.Error(ex, "Json deserialization error");
                 MessageBox.Show($"Error deserializing JSON: {ex.Message}", "JSON Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }

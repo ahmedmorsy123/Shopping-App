@@ -1,14 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Identity.Client.Extensions.Msal;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShoppingAppDB.Entities
+﻿namespace ShoppingAppDB.Entities
 {
     public class User
     {
@@ -18,8 +8,11 @@ namespace ShoppingAppDB.Entities
         public string PasswordHash { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? LastLogin { get; set; }
+        public string Role { get; set; } = string.Empty;
+        public string? RefreshToken { get; set; }
+        public DateTime? RefreshTokenExpiryTime { get; set; }
 
-        public Cart? Cart { get; set; } 
+        public Cart? Cart { get; set; }
         public List<Order>? Orders { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace ShoppingAppDB.Data.Config
             builder.Property(x => x.ProductId).IsRequired();
             builder.Property(x => x.Quantity).IsRequired();
             builder.Property(x => x.UnitPrice).IsRequired().HasColumnType("decimal(18,2)");
-            
+
             builder.HasOne(x => x.Order).WithMany(x => x.OrderItems).HasForeignKey(x => x.OrderId);
             builder.HasOne(x => x.Product).WithMany(x => x.OrderItems).HasForeignKey(x => x.ProductId);
             builder.ToTable("OrderItems");

@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Serilog.Context;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingAppBussiness;
-using static ShoppingAppDB.UserData;
+using ShoppingAppDB.Models;
+using ShoppingAppDB.Services;
+using System.Security.Claims;
 
 namespace ShoppingAppAPI.Controllers
 {
@@ -20,10 +21,11 @@ namespace ShoppingAppAPI.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         [HttpGet("getUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<IEnumerable<UserDto>> GetUser(int id)
+        public ActionResult<UserDto> GetUser(int id)
         {
             _logger.LogInformation($"{_prefix}GetUserAPI");
             var user = _usersService.GetUserById(id);
@@ -35,6 +37,7 @@ namespace ShoppingAppAPI.Controllers
             return Ok(_usersService.GetUserById(id));
         }
 
+        [Authorize]
         [HttpPut("UpdateUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -52,6 +55,7 @@ namespace ShoppingAppAPI.Controllers
             return Ok(UpdatedUser);
         }
 
+        [Authorize]
         [HttpDelete("DeleteUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -71,53 +75,51 @@ namespace ShoppingAppAPI.Controllers
         [HttpPost("AddUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<UserDto> AddUser(UserDto user)
         {
             _logger.LogInformation($"{_prefix}AddUserAPI");
-            int id = _usersService.AddUser(user);
-            user.Id = id;
-            _logger.LogInformation($"{_prefix}Added user with id: {user.Id}");
-            return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
-        }
+            UserDto? newUser = _usersService.AddUser(user);
 
-        [HttpGet("CurrentUser")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<UserDto> GetCurrentUser()
-        {
-            _logger.LogInformation($"{_prefix}GetCurrentUserAPI");
-            UserDto result = _usersService.GetCurrentUser();
-            if (result == null)
+            if (newUser == null)
             {
-                _logger.LogWarning($"{_prefix}There is no logged-in user");
-                return NotFound("There is no logged-in user");
+                _logger.LogWarning($"{_prefix}User was not added");
+                return BadRequest("UserName or Email already exists");
             }
-            return Ok(result);
+            _logger.LogInformation($"{_prefix}Added user with id: {user.Id}");
+            return CreatedAtAction(nameof(GetUser), new { id = newUser.Id }, newUser);
         }
 
         [HttpPost("Login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<UserDto> Login(string userName, string password)
         {
             _logger.LogInformation($"{_prefix}LoginAPI");
-            bool result = _usersService.Login(userName, password);
-            if (result == false)
+            TokenResponseDto? result = _usersService.Login(userName, password);
+            if (result is null)
             {
                 _logger.LogWarning($"{_prefix}Invalid username or password");
-                return Unauthorized("Invalid username or password");
+                return BadRequest("Invalid username or password");
             }
             _logger.LogInformation($"{_prefix}User logged in successfully");
-            return Ok(_usersService.GetCurrentUser());
+            return Ok(result);
         }
 
-        [HttpPost("Logout")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [Authorize]
+        [HttpPost("logout")]
         public ActionResult Logout()
         {
-            _logger.LogInformation($"{_prefix}LogoutAPI");
-            _usersService.Logout();
-            return Ok("User logged out successfully");
+            // Extract user ID from claims
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim is null || !int.TryParse(userIdClaim.Value, out var userId))
+                return BadRequest("Invalid user identifier.");
+
+            var result = _usersService.Logout(userId);
+            if (!result)
+                return NotFound("User not found.");
+
+            return Ok("Logged out successfully.");
         }
     }
 }

@@ -1,23 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using ShoppingAppDB.Data;
+using ShoppingAppDB.Models;
 
 namespace ShoppingAppDB
 {
     public class ProductData
     {
-        public class ProductDto
-        {
-            public int Id { get; set; }
-            public string productName { get; set; }
-            public string? productCategory { get; set; }
-            public string? productDescription { get; set; }
-            public int quantity { get; set; }
-            public decimal Weight { get; set; }
-            public decimal price { get; set; }
-        }
-
         private ILogger<ProductData> _logger;
         private const string _prefix = "ProductDA ";
 
@@ -51,6 +40,5 @@ namespace ShoppingAppDB
             _logger.LogInformation($"{_prefix}Returned {products.Count} products, page {pageNumber}, pageSize {pageSize}");
             return products;
         }
-
     }
 }

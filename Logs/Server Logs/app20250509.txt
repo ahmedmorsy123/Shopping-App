@@ -1,0 +1,461 @@
+2025-05-09 20:55:18.464 +03:00 [INF] Starting web host
+2025-05-09 20:55:19.186 +03:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Users Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Users': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Orders Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Orders': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppDB.UserData Lifetime: Scoped ImplementationType: ShoppingAppDB.UserData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppDB.OrderData Lifetime: Scoped ImplementationType: ShoppingAppDB.OrderData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Users Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Users': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI\Program.cs:line 65
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Orders Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Orders': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppDB.UserData Lifetime: Scoped ImplementationType: ShoppingAppDB.UserData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppDB.OrderData Lifetime: Scoped ImplementationType: ShoppingAppDB.OrderData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2025-05-09 20:55:37.923 +03:00 [INF] Starting web host
+2025-05-09 20:55:38.499 +03:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Users Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Users': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Orders Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Orders': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppDB.UserData Lifetime: Scoped ImplementationType: ShoppingAppDB.UserData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppDB.OrderData Lifetime: Scoped ImplementationType: ShoppingAppDB.OrderData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Users Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Users': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI\Program.cs:line 65
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Orders Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Orders': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppDB.UserData Lifetime: Scoped ImplementationType: ShoppingAppDB.UserData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppDB.OrderData Lifetime: Scoped ImplementationType: ShoppingAppDB.OrderData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2025-05-09 20:55:49.095 +03:00 [INF] Starting web host
+2025-05-09 20:55:49.693 +03:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Users Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Users': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Orders Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Orders': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppDB.UserData Lifetime: Scoped ImplementationType: ShoppingAppDB.UserData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppDB.OrderData Lifetime: Scoped ImplementationType: ShoppingAppDB.OrderData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Users Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Users': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI\Program.cs:line 65
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Orders Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Orders': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppDB.UserData Lifetime: Scoped ImplementationType: ShoppingAppDB.UserData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppDB.OrderData Lifetime: Scoped ImplementationType: ShoppingAppDB.OrderData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2025-05-09 20:56:18.686 +03:00 [INF] Starting web host
+2025-05-09 20:56:19.268 +03:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Users Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Users': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Orders Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Orders': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppDB.UserData Lifetime: Scoped ImplementationType: ShoppingAppDB.UserData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.) (Error while validating the service descriptor 'ServiceType: ShoppingAppDB.OrderData Lifetime: Scoped ImplementationType: ShoppingAppDB.OrderData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Users Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Users': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI\Program.cs:line 65
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppBussiness.Orders Lifetime: Scoped ImplementationType: ShoppingAppBussiness.Orders': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppDB.UserData Lifetime: Scoped ImplementationType: ShoppingAppDB.UserData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ShoppingAppDB.OrderData Lifetime: Scoped ImplementationType: ShoppingAppDB.OrderData': Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ShoppingAppDB.Services.PasswordService' while attempting to activate 'ShoppingAppDB.UserData'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2025-05-09 20:58:43.122 +03:00 [INF] Starting web host
+2025-05-09 20:58:44.314 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 20:58:44.316 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 20:58:44.389 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 20:58:44.389 +03:00 [INF] Hosting environment: Development
+2025-05-09 20:58:44.389 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 20:59:01.568 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 20:59:01.570 +03:00 [INF] UsersBL Login
+2025-05-09 20:59:01.613 +03:00 [INF] UserDA Login
+2025-05-09 21:00:35.220 +03:00 [INF] Starting web host
+2025-05-09 21:00:35.333 +03:00 [FTL] Host terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI\Program.cs:line 69
+2025-05-09 21:02:15.294 +03:00 [INF] Starting web host
+2025-05-09 21:02:16.233 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 21:02:16.234 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 21:02:16.296 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 21:02:16.297 +03:00 [INF] Hosting environment: Development
+2025-05-09 21:02:16.297 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 21:02:29.877 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 21:02:29.880 +03:00 [INF] UsersBL Login
+2025-05-09 21:02:29.901 +03:00 [INF] UserDA Login
+2025-05-09 21:02:31.280 +03:00 [INF] ServPass Verifying password
+2025-05-09 21:02:31.528 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-09 21:02:31.576 +03:00 [INF] UsersAPI User logged in successfully
+2025-05-09 21:07:10.343 +03:00 [INF] Starting web host
+2025-05-09 21:07:11.266 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 21:07:11.268 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 21:07:11.349 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 21:07:11.349 +03:00 [INF] Hosting environment: Development
+2025-05-09 21:07:11.350 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 21:07:23.621 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 21:07:23.623 +03:00 [INF] UsersBL Login
+2025-05-09 21:07:23.639 +03:00 [INF] UserDA Login
+2025-05-09 21:07:24.870 +03:00 [INF] ServPass Verifying password
+2025-05-09 21:07:25.089 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-09 21:07:25.142 +03:00 [INF] UsersAPI User logged in successfully
+2025-05-09 21:07:48.296 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-09 21:07:48.296 +03:00 [INF] UsersBL GetUserById
+2025-05-09 21:07:48.297 +03:00 [INF] UserDA Getting user by id
+2025-05-09 21:07:48.357 +03:00 [INF] UsersBL GetUserById
+2025-05-09 21:07:48.358 +03:00 [INF] UserDA Getting user by id
+2025-05-09 21:33:34.893 +03:00 [INF] Starting web host
+2025-05-09 21:33:36.431 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 21:33:36.434 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 21:33:36.546 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 21:33:36.546 +03:00 [INF] Hosting environment: Development
+2025-05-09 21:33:36.546 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 21:34:38.439 +03:00 [INF] Starting web host
+2025-05-09 21:34:38.975 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 21:34:38.978 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 21:34:39.127 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 21:34:39.128 +03:00 [INF] Hosting environment: Development
+2025-05-09 21:34:39.128 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 21:34:56.808 +03:00 [INF] Starting web host
+2025-05-09 21:34:58.440 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 21:34:58.443 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 21:34:58.610 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 21:34:58.611 +03:00 [INF] Hosting environment: Development
+2025-05-09 21:34:58.611 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 21:35:51.469 +03:00 [INF] Starting web host
+2025-05-09 21:35:52.713 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 21:35:52.715 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 21:35:52.898 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 21:35:52.899 +03:00 [INF] Hosting environment: Development
+2025-05-09 21:35:52.899 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 21:51:32.385 +03:00 [INF] Starting web host
+2025-05-09 21:51:34.047 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 21:51:34.049 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 21:51:34.373 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 21:51:34.374 +03:00 [INF] Hosting environment: Development
+2025-05-09 21:51:34.374 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 22:02:37.817 +03:00 [INF] Starting web host
+2025-05-09 22:02:39.136 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 22:02:39.138 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 22:02:39.299 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 22:02:39.300 +03:00 [INF] Hosting environment: Development
+2025-05-09 22:02:39.300 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 22:06:07.230 +03:00 [INF] Starting web host
+2025-05-09 22:06:08.693 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 22:06:08.696 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 22:06:08.811 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 22:06:08.811 +03:00 [INF] Hosting environment: Development
+2025-05-09 22:06:08.811 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 22:13:00.793 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 22:13:00.800 +03:00 [INF] UsersBL Login
+2025-05-09 22:13:00.888 +03:00 [INF] UserDA Login
+2025-05-09 22:13:06.310 +03:00 [INF] ServPass Verifying password
+2025-05-09 22:13:07.271 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-09 22:13:07.476 +03:00 [INF] UsersAPI User logged in successfully
+2025-05-09 22:32:26.695 +03:00 [INF] Starting web host
+2025-05-09 22:32:27.850 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 22:32:27.852 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 22:32:27.970 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 22:32:27.971 +03:00 [INF] Hosting environment: Development
+2025-05-09 22:32:27.971 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 22:33:16.476 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 22:33:16.479 +03:00 [INF] UsersBL Login
+2025-05-09 22:33:16.521 +03:00 [INF] UserDA Login
+2025-05-09 22:33:18.975 +03:00 [INF] ServPass Verifying password
+2025-05-09 22:33:19.312 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-09 22:33:19.481 +03:00 [INF] UsersAPI User logged in successfully
+2025-05-09 22:43:28.571 +03:00 [INF] Starting web host
+2025-05-09 22:43:30.553 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 22:43:30.557 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 22:43:30.715 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 22:43:30.715 +03:00 [INF] Hosting environment: Development
+2025-05-09 22:43:30.715 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 22:44:21.494 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 22:44:21.500 +03:00 [INF] UsersBL Login
+2025-05-09 22:44:21.603 +03:00 [INF] UserDA Login
+2025-05-09 22:44:27.296 +03:00 [INF] ServPass Verifying password
+2025-05-09 22:44:28.342 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-09 22:44:28.589 +03:00 [INF] UsersAPI User logged in successfully
+2025-05-09 22:46:49.424 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 22:46:49.424 +03:00 [INF] UsersBL Login
+2025-05-09 22:46:49.424 +03:00 [INF] UserDA Login
+2025-05-09 22:46:49.523 +03:00 [INF] ServPass Verifying password
+2025-05-09 22:46:49.778 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-09 22:46:49.791 +03:00 [INF] UsersAPI User logged in successfully
+2025-05-09 23:16:47.753 +03:00 [INF] Starting web host
+2025-05-09 23:16:50.091 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-09 23:16:50.094 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-09 23:16:50.388 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-09 23:16:50.388 +03:00 [INF] Hosting environment: Development
+2025-05-09 23:16:50.389 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-09 23:19:02.917 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 23:19:02.920 +03:00 [INF] UsersBL Login
+2025-05-09 23:19:02.944 +03:00 [INF] UserDA Login
+2025-05-09 23:19:04.559 +03:00 [INF] ServPass Verifying password
+2025-05-09 23:19:04.768 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-09 23:19:04.826 +03:00 [INF] UsersAPI User logged in successfully
+2025-05-09 23:27:35.948 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 23:27:35.948 +03:00 [INF] UsersBL Login
+2025-05-09 23:27:35.948 +03:00 [INF] UserDA Login
+2025-05-09 23:27:36.056 +03:00 [INF] ServPass Verifying password
+2025-05-09 23:27:36.241 +03:00 [WRN] UserDA Login failed
+2025-05-09 23:27:36.242 +03:00 [WRN] UsersAPI Invalid username or password
+2025-05-09 23:27:55.601 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 23:27:55.601 +03:00 [INF] UsersBL Login
+2025-05-09 23:27:55.601 +03:00 [INF] UserDA Login
+2025-05-09 23:27:55.637 +03:00 [INF] ServPass Verifying password
+2025-05-09 23:27:55.740 +03:00 [WRN] UserDA Login failed
+2025-05-09 23:27:55.741 +03:00 [WRN] UsersAPI Invalid username or password
+2025-05-09 23:28:54.895 +03:00 [INF] UsersAPI LoginAPI
+2025-05-09 23:28:54.895 +03:00 [INF] UsersBL Login
+2025-05-09 23:28:54.895 +03:00 [INF] UserDA Login
+2025-05-09 23:28:54.913 +03:00 [INF] ServPass Verifying password
+2025-05-09 23:28:55.002 +03:00 [INF] UserDA User logged in successfully with id 501
+2025-05-09 23:28:55.014 +03:00 [INF] UsersAPI User logged in successfully

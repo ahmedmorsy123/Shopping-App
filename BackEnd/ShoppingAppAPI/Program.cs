@@ -1,7 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using Serilog.Events;
 using ShoppingAppBussiness;
 using ShoppingAppDB;
+using ShoppingAppDB.Services;
+using System.Text;
 
 public class Program
 {
@@ -42,6 +46,25 @@ public class Program
             builder.Services.AddScoped<ProductData>();
             builder.Services.AddScoped<OrderData>();
             builder.Services.AddScoped<CartData>();
+
+            builder.Services.AddScoped<AuthService>();
+            builder.Services.AddScoped<PasswordService>();
+
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = builder.Configuration["Auth:Issuer"],
+                    ValidateAudience = true,
+                    ValidAudience = builder.Configuration["Auth:Audience"],
+                    ValidateLifetime = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(builder.Configuration["Auth:Token"]!)),
+                    ValidateIssuerSigningKey = true
+                };
+            });
 
             var app = builder.Build();
 

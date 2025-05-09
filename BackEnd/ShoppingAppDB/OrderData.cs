@@ -1,27 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using ShoppingAppDB.Data;
 using ShoppingAppDB.Entities;
-using static ShoppingAppDB.ProductData;
-using static ShoppingAppDB.UserData;
+using ShoppingAppDB.Models;
 
 namespace ShoppingAppDB
 {
     public class OrderData
     {
-        public class OrderDto
-        {
-            public int Id { get; set; }
-            public DateTime CreatedAt { get; set; }
-            public decimal TotalPrice { get; set; }
-            public string Status { get; set; }
-            public string? ShippingAddress { get; set; }
-            public string? PaymentMethod { get; set; }
-            public List<ProductDto> OrderItems { get; set; }
-
-        }
-
         private ILogger<OrderData> _logger;
         private CartData _cartData;
         private UserData _userData;
@@ -34,13 +20,13 @@ namespace ShoppingAppDB
             _userData = userData;
         }
 
-        public OrderDto AddOrder(string shippingAddress, string paymentMethod)
+        public OrderDto AddOrder(int userId, string shippingAddress, string paymentMethod)
         {
             _logger.LogInformation($"{_prefix}Add Order");
             using (var context = new AppDbContext())
             {
                 var orderToAdd = new Order();
-                orderToAdd.UserId = UserData._currentUser.Id;
+                orderToAdd.UserId = userId;
                 orderToAdd.OrderDate = DateTime.Now;
                 orderToAdd.TotalPrice = 0;
                 orderToAdd.Status = "Pending";
@@ -51,7 +37,7 @@ namespace ShoppingAppDB
                 _logger.LogInformation($"{_prefix}Order Added with id {orderToAdd.Id}");
 
                 var cartItems = context.CartItems
-                    .Where(ci => ci.Cart.UserId == UserData._currentUser.Id)
+                    .Where(ci => ci.Cart.UserId == userId)
                     .Include(ci => ci.Product)
                     .ToList();
                 foreach (var item in cartItems)
@@ -63,14 +49,14 @@ namespace ShoppingAppDB
                     orderItemToAdd.UnitPrice = item.Product.Price;
                     context.OrderItems.Add(orderItemToAdd);
 
-                    context.Products.Where(p => p.Id == item.ProductId).FirstOrDefault().Quantity -= item.Quantity;
-
+                    context.Products.Where(p => p.Id == item.ProductId).First().Quantity -= item.Quantity;
                     context.SaveChanges();
+
                     _logger.LogInformation($"{_prefix}OrderItem Added with id {orderItemToAdd.Id}");
                     orderToAdd.TotalPrice += item.Product.Price * item.Quantity;
                 }
 
-                _cartData.DeleteCart(_cartData.GetCartIdByUserId(UserData._currentUser.Id));
+                _cartData.DeleteCart(_cartData.GetCartIdByUserId(userId));
 
                 return new OrderDto()
                 {
@@ -177,6 +163,5 @@ namespace ShoppingAppDB
                 }
             }
         }
-
     }
 }

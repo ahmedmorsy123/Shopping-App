@@ -1,10 +1,5 @@
 ﻿using Bogus;
-using Microsoft.EntityFrameworkCore;
-using ShoppingAppDB.Data;
 using ShoppingAppDB.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace ShoppingAppDB.Data.Seeder
 {
@@ -18,10 +13,8 @@ namespace ShoppingAppDB.Data.Seeder
             _context = context;
         }
 
-
         public void Seed(int userCount = 10, int categoryCount = 5, int productCount = 50)
         {
-
             // Seed in proper order to maintain relationships
             SeedUsers(userCount);
             SeedCarts();
@@ -274,6 +267,5 @@ namespace ShoppingAppDB.Data.Seeder
                 _context.SaveChanges();
             }
         }
-   
     }
 }

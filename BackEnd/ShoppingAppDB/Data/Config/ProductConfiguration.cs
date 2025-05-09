@@ -18,13 +18,11 @@ namespace ShoppingAppDB.Data.Config
             builder.Property(x => x.CreatedAt).IsRequired().HasDefaultValueSql("GETDATE()");
             builder.Property(x => x.IsActive).IsRequired().HasDefaultValue(true);
 
-
             builder.HasOne(x => x.Category).WithMany(x => x.Products).HasForeignKey(x => x.CategoryId);
 
             builder.HasQueryFilter(x => x.IsActive);
 
             builder.ToTable("Products");
-
         }
     }
 }

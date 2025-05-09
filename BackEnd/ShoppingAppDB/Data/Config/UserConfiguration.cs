@@ -1,15 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Identity.Client.Extensions.Msal;
 using ShoppingAppDB.Entities;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShoppingAppDB.Data.Config
 {
@@ -24,9 +15,7 @@ namespace ShoppingAppDB.Data.Config
             builder.Property(x => x.CreatedAt).IsRequired().HasDefaultValueSql("GETDATE()");
             builder.Property(x => x.LastLogin).IsRequired(false);
 
-
             builder.ToTable("Users");
-
         }
     }
 }

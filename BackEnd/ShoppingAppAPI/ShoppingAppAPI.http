@@ -1,6 +1,35 @@
-@ShoppingAppAPI_HostAddress = http://localhost:5002
+@hostname = https://localhost:7093
+@contentType = application/json
+@token = # This will be filled after logging in
 
-GET {{ShoppingAppAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+### Register a new user
+POST {{hostname}}/api/auth/register
+Content-Type: {{contentType}}
 
-###
+{
+  "username": "newuser",
+  "password": "Password123!"
+}
+
+### Login
+# @name login
+POST {{hostname}}/api/auth/login
+Content-Type: {{contentType}}
+
+{
+  "username": "newuser",
+  "password": "Password123!"
+}
+
+### Save the token from the login response
+@accessToken = {{login.response.body.accessToken}}
+@refreshToken = {{login.response.body.refreshToken}}
+@userId = {{login.response.body.userId}}  # If your response includes userId
+
+### Access protected endpoint
+GET {{hostname}}/api/auth
+Authorization: Bearer {{accessToken}}
+
+### Access admin-only endpoint
+GET {{hostname}}/api/auth/admin-only
+Authorization: Bearer {{accessToken}}

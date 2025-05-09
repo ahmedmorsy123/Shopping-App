@@ -11,6 +11,4 @@
 
         public Order Order { get; set; }
     }
-
-
 }

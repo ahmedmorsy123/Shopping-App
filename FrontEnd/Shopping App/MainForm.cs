@@ -15,7 +15,6 @@ namespace Shopping_App
 {
     public partial class MainForm : Form
     {
-        static readonly HttpClient httpClient = new HttpClient();
         public MainForm()
         {
             Log.Information("MainForm constructor called.");

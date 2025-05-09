@@ -1,8 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Serilog.Context;
+﻿using Microsoft.Extensions.Logging;
 using ShoppingAppDB;
-using static ShoppingAppDB.OrderData;
+using ShoppingAppDB.Models;
 
 namespace ShoppingAppBussiness
 {
@@ -11,21 +9,23 @@ namespace ShoppingAppBussiness
         private ILogger<Orders> _logger;
         private readonly OrderData _orderData;
         private const string _prefix = "OrdersBL ";
+
         public Orders(ILogger<Orders> logger, OrderData orderData)
         {
             _logger = logger;
             _orderData = orderData;
         }
+
         public List<OrderDto>? GetUserOrders(int UserId)
         {
             _logger.LogInformation($"{_prefix}GetUserOrders");
             return _orderData.GetUserOrders(UserId);
         }
 
-        public OrderDto AddOrder(string shippingAddress, string paymentMethod)
+        public OrderDto AddOrder(int userId, string shippingAddress, string paymentMethod)
         {
             _logger.LogInformation($"{_prefix}AddOrder");
-            return _orderData.AddOrder(shippingAddress, paymentMethod);
+            return _orderData.AddOrder(userId, shippingAddress, paymentMethod);
         }
 
         public OrderDto? GetOrderById(int id)
@@ -39,6 +39,5 @@ namespace ShoppingAppBussiness
             _logger.LogInformation($"{_prefix}CancelOrder");
             _orderData.CancelOrder(id);
         }
-
     }
 }

@@ -1,22 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using ShoppingAppDB.Data;
 using ShoppingAppDB.Entities;
-using static ShoppingAppDB.ProductData;
+using ShoppingAppDB.Models;
 
 namespace ShoppingAppDB
 {
     public class CartData
     {
-        public class CartDto
-        {
-            public int CartId { get; set; }
-            public DateTime CreatedAt { get; set; }
-            public DateTime UpdatedAt { get; set; }
-            public List<ProductDto> Products { get; set; }
-        }
-
         private ILogger<CartData> _logger;
         private const string _prefix = "CartDA ";
 
@@ -25,20 +16,13 @@ namespace ShoppingAppDB
             _logger = logger;
         }
 
-        public CartDto? GetCurrentUserCart()
+        public CartDto? GetUserCart(int userId)
         {
-            _logger.LogInformation($"{_prefix}Get Current User Cart");
-            if (UserData._currentUser == null)
-            {
-                _logger.LogWarning($"{_prefix}No Current User");
-                return null;
-            }
-            CartDto? cart;
-
+            _logger.LogInformation($"{_prefix}Get User Cart");
             using (var context = new AppDbContext())
             {
-                cart = context.Carts.AsNoTracking()
-                    .Where(c => c.UserId == UserData._currentUser.Id)
+                return context.Carts.AsNoTracking()
+                    .Where(c => c.UserId == userId)
                     .Include(c => c.CartItems)
                     .ThenInclude(ci => ci.Product)
                     .Select(c => new CartDto()
@@ -56,8 +40,6 @@ namespace ShoppingAppDB
                     })
                     .FirstOrDefault();
             }
-
-            return cart;
         }
 
         public bool UpdateCart(CartDto newCart)
@@ -123,16 +105,16 @@ namespace ShoppingAppDB
         public int AddCart(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Add Cart");
-            using(var context = new AppDbContext())
+            using (var context = new AppDbContext())
             {
                 var cartToAdd = new Cart();
                 cartToAdd.CreatedAt = DateTime.Now;
-                cartToAdd.UserId = UserData._currentUser.Id;
+                cartToAdd.UserId = cart.UserId;
                 context.Carts.Add(cartToAdd);
                 context.SaveChanges();
                 _logger.LogInformation($"{_prefix}Cart Added");
 
-                foreach(var item in cart.Products)
+                foreach (var item in cart.Products)
                 {
                     var cartItem = new CartItem();
                     cartItem.CartId = cartToAdd.Id;
@@ -153,15 +135,6 @@ namespace ShoppingAppDB
             using (var context = new AppDbContext())
             {
                 return context.Carts.AsNoTracking().Where(c => c.UserId == UserId).Select(c => c.Id).FirstOrDefault();
-            }
-        }
-
-        public bool CurrentUserHaveCart()
-        {
-            _logger.LogInformation($"{_prefix}Current User Have Cart");
-            using (var context = new AppDbContext())
-            {
-                return context.Carts.Any(c => c.UserId == UserData._currentUser.Id);
             }
         }
     }

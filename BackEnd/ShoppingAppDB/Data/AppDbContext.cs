@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using ShoppingAppDB.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShoppingAppDB.Data
 {
@@ -18,24 +13,22 @@ namespace ShoppingAppDB.Data
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
-        
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // to make the path in the current layer not in the api layer
-            var configPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "ShoppingAppDB", "appsettings.json"); 
+            var configPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "ShoppingAppDB", "appsettings.json");
             var config = new ConfigurationBuilder()
                 .AddJsonFile(configPath)
                 .Build();
 
-
             optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"))
                 .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
-
-            
         }
     }
 }

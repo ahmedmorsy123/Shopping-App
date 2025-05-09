@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Serilog.Context;
 using ShoppingAppBussiness;
-using static ShoppingAppDB.CartData;
+using ShoppingAppDB.Models;
 
 namespace ShoppingAppAPI.Controllers
 {
@@ -14,26 +13,22 @@ namespace ShoppingAppAPI.Controllers
         private readonly Carts _cartsService;
         private const string _prefix = "CartsAPI ";
 
-        public CartsAPI(ILogger<CartsAPI> logger, Users users, Carts cartsService) 
+        public CartsAPI(ILogger<CartsAPI> logger, Users users, Carts cartsService)
         {
             _logger = logger;
             _usersService = users;
-            _cartsService = cartsService; 
+            _cartsService = cartsService;
         }
 
         [HttpGet("GetCurrentUserCart")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<IEnumerable<CartDto>> GetCurrentUserCart()
+        public ActionResult<CartDto> GetUserCart(int UserId)
         {
             _logger.LogInformation($"{_prefix}Get Current User Cart");
-            if (_usersService.GetCurrentUser() == null)
-            {
-                _logger.LogWarning($"{_prefix}Please Login First");
-                return BadRequest("Please Login First");
-            }
-            var cart = _cartsService.GetCurrentUserCart();
+
+            var cart = _cartsService.GetUserCart(UserId);
             if (cart == null)
             {
                 _logger.LogWarning($"{_prefix}There is no cart for this user");
@@ -48,11 +43,6 @@ namespace ShoppingAppAPI.Controllers
         public ActionResult<CartDto> UpdateCart(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Update Cart");
-            if (_usersService.GetCurrentUser() == null)
-            {
-                _logger.LogWarning($"{_prefix}User is not logged in");
-                return BadRequest("Please Login First");
-            }
 
             bool result = _cartsService.UpdateCart(cart);
             int id = cart.CartId;
@@ -75,21 +65,11 @@ namespace ShoppingAppAPI.Controllers
         public ActionResult<CartDto> AddCart(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Add Cart");
-            if (_usersService.GetCurrentUser() == null)
-            {
-                _logger.LogWarning($"{_prefix}Please Login First");
-                return BadRequest("Please Login First");
-            }
-            if (_cartsService.CurrentUserHaveCart())
-            {
-                _logger.LogWarning($"{_prefix}User already have a cart, so no cart was added");
-                return BadRequest("You already have a cart");
-            }
 
             int id = _cartsService.AddCart(cart);
             cart.CartId = id;
             _logger.LogInformation($"{_prefix}Cart was added with id {id}");
-            return CreatedAtAction(nameof(GetCurrentUserCart), cart);
+            return CreatedAtAction(nameof(GetUserCart), new { id = cart.UserId }, cart);
         }
 
         [HttpDelete("DeleteCart")]

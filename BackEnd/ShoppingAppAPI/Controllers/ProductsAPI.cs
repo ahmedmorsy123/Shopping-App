@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Serilog.Context;
 using ShoppingAppBussiness;
-using static ShoppingAppDB.ProductData;
+using ShoppingAppDB.Models;
 
 namespace ShoppingAppAPI.Controllers
 {
@@ -13,17 +12,17 @@ namespace ShoppingAppAPI.Controllers
         private readonly Products _productsService;
         private const string _prefix = "ProductsAPI ";
 
-        public ProductsAPI(ILogger<ProductsAPI> logger, Products products) 
+        public ProductsAPI(ILogger<ProductsAPI> logger, Products products)
         {
             _logger = logger;
-            _productsService = products; 
+            _productsService = products;
         }
 
         [HttpGet("GetAllProductsPaginated")]
         public ActionResult<IEnumerable<ProductDto>> GetProductsPaginated(int page)
         {
             _logger.LogInformation($"{_prefix}GetAllProductsPaginated");
-            return Ok(_productsService.GetProductsPaginated(page)); 
+            return Ok(_productsService.GetProductsPaginated(page));
         }
     }
 }

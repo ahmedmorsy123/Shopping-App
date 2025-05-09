@@ -16,6 +16,4 @@
         public List<CartItem>? CartItems { get; set; }
         public List<OrderItem>? OrderItems { get; set; }
     }
-
-
 }

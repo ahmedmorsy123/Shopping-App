@@ -1,8 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Serilog.Context;
+﻿using Microsoft.Extensions.Logging;
 using ShoppingAppDB;
-using static ShoppingAppDB.ProductData;
+using ShoppingAppDB.Models;
 
 namespace ShoppingAppBussiness
 {
@@ -17,11 +15,11 @@ namespace ShoppingAppBussiness
             _logger = logger;
             _productData = productData;
         }
+
         public List<ProductDto> GetProductsPaginated(int pageNumber)
         {
             _logger.LogInformation($"{_prefix}GetProductsPaginated");
             return _productData.GetProductsPaginated(pageNumber);
         }
     }
-
 }

@@ -1,8 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Serilog.Context;
+﻿using Microsoft.Extensions.Logging;
 using ShoppingAppDB;
-using static ShoppingAppDB.CartData;
+using ShoppingAppDB.Models;
 
 namespace ShoppingAppBussiness
 {
@@ -11,15 +9,17 @@ namespace ShoppingAppBussiness
         private ILogger<Carts> _logger;
         private readonly CartData _cartData;
         private const string _prefix = "CartsBL ";
+
         public Carts(ILogger<Carts> logger, CartData cartData)
         {
             _logger = logger;
             _cartData = cartData;
         }
-        public CartDto? GetCurrentUserCart()
+
+        public CartDto? GetUserCart(int userId)
         {
-            _logger.LogInformation($"{_prefix}Get Current User Cart");
-            return _cartData.GetCurrentUserCart();
+            _logger.LogInformation($"{_prefix}Get User Cart");
+            return _cartData.GetUserCart(userId);
         }
 
         public bool UpdateCart(CartDto cart)
@@ -44,12 +44,6 @@ namespace ShoppingAppBussiness
         {
             _logger.LogInformation($"{_prefix}Get Cart Id By User Id");
             return _cartData.GetCartIdByUserId(userId);
-        }
-
-        public bool CurrentUserHaveCart()
-        {
-            _logger.LogInformation($"{_prefix}Current User Have Cart");
-            return _cartData.CurrentUserHaveCart();
         }
     }
 }
