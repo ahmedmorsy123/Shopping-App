@@ -2,13 +2,13 @@
 
 namespace ShoppingAppDB.Services
 {
-    public class PasswordService
+    public class Password
     {
         private const int WorkFactor = 10;
         private const string _prefix = "ServPass ";
-        private ILogger<PasswordService> _logger;
+        private ILogger<Password> _logger;
 
-        public PasswordService(ILogger<PasswordService> logger)
+        public Password(ILogger<Password> logger)
         {
             _logger = logger;
         }

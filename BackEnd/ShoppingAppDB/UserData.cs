@@ -11,15 +11,13 @@ namespace ShoppingAppDB
     public class UserData
     {
         private ILogger<UserData> _logger;
-        private PasswordService _passwordService;
-        private AuthService _authService;
+        private Password _passwordService;
         private const string _prefix = "UserDA ";
 
-        public UserData(ILogger<UserData> logger, PasswordService passwordService, AuthService authService)
+        public UserData(ILogger<UserData> logger, Password passwordService)
         {
             _logger = logger;
             _passwordService = passwordService;
-            _authService = authService;
         }
 
         public UserDto? GetUserById(int id)
@@ -98,27 +96,6 @@ namespace ShoppingAppDB
                 }
             }
             return false;
-        }
-
-        public TokenResponseDto? Login(string username, string password)
-        {
-            _logger.LogInformation($"{_prefix}Login");
-            using (var context = new AppDbContext())
-            {
-                var user = context.Users.FirstOrDefault(u => u.Name == username);
-
-                if (user != null && _passwordService.VerifyPassword(password, user.PasswordHash))
-                {
-                    user.LastLogin = DateTime.Now;
-                    context.SaveChanges();
-
-                    _logger.LogInformation($"{_prefix}User logged in successfully with id {user.Id}");
-
-                    return _authService.CreateTokenResponse(user);
-                }
-                _logger.LogWarning($"{_prefix}Login failed");
-                return null;
-            }
         }
     }
 }

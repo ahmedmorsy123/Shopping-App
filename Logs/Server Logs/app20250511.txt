@@ -1,0 +1,23 @@
+2025-05-11 23:14:08.977 +03:00 [INF] Starting web host
+2025-05-11 23:14:10.270 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-11 23:14:10.271 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-11 23:14:10.370 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-11 23:14:10.370 +03:00 [INF] Hosting environment: Development
+2025-05-11 23:14:10.371 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-11 23:15:50.521 +03:00 [INF] Starting web host
+2025-05-11 23:15:51.702 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-11 23:15:51.705 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-11 23:15:51.765 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-11 23:15:51.765 +03:00 [INF] Hosting environment: Development
+2025-05-11 23:15:51.765 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingAppDB\BackEnd\ShoppingAppAPI
+2025-05-11 23:32:34.825 +03:00 [INF] Starting web host
+2025-05-11 23:32:34.956 +03:00 [FTL] Host terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args)

@@ -1,26 +1,26 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShoppingAppBussiness;
 using ShoppingAppDB.Models;
 
 namespace ShoppingAppAPI.Controllers
 {
     [Route("api/Carts")]
+    [Authorize]
     [ApiController]
     public class CartsAPI : ControllerBase
     {
         private readonly ILogger<CartsAPI> _logger;
-        private readonly Users _usersService;
-        private readonly Carts _cartsService;
+        private readonly CartsService _cartsService;
         private const string _prefix = "CartsAPI ";
 
-        public CartsAPI(ILogger<CartsAPI> logger, Users users, Carts cartsService)
+        public CartsAPI(ILogger<CartsAPI> logger, CartsService cartsService)
         {
             _logger = logger;
-            _usersService = users;
             _cartsService = cartsService;
         }
 
-        [HttpGet("GetCurrentUserCart")]
+        [HttpGet("GetUserCart")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

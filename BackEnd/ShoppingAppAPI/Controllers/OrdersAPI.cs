@@ -1,23 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShoppingAppBussiness;
 using ShoppingAppDB.Models;
 
 namespace ShoppingAppAPI.Controllers
 {
     [Route("api/Orders")]
+    [Authorize]
     [ApiController]
     public class OrdersAPI : ControllerBase
     {
         private readonly ILogger<OrdersAPI> _logger;
-        private readonly Users _usersService;
-        private readonly Orders _ordersService;
-        private readonly Carts _cartsService;
+        private readonly OrdersService _ordersService;
         private const string _prefix = "OrdersAPI ";
 
-        public OrdersAPI(ILogger<OrdersAPI> logger, Users users, Orders orders)
+        public OrdersAPI(ILogger<OrdersAPI> logger, OrdersService orders)
         {
             _logger = logger;
-            _usersService = users;
             _ordersService = orders;
         }
 

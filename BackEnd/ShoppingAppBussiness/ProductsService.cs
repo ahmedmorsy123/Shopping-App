@@ -4,13 +4,13 @@ using ShoppingAppDB.Models;
 
 namespace ShoppingAppBussiness
 {
-    public class Products
+    public class ProductsService
     {
-        private ILogger<Products> _logger;
+        private ILogger<ProductsService> _logger;
         private readonly ProductData _productData;
         private const string _prefix = "ProductsBL ";
 
-        public Products(ILogger<Products> logger, ProductData productData)
+        public ProductsService(ILogger<ProductsService> logger, ProductData productData)
         {
             _logger = logger;
             _productData = productData;

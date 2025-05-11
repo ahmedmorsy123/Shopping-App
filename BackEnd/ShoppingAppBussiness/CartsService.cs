@@ -4,13 +4,13 @@ using ShoppingAppDB.Models;
 
 namespace ShoppingAppBussiness
 {
-    public class Carts
+    public class CartsService
     {
-        private ILogger<Carts> _logger;
+        private ILogger<CartsService> _logger;
         private readonly CartData _cartData;
         private const string _prefix = "CartsBL ";
 
-        public Carts(ILogger<Carts> logger, CartData cartData)
+        public CartsService(ILogger<CartsService> logger, CartData cartData)
         {
             _logger = logger;
             _cartData = cartData;

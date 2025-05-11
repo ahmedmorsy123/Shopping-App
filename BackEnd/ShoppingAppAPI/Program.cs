@@ -37,18 +37,19 @@ public class Program
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddScoped<Users>();
-            builder.Services.AddScoped<Products>();
-            builder.Services.AddScoped<Orders>();
-            builder.Services.AddScoped<Carts>();
+            builder.Services.AddScoped<UsersService>();
+            builder.Services.AddScoped<ProductsService>();
+            builder.Services.AddScoped<OrdersService>();
+            builder.Services.AddScoped<CartsService>();
+            builder.Services.AddScoped<AuthService>();
 
             builder.Services.AddScoped<UserData>();
             builder.Services.AddScoped<ProductData>();
             builder.Services.AddScoped<OrderData>();
             builder.Services.AddScoped<CartData>();
 
-            builder.Services.AddScoped<AuthService>();
-            builder.Services.AddScoped<PasswordService>();
+            builder.Services.AddScoped<Auth>();
+            builder.Services.AddScoped<Password>();
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
@@ -71,11 +72,18 @@ public class Program
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
+                app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
+            }
 
             app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
 
@@ -85,6 +93,8 @@ public class Program
         }
         catch (Exception ex)
         {
+            Console.WriteLine("Application startup failed:");
+            Console.WriteLine(ex.ToString());
             Log.Fatal(ex, "Host terminated unexpectedly");
             return 1; // Indicate an error occurred
         }
