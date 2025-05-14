@@ -5,7 +5,7 @@
 namespace ShoppingAppDB.Migrations
 {
     /// <inheritdoc />
-    public partial class fixsomeproblems : Migration
+    public partial class FixsomeProblems : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

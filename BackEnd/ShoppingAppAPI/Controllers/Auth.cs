@@ -39,7 +39,6 @@ namespace ShoppingAppAPI.Controllers
             return Ok(result);
         }
 
-        [Authorize]
         [HttpPost("refresh-token")]
         public ActionResult<TokenResponseDto> RefreshToken(RefreshTokenRequestDto request)
         {

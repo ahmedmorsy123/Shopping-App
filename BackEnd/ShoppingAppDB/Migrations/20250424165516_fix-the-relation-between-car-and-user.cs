@@ -5,7 +5,7 @@
 namespace ShoppingAppDB.Migrations
 {
     /// <inheritdoc />
-    public partial class fixtherelationbetweencaranduser : Migration
+    public partial class FixTheRelationBetweenCartAndUser : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

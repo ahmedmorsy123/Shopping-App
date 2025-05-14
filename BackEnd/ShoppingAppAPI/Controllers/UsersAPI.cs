@@ -50,7 +50,7 @@ namespace ShoppingAppAPI.Controllers
                 return NotFound("There is no user with this id or wrong password or you are not logged in");
             }
 
-            UserDto UpdatedUser = _usersService.GetUserById(user.Id);
+            UserDto UpdatedUser = _usersService.GetUserById(user.Id)!;
             return Ok(UpdatedUser);
         }
 
@@ -70,8 +70,8 @@ namespace ShoppingAppAPI.Controllers
             return Ok();
         }
 
+        [AllowAnonymous]
         [HttpPost("AddUser")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<UserDto> AddUser(UserDto user)

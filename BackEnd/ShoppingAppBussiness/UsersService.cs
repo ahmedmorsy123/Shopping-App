@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using ShoppingAppDB;
 using ShoppingAppDB.Models;
-using ShoppingAppDB.Services;
 
 namespace ShoppingAppBussiness
 {

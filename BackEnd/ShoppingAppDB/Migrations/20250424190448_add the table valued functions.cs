@@ -5,7 +5,7 @@
 namespace ShoppingAppDB.Migrations
 {
     /// <inheritdoc />
-    public partial class addthetablevaluedfunctions : Migration
+    public partial class AddTheTableValuedFunctions : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

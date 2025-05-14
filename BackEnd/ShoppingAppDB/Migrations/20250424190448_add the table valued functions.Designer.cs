@@ -13,7 +13,7 @@ namespace ShoppingAppDB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250424190448_add the table valued functions")]
-    partial class addthetablevaluedfunctions
+    partial class AddTheTableValuedFunctions
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

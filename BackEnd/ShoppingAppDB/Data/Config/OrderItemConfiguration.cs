@@ -16,6 +16,8 @@ namespace ShoppingAppDB.Data.Config
 
             builder.HasOne(x => x.Order).WithMany(x => x.OrderItems).HasForeignKey(x => x.OrderId);
             builder.HasOne(x => x.Product).WithMany(x => x.OrderItems).HasForeignKey(x => x.ProductId);
+
+            builder.HasQueryFilter(x => x.Product.IsActive);
             builder.ToTable("OrderItems");
         }
     }

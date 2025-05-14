@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ShoppingAppDB.Migrations
 {
     /// <inheritdoc />
-    public partial class addauth : Migration
+    public partial class AaddAuth : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

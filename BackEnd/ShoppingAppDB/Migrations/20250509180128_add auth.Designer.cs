@@ -13,7 +13,7 @@ namespace ShoppingAppDB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250509180128_add auth")]
-    partial class addauth
+    partial class AaddAuth
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

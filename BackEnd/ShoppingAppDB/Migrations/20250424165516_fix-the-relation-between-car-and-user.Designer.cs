@@ -13,7 +13,7 @@ namespace ShoppingAppDB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250424165516_fix-the-relation-between-car-and-user")]
-    partial class fixtherelationbetweencaranduser
+    partial class FixTheRelationBetweenCartAndUser
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

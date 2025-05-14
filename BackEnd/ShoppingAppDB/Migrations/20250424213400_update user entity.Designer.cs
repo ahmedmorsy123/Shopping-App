@@ -13,7 +13,7 @@ namespace ShoppingAppDB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250424213400_update user entity")]
-    partial class updateuserentity
+    partial class UpdateUserEntity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

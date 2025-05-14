@@ -13,7 +13,7 @@ namespace ShoppingAppDB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250426091307_fix some problems")]
-    partial class fixsomeproblems
+    partial class FixsomeProblems
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -38,6 +38,11 @@ namespace ShoppingAppDB
         public UserDto? AddUser(UserDto user)
         {
             _logger.LogInformation($"{_prefix}Adding user");
+            if (user == null)
+            {
+                _logger.LogWarning($"{_prefix}User is null");
+                return null;
+            }
             using (var context = new AppDbContext())
             {
                 if (context.Users.Any(u => u.Email == user.Email || u.Name == user.Name))
@@ -50,7 +55,7 @@ namespace ShoppingAppDB
 
                 userToAdd.Name = user.Name;
                 userToAdd.Email = user.Email;
-                userToAdd.PasswordHash = _passwordService.HashPassword(user.Password);
+                userToAdd.PasswordHash = _passwordService.HashPassword(user.Password!);
                 userToAdd.CreatedAt = DateTime.Now;
                 userToAdd.LastLogin = DateTime.Now;
                 context.Users.Add(userToAdd);

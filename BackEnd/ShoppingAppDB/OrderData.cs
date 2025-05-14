@@ -71,7 +71,7 @@ namespace ShoppingAppDB
                     {
                         Id = oi.Product.Id,
                         productName = oi.Product.Name,
-                        productCategory = context.ProductCategories.FirstOrDefault(pc => pc.Id == oi.Product.CategoryId).CategoryName,
+                        productCategory = context.ProductCategories.FirstOrDefault(pc => pc.Id == oi.Product.CategoryId)!.CategoryName,
                         productDescription = oi.Product.Description,
                         quantity = oi.Quantity,
                         price = oi.Product.Price
