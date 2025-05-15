@@ -21,10 +21,10 @@ namespace ShoppingAppAPI.Controllers
         }
 
         [HttpGet("GetAllProductsPaginated")]
-        public ActionResult<IEnumerable<ProductDto>> GetProductsPaginated(int page)
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetProductsPaginated(int page)
         {
             _logger.LogInformation($"{_prefix}GetAllProductsPaginated");
-            return Ok(_productsService.GetProductsPaginated(page));
+            return Ok(await _productsService.GetProductsPaginated(page));
         }
     }
 }

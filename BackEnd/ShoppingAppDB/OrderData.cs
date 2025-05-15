@@ -20,7 +20,7 @@ namespace ShoppingAppDB
             _userData = userData;
         }
 
-        public OrderDto AddOrder(int userId, string shippingAddress, string paymentMethod)
+        public async Task<OrderDto> AddOrder(int userId, string shippingAddress, string paymentMethod)
         {
             _logger.LogInformation($"{_prefix}Add Order");
             using (var context = new AppDbContext())
@@ -32,14 +32,15 @@ namespace ShoppingAppDB
                 orderToAdd.Status = "Pending";
                 orderToAdd.ShippingAddress = shippingAddress;
                 orderToAdd.PaymentMethod = paymentMethod;
-                context.Orders.Add(orderToAdd);
-                context.SaveChanges();
+                await context.Orders.AddAsync(orderToAdd);
+
+                await context.SaveChangesAsync();
                 _logger.LogInformation($"{_prefix}Order Added with id {orderToAdd.Id}");
 
-                var cartItems = context.CartItems
+                var cartItems = await context.CartItems
                     .Where(ci => ci.Cart.UserId == userId)
                     .Include(ci => ci.Product)
-                    .ToList();
+                    .ToListAsync();
                 foreach (var item in cartItems)
                 {
                     var orderItemToAdd = new OrderItem();
@@ -47,16 +48,17 @@ namespace ShoppingAppDB
                     orderItemToAdd.ProductId = item.ProductId;
                     orderItemToAdd.Quantity = item.Quantity;
                     orderItemToAdd.UnitPrice = item.Product.Price;
-                    context.OrderItems.Add(orderItemToAdd);
+                    context.OrderItems.AddAsync(orderItemToAdd);
 
-                    context.Products.Where(p => p.Id == item.ProductId).First().Quantity -= item.Quantity;
-                    context.SaveChanges();
+                    var product = await context.Products.Where(p => p.Id == item.ProductId).FirstAsync();
+                    product.Quantity -= item.Quantity;
+                    await context.SaveChangesAsync();
 
                     _logger.LogInformation($"{_prefix}OrderItem Added with id {orderItemToAdd.Id}");
                     orderToAdd.TotalPrice += item.Product.Price * item.Quantity;
                 }
 
-                _cartData.DeleteCart(_cartData.GetCartIdByUserId(userId));
+                await _cartData.DeleteCart(_cartData.GetCartIdByUserId(userId));
 
                 return new OrderDto()
                 {
@@ -80,13 +82,13 @@ namespace ShoppingAppDB
             }
         }
 
-        public OrderDto? GetOrderById(int id)
+        public async Task<OrderDto?> GetOrderById(int OrderId)
         {
             _logger.LogInformation($"{_prefix}Get Order By Id");
             using (var context = new AppDbContext())
             {
-                return context.Orders.AsNoTracking()
-                    .Where(o => o.Id == id)
+                return await context.Orders.AsNoTracking()
+                    .Where(o => o.Id == OrderId)
                     .Include(o => o.OrderItems)
                     .ThenInclude(oi => oi.Product)
                     .Select(o => new OrderDto()
@@ -103,14 +105,14 @@ namespace ShoppingAppDB
                             quantity = oi.Quantity,
                             price = oi.Product.Price
                         }).ToList()
-                    }).FirstOrDefault();
+                    }).FirstOrDefaultAsync();
             }
         }
 
-        public List<OrderDto>? GetUserOrders(int UserId)
+        public async Task<List<OrderDto>?> GetUserOrders(int UserId)
         {
             _logger.LogInformation($"{_prefix}Get User Orders");
-            var user = _userData.GetUserById(UserId);
+            var user = await _userData.GetUserById(UserId);
             if (user == null)
             {
                 _logger.LogWarning($"{_prefix}User Not Found");
@@ -120,7 +122,7 @@ namespace ShoppingAppDB
 
             using (var context = new AppDbContext())
             {
-                OrderItems = context.Orders.AsNoTracking()
+                OrderItems = await context.Orders.AsNoTracking()
                     .Where(o => o.UserId == user.Id)
                     .Include(o => o.OrderItems)
                     .ThenInclude(oi => oi.Product)
@@ -139,22 +141,22 @@ namespace ShoppingAppDB
                             quantity = oi.Quantity,
                             price = oi.Product.Price
                         }).ToList()
-                    }).ToList();
+                    }).ToListAsync();
             }
 
             return OrderItems.Count == 0 ? null : OrderItems;
         }
 
-        public void CancelOrder(int orderId)
+        public async Task CancelOrder(int orderId)
         {
             _logger.LogInformation($"{_prefix}Cancel Order");
             using (var context = new AppDbContext())
             {
-                var order = context.Orders.Find(orderId);
+                var order = await context.Orders.FindAsync(orderId);
                 if (order != null)
                 {
                     order.Status = "Canceled";
-                    context.SaveChanges();
+                    await context.SaveChangesAsync();
                     _logger.LogInformation($"{_prefix}Order Canceled");
                 }
                 else

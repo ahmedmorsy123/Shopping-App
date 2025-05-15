@@ -26,10 +26,10 @@ namespace ShoppingAppAPI.Controllers
         [HttpPost("Login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<UserDto> Login(string userName, string password)
+        public async Task<ActionResult<UserDto>> Login(string userName, string password)
         {
             _logger.LogInformation($"{_prefix}LoginAPI");
-            TokenResponseDto? result = _authService.Login(userName, password);
+            TokenResponseDto? result = await _authService.Login(userName, password);
             if (result is null)
             {
                 _logger.LogWarning($"{_prefix}Invalid username or password");
@@ -51,14 +51,14 @@ namespace ShoppingAppAPI.Controllers
 
         [Authorize]
         [HttpPost("logout")]
-        public ActionResult Logout()
+        public async Task<ActionResult> Logout()
         {
             // Extract user ID from claims
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
             if (userIdClaim is null || !int.TryParse(userIdClaim.Value, out var userId))
                 return BadRequest("Invalid user identifier.");
 
-            var result = _authService.Logout(userId);
+            var result = await _authService.Logout(userId);
             if (!result)
                 return NotFound("User not found.");
 

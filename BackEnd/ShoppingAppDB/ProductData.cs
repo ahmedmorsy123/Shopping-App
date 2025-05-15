@@ -15,14 +15,14 @@ namespace ShoppingAppDB
             _logger = logger;
         }
 
-        public List<ProductDto> GetProductsPaginated(int pageNumber, int pageSize = 10)
+        public async Task<List<ProductDto>> GetProductsPaginated(int pageNumber, int pageSize = 10)
         {
             _logger.LogInformation($"{_prefix}Get Products Paginated");
             var products = new List<ProductDto>();
 
             using (var context = new AppDbContext())
             {
-                products = context.Products.AsNoTracking()
+                products = await context.Products.AsNoTracking()
                     .Include(p => p.Category)
                     .Select(p => new ProductDto()
                     {
@@ -35,7 +35,7 @@ namespace ShoppingAppDB
                     })
                     .Skip((pageNumber - 1) * pageSize)
                     .Take(pageSize)
-                    .ToList();
+                    .ToListAsync();
             }
             _logger.LogInformation($"{_prefix}Returned {products.Count} products, page {pageNumber}, pageSize {pageSize}");
             return products;

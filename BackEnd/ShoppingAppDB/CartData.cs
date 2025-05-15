@@ -16,12 +16,12 @@ namespace ShoppingAppDB
             _logger = logger;
         }
 
-        public CartDto? GetUserCart(int userId)
+        public async Task<CartDto?> GetUserCart(int userId)
         {
             _logger.LogInformation($"{_prefix}Get User Cart");
             using (var context = new AppDbContext())
             {
-                return context.Carts.AsNoTracking()
+                return await context.Carts.AsNoTracking()
                     .Where(c => c.UserId == userId)
                     .Include(c => c.CartItems)
                     .ThenInclude(ci => ci.Product)
@@ -38,26 +38,26 @@ namespace ShoppingAppDB
                             price = ci.Product.Price
                         }).ToList()
                     })
-                    .FirstOrDefault();
+                    .FirstOrDefaultAsync();
             }
         }
 
-        public bool UpdateCart(CartDto newCart)
+        public async Task<bool> UpdateCart(CartDto newCart)
         {
             _logger.LogInformation($"{_prefix}Update Cart");
             using (var context = new AppDbContext())
             {
-                var cart = context.Carts.Find(newCart.CartId);
+                var cart = await context.Carts.FindAsync(newCart.CartId);
                 if (cart != null)
                 {
                     cart.UpdatedAt = DateTime.Now;
 
-                    var cartItems = context.CartItems.Where(ci => ci.CartId == newCart.CartId).ToList();
+                    var cartItems = await context.CartItems.Where(ci => ci.CartId == newCart.CartId).ToListAsync();
                     context.CartItems.RemoveRange(cartItems);
 
                     if (newCart.Products.Count == 0)
                     {
-                        DeleteCart(newCart.CartId);
+                        await DeleteCart(newCart.CartId);
                         _logger.LogInformation($"{_prefix}New Cart Have no Products so deleted");
                         return true;
                     }
@@ -70,9 +70,9 @@ namespace ShoppingAppDB
                             ProductId = item.Id,
                             Quantity = item.quantity
                         };
-                        context.CartItems.Add(cartItem);
+                        await context.CartItems.AddAsync(cartItem);
                     }
-                    context.SaveChanges();
+                    await context.SaveChangesAsync();
                     _logger.LogInformation($"{_prefix}Cart Updated");
                     return true;
                 }
@@ -84,16 +84,16 @@ namespace ShoppingAppDB
             }
         }
 
-        public bool DeleteCart(int CartId)
+        public async Task<bool> DeleteCart(int CartId)
         {
             _logger.LogInformation($"{_prefix}Delete Cart");
             using (var context = new AppDbContext())
             {
-                var cart = context.Carts.Find(CartId);
+                var cart = await context.Carts.FindAsync(CartId);
                 if (cart != null)
                 {
                     context.Carts.Remove(cart);
-                    context.SaveChanges();
+                    await context.SaveChangesAsync();
                     _logger.LogInformation($"{_prefix}Cart Deleted");
                     return true;
                 }
@@ -102,7 +102,7 @@ namespace ShoppingAppDB
             }
         }
 
-        public int AddCart(CartDto cart)
+        public async Task<int> AddCart(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Add Cart");
             using (var context = new AppDbContext())
@@ -111,7 +111,8 @@ namespace ShoppingAppDB
                 cartToAdd.CreatedAt = DateTime.Now;
                 cartToAdd.UserId = cart.UserId;
                 context.Carts.Add(cartToAdd);
-                context.SaveChanges();
+
+                await context.SaveChangesAsync();
                 _logger.LogInformation($"{_prefix}Cart Added");
 
                 foreach (var item in cart.Products)
@@ -122,7 +123,8 @@ namespace ShoppingAppDB
                     cartItem.Quantity = item.quantity;
                     cartToAdd.CartItems.Add(cartItem);
                 }
-                context.SaveChanges();
+
+                await context.SaveChangesAsync();
                 _logger.LogInformation($"{_prefix}Cart Items Added");
 
                 return cartToAdd.Id;

@@ -20,11 +20,11 @@ namespace ShoppingAppDB.Data
                .AddJsonFile("appsettings.json")
                .Build();
 
-            //optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"))
-            //    .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
-
-            optionsBuilder.UseSqlServer(config.GetConnectionString("ShoppingAppConnection"))
+            optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"))
                 .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
+
+            //optionsBuilder.UseSqlServer(config.GetConnectionString("ShoppingAppConnection"))
+            //    .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

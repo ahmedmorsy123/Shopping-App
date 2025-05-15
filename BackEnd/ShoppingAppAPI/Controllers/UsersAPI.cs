@@ -25,42 +25,41 @@ namespace ShoppingAppAPI.Controllers
         [HttpGet("getUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<UserDto> GetUser(int id)
+        public async Task<ActionResult<UserDto>> GetUser(int id)
         {
             _logger.LogInformation($"{_prefix}GetUserAPI");
-            var user = _usersService.GetUserById(id);
+            var user = await _usersService.GetUserById(id);
             if (user == null)
             {
                 _logger.LogWarning($"{_prefix}There is no user with this id");
                 return NotFound();
             }
-            return Ok(_usersService.GetUserById(id));
+            return Ok(user);
         }
 
         [HttpPut("UpdateUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<UserDto> UpdateUser(UserDto user, string oldPassword)
+        public async Task<ActionResult<UserDto>> UpdateUser(UserDto user, string oldPassword)
         {
             _logger.LogInformation($"{_prefix}UpdateUserAPI");
-            bool result = _usersService.UpdateUser(user, oldPassword);
-            if (result == false)
+            var UpdatedUser = await _usersService.UpdateUser(user, oldPassword);
+            if (UpdatedUser == null)
             {
                 _logger.LogWarning($"{_prefix}There is no user with this id or wrong password or you are not logged in");
                 return NotFound("There is no user with this id or wrong password or you are not logged in");
             }
 
-            UserDto UpdatedUser = _usersService.GetUserById(user.Id)!;
             return Ok(UpdatedUser);
         }
 
         [HttpDelete("DeleteUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult DeleteUser(int id)
+        public async Task<ActionResult> DeleteUser(int id)
         {
             _logger.LogInformation($"{_prefix}DeleteUserAPI");
-            bool result = _usersService.DeleteUser(id);
+            bool result = await _usersService.DeleteUser(id);
             if (result == false)
             {
                 _logger.LogWarning($"{_prefix}There is no user with this id");
@@ -74,10 +73,10 @@ namespace ShoppingAppAPI.Controllers
         [HttpPost("AddUser")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<UserDto> AddUser(UserDto user)
+        public async Task<ActionResult<UserDto>> AddUser(UserDto user)
         {
             _logger.LogInformation($"{_prefix}AddUserAPI");
-            UserDto? newUser = _usersService.AddUser(user);
+            UserDto? newUser = await _usersService.AddUser(user);
 
             if (newUser == null)
             {

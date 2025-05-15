@@ -16,28 +16,28 @@ namespace ShoppingAppBussiness
             _orderData = orderData;
         }
 
-        public List<OrderDto>? GetUserOrders(int UserId)
+        public async Task<List<OrderDto>?> GetUserOrders(int UserId)
         {
             _logger.LogInformation($"{_prefix}GetUserOrders");
-            return _orderData.GetUserOrders(UserId);
+            return await _orderData.GetUserOrders(UserId);
         }
 
-        public OrderDto AddOrder(int userId, string shippingAddress, string paymentMethod)
+        public async Task<OrderDto> AddOrder(int userId, string shippingAddress, string paymentMethod)
         {
             _logger.LogInformation($"{_prefix}AddOrder");
-            return _orderData.AddOrder(userId, shippingAddress, paymentMethod);
+            return await _orderData.AddOrder(userId, shippingAddress, paymentMethod);
         }
 
-        public OrderDto? GetOrderById(int id)
+        public async Task<OrderDto?> GetOrderById(int OrderId)
         {
             _logger.LogInformation($"{_prefix}GetOrderById");
-            return _orderData.GetOrderById(id);
+            return await _orderData.GetOrderById(OrderId);
         }
 
-        public void CancelOrder(int id)
+        public async Task CancelOrder(int id)
         {
             _logger.LogInformation($"{_prefix}CancelOrder");
-            _orderData.CancelOrder(id);
+            await _orderData.CancelOrder(id);
         }
     }
 }

@@ -24,11 +24,11 @@ namespace ShoppingAppAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<CartDto> GetUserCart(int UserId)
+        public async Task<ActionResult<CartDto>> GetUserCart(int UserId)
         {
             _logger.LogInformation($"{_prefix}Get Current User Cart");
 
-            var cart = _cartsService.GetUserCart(UserId);
+            var cart = await _cartsService.GetUserCart(UserId);
             if (cart == null)
             {
                 _logger.LogWarning($"{_prefix}There is no cart for this user");
@@ -40,16 +40,16 @@ namespace ShoppingAppAPI.Controllers
         [HttpPut("UpdateCart")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<CartDto> UpdateCart(CartDto cart)
+        public async Task<ActionResult<CartDto>> UpdateCart(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Update Cart");
 
-            bool result = _cartsService.UpdateCart(cart);
+            bool result = await _cartsService.UpdateCart(cart);
             int id = cart.CartId;
             if (result == false)
             {
                 _logger.LogInformation($"{_prefix}There is no cart with this id so add new one");
-                id = _cartsService.AddCart(cart);
+                id = await _cartsService.AddCart(cart);
             }
             else
             {
@@ -62,11 +62,11 @@ namespace ShoppingAppAPI.Controllers
         [HttpPost("AddCart")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<CartDto> AddCart(CartDto cart)
+        public async Task<ActionResult<CartDto>> AddCart(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Add Cart");
 
-            int id = _cartsService.AddCart(cart);
+            int id = await _cartsService.AddCart(cart);
             cart.CartId = id;
             _logger.LogInformation($"{_prefix}Cart was added with id {id}");
             return CreatedAtAction(nameof(GetUserCart), new { id = cart.UserId }, cart);
@@ -75,10 +75,10 @@ namespace ShoppingAppAPI.Controllers
         [HttpDelete("DeleteCart")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult DeleteCart(int cartId)
+        public async Task<ActionResult> DeleteCart(int cartId)
         {
             _logger.LogInformation($"{_prefix}Delete Cart");
-            bool result = _cartsService.DeleteCart(cartId);
+            bool result = await _cartsService.DeleteCart(cartId);
             if (result == false)
             {
                 _logger.LogWarning($"{_prefix}Cart was not found");
