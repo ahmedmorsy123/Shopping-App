@@ -20,7 +20,7 @@ namespace ShoppingAppDB
             _userData = userData;
         }
 
-        public async Task<OrderDto> AddOrder(int userId, string shippingAddress, string paymentMethod)
+        public async Task<OrderDto> AddOrderAsync(int userId, string shippingAddress, string paymentMethod)
         {
             _logger.LogInformation($"{_prefix}Add Order");
             using (var context = new AppDbContext())
@@ -58,7 +58,7 @@ namespace ShoppingAppDB
                     orderToAdd.TotalPrice += item.Product.Price * item.Quantity;
                 }
 
-                await _cartData.DeleteCart(_cartData.GetCartIdByUserId(userId));
+                await _cartData.DeleteCartAsync(_cartData.GetCartIdByUserId(userId));
 
                 return new OrderDto()
                 {
@@ -82,7 +82,7 @@ namespace ShoppingAppDB
             }
         }
 
-        public async Task<OrderDto?> GetOrderById(int OrderId)
+        public async Task<OrderDto?> GetOrderByIdAsync(int OrderId)
         {
             _logger.LogInformation($"{_prefix}Get Order By Id");
             using (var context = new AppDbContext())
@@ -109,10 +109,10 @@ namespace ShoppingAppDB
             }
         }
 
-        public async Task<List<OrderDto>?> GetUserOrders(int UserId)
+        public async Task<List<OrderDto>?> GetUserOrdersAsync(int UserId)
         {
             _logger.LogInformation($"{_prefix}Get User Orders");
-            var user = await _userData.GetUserById(UserId);
+            var user = await _userData.GetUserByIdAsync(UserId);
             if (user == null)
             {
                 _logger.LogWarning($"{_prefix}User Not Found");
@@ -147,7 +147,7 @@ namespace ShoppingAppDB
             return OrderItems.Count == 0 ? null : OrderItems;
         }
 
-        public async Task CancelOrder(int orderId)
+        public async Task CancelOrderAsync(int orderId)
         {
             _logger.LogInformation($"{_prefix}Cancel Order");
             using (var context = new AppDbContext())

@@ -16,28 +16,28 @@ namespace ShoppingAppBussiness
             _cartData = cartData;
         }
 
-        public async Task<CartDto?> GetUserCart(int userId)
+        public async Task<CartDto?> GetUserCartAsync(int userId)
         {
             _logger.LogInformation($"{_prefix}Get User Cart");
-            return await _cartData.GetUserCart(userId);
+            return await _cartData.GetUserCartAsync(userId);
         }
 
-        public async Task<bool> UpdateCart(CartDto cart)
+        public async Task<bool> UpdateCartAsync(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Update Cart");
-            return await _cartData.UpdateCart(cart);
+            return await _cartData.UpdateCartAsync(cart);
         }
 
-        public async Task<int> AddCart(CartDto cart)
+        public async Task<int> AddCartAsync(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Add Cart");
-            return await _cartData.AddCart(cart);
+            return await _cartData.AddCartAsync(cart);
         }
 
-        public async Task<bool> DeleteCart(int cartId)
+        public async Task<bool> DeleteCartAsync(int cartId)
         {
             _logger.LogInformation($"{_prefix}Delete Cart");
-            return await _cartData.DeleteCart(cartId);
+            return await _cartData.DeleteCartAsync(cartId);
         }
 
         public int GetCartIdByUserId(int userId)

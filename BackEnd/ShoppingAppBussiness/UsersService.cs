@@ -16,28 +16,28 @@ namespace ShoppingAppBussiness
             _userData = userData;
         }
 
-        public async Task<UserDto?> GetUserById(int id)
+        public async Task<UserDto?> GetUserByIdAsync(int id)
         {
             _logger.LogInformation($"{_prefix}GetUserById");
-            return await _userData.GetUserById(id);
+            return await _userData.GetUserByIdAsync(id);
         }
 
-        public async Task<UserDto?> AddUser(UserDto user)
+        public async Task<UserDto?> AddUserAsync(UserDto user)
         {
             _logger.LogInformation($"{_prefix}AddUser");
-            return await _userData.AddUser(user);
+            return await _userData.AddUserAsync(user);
         }
 
-        public async Task<UserDto?> UpdateUser(UserDto user, string oldPassword)
+        public async Task<UserDto?> UpdateUserAsync(UserDto user, string oldPassword)
         {
             _logger.LogInformation($"{_prefix}UpdateUser");
-            return await _userData.UpdateUser(user, oldPassword);
+            return await _userData.UpdateUserAsync(user, oldPassword);
         }
 
-        public async Task<bool> DeleteUser(int userId)
+        public async Task<bool> DeleteUserAsync(int userId)
         {
             _logger.LogInformation($"{_prefix}DeleteUser");
-            return await _userData.DeleteUser(userId);
+            return await _userData.DeleteUserAsync(userId);
         }
     }
 }

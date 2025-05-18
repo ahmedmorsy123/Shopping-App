@@ -16,7 +16,7 @@ namespace ShoppingAppDB
             _logger = logger;
         }
 
-        public async Task<CartDto?> GetUserCart(int userId)
+        public async Task<CartDto?> GetUserCartAsync(int userId)
         {
             _logger.LogInformation($"{_prefix}Get User Cart");
             using (var context = new AppDbContext())
@@ -42,7 +42,7 @@ namespace ShoppingAppDB
             }
         }
 
-        public async Task<bool> UpdateCart(CartDto newCart)
+        public async Task<bool> UpdateCartAsync(CartDto newCart)
         {
             _logger.LogInformation($"{_prefix}Update Cart");
             using (var context = new AppDbContext())
@@ -57,7 +57,7 @@ namespace ShoppingAppDB
 
                     if (newCart.Products.Count == 0)
                     {
-                        await DeleteCart(newCart.CartId);
+                        await DeleteCartAsync(newCart.CartId);
                         _logger.LogInformation($"{_prefix}New Cart Have no Products so deleted");
                         return true;
                     }
@@ -84,7 +84,7 @@ namespace ShoppingAppDB
             }
         }
 
-        public async Task<bool> DeleteCart(int CartId)
+        public async Task<bool> DeleteCartAsync(int CartId)
         {
             _logger.LogInformation($"{_prefix}Delete Cart");
             using (var context = new AppDbContext())
@@ -102,7 +102,7 @@ namespace ShoppingAppDB
             }
         }
 
-        public async Task<int> AddCart(CartDto cart)
+        public async Task<int> AddCartAsync(CartDto cart)
         {
             _logger.LogInformation($"{_prefix}Add Cart");
             using (var context = new AppDbContext())

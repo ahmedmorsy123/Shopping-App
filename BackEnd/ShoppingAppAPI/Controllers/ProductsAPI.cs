@@ -21,10 +21,12 @@ namespace ShoppingAppAPI.Controllers
         }
 
         [HttpGet("GetAllProductsPaginated")]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<ProductDto>>> GetProductsPaginated(int page)
         {
             _logger.LogInformation($"{_prefix}GetAllProductsPaginated");
-            return Ok(await _productsService.GetProductsPaginated(page));
+            return Ok(await _productsService.GetProductsPaginatedAsync(page));
         }
     }
 }

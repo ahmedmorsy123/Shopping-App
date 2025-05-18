@@ -120,7 +120,7 @@ namespace ShoppingAppDB.Services
             return Convert.ToBase64String(randomNumber);
         }
 
-        public async Task<TokenResponseDto?> Login(string username, string password)
+        public async Task<TokenResponseDto?> LoginAsync(string username, string password)
         {
             _logger.LogInformation($"{_prefix}Login");
             using (var context = new AppDbContext())
@@ -141,7 +141,7 @@ namespace ShoppingAppDB.Services
             }
         }
 
-        public async Task<bool> Logout(int userId)
+        public async Task<bool> LogoutAsync(int userId)
         {
             _logger.LogInformation($"{_prefix}Logout");
             using (var context = new AppDbContext())

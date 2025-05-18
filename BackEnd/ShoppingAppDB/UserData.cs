@@ -20,7 +20,7 @@ namespace ShoppingAppDB
             _passwordService = passwordService;
         }
 
-        public async Task<UserDto?> GetUserById(int id)
+        public async Task<UserDto?> GetUserByIdAsync(int id)
         {
             _logger.LogInformation($"{_prefix}Getting user by id");
             UserDto? userDto;
@@ -35,7 +35,7 @@ namespace ShoppingAppDB
             return userDto;
         }
 
-        public async Task<UserDto?> AddUser(UserDto user)
+        public async Task<UserDto?> AddUserAsync(UserDto user)
         {
             _logger.LogInformation($"{_prefix}Adding user");
             if (user == null)
@@ -68,7 +68,7 @@ namespace ShoppingAppDB
             }
         }
 
-        public async Task<UserDto?> UpdateUser(UserDto user, string oldPassword)
+        public async Task<UserDto?> UpdateUserAsync(UserDto user, string oldPassword)
         {
             using (var context = new AppDbContext())
             {
@@ -88,7 +88,7 @@ namespace ShoppingAppDB
             }
         }
 
-        public async Task<bool> DeleteUser(int userId)
+        public async Task<bool> DeleteUserAsync(int userId)
         {
             _logger.LogInformation($"{_prefix}Deleted user with id {userId}");
             using (var context = new AppDbContext())
