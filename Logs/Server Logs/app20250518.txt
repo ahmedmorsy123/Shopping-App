@@ -1,0 +1,42 @@
+2025-05-18 19:29:14.551 +03:00 [INF] Starting web host
+2025-05-18 19:29:15.537 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-18 19:29:15.539 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-18 19:29:15.612 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-18 19:29:15.612 +03:00 [INF] Hosting environment: Development
+2025-05-18 19:29:15.612 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-18 19:31:07.375 +03:00 [INF] Starting web host
+2025-05-18 19:31:08.314 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-18 19:31:08.317 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-18 19:31:08.377 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-18 19:31:08.377 +03:00 [INF] Hosting environment: Development
+2025-05-18 19:31:08.377 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-18 19:36:49.165 +03:00 [INF] Starting web host
+2025-05-18 19:36:50.577 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-18 19:36:50.579 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-18 19:36:50.737 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-18 19:36:50.737 +03:00 [INF] Hosting environment: Development
+2025-05-18 19:36:50.738 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-18 19:39:10.681 +03:00 [INF] Starting web host
+2025-05-18 19:39:12.437 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-18 19:39:12.439 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-18 19:39:12.547 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-18 19:39:12.547 +03:00 [INF] Hosting environment: Development
+2025-05-18 19:39:12.547 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-18 23:43:56.324 +03:00 [INF] Starting web host
+2025-05-18 23:43:57.664 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-18 23:43:57.666 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-18 23:43:57.747 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-18 23:43:57.748 +03:00 [INF] Hosting environment: Development
+2025-05-18 23:43:57.748 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-18 23:44:10.601 +03:00 [INF] AuthAPI LoginAPI
+2025-05-18 23:44:10.605 +03:00 [INF] AuthBL Login
+2025-05-18 23:44:10.655 +03:00 [INF] ServAuth Login
+2025-05-18 23:44:12.380 +03:00 [INF] ServPass Verifying password
+2025-05-18 23:44:12.636 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-18 23:44:12.637 +03:00 [INF] ServAuth Creating token response
+2025-05-18 23:44:12.637 +03:00 [INF] ServAuth Creating token
+2025-05-18 23:44:12.640 +03:00 [INF] ServAuth Token created successfully
+2025-05-18 23:44:12.661 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-18 23:44:12.663 +03:00 [INF] ServAuth Generating refresh token
+2025-05-18 23:44:12.682 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-18 23:44:12.702 +03:00 [INF] AuthAPI User logged in successfully

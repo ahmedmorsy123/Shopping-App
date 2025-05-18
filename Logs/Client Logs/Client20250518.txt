@@ -1,0 +1,4 @@
+2025-05-18 23:35:46.239 +03:00 [INF] Application starting.
+2025-05-18 23:35:46.436 +03:00 [INF] MainForm constructor called.
+2025-05-18 23:44:12.742 +03:00 [INF] Application starting.
+2025-05-18 23:44:12.806 +03:00 [INF] MainForm constructor called.
