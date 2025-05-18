@@ -36,6 +36,9 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.4\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Serilog, Version=4.2.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
       <HintPath>..\packages\Serilog.4.2.0\lib\net471\Serilog.dll</HintPath>
     </Reference>
@@ -89,10 +92,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="APIs\Carts.cs" />
-    <Compile Include="APIs\Orders.cs" />
-    <Compile Include="APIs\Products.cs" />
-    <Compile Include="APIs\Users.cs" />
+    <Compile Include="Api\ApiClient.cs" />
+    <Compile Include="Api\Controllers\AuthService.cs" />
+    <Compile Include="Api\Controllers\CartsService.cs" />
+    <Compile Include="Api\Controllers\OrdersService.cs" />
+    <Compile Include="Api\Controllers\ProductsService.cs" />
+    <Compile Include="Api\Controllers\UsersService.cs" />
+    <Compile Include="Api\Models\CartDto.cs" />
+    <Compile Include="Api\Models\OrderDto.cs" />
+    <Compile Include="Api\Models\LoginRequestDto.cs" />
+    <Compile Include="Api\Models\ProductDto.cs" />
+    <Compile Include="Api\Models\RefreshTokenRequestDto.cs" />
+    <Compile Include="Api\Models\TokenResponseDto.cs" />
+    <Compile Include="Api\Models\UserDto.cs" />
+    <Compile Include="Server.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,5 +140,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

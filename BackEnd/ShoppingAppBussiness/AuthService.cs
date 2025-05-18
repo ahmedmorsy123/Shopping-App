@@ -16,10 +16,10 @@ namespace ShoppingAppBussiness
             _authService = authService;
         }
 
-        public async Task<TokenResponseDto?> LoginAsync(string username, string password)
+        public async Task<TokenResponseDto?> LoginAsync(LoginRequestDto loginRequest)
         {
             _logger.LogInformation($"{_prefix}Login");
-            return await _authService.LoginAsync(username, password);
+            return await _authService.LoginAsync(loginRequest);
         }
 
         public async Task<bool> LogoutAsync(int userId)

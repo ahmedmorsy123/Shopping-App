@@ -22,7 +22,7 @@ namespace ShoppingAppDB
 
             using(var context = new AppDbContext())
             {
-                return await context.Products.CountAsync() / _pageSize;
+                return (int)Math.Ceiling(await context.Products.CountAsync() / _pageSize * 1.0);
             }
         }
 

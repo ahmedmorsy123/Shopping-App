@@ -6,6 +6,7 @@ using ShoppingAppDB.Models;
 using ShoppingAppDB.Services;
 using System.Security.Claims;
 
+
 namespace ShoppingAppAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -26,17 +27,18 @@ namespace ShoppingAppAPI.Controllers
         [HttpPost("Login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<UserDto>> Login(string userName, string password)
+        public async Task<ActionResult<TokenResponseDto>> Login(LoginRequestDto loginnRequest)
         {
             _logger.LogInformation($"{_prefix}LoginAPI");
-            TokenResponseDto? result = await _authService.LoginAsync(userName, password);
+            TokenResponseDto? result = await _authService.LoginAsync(loginnRequest);
             if (result is null)
             {
                 _logger.LogWarning($"{_prefix}Invalid username or password");
                 return BadRequest("Invalid username or password");
             }
             _logger.LogInformation($"{_prefix}User logged in successfully");
-            return Ok(result);
+            //return Ok(result);
+            return CreatedAtAction(nameof(GetUser), new { id = }, result);
         }
 
         [HttpPost("refresh-token")]

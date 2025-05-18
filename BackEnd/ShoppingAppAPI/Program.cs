@@ -17,7 +17,7 @@ public class Program
             .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
             .Enrich.FromLogContext()
             .WriteTo.File(
-                path: "C:/Users/ENG Ahmed/source/repos/ShoppingAppDB/Logs/Server Logs/app.txt",
+                path: "C:/Users/ENG Ahmed/source/repos/ShoppingApp/Logs/Server Logs/app.txt",
                 rollingInterval: RollingInterval.Day,
                 outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}"
             )

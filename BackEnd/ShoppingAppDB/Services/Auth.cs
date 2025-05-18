@@ -120,14 +120,14 @@ namespace ShoppingAppDB.Services
             return Convert.ToBase64String(randomNumber);
         }
 
-        public async Task<TokenResponseDto?> LoginAsync(string username, string password)
+        public async Task<TokenResponseDto?> LoginAsync(LoginRequestDto loginRequest)
         {
             _logger.LogInformation($"{_prefix}Login");
             using (var context = new AppDbContext())
             {
-                var user = context.Users.FirstOrDefault(u => u.Name == username);
+                var user = context.Users.FirstOrDefault(u => u.Name == loginRequest.UserName);
 
-                if (user != null && _passwordService.VerifyPassword(password, user.PasswordHash))
+                if (user != null && _passwordService.VerifyPassword(loginRequest.Password, user.PasswordHash))
                 {
                     user.LastLogin = DateTime.Now;
                     await context.SaveChangesAsync();

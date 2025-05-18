@@ -15,7 +15,10 @@ namespace ShoppingAppBussiness
             _logger = logger;
             _productData = productData;
         }
-
+        public async Task<int> GetPageCountAsync()
+        {
+            return await _productData.GetPageCountAsync();
+        }
         public async Task<List<ProductDto>> GetProductsPaginatedAsync(int pageNumber)
         {
             _logger.LogInformation($"{_prefix}GetProductsPaginated");
