@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using Serilog;
+using Shopping_App.Forms;
 using ShoppingApp.Api;
 using ShoppingApp.Api.Controllers;
 using ShoppingApp.Api.Models;
@@ -18,7 +19,7 @@ namespace Shopping_App
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static async Task Main()
+        static void Main()
         {
             // Configure Serilog
             Log.Logger = new LoggerConfiguration()
@@ -28,29 +29,19 @@ namespace Shopping_App
                 outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
                 .CreateLogger();
 
-
-            AuthService authService = new AuthService();
-
-            TokenResponseDto tokenResponseDto = await authService.LoginAsync("Ahmed", "3420");
-
-            if (tokenResponseDto != null)
-            {
-                Console.WriteLine(tokenResponseDto.RefreshToken);
-                Console.WriteLine(tokenResponseDto.AccessToken);
-            }
-
-            Console.WriteLine(extractUserIdButton_Click());
-
             Log.Information("Application starting.");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm()); 
-            
+            using (var loginForm = new LoginRegisterForm())
+            {
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new MainForm());
+                }
+            }
 
+            //Application.Run(new MainForm());
 
         }
-
-
-        
     }
 }

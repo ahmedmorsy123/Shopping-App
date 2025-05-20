@@ -22,3 +22,807 @@
 2025-05-19 00:41:35.227 +03:00 [INF] ServAuth Generating refresh token
 2025-05-19 00:41:35.228 +03:00 [INF] ServAuth Refresh token saved successfully
 2025-05-19 00:41:35.232 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 12:46:01.688 +03:00 [INF] Starting web host
+2025-05-19 12:46:02.676 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-19 12:46:02.677 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-19 12:46:02.746 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 12:46:02.747 +03:00 [INF] Hosting environment: Development
+2025-05-19 12:46:02.747 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-19 12:46:14.574 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 12:46:14.577 +03:00 [INF] AuthBL Login
+2025-05-19 12:46:14.617 +03:00 [INF] ServAuth Login
+2025-05-19 12:46:16.062 +03:00 [INF] ServPass Verifying password
+2025-05-19 12:46:16.308 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 12:46:16.308 +03:00 [INF] ServAuth Creating token response
+2025-05-19 12:46:16.309 +03:00 [INF] ServAuth Creating token
+2025-05-19 12:46:16.313 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 12:46:16.332 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 12:46:16.333 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 12:46:16.355 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 12:46:16.369 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 12:46:24.760 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 12:46:24.760 +03:00 [INF] AuthBL Login
+2025-05-19 12:46:24.760 +03:00 [INF] ServAuth Login
+2025-05-19 12:46:24.804 +03:00 [WRN] ServAuth Login failed
+2025-05-19 12:46:24.804 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-19 12:46:36.270 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 12:46:36.270 +03:00 [INF] AuthBL Login
+2025-05-19 12:46:36.270 +03:00 [INF] ServAuth Login
+2025-05-19 12:46:36.275 +03:00 [INF] ServPass Verifying password
+2025-05-19 12:46:36.365 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 12:46:36.365 +03:00 [INF] ServAuth Creating token response
+2025-05-19 12:46:36.365 +03:00 [INF] ServAuth Creating token
+2025-05-19 12:46:36.365 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 12:46:36.365 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 12:46:36.365 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 12:46:36.367 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 12:46:36.370 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 12:50:10.648 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 12:50:10.649 +03:00 [INF] AuthBL Login
+2025-05-19 12:50:10.649 +03:00 [INF] ServAuth Login
+2025-05-19 12:50:10.655 +03:00 [INF] ServPass Verifying password
+2025-05-19 12:50:10.736 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 12:50:10.736 +03:00 [INF] ServAuth Creating token response
+2025-05-19 12:50:10.736 +03:00 [INF] ServAuth Creating token
+2025-05-19 12:50:10.737 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 12:50:10.737 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 12:50:10.737 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 12:50:10.738 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 12:50:10.742 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 12:50:19.754 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 12:50:19.755 +03:00 [INF] AuthBL Login
+2025-05-19 12:50:19.755 +03:00 [INF] ServAuth Login
+2025-05-19 12:50:19.764 +03:00 [INF] ServPass Verifying password
+2025-05-19 12:50:19.825 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 12:50:19.825 +03:00 [INF] ServAuth Creating token response
+2025-05-19 12:50:19.825 +03:00 [INF] ServAuth Creating token
+2025-05-19 12:50:19.825 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 12:50:19.826 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 12:50:19.826 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 12:50:19.826 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 12:50:19.828 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:11:46.066 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:11:46.066 +03:00 [INF] AuthBL Login
+2025-05-19 14:11:46.066 +03:00 [INF] ServAuth Login
+2025-05-19 14:11:46.091 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:11:46.158 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:11:46.158 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:11:46.158 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:11:46.158 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:11:46.159 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:11:46.159 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:11:46.160 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:11:46.164 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:11:57.031 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:11:57.031 +03:00 [INF] AuthBL Login
+2025-05-19 14:11:57.031 +03:00 [INF] ServAuth Login
+2025-05-19 14:11:57.033 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:11:57.098 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:11:57.098 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:11:57.098 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:11:57.098 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:11:57.098 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:11:57.098 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:11:57.099 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:11:57.103 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:20:00.474 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:20:00.474 +03:00 [INF] AuthBL Login
+2025-05-19 14:20:00.474 +03:00 [INF] ServAuth Login
+2025-05-19 14:20:00.503 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:20:00.575 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:20:00.575 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:20:00.575 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:20:00.575 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:20:00.575 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:20:00.576 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:20:00.577 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:20:00.582 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:25:13.054 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:25:13.054 +03:00 [INF] AuthBL Login
+2025-05-19 14:25:13.054 +03:00 [INF] ServAuth Login
+2025-05-19 14:25:13.061 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:25:13.129 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:25:13.129 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:25:13.129 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:25:13.129 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:25:13.129 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:25:13.129 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:25:13.130 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:25:13.133 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:26:22.109 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:26:22.109 +03:00 [INF] AuthBL Login
+2025-05-19 14:26:22.109 +03:00 [INF] ServAuth Login
+2025-05-19 14:26:22.113 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:26:22.178 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:26:22.178 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:26:22.178 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:26:22.179 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:26:22.179 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:26:22.179 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:26:22.180 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:26:22.183 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:28:02.561 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:28:02.561 +03:00 [INF] AuthBL Login
+2025-05-19 14:28:02.561 +03:00 [INF] ServAuth Login
+2025-05-19 14:28:02.567 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:28:02.639 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:28:02.639 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:28:02.639 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:28:02.639 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:28:02.640 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:28:02.640 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:28:02.641 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:28:02.644 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:28:12.542 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:28:12.542 +03:00 [INF] AuthBL Login
+2025-05-19 14:28:12.542 +03:00 [INF] ServAuth Login
+2025-05-19 14:28:12.545 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:28:12.609 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:28:12.609 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:28:12.609 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:28:12.609 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:28:12.609 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:28:12.610 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:28:12.611 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:28:12.612 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:28:28.585 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:28:28.585 +03:00 [INF] AuthBL Login
+2025-05-19 14:28:28.585 +03:00 [INF] ServAuth Login
+2025-05-19 14:28:28.588 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:28:28.652 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:28:28.652 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:28:28.652 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:28:28.653 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:28:28.653 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:28:28.653 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:28:28.654 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:28:28.655 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:28:40.116 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:28:40.116 +03:00 [INF] AuthBL Login
+2025-05-19 14:28:40.116 +03:00 [INF] ServAuth Login
+2025-05-19 14:28:40.121 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:28:40.186 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:28:40.186 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:28:40.186 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:28:40.186 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:28:40.186 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:28:40.186 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:28:40.187 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:28:40.191 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:29:00.214 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:29:00.214 +03:00 [INF] AuthBL Login
+2025-05-19 14:29:00.214 +03:00 [INF] ServAuth Login
+2025-05-19 14:29:00.218 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:29:00.287 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:29:00.287 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:29:00.287 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:29:00.287 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:29:00.287 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:29:00.287 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:29:00.289 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:29:00.293 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:29:30.169 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:29:30.169 +03:00 [INF] AuthBL Login
+2025-05-19 14:29:30.170 +03:00 [INF] ServAuth Login
+2025-05-19 14:29:30.179 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:29:30.249 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:29:30.249 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:29:30.249 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:29:30.249 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:29:30.250 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:29:30.250 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:29:30.251 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:29:30.254 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:29:45.248 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:29:45.248 +03:00 [INF] AuthBL Login
+2025-05-19 14:29:45.248 +03:00 [INF] ServAuth Login
+2025-05-19 14:29:45.251 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:29:45.318 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:29:45.319 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:29:45.319 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:29:45.319 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:29:45.319 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:29:45.319 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:29:45.320 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:29:45.322 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:29:53.791 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:29:53.791 +03:00 [INF] AuthBL Login
+2025-05-19 14:29:53.791 +03:00 [INF] ServAuth Login
+2025-05-19 14:29:53.796 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:29:53.865 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:29:53.865 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:29:53.865 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:29:53.865 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:29:53.865 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:29:53.866 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:29:53.866 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:29:53.869 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:30:01.152 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:30:01.153 +03:00 [INF] AuthBL Login
+2025-05-19 14:30:01.153 +03:00 [INF] ServAuth Login
+2025-05-19 14:30:01.155 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:30:01.226 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:30:01.226 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:30:01.226 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:30:01.226 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:30:01.226 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:30:01.226 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:30:01.227 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:30:01.229 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:30:10.354 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:30:10.354 +03:00 [INF] AuthBL Login
+2025-05-19 14:30:10.354 +03:00 [INF] ServAuth Login
+2025-05-19 14:30:10.357 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:30:10.422 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:30:10.422 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:30:10.422 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:30:10.422 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:30:10.422 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:30:10.422 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:30:10.423 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:30:10.424 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:31:13.919 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:31:13.919 +03:00 [INF] AuthBL Login
+2025-05-19 14:31:13.919 +03:00 [INF] ServAuth Login
+2025-05-19 14:31:13.924 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:31:13.996 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:31:13.996 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:31:13.996 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:31:13.996 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:31:13.997 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:31:13.997 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:31:13.998 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:31:14.003 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:31:22.555 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:31:22.555 +03:00 [INF] AuthBL Login
+2025-05-19 14:31:22.555 +03:00 [INF] ServAuth Login
+2025-05-19 14:31:22.558 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:31:22.624 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:31:22.625 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:31:22.625 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:31:22.625 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:31:22.625 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:31:22.625 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:31:22.626 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:31:22.628 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:31:28.034 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:31:28.034 +03:00 [INF] AuthBL Login
+2025-05-19 14:31:28.034 +03:00 [INF] ServAuth Login
+2025-05-19 14:31:28.036 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:31:28.104 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:31:28.104 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:31:28.104 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:31:28.104 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:31:28.104 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:31:28.104 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:31:28.105 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:31:28.106 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:31:34.595 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:31:34.595 +03:00 [INF] AuthBL Login
+2025-05-19 14:31:34.595 +03:00 [INF] ServAuth Login
+2025-05-19 14:31:34.596 +03:00 [WRN] ServAuth Login failed
+2025-05-19 14:31:34.596 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-19 14:32:29.504 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:32:29.504 +03:00 [INF] AuthBL Login
+2025-05-19 14:32:29.504 +03:00 [INF] ServAuth Login
+2025-05-19 14:32:29.508 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:32:29.582 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:32:29.582 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:32:29.582 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:32:29.582 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:32:29.582 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:32:29.582 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:32:29.583 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:32:29.586 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:32:43.716 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:32:43.716 +03:00 [INF] AuthBL Login
+2025-05-19 14:32:43.716 +03:00 [INF] ServAuth Login
+2025-05-19 14:32:43.719 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:32:43.784 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:32:43.784 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:32:43.784 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:32:43.784 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:32:43.784 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:32:43.784 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:32:43.785 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:32:43.787 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:32:54.055 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:32:54.055 +03:00 [INF] AuthBL Login
+2025-05-19 14:32:54.055 +03:00 [INF] ServAuth Login
+2025-05-19 14:32:54.058 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:32:54.124 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:32:54.125 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:32:54.125 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:32:54.125 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:32:54.125 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:32:54.125 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:32:54.126 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:32:54.127 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:33:01.248 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:33:01.248 +03:00 [INF] AuthBL Login
+2025-05-19 14:33:01.248 +03:00 [INF] ServAuth Login
+2025-05-19 14:33:01.250 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:33:01.318 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:33:01.318 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:33:01.318 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:33:01.318 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:33:01.318 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:33:01.318 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:33:01.319 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:33:01.322 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:33:07.993 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:33:07.993 +03:00 [INF] AuthBL Login
+2025-05-19 14:33:07.993 +03:00 [INF] ServAuth Login
+2025-05-19 14:33:07.998 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:33:08.064 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:33:08.065 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:33:08.065 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:33:08.065 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:33:08.065 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:33:08.065 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:33:08.066 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:33:08.069 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:33:21.556 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:33:21.556 +03:00 [INF] AuthBL Login
+2025-05-19 14:33:21.556 +03:00 [INF] ServAuth Login
+2025-05-19 14:33:21.564 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:33:21.634 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:33:21.634 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:33:21.634 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:33:21.634 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:33:21.634 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:33:21.634 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:33:21.635 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:33:21.637 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:34:37.947 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:34:37.947 +03:00 [INF] AuthBL Login
+2025-05-19 14:34:37.947 +03:00 [INF] ServAuth Login
+2025-05-19 14:34:37.951 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:34:38.017 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:34:38.017 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:34:38.017 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:34:38.017 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:34:38.017 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:34:38.017 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:34:38.018 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:34:38.020 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:35:10.412 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:35:10.412 +03:00 [INF] AuthBL Login
+2025-05-19 14:35:10.412 +03:00 [INF] ServAuth Login
+2025-05-19 14:35:10.414 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:35:10.482 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:35:10.482 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:35:10.482 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:35:10.482 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:35:10.482 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:35:10.482 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:35:10.483 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:35:10.486 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:36:49.614 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:36:49.614 +03:00 [INF] AuthBL Login
+2025-05-19 14:36:49.614 +03:00 [INF] ServAuth Login
+2025-05-19 14:36:49.619 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:36:49.689 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:36:49.689 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:36:49.689 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:36:49.689 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:36:49.690 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:36:49.690 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:36:49.691 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:36:49.694 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:37:12.285 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:37:12.285 +03:00 [INF] AuthBL Login
+2025-05-19 14:37:12.286 +03:00 [INF] ServAuth Login
+2025-05-19 14:37:12.288 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:37:12.356 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:37:12.356 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:37:12.356 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:37:12.356 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:37:12.356 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:37:12.357 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:37:12.357 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:37:12.358 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:43:42.791 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:43:42.791 +03:00 [INF] AuthBL Login
+2025-05-19 14:43:42.792 +03:00 [INF] ServAuth Login
+2025-05-19 14:43:42.803 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:43:42.872 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:43:42.872 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:43:42.872 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:43:42.872 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:43:42.872 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:43:42.872 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:43:42.873 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:43:42.875 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 14:59:29.083 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 14:59:29.088 +03:00 [INF] AuthBL Login
+2025-05-19 14:59:29.090 +03:00 [INF] ServAuth Login
+2025-05-19 14:59:29.104 +03:00 [INF] ServPass Verifying password
+2025-05-19 14:59:29.175 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 14:59:29.176 +03:00 [INF] ServAuth Creating token response
+2025-05-19 14:59:29.176 +03:00 [INF] ServAuth Creating token
+2025-05-19 14:59:29.176 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 14:59:29.176 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 14:59:29.176 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 14:59:29.177 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 14:59:29.181 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:04:43.868 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:04:43.868 +03:00 [INF] AuthBL Login
+2025-05-19 15:04:43.868 +03:00 [INF] ServAuth Login
+2025-05-19 15:04:43.885 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:04:43.957 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:04:43.957 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:04:43.957 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:04:43.957 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:04:43.957 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:04:43.957 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:04:43.958 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:04:43.961 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:04:49.357 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:04:49.357 +03:00 [INF] AuthBL Login
+2025-05-19 15:04:49.357 +03:00 [INF] ServAuth Login
+2025-05-19 15:04:49.359 +03:00 [WRN] ServAuth Login failed
+2025-05-19 15:04:49.359 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-19 15:05:01.138 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:05:01.138 +03:00 [INF] AuthBL Login
+2025-05-19 15:05:01.139 +03:00 [INF] ServAuth Login
+2025-05-19 15:05:01.146 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:05:01.210 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:05:01.210 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:05:01.210 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:05:01.210 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:05:01.210 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:05:01.210 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:05:01.211 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:05:01.213 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:05:35.246 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:05:35.246 +03:00 [INF] AuthBL Login
+2025-05-19 15:05:35.246 +03:00 [INF] ServAuth Login
+2025-05-19 15:05:35.249 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:05:35.315 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:05:35.315 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:05:35.315 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:05:35.316 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:05:35.316 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:05:35.316 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:05:35.316 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:05:35.317 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:08:59.021 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:08:59.022 +03:00 [INF] AuthBL Login
+2025-05-19 15:08:59.022 +03:00 [INF] ServAuth Login
+2025-05-19 15:08:59.030 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:08:59.099 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:08:59.099 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:08:59.099 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:08:59.099 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:08:59.099 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:08:59.099 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:08:59.100 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:08:59.103 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:11:34.876 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:11:34.876 +03:00 [INF] AuthBL Login
+2025-05-19 15:11:34.876 +03:00 [INF] ServAuth Login
+2025-05-19 15:11:34.886 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:11:34.958 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:11:34.958 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:11:34.958 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:11:34.958 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:11:34.958 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:11:34.958 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:11:34.959 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:11:34.963 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:13:54.761 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:13:54.761 +03:00 [INF] AuthBL Login
+2025-05-19 15:13:54.761 +03:00 [INF] ServAuth Login
+2025-05-19 15:13:54.771 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:13:54.838 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:13:54.838 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:13:54.838 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:13:54.839 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:13:54.839 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:13:54.839 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:13:54.840 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:13:54.843 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:15:01.644 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:15:01.644 +03:00 [INF] AuthBL Login
+2025-05-19 15:15:01.644 +03:00 [INF] ServAuth Login
+2025-05-19 15:15:01.648 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:15:01.715 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:15:01.716 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:15:01.716 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:15:01.716 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:15:01.716 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:15:01.716 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:15:01.716 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:15:01.720 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:15:50.397 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:15:50.397 +03:00 [INF] AuthBL Login
+2025-05-19 15:15:50.397 +03:00 [INF] ServAuth Login
+2025-05-19 15:15:50.399 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:15:50.464 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:15:50.464 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:15:50.464 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:15:50.464 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:15:50.464 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:15:50.464 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:15:50.465 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:15:50.467 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:18:27.106 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:18:27.106 +03:00 [INF] AuthBL Login
+2025-05-19 15:18:27.106 +03:00 [INF] ServAuth Login
+2025-05-19 15:18:27.118 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:18:27.185 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:18:27.185 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:18:27.185 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:18:27.185 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:18:27.186 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:18:27.186 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:18:27.186 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:18:27.189 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:18:33.335 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:18:33.335 +03:00 [INF] AuthBL Login
+2025-05-19 15:18:33.335 +03:00 [INF] ServAuth Login
+2025-05-19 15:18:33.337 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:18:33.401 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:18:33.401 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:18:33.401 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:18:33.401 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:18:33.401 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:18:33.401 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:18:33.402 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:18:33.403 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:19:43.070 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:19:43.070 +03:00 [INF] AuthBL Login
+2025-05-19 15:19:43.070 +03:00 [INF] ServAuth Login
+2025-05-19 15:19:43.086 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:19:43.161 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:19:43.161 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:19:43.161 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:19:43.161 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:19:43.161 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:19:43.161 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:19:43.162 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:19:43.166 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:22:27.892 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:22:27.893 +03:00 [INF] AuthBL Login
+2025-05-19 15:22:27.893 +03:00 [INF] ServAuth Login
+2025-05-19 15:22:27.896 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:22:27.959 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:22:27.959 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:22:27.959 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:22:27.959 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:22:27.959 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:22:27.959 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:22:27.960 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:22:27.962 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:22:56.624 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:22:56.624 +03:00 [INF] AuthBL Login
+2025-05-19 15:22:56.624 +03:00 [INF] ServAuth Login
+2025-05-19 15:22:56.627 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:22:56.692 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:22:56.692 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:22:56.692 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:22:56.692 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:22:56.692 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:22:56.692 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:22:56.693 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:22:56.695 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:23:57.985 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:23:57.985 +03:00 [INF] AuthBL Login
+2025-05-19 15:23:57.985 +03:00 [INF] ServAuth Login
+2025-05-19 15:23:57.995 +03:00 [WRN] ServAuth Login failed
+2025-05-19 15:23:57.995 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-19 15:24:07.398 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:24:07.399 +03:00 [INF] AuthBL Login
+2025-05-19 15:24:07.399 +03:00 [INF] ServAuth Login
+2025-05-19 15:24:07.400 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:24:07.467 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:24:07.467 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:24:07.467 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:24:07.467 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:24:07.467 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:24:07.467 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:24:07.468 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:24:07.471 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:25:18.488 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:25:18.488 +03:00 [INF] AuthBL Login
+2025-05-19 15:25:18.488 +03:00 [INF] ServAuth Login
+2025-05-19 15:25:18.498 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:25:18.562 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:25:18.562 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:25:18.562 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:25:18.562 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:25:18.563 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:25:18.563 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:25:18.563 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:25:18.565 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:25:45.679 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:25:45.679 +03:00 [INF] AuthBL Login
+2025-05-19 15:25:45.679 +03:00 [INF] ServAuth Login
+2025-05-19 15:25:45.681 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:25:45.746 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:25:45.746 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:25:45.746 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:25:45.746 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:25:45.746 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:25:45.746 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:25:45.747 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:25:45.749 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:26:54.642 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:26:54.642 +03:00 [INF] AuthBL Login
+2025-05-19 15:26:54.642 +03:00 [INF] ServAuth Login
+2025-05-19 15:26:54.653 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:26:54.720 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:26:54.720 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:26:54.720 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:26:54.720 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:26:54.720 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:26:54.720 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:26:54.721 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:26:54.723 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:27:29.492 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:27:29.492 +03:00 [INF] AuthBL Login
+2025-05-19 15:27:29.492 +03:00 [INF] ServAuth Login
+2025-05-19 15:27:29.495 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:27:29.561 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:27:29.561 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:27:29.561 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:27:29.561 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:27:29.561 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:27:29.561 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:27:29.562 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:27:29.565 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:27:58.855 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:27:58.855 +03:00 [INF] AuthBL Login
+2025-05-19 15:27:58.855 +03:00 [INF] ServAuth Login
+2025-05-19 15:27:58.859 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:27:58.927 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:27:58.927 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:27:58.927 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:27:58.927 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:27:58.927 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:27:58.927 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:27:58.928 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:27:58.931 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:28:30.773 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:28:30.773 +03:00 [INF] AuthBL Login
+2025-05-19 15:28:30.773 +03:00 [INF] ServAuth Login
+2025-05-19 15:28:30.778 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:28:30.841 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:28:30.841 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:28:30.841 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:28:30.841 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:28:30.841 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:28:30.841 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:28:30.841 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:28:30.844 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:29:01.811 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:29:01.811 +03:00 [INF] AuthBL Login
+2025-05-19 15:29:01.811 +03:00 [INF] ServAuth Login
+2025-05-19 15:29:01.818 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:29:01.884 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:29:01.884 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:29:01.884 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:29:01.884 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:29:01.884 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:29:01.884 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:29:01.885 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:29:01.887 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:29:50.544 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:29:50.544 +03:00 [INF] AuthBL Login
+2025-05-19 15:29:50.544 +03:00 [INF] ServAuth Login
+2025-05-19 15:29:50.564 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:29:50.627 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:29:50.627 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:29:50.627 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:29:50.627 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:29:50.628 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:29:50.628 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:29:50.628 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:29:50.630 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:30:49.355 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:30:49.355 +03:00 [INF] AuthBL Login
+2025-05-19 15:30:49.355 +03:00 [INF] ServAuth Login
+2025-05-19 15:30:49.381 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:30:49.444 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:30:49.444 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:30:49.444 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:30:49.444 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:30:49.444 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:30:49.444 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:30:49.445 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:30:49.447 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 15:50:45.563 +03:00 [INF] Starting web host
+2025-05-19 15:50:46.399 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-19 15:50:46.400 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-19 15:50:46.468 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 15:50:46.468 +03:00 [INF] Hosting environment: Development
+2025-05-19 15:50:46.468 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-19 15:54:24.213 +03:00 [INF] Starting web host
+2025-05-19 15:54:25.315 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-19 15:54:25.316 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-19 15:54:25.394 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 15:54:25.395 +03:00 [INF] Hosting environment: Development
+2025-05-19 15:54:25.395 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-19 15:54:48.809 +03:00 [INF] AuthBL RefreshToken
+2025-05-19 15:54:48.811 +03:00 [INF] ServAuth Refreshing tokens
+2025-05-19 15:54:48.821 +03:00 [INF] ServAuth Validating refresh token
+2025-05-19 15:54:49.999 +03:00 [WRN] ServAuth Refresh token validation failed
+2025-05-19 15:54:50.003 +03:00 [WRN] ServAuth Refresh token validation failed
+2025-05-19 15:56:28.232 +03:00 [INF] Starting web host
+2025-05-19 15:56:29.118 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-19 15:56:29.119 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-19 15:56:29.185 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 15:56:29.185 +03:00 [INF] Hosting environment: Development
+2025-05-19 15:56:29.185 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-19 15:58:34.436 +03:00 [INF] Starting web host
+2025-05-19 15:58:35.396 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-19 15:58:35.397 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-19 15:58:35.465 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 15:58:35.465 +03:00 [INF] Hosting environment: Development
+2025-05-19 15:58:35.465 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-19 15:59:49.901 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:59:49.903 +03:00 [INF] AuthBL Login
+2025-05-19 15:59:49.917 +03:00 [INF] ServAuth Login
+2025-05-19 15:59:51.040 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:59:51.181 +03:00 [WRN] ServAuth Login failed
+2025-05-19 15:59:51.185 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-19 15:59:59.239 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 15:59:59.239 +03:00 [INF] AuthBL Login
+2025-05-19 15:59:59.239 +03:00 [INF] ServAuth Login
+2025-05-19 15:59:59.265 +03:00 [INF] ServPass Verifying password
+2025-05-19 15:59:59.499 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 15:59:59.499 +03:00 [INF] ServAuth Creating token response
+2025-05-19 15:59:59.500 +03:00 [INF] ServAuth Creating token
+2025-05-19 15:59:59.503 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 15:59:59.521 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 15:59:59.521 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 15:59:59.564 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 15:59:59.572 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 16:01:11.053 +03:00 [INF] UsersAPI AddUserAPI
+2025-05-19 16:01:11.053 +03:00 [INF] UsersBL AddUser
+2025-05-19 16:01:11.057 +03:00 [INF] UserDA Adding user
+2025-05-19 16:01:11.094 +03:00 [INF] ServPass Hashing password
+2025-05-19 16:01:11.267 +03:00 [INF] UserDA User added successfully with id 505
+2025-05-19 16:01:11.268 +03:00 [INF] UsersAPI Added user with id: 0
+2025-05-19 16:02:12.589 +03:00 [INF] Starting web host
+2025-05-19 16:02:13.551 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-19 16:02:13.553 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-19 16:02:13.635 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 16:02:13.635 +03:00 [INF] Hosting environment: Development
+2025-05-19 16:02:13.635 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-19 16:16:25.104 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 16:16:25.106 +03:00 [INF] AuthBL Login
+2025-05-19 16:16:25.121 +03:00 [INF] ServAuth Login
+2025-05-19 16:16:26.222 +03:00 [INF] ServPass Verifying password
+2025-05-19 16:16:26.476 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 16:16:26.476 +03:00 [INF] ServAuth Creating token response
+2025-05-19 16:16:26.477 +03:00 [INF] ServAuth Creating token
+2025-05-19 16:16:26.480 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 16:16:26.501 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 16:16:26.504 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 16:16:26.539 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 16:16:26.556 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-19 16:22:45.824 +03:00 [INF] Starting web host
+2025-05-19 16:22:46.893 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-19 16:22:46.894 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-19 16:22:46.966 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 16:22:46.967 +03:00 [INF] Hosting environment: Development
+2025-05-19 16:22:46.967 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-19 16:24:19.009 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 16:24:19.011 +03:00 [INF] AuthBL Login
+2025-05-19 16:24:19.024 +03:00 [INF] ServAuth Login
+2025-05-19 16:24:20.001 +03:00 [WRN] ServAuth Login failed
+2025-05-19 16:24:20.004 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-19 16:24:29.409 +03:00 [INF] AuthAPI LoginAPI
+2025-05-19 16:24:29.409 +03:00 [INF] AuthBL Login
+2025-05-19 16:24:29.409 +03:00 [INF] ServAuth Login
+2025-05-19 16:24:29.479 +03:00 [INF] ServPass Verifying password
+2025-05-19 16:24:29.698 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-19 16:24:29.698 +03:00 [INF] ServAuth Creating token response
+2025-05-19 16:24:29.699 +03:00 [INF] ServAuth Creating token
+2025-05-19 16:24:29.702 +03:00 [INF] ServAuth Token created successfully
+2025-05-19 16:24:29.719 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-19 16:24:29.719 +03:00 [INF] ServAuth Generating refresh token
+2025-05-19 16:24:29.763 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-19 16:24:29.771 +03:00 [INF] AuthAPI User logged in successfully

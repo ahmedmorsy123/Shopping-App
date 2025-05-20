@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Serilog;
 using ShoppingApp.Api.Models;
 
 namespace ShoppingApp.Api.Controllers
@@ -19,6 +20,7 @@ namespace ShoppingApp.Api.Controllers
         /// <returns>List of user's orders</returns>
         public async Task<List<OrderDto>> GetUserOrdersAsync(int userId)
         {
+            Log.Information("Getting orders for user ID: {UserId}", userId);
             string queryString = $"userId={userId}";
 
             try
@@ -29,6 +31,7 @@ namespace ShoppingApp.Api.Controllers
             {
                 if (ex.StatusCode == 404)
                 {
+                    Log.Error("No orders found for user ID: {UserId}", userId);
                     throw new ApiException(404, $"No orders found for user {userId}");
                 }
                 throw;
@@ -42,6 +45,7 @@ namespace ShoppingApp.Api.Controllers
         /// <returns>Order information</returns>
         public async Task<OrderDto> GetOrderByIdAsync(int orderId)
         {
+            Log.Information("Getting order by ID: {OrderId}", orderId);
             string queryString = $"orderId={orderId}";
 
             try
@@ -52,6 +56,7 @@ namespace ShoppingApp.Api.Controllers
             {
                 if (ex.StatusCode == 404)
                 {
+                    Log.Error("Order not found with ID: {OrderId}", orderId);
                     throw new ApiException(404, $"Order with ID {orderId} not found");
                 }
                 throw;
@@ -67,6 +72,7 @@ namespace ShoppingApp.Api.Controllers
         /// <returns>Created order information</returns>
         public async Task<OrderDto> MakeOrderAsync(int userId, string shippingAddress, string paymentMethod)
         {
+            Log.Information("Creating order for user ID: {UserId}", userId);
             string queryString = $"userId={userId}&shippingAddress={shippingAddress}&paymentMethod={paymentMethod}";
 
             try
@@ -77,6 +83,7 @@ namespace ShoppingApp.Api.Controllers
             {
                 if (ex.StatusCode == 400)
                 {
+                    Log.Error("Invalid order data for user ID: {UserId}", userId);
                     throw new ApiException(400, "Invalid order data. Please check your input.");
                 }
                 throw;
@@ -89,6 +96,7 @@ namespace ShoppingApp.Api.Controllers
         /// <param name="orderId">Order ID to cancel</param>
         public async Task CancelOrderAsync(int orderId)
         {
+            Log.Information("Cancelling order with ID: {OrderId}", orderId);
             string queryString = $"orderId={orderId}";
 
             try
@@ -99,6 +107,7 @@ namespace ShoppingApp.Api.Controllers
             {
                 if (ex.StatusCode == 404)
                 {
+                    Log.Error("Order not found with ID: {OrderId}", orderId);
                     throw new ApiException(404, $"Order with ID {orderId} not found");
                 }
                 throw;

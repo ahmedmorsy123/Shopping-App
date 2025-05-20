@@ -3,6 +3,8 @@ using System;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using ShoppingApp.Api.Models;
+using Serilog;
+using Shopping_App;
 
 namespace ShoppingApp.Api.Controllers
 {
@@ -21,6 +23,7 @@ namespace ShoppingApp.Api.Controllers
         /// <returns>User information if authentication is successful</returns>
         public async Task<TokenResponseDto> LoginAsync(string username, string password)
         {
+            Log.Information("Logging in user with username: {Username}", username);
             var request = new LoginRequestDto
             {
                 UserName = username,
@@ -32,12 +35,15 @@ namespace ShoppingApp.Api.Controllers
                 var response = await PostAsync<TokenResponseDto>(LOGIN_ENDPOINT, request);
                 SetAuthorizationToken(response.AccessToken);
                 SetRefereshToken(response.RefreshToken);
+                SetCurrentUserId(response.AccessToken);
+                Log.Information("User logged in successfully with ID: {UserId}", AppState.CurrentLoggedInUser.Id);
                 return response;
             }
             catch (ApiException ex)
             {
                 if (ex.StatusCode == 400)
                 {
+                    Log.Error("Invalid username or password for user: {Username}", username);
                     throw new ApiException(400, "Invalid username or password");
                 }
                 throw;
@@ -50,25 +56,35 @@ namespace ShoppingApp.Api.Controllers
         /// <param name="userId">User ID</param>
         /// <param name="refreshToken">Refresh token from previous login</param>
         /// <returns>New access token and refresh token</returns>
-        public async Task<TokenResponseDto> RefreshTokenAsync(int userId)
+        public async Task<TokenResponseDto> RefreshTokenAsync()
         {
+            Log.Information("Refreshing token for user ID: {UserId}", AppState.CurrentLoggedInUser.Id);
             var request = new RefreshTokenRequestDto
             {
-                UserId = userId,
-                RefreshToken = refereshToken
+                UserId = AppState.CurrentLoggedInUser.Id,
+                RefreshToken = AppState.RefreshToken
             };
 
             try
             {
                 var response = await PostAsync<TokenResponseDto>(REFRESH_TOKEN_ENDPOINT, request);
-                SetAuthorizationToken(response?.AccessToken);
-                SetRefereshToken(response?.RefreshToken);
+                if (response != null)
+                {
+                    SetAuthorizationToken(response.AccessToken);
+                    SetCurrentUserId(response.AccessToken);
+                    Log.Information("Token refreshed successfully for user ID: {UserId}", AppState.CurrentLoggedInUser.Id);
+                }
+                else
+                {
+                    throw new ApiException(400, "Failed to refresh token");
+                }
                 return response;
             }
             catch (ApiException ex)
             {
                 if (ex.StatusCode == 400)
                 {
+                    Log.Error("Failed to refresh token for user ID: {UserId}", AppState.CurrentLoggedInUser.Id);
                     throw new ApiException(400, "Invalid or expired refresh token");
                 }
                 throw;
@@ -80,34 +96,49 @@ namespace ShoppingApp.Api.Controllers
         /// </summary>
         public async Task LogoutAsync()
         {
+            Log.Information("Logging out user with ID: {UserId}", AppState.CurrentLoggedInUser.Id);
             try
             {
                 await PostAsync(LOGOUT_ENDPOINT);
                 ClearAuthorizationToken();
+                ClearRefereshToken();
+                AppState.CurrentLoggedInUser.Id = 0;
             }
             catch (ApiException ex)
             {
                 if (ex.StatusCode == 401)
                 {
+                    Log.Error("User with ID: {UserId} is already logged out or token expired", AppState.CurrentLoggedInUser.Id);
                     // Already logged out or token expired
                     ClearAuthorizationToken();
                     return;
+                } 
+                else if (ex.StatusCode == 400)
+                {
+                    Log.Error("Invalid Auth token in logout request for user ID: {UserId}", AppState.CurrentLoggedInUser.Id);
+                    throw new ApiException(400, "Invalid Auth token in logout request");
                 }
+                else if (ex.StatusCode == 404)
+                {
+                    Log.Error("User not found or referesh token expired for user ID: {UserId}", AppState.CurrentLoggedInUser.Id);
+                    throw new ApiException(404, "User not found or referesh token expired");
+                }
+
                 throw;
             }
         }
 
 
-        private string SetCurrentUser(string jwt)
+        private void SetCurrentUserId(string jwt)
         {
-
+            Log.Information("Setting current user ID from JWT");
             string userId = GetUserIdFromJwt(jwt);
-
-            return userId;
+            AppState.CurrentLoggedInUser.Id = int.Parse(userId);
         }
 
         private string GetUserIdFromJwt(string jwt)
         {
+            Log.Information("Extracting user ID from JWT");
             try
             {
                 string[] parts = jwt.Split('.');

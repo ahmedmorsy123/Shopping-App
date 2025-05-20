@@ -1,0 +1,79 @@
+2025-05-20 10:57:19.124 +03:00 [INF] Starting web host
+2025-05-20 10:57:21.394 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-20 10:57:21.398 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-20 10:57:21.601 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 10:57:21.601 +03:00 [INF] Hosting environment: Development
+2025-05-20 10:57:21.601 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-20 10:58:05.690 +03:00 [INF] AuthAPI LoginAPI
+2025-05-20 10:58:05.699 +03:00 [INF] AuthBL Login
+2025-05-20 10:58:05.788 +03:00 [INF] ServAuth Login
+2025-05-20 10:58:11.318 +03:00 [INF] ServPass Verifying password
+2025-05-20 10:58:11.988 +03:00 [WRN] ServAuth Login failed
+2025-05-20 10:58:12.010 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-20 10:58:20.029 +03:00 [INF] AuthAPI LoginAPI
+2025-05-20 10:58:20.030 +03:00 [INF] AuthBL Login
+2025-05-20 10:58:20.030 +03:00 [INF] ServAuth Login
+2025-05-20 10:58:20.128 +03:00 [INF] ServPass Verifying password
+2025-05-20 10:58:21.096 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-20 10:58:21.097 +03:00 [INF] ServAuth Creating token response
+2025-05-20 10:58:21.100 +03:00 [INF] ServAuth Creating token
+2025-05-20 10:58:21.114 +03:00 [INF] ServAuth Token created successfully
+2025-05-20 10:58:21.227 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-20 10:58:21.228 +03:00 [INF] ServAuth Generating refresh token
+2025-05-20 10:58:21.451 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-20 10:58:21.487 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-20 11:02:41.974 +03:00 [INF] UsersAPI AddUserAPI
+2025-05-20 11:02:41.977 +03:00 [INF] UsersBL AddUser
+2025-05-20 11:02:41.983 +03:00 [INF] UserDA Adding user
+2025-05-20 11:02:42.095 +03:00 [INF] ServPass Hashing password
+2025-05-20 11:02:42.528 +03:00 [INF] UserDA User added successfully with id 506
+2025-05-20 11:02:42.528 +03:00 [INF] UsersAPI Added user with id: 0
+2025-05-20 11:02:54.834 +03:00 [INF] AuthAPI LoginAPI
+2025-05-20 11:02:54.835 +03:00 [INF] AuthBL Login
+2025-05-20 11:02:54.835 +03:00 [INF] ServAuth Login
+2025-05-20 11:02:54.884 +03:00 [INF] ServPass Verifying password
+2025-05-20 11:02:55.155 +03:00 [INF] ServAuth User logged in successfully with id 506
+2025-05-20 11:02:55.155 +03:00 [INF] ServAuth Creating token response
+2025-05-20 11:02:55.155 +03:00 [INF] ServAuth Creating token
+2025-05-20 11:02:55.155 +03:00 [INF] ServAuth Token created successfully
+2025-05-20 11:02:55.156 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-20 11:02:55.157 +03:00 [INF] ServAuth Generating refresh token
+2025-05-20 11:02:55.160 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-20 11:02:55.165 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-20 12:45:32.743 +03:00 [INF] Starting web host
+2025-05-20 12:45:34.134 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-20 12:45:34.137 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-20 12:45:34.315 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 12:45:34.315 +03:00 [INF] Hosting environment: Development
+2025-05-20 12:45:34.315 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-20 12:45:48.524 +03:00 [INF] AuthAPI LoginAPI
+2025-05-20 12:45:48.531 +03:00 [INF] AuthBL Login
+2025-05-20 12:45:48.633 +03:00 [INF] ServAuth Login
+2025-05-20 12:45:53.322 +03:00 [WRN] ServAuth Login failed
+2025-05-20 12:45:53.335 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-20 12:46:08.731 +03:00 [INF] UsersAPI AddUserAPI
+2025-05-20 12:46:08.734 +03:00 [INF] UsersBL AddUser
+2025-05-20 12:46:08.792 +03:00 [INF] UserDA Adding user
+2025-05-20 12:46:08.961 +03:00 [WRN] UserDA User with email d already exists
+2025-05-20 12:46:08.962 +03:00 [WRN] UsersAPI User was not added
+2025-05-20 13:48:56.420 +03:00 [INF] Starting web host
+2025-05-20 13:48:57.550 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-20 13:48:57.551 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-20 13:48:57.628 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 13:48:57.628 +03:00 [INF] Hosting environment: Development
+2025-05-20 13:48:57.628 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-20 13:57:55.677 +03:00 [INF] AuthAPI LoginAPI
+2025-05-20 13:57:55.679 +03:00 [INF] AuthBL Login
+2025-05-20 13:57:55.719 +03:00 [INF] ServAuth Login
+2025-05-20 13:57:56.957 +03:00 [WRN] ServAuth Login failed
+2025-05-20 13:57:56.960 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-20 13:58:28.428 +03:00 [INF] AuthAPI LoginAPI
+2025-05-20 13:58:28.431 +03:00 [INF] AuthBL Login
+2025-05-20 13:58:28.431 +03:00 [INF] ServAuth Login
+2025-05-20 13:58:28.455 +03:00 [WRN] ServAuth Login failed
+2025-05-20 13:58:28.456 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-20 13:58:39.993 +03:00 [INF] AuthAPI LoginAPI
+2025-05-20 13:58:39.993 +03:00 [INF] AuthBL Login
+2025-05-20 13:58:39.993 +03:00 [INF] ServAuth Login
+2025-05-20 13:58:40.045 +03:00 [WRN] ServAuth Login failed
+2025-05-20 13:58:40.045 +03:00 [WRN] AuthAPI Invalid username or password

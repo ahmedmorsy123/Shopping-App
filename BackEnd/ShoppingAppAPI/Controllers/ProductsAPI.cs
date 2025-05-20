@@ -22,24 +22,11 @@ namespace ShoppingAppAPI.Controllers
 
         [HttpGet("GetProductsPaginated")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<IEnumerable<ProductDto>>> GetProductsPaginated(int pageNumber)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedList<ProductDto>))]
+        public async Task<ActionResult<PagedList<ProductDto>>> GetProductsPaginated(string? SearchTerm, string? SortColumn, string? SortOrder, int Page, int PageSize)
         {
-            double pageCount = await _productsService.GetPageCountAsync();
-
-            if (pageNumber > pageCount || pageNumber < 0)
-                return BadRequest($"Invalid page number. Must be between 0 and {pageCount}.");
-
             _logger.LogInformation($"{_prefix}GetAllProductsPaginated");
-            return Ok(await _productsService.GetProductsPaginatedAsync(pageNumber));
-        }
-
-        [HttpGet("GetPagesCount")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<int>> GetPageCountAsync()
-        {
-            return Ok(await _productsService.GetPageCountAsync());
+            return Ok(await _productsService.GetProducts(SearchTerm, SortColumn, SortOrder, Page, PageSize));
         }
     }
 }

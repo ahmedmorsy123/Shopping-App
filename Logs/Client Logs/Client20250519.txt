@@ -2,3 +2,889 @@
 2025-05-19 00:22:50.441 +03:00 [INF] MainForm constructor called.
 2025-05-19 00:41:39.242 +03:00 [INF] Application starting.
 2025-05-19 00:41:39.327 +03:00 [INF] MainForm constructor called.
+2025-05-19 12:43:08.344 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 12:43:08.440 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 12:43:08.616 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 12:46:14.176 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 12:46:14.237 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 12:46:14.246 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 12:46:16.377 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 12:46:16.383 +03:00 [INF] Setting authorization token
+2025-05-19 12:46:16.383 +03:00 [INF] Setting refresh token
+2025-05-19 12:46:16.383 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 12:46:16.383 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 12:46:16.383 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 12:46:16.383 +03:00 [INF] Application starting.
+2025-05-19 12:46:24.742 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 12:46:24.742 +03:00 [INF] Logging in user with username: hkjfsd
+2025-05-19 12:46:24.742 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 12:46:24.809 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 12:46:24.904 +03:00 [ERR] Invalid username or password for user: hkjfsd
+2025-05-19 12:46:36.250 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 12:46:36.250 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 12:46:36.250 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 12:46:36.366 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 12:46:36.366 +03:00 [INF] Setting authorization token
+2025-05-19 12:46:36.366 +03:00 [INF] Setting refresh token
+2025-05-19 12:46:36.366 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 12:46:36.366 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 12:46:36.366 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 12:46:38.145 +03:00 [INF] MainForm constructor called.
+2025-05-19 12:50:10.471 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 12:50:10.524 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 12:50:10.526 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 12:50:10.729 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 12:50:10.745 +03:00 [INF] Setting authorization token
+2025-05-19 12:50:10.745 +03:00 [INF] Setting refresh token
+2025-05-19 12:50:10.745 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 12:50:10.745 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 12:50:10.745 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 12:50:10.745 +03:00 [INF] Application starting.
+2025-05-19 12:50:19.734 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 12:50:19.734 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 12:50:19.734 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 12:50:19.827 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 12:50:19.827 +03:00 [INF] Setting authorization token
+2025-05-19 12:50:19.827 +03:00 [INF] Setting refresh token
+2025-05-19 12:50:19.827 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 12:50:19.827 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 12:50:19.827 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 12:50:21.222 +03:00 [INF] MainForm constructor called.
+2025-05-19 14:11:45.766 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:11:45.857 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:11:45.914 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:11:46.159 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:11:46.159 +03:00 [INF] Setting authorization token
+2025-05-19 14:11:46.159 +03:00 [INF] Setting refresh token
+2025-05-19 14:11:46.159 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:11:46.159 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:11:46.159 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:11:46.159 +03:00 [INF] Application starting.
+2025-05-19 14:11:57.016 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:11:57.016 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:11:57.016 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:11:57.102 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:11:57.102 +03:00 [INF] Setting authorization token
+2025-05-19 14:11:57.102 +03:00 [INF] Setting refresh token
+2025-05-19 14:11:57.102 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:11:57.102 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:11:57.102 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:11:58.224 +03:00 [INF] MainForm constructor called.
+2025-05-19 14:20:00.242 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:20:00.305 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:20:00.310 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:20:00.576 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:20:00.576 +03:00 [INF] Setting authorization token
+2025-05-19 14:20:00.576 +03:00 [INF] Setting refresh token
+2025-05-19 14:20:00.576 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:20:00.576 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:20:00.576 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:20:00.576 +03:00 [INF] Application starting.
+2025-05-19 14:25:12.861 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:25:12.911 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:25:12.919 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:25:13.125 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:25:13.136 +03:00 [INF] Setting authorization token
+2025-05-19 14:25:13.136 +03:00 [INF] Setting refresh token
+2025-05-19 14:25:13.136 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:25:13.136 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:25:13.138 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:25:13.138 +03:00 [INF] Application starting.
+2025-05-19 14:26:21.917 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:26:21.966 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:26:21.975 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:26:22.182 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:26:22.186 +03:00 [INF] Setting authorization token
+2025-05-19 14:26:22.186 +03:00 [INF] Setting refresh token
+2025-05-19 14:26:22.186 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:26:22.186 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:26:22.188 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:26:22.188 +03:00 [INF] Application starting.
+2025-05-19 14:28:02.368 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:28:02.425 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:28:02.436 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:28:02.646 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:28:02.648 +03:00 [INF] Setting authorization token
+2025-05-19 14:28:02.649 +03:00 [INF] Setting refresh token
+2025-05-19 14:28:02.649 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:28:02.649 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:28:02.650 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:28:02.650 +03:00 [INF] Application starting.
+2025-05-19 14:28:12.379 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:28:12.436 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:28:12.444 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:28:12.603 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:28:12.615 +03:00 [INF] Setting authorization token
+2025-05-19 14:28:12.617 +03:00 [INF] Setting refresh token
+2025-05-19 14:28:12.617 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:28:12.617 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:28:12.617 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:28:12.617 +03:00 [INF] Application starting.
+2025-05-19 14:28:28.379 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:28:28.427 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:28:28.442 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:28:28.658 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:28:28.658 +03:00 [INF] Setting authorization token
+2025-05-19 14:28:28.658 +03:00 [INF] Setting refresh token
+2025-05-19 14:28:28.658 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:28:28.658 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:28:28.658 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:28:28.658 +03:00 [INF] Application starting.
+2025-05-19 14:28:39.944 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:28:40.000 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:28:40.008 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:28:40.193 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:28:40.195 +03:00 [INF] Setting authorization token
+2025-05-19 14:28:40.195 +03:00 [INF] Setting refresh token
+2025-05-19 14:28:40.196 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:28:40.196 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:28:40.197 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:28:40.197 +03:00 [INF] Application starting.
+2025-05-19 14:29:00.009 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:29:00.067 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:29:00.080 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:29:00.294 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:29:00.296 +03:00 [INF] Setting authorization token
+2025-05-19 14:29:00.296 +03:00 [INF] Setting refresh token
+2025-05-19 14:29:00.296 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:29:00.296 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:29:00.297 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:29:00.297 +03:00 [INF] Application starting.
+2025-05-19 14:29:29.938 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:29:29.981 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:29:29.997 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:29:30.258 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:29:30.262 +03:00 [INF] Setting authorization token
+2025-05-19 14:29:30.262 +03:00 [INF] Setting refresh token
+2025-05-19 14:29:30.262 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:29:30.262 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:29:30.263 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:29:30.264 +03:00 [INF] Application starting.
+2025-05-19 14:29:45.046 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:29:45.095 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:29:45.095 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:29:45.324 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:29:45.324 +03:00 [INF] Setting authorization token
+2025-05-19 14:29:45.324 +03:00 [INF] Setting refresh token
+2025-05-19 14:29:45.324 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:29:45.324 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:29:45.324 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:29:45.324 +03:00 [INF] Application starting.
+2025-05-19 14:29:53.588 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:29:53.657 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:29:53.672 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:29:53.860 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:29:53.860 +03:00 [INF] Setting authorization token
+2025-05-19 14:29:53.860 +03:00 [INF] Setting refresh token
+2025-05-19 14:29:53.860 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:29:53.860 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:29:53.874 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:29:53.874 +03:00 [INF] Application starting.
+2025-05-19 14:30:00.927 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:30:01.007 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:30:01.007 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:30:01.232 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:30:01.235 +03:00 [INF] Setting authorization token
+2025-05-19 14:30:01.235 +03:00 [INF] Setting refresh token
+2025-05-19 14:30:01.235 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:30:01.235 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:30:01.235 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:30:01.235 +03:00 [INF] Application starting.
+2025-05-19 14:30:10.126 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:30:10.219 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:30:10.219 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:30:10.423 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:30:10.429 +03:00 [INF] Setting authorization token
+2025-05-19 14:30:10.429 +03:00 [INF] Setting refresh token
+2025-05-19 14:30:10.429 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:30:10.429 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:30:10.431 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:30:10.431 +03:00 [INF] Application starting.
+2025-05-19 14:31:13.654 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:31:13.763 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:31:13.765 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:31:14.001 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:31:14.007 +03:00 [INF] Setting authorization token
+2025-05-19 14:31:14.007 +03:00 [INF] Setting refresh token
+2025-05-19 14:31:14.007 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:31:14.007 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:31:14.007 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:31:14.007 +03:00 [INF] Application starting.
+2025-05-19 14:31:22.332 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:31:22.416 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:31:22.416 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:31:22.621 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:31:22.632 +03:00 [INF] Setting authorization token
+2025-05-19 14:31:22.632 +03:00 [INF] Setting refresh token
+2025-05-19 14:31:22.632 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:31:22.632 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:31:22.632 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:31:22.632 +03:00 [INF] Application starting.
+2025-05-19 14:31:27.852 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:31:27.917 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:31:27.922 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:31:28.107 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:31:28.107 +03:00 [INF] Setting authorization token
+2025-05-19 14:31:28.107 +03:00 [INF] Setting refresh token
+2025-05-19 14:31:28.107 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:31:28.107 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:31:28.107 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:31:28.107 +03:00 [INF] Application starting.
+2025-05-19 14:31:34.570 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:31:34.570 +03:00 [INF] Logging in user with username: 
+2025-05-19 14:31:34.570 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:31:34.586 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 14:31:34.682 +03:00 [ERR] Invalid username or password for user: 
+2025-05-19 14:32:29.323 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:32:29.378 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:32:29.389 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:32:29.579 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:32:29.589 +03:00 [INF] Setting authorization token
+2025-05-19 14:32:29.589 +03:00 [INF] Setting refresh token
+2025-05-19 14:32:29.589 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:32:29.589 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:32:29.592 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:32:29.592 +03:00 [INF] Application starting.
+2025-05-19 14:32:43.531 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:32:43.579 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:32:43.595 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:32:43.780 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:32:43.780 +03:00 [INF] Setting authorization token
+2025-05-19 14:32:43.780 +03:00 [INF] Setting refresh token
+2025-05-19 14:32:43.780 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:32:43.780 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:32:43.780 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:32:43.780 +03:00 [INF] Application starting.
+2025-05-19 14:32:53.848 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:32:53.925 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:32:53.928 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:32:54.121 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:32:54.131 +03:00 [INF] Setting authorization token
+2025-05-19 14:32:54.131 +03:00 [INF] Setting refresh token
+2025-05-19 14:32:54.131 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:32:54.131 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:32:54.131 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:32:54.131 +03:00 [INF] Application starting.
+2025-05-19 14:33:01.092 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:33:01.141 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:33:01.141 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:33:01.324 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:33:01.326 +03:00 [INF] Setting authorization token
+2025-05-19 14:33:01.326 +03:00 [INF] Setting refresh token
+2025-05-19 14:33:01.326 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:33:01.326 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:33:01.326 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:33:01.326 +03:00 [INF] Application starting.
+2025-05-19 14:33:07.802 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:33:07.857 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:33:07.865 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:33:08.062 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:33:08.062 +03:00 [INF] Setting authorization token
+2025-05-19 14:33:08.062 +03:00 [INF] Setting refresh token
+2025-05-19 14:33:08.062 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:33:08.062 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:33:08.062 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:33:08.062 +03:00 [INF] Application starting.
+2025-05-19 14:33:21.324 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:33:21.387 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:33:21.398 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:33:21.637 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:33:21.637 +03:00 [INF] Setting authorization token
+2025-05-19 14:33:21.645 +03:00 [INF] Setting refresh token
+2025-05-19 14:33:21.645 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:33:21.645 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:33:21.645 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:33:21.645 +03:00 [INF] Application starting.
+2025-05-19 14:34:37.676 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:34:37.740 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:34:37.756 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:34:38.007 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:34:38.023 +03:00 [INF] Setting authorization token
+2025-05-19 14:34:38.023 +03:00 [INF] Setting refresh token
+2025-05-19 14:34:38.023 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:34:38.023 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:34:38.023 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:34:38.023 +03:00 [INF] Application starting.
+2025-05-19 14:35:10.206 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:35:10.253 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:35:10.269 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:35:10.481 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:35:10.491 +03:00 [INF] Setting authorization token
+2025-05-19 14:35:10.491 +03:00 [INF] Setting refresh token
+2025-05-19 14:35:10.491 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:35:10.491 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:35:10.492 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:35:10.492 +03:00 [INF] Application starting.
+2025-05-19 14:36:49.415 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:36:49.466 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:36:49.473 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:36:49.696 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:36:49.699 +03:00 [INF] Setting authorization token
+2025-05-19 14:36:49.699 +03:00 [INF] Setting refresh token
+2025-05-19 14:36:49.699 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:36:49.699 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:36:49.701 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:36:49.701 +03:00 [INF] Application starting.
+2025-05-19 14:37:12.114 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:37:12.164 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:37:12.175 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:37:12.360 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:37:12.362 +03:00 [INF] Setting authorization token
+2025-05-19 14:37:12.362 +03:00 [INF] Setting refresh token
+2025-05-19 14:37:12.362 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:37:12.362 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:37:12.363 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:37:12.363 +03:00 [INF] Application starting.
+2025-05-19 14:43:42.575 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:43:42.623 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:43:42.655 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:43:42.865 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:43:42.865 +03:00 [INF] Setting authorization token
+2025-05-19 14:43:42.865 +03:00 [INF] Setting refresh token
+2025-05-19 14:43:42.865 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:43:42.865 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:43:42.865 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:43:42.865 +03:00 [INF] Application starting.
+2025-05-19 14:59:28.876 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 14:59:28.940 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 14:59:28.955 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 14:59:29.175 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 14:59:29.175 +03:00 [INF] Setting authorization token
+2025-05-19 14:59:29.175 +03:00 [INF] Setting refresh token
+2025-05-19 14:59:29.175 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 14:59:29.175 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 14:59:29.175 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 14:59:29.175 +03:00 [INF] Application starting.
+2025-05-19 15:04:43.678 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:04:43.755 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:04:43.761 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:04:43.964 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:04:43.965 +03:00 [INF] Setting authorization token
+2025-05-19 15:04:43.965 +03:00 [INF] Setting refresh token
+2025-05-19 15:04:43.965 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:04:43.965 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:04:43.965 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:04:43.965 +03:00 [INF] Application starting.
+2025-05-19 15:04:49.332 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:04:49.332 +03:00 [INF] Logging in user with username: fd
+2025-05-19 15:04:49.332 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:04:49.348 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:04:49.446 +03:00 [ERR] Invalid username or password for user: fd
+2025-05-19 15:05:01.120 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:05:01.120 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:05:01.120 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:05:01.199 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:05:01.199 +03:00 [INF] Setting authorization token
+2025-05-19 15:05:01.199 +03:00 [INF] Setting refresh token
+2025-05-19 15:05:01.199 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:05:01.199 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:05:01.199 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:05:02.454 +03:00 [INF] MainForm constructor called.
+2025-05-19 15:05:35.032 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:05:35.091 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:05:35.100 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:05:35.319 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:05:35.321 +03:00 [INF] Setting authorization token
+2025-05-19 15:05:35.322 +03:00 [INF] Setting refresh token
+2025-05-19 15:05:35.322 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:05:35.322 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:05:35.322 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:05:35.322 +03:00 [INF] Application starting.
+2025-05-19 15:08:58.755 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:08:58.834 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:08:58.852 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:08:59.102 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:08:59.102 +03:00 [INF] Setting authorization token
+2025-05-19 15:08:59.102 +03:00 [INF] Setting refresh token
+2025-05-19 15:08:59.102 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:08:59.102 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:08:59.102 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:08:59.102 +03:00 [INF] Application starting.
+2025-05-19 15:09:20.593 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:09:20.593 +03:00 [INF] Adding new user with username: Ahmed
+2025-05-19 15:09:20.593 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:09:20.641 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:09:20.720 +03:00 [ERR] UserName or Email already exists for username: Ahmed
+2025-05-19 15:11:34.648 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:11:34.717 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:11:34.725 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:11:34.959 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:11:34.969 +03:00 [INF] Setting authorization token
+2025-05-19 15:11:34.969 +03:00 [INF] Setting refresh token
+2025-05-19 15:11:34.969 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:11:34.969 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:11:34.969 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:11:34.969 +03:00 [INF] Application starting.
+2025-05-19 15:13:54.559 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:13:54.611 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:13:54.633 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:13:54.844 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:13:54.847 +03:00 [INF] Setting authorization token
+2025-05-19 15:13:54.847 +03:00 [INF] Setting refresh token
+2025-05-19 15:13:54.847 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:13:54.847 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:13:54.848 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:13:54.848 +03:00 [INF] Application starting.
+2025-05-19 15:15:01.425 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:15:01.479 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:15:01.485 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:15:01.719 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:15:01.719 +03:00 [INF] Setting authorization token
+2025-05-19 15:15:01.719 +03:00 [INF] Setting refresh token
+2025-05-19 15:15:01.719 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:15:01.719 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:15:01.719 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:15:01.719 +03:00 [INF] Application starting.
+2025-05-19 15:15:50.208 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:15:50.261 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:15:50.269 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:15:50.463 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:15:50.463 +03:00 [INF] Setting authorization token
+2025-05-19 15:15:50.463 +03:00 [INF] Setting refresh token
+2025-05-19 15:15:50.463 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:15:50.463 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:15:50.463 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:15:50.463 +03:00 [INF] Application starting.
+2025-05-19 15:18:26.843 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:18:26.906 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:18:26.953 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:18:27.189 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:18:27.189 +03:00 [INF] Setting authorization token
+2025-05-19 15:18:27.189 +03:00 [INF] Setting refresh token
+2025-05-19 15:18:27.189 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:18:27.189 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:18:27.189 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:18:27.189 +03:00 [INF] Application starting.
+2025-05-19 15:18:33.315 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:18:33.315 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:18:33.315 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:18:33.394 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:18:33.394 +03:00 [INF] Setting authorization token
+2025-05-19 15:18:33.394 +03:00 [INF] Setting refresh token
+2025-05-19 15:18:33.394 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:18:33.394 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:18:33.394 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:18:34.343 +03:00 [INF] MainForm constructor called.
+2025-05-19 15:19:42.789 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:19:42.845 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:19:42.849 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:19:43.168 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:19:43.171 +03:00 [INF] Setting authorization token
+2025-05-19 15:19:43.171 +03:00 [INF] Setting refresh token
+2025-05-19 15:19:43.172 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:19:43.172 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:19:43.172 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:19:43.173 +03:00 [INF] Application starting.
+2025-05-19 15:21:10.338 +03:00 [INF] Application starting.
+2025-05-19 15:22:21.895 +03:00 [INF] Application starting.
+2025-05-19 15:22:27.763 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:22:27.780 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:22:27.780 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:22:27.952 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:22:27.952 +03:00 [INF] Setting authorization token
+2025-05-19 15:22:27.952 +03:00 [INF] Setting refresh token
+2025-05-19 15:22:27.952 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:22:27.952 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:22:27.952 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:22:28.470 +03:00 [INF] MainForm constructor called.
+2025-05-19 15:22:52.438 +03:00 [INF] Application starting.
+2025-05-19 15:22:56.507 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:22:56.523 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:22:56.523 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:22:56.687 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:22:56.699 +03:00 [INF] Setting authorization token
+2025-05-19 15:22:56.699 +03:00 [INF] Setting refresh token
+2025-05-19 15:22:56.699 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:22:56.699 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:22:56.699 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:22:57.122 +03:00 [INF] MainForm constructor called.
+2025-05-19 15:23:44.330 +03:00 [INF] Application starting.
+2025-05-19 15:23:57.855 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:23:57.867 +03:00 [INF] Logging in user with username: fsd
+2025-05-19 15:23:57.867 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:23:57.994 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:23:58.042 +03:00 [ERR] Invalid username or password for user: fsd
+2025-05-19 15:24:07.387 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:24:07.387 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:24:07.387 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:24:07.472 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:24:07.472 +03:00 [INF] Setting authorization token
+2025-05-19 15:24:07.472 +03:00 [INF] Setting refresh token
+2025-05-19 15:24:07.472 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:24:07.472 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:24:07.474 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:24:09.308 +03:00 [INF] MainForm constructor called.
+2025-05-19 15:25:13.276 +03:00 [INF] Application starting.
+2025-05-19 15:25:18.332 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:25:18.349 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:25:18.363 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:25:18.556 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:25:18.556 +03:00 [INF] Setting authorization token
+2025-05-19 15:25:18.556 +03:00 [INF] Setting refresh token
+2025-05-19 15:25:18.556 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:25:18.556 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:25:18.556 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:25:19.044 +03:00 [INF] MainForm constructor called.
+2025-05-19 15:25:40.642 +03:00 [INF] Application starting.
+2025-05-19 15:25:45.556 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:25:45.574 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:25:45.574 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:25:45.740 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:25:45.740 +03:00 [INF] Setting authorization token
+2025-05-19 15:25:45.740 +03:00 [INF] Setting refresh token
+2025-05-19 15:25:45.740 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:25:45.740 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:25:45.740 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:25:46.207 +03:00 [INF] MainForm constructor called.
+2025-05-19 15:26:49.294 +03:00 [INF] Application starting.
+2025-05-19 15:26:54.491 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:26:54.508 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:26:54.523 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:26:54.724 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:26:54.724 +03:00 [INF] Setting authorization token
+2025-05-19 15:26:54.724 +03:00 [INF] Setting refresh token
+2025-05-19 15:26:54.724 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:26:54.724 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:26:54.724 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:27:22.539 +03:00 [INF] Application starting.
+2025-05-19 15:27:29.358 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:27:29.374 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:27:29.374 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:27:29.568 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:27:29.570 +03:00 [INF] Setting authorization token
+2025-05-19 15:27:29.570 +03:00 [INF] Setting refresh token
+2025-05-19 15:27:29.570 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:27:29.570 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:27:29.570 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:27:52.882 +03:00 [INF] Application starting.
+2025-05-19 15:27:58.718 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:27:58.734 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:27:58.750 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:27:58.934 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:27:58.934 +03:00 [INF] Setting authorization token
+2025-05-19 15:27:58.934 +03:00 [INF] Setting refresh token
+2025-05-19 15:27:58.934 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:27:58.934 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:27:58.934 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:28:24.777 +03:00 [INF] Application starting.
+2025-05-19 15:28:30.621 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:28:30.638 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:28:30.638 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:28:30.844 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:28:30.844 +03:00 [INF] Setting authorization token
+2025-05-19 15:28:30.844 +03:00 [INF] Setting refresh token
+2025-05-19 15:28:30.844 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:28:30.844 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:28:30.844 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:28:56.966 +03:00 [INF] Application starting.
+2025-05-19 15:29:01.684 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:29:01.698 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:29:01.714 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:29:01.876 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:29:01.889 +03:00 [INF] Setting authorization token
+2025-05-19 15:29:01.891 +03:00 [INF] Setting refresh token
+2025-05-19 15:29:01.891 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:29:01.891 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:29:01.891 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:29:45.321 +03:00 [INF] Application starting.
+2025-05-19 15:29:50.418 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:29:50.434 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:29:50.450 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:29:50.624 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:29:50.624 +03:00 [INF] Setting authorization token
+2025-05-19 15:29:50.624 +03:00 [INF] Setting refresh token
+2025-05-19 15:29:50.624 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:29:50.624 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:29:50.624 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:30:45.260 +03:00 [INF] Application starting.
+2025-05-19 15:30:49.196 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:30:49.212 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:30:49.228 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:30:49.439 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:30:49.439 +03:00 [INF] Setting authorization token
+2025-05-19 15:30:49.439 +03:00 [INF] Setting refresh token
+2025-05-19 15:30:49.439 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:30:49.439 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:30:49.439 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 15:33:40.125 +03:00 [INF] Application starting.
+2025-05-19 15:34:21.317 +03:00 [INF] Application starting.
+2025-05-19 15:34:34.471 +03:00 [INF] Application starting.
+2025-05-19 15:34:57.577 +03:00 [INF] Application starting.
+2025-05-19 15:35:05.658 +03:00 [INF] Application starting.
+2025-05-19 15:35:13.245 +03:00 [INF] Application starting.
+2025-05-19 15:35:58.797 +03:00 [INF] Application starting.
+2025-05-19 15:36:51.786 +03:00 [INF] Application starting.
+2025-05-19 15:39:10.129 +03:00 [INF] Application starting.
+2025-05-19 15:39:20.643 +03:00 [INF] Application starting.
+2025-05-19 15:39:27.257 +03:00 [INF] Application starting.
+2025-05-19 15:39:34.792 +03:00 [INF] Application starting.
+2025-05-19 15:39:46.080 +03:00 [INF] Application starting.
+2025-05-19 15:39:53.377 +03:00 [INF] Application starting.
+2025-05-19 15:40:00.398 +03:00 [INF] Application starting.
+2025-05-19 15:40:29.113 +03:00 [INF] Application starting.
+2025-05-19 15:40:56.837 +03:00 [INF] Application starting.
+2025-05-19 15:41:18.026 +03:00 [INF] Application starting.
+2025-05-19 15:43:58.299 +03:00 [INF] Application starting.
+2025-05-19 15:46:17.187 +03:00 [INF] Application starting.
+2025-05-19 15:46:25.977 +03:00 [INF] Application starting.
+2025-05-19 15:47:06.760 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:47:06.776 +03:00 [INF] Adding new user with username: Ali
+2025-05-19 15:47:06.776 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:47:06.877 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:47:06.919 +03:00 [ERR] UserName or Email already exists for username: Ali
+2025-05-19 15:47:13.880 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:47:13.880 +03:00 [INF] Adding new user with username: Ali5
+2025-05-19 15:47:13.880 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:47:13.895 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:47:13.912 +03:00 [ERR] UserName or Email already exists for username: Ali5
+2025-05-19 15:47:20.643 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:47:20.643 +03:00 [INF] Adding new user with username: Ali5
+2025-05-19 15:47:20.643 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:47:20.659 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:47:20.675 +03:00 [ERR] UserName or Email already exists for username: Ali5
+2025-05-19 15:47:30.642 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:47:30.642 +03:00 [INF] Adding new user with username: ss
+2025-05-19 15:47:30.642 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:47:30.648 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:47:30.663 +03:00 [ERR] UserName or Email already exists for username: ss
+2025-05-19 15:48:31.690 +03:00 [INF] Application starting.
+2025-05-19 15:48:51.839 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:48:51.860 +03:00 [INF] Adding new user with username: fdsfsd
+2025-05-19 15:48:51.868 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:48:51.979 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:48:52.026 +03:00 [ERR] UserName or Email already exists for username: fdsfsd
+2025-05-19 15:50:51.210 +03:00 [INF] Application starting.
+2025-05-19 15:51:01.255 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:51:01.271 +03:00 [INF] Adding new user with username: aaaa
+2025-05-19 15:51:01.271 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:51:01.519 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:51:01.570 +03:00 [ERR] UserName or Email already exists for username: aaaa
+2025-05-19 15:53:14.776 +03:00 [INF] Application starting.
+2025-05-19 15:53:23.389 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:53:23.405 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:53:23.405 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:53:23.542 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:53:23.590 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:55:02.933 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:55:02.933 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:55:02.933 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:55:02.981 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:55:03.012 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:55:11.463 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:55:11.463 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:55:11.463 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:55:11.479 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:55:11.495 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:56:36.593 +03:00 [INF] Application starting.
+2025-05-19 15:56:41.870 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:56:41.877 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:56:41.899 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:56:42.150 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:56:42.197 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:57:11.296 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:57:11.296 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:57:11.296 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:57:11.328 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:57:11.360 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:57:13.277 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:57:13.277 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:57:13.277 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:57:13.290 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:57:13.306 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:57:13.933 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:57:13.933 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:57:13.933 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:57:13.936 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:57:13.966 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:57:14.433 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:57:14.433 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:57:14.433 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:57:14.449 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:57:14.477 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:57:14.977 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:57:14.977 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:57:14.977 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:57:14.993 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:57:15.009 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:57:15.559 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:57:15.559 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:57:15.559 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:57:15.575 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:57:15.607 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:57:16.094 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:57:16.094 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:57:16.094 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:57:16.109 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:57:16.141 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:57:16.696 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:57:16.696 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:57:16.696 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:57:16.714 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:57:16.727 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:58:46.347 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:58:46.347 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:58:46.347 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:58:46.490 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:58:46.521 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:58:48.508 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:58:48.508 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:58:48.508 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:58:48.526 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:58:48.561 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:58:49.508 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:58:49.508 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:58:49.508 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:58:49.524 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:58:49.539 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:58:50.404 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:58:50.404 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 15:58:50.404 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 15:58:50.411 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:58:50.443 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 15:59:40.738 +03:00 [INF] Application starting.
+2025-05-19 15:59:49.764 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:59:49.780 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:59:49.780 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:59:51.182 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 15:59:51.235 +03:00 [ERR] Invalid username or password for user: Ahmed
+2025-05-19 15:59:59.226 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 15:59:59.226 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 15:59:59.226 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 15:59:59.567 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 15:59:59.567 +03:00 [INF] Setting authorization token
+2025-05-19 15:59:59.567 +03:00 [INF] Setting refresh token
+2025-05-19 15:59:59.567 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 15:59:59.567 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 15:59:59.567 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 16:00:03.262 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:00:03.262 +03:00 [INF] Logging out user with ID: 0
+2025-05-19 16:00:03.262 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-19 16:00:11.323 +03:00 [INF] Application starting.
+2025-05-19 16:00:22.642 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:00:22.658 +03:00 [INF] Adding new user with username: fds
+2025-05-19 16:00:22.674 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:00:22.769 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:00:22.816 +03:00 [ERR] UserName or Email already exists for username: fds
+2025-05-19 16:00:27.412 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:00:27.412 +03:00 [INF] Adding new user with username: fds
+2025-05-19 16:00:27.412 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:00:27.432 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:00:27.448 +03:00 [ERR] UserName or Email already exists for username: fds
+2025-05-19 16:01:40.587 +03:00 [INF] Application starting.
+2025-05-19 16:01:52.299 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:01:52.315 +03:00 [INF] Adding new user with username: fd
+2025-05-19 16:01:52.315 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:01:56.261 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:01:56.261 +03:00 [INF] Adding new user with username: fd
+2025-05-19 16:01:56.261 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:02:18.760 +03:00 [INF] Application starting.
+2025-05-19 16:02:26.643 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:02:26.659 +03:00 [INF] Adding new user with username: ffff
+2025-05-19 16:02:26.659 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:02:26.833 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:02:26.880 +03:00 [ERR] UserName or Email already exists for username: ffff
+2025-05-19 16:03:07.464 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:03:07.464 +03:00 [INF] Adding new user with username: ffffsdfsdfndskfnsdlkfnsdlknf
+2025-05-19 16:03:07.464 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:03:07.496 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:03:07.512 +03:00 [ERR] UserName or Email already exists for username: ffffsdfsdfndskfnsdlkfnsdlknf
+2025-05-19 16:04:50.519 +03:00 [INF] Application starting.
+2025-05-19 16:04:57.544 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:04:57.556 +03:00 [INF] Adding new user with username: fdsfds
+2025-05-19 16:04:57.572 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:04:57.693 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:04:57.732 +03:00 [ERR] UserName or Email already exists for username: fdsfds
+2025-05-19 16:05:17.044 +03:00 [INF] Application starting.
+2025-05-19 16:05:25.685 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:05:25.705 +03:00 [INF] Adding new user with username: dsfsd
+2025-05-19 16:05:25.705 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:05:25.813 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:05:25.861 +03:00 [ERR] UserName or Email already exists for username: dsfsd
+2025-05-19 16:06:33.545 +03:00 [INF] Application starting.
+2025-05-19 16:06:38.990 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:06:39.006 +03:00 [INF] Adding new user with username: rtwt
+2025-05-19 16:06:39.012 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:06:39.140 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:06:39.188 +03:00 [ERR] UserName or Email already exists for username: rtwt
+2025-05-19 16:06:53.535 +03:00 [INF] Application starting.
+2025-05-19 16:07:00.780 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:07:00.796 +03:00 [INF] Adding new user with username: fsd
+2025-05-19 16:07:00.796 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:07:00.908 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:07:00.954 +03:00 [ERR] UserName or Email already exists for username: fsd
+2025-05-19 16:07:10.924 +03:00 [INF] Application starting.
+2025-05-19 16:07:16.905 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:07:16.919 +03:00 [INF] Adding new user with username: fdfd
+2025-05-19 16:07:16.934 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:07:17.032 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:07:17.078 +03:00 [ERR] UserName or Email already exists for username: fdfd
+2025-05-19 16:07:58.206 +03:00 [INF] Application starting.
+2025-05-19 16:08:04.145 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:08:04.161 +03:00 [INF] Adding new user with username: fsdfsd
+2025-05-19 16:08:04.177 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:08:04.308 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:08:04.340 +03:00 [ERR] UserName or Email already exists for username: fsdfsd
+2025-05-19 16:16:15.907 +03:00 [INF] Application starting.
+2025-05-19 16:16:24.949 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:16:24.965 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 16:16:24.977 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 16:16:26.561 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 16:16:26.563 +03:00 [INF] Setting authorization token
+2025-05-19 16:16:26.563 +03:00 [INF] Setting refresh token
+2025-05-19 16:16:26.563 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 16:16:26.563 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 16:16:26.563 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 16:16:34.633 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:16:34.633 +03:00 [INF] Logging out user with ID: 0
+2025-05-19 16:16:34.633 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-19 16:16:40.378 +03:00 [INF] Application starting.
+2025-05-19 16:17:06.935 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:17:06.951 +03:00 [INF] Adding new user with username: adsfd
+2025-05-19 16:17:06.951 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:17:07.061 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:17:07.116 +03:00 [ERR] UserName or Email already exists for username: adsfd
+2025-05-19 16:17:14.862 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:17:14.862 +03:00 [INF] Adding new user with username: adsfd
+2025-05-19 16:17:14.862 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:17:14.877 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:17:14.898 +03:00 [ERR] UserName or Email already exists for username: adsfd
+2025-05-19 16:17:17.483 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:17:17.483 +03:00 [INF] Adding new user with username: adsfd
+2025-05-19 16:17:17.483 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:17:17.499 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:17:17.531 +03:00 [ERR] UserName or Email already exists for username: adsfd
+2025-05-19 16:17:18.410 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:17:18.410 +03:00 [INF] Adding new user with username: adsfd
+2025-05-19 16:17:18.410 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:17:18.411 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:17:18.443 +03:00 [ERR] UserName or Email already exists for username: adsfd
+2025-05-19 16:22:56.151 +03:00 [INF] Application starting.
+2025-05-19 16:23:20.090 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:23:20.114 +03:00 [INF] Adding new user with username: afdsfae
+2025-05-19 16:23:20.122 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:23:20.361 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:23:20.409 +03:00 [ERR] UserName or Email already exists for username: afdsfae
+2025-05-19 16:24:10.611 +03:00 [INF] Application starting.
+2025-05-19 16:24:18.854 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:24:18.880 +03:00 [INF] Logging in user with username: sfd
+2025-05-19 16:24:18.888 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 16:24:20.004 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:24:20.048 +03:00 [ERR] Invalid username or password for user: sfd
+2025-05-19 16:24:29.384 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:24:29.384 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-19 16:24:29.384 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-19 16:24:29.769 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-19 16:24:29.769 +03:00 [INF] Setting authorization token
+2025-05-19 16:24:29.769 +03:00 [INF] Setting refresh token
+2025-05-19 16:24:29.769 +03:00 [INF] Setting current user ID from JWT
+2025-05-19 16:24:29.769 +03:00 [INF] Extracting user ID from JWT
+2025-05-19 16:24:29.769 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-19 16:24:32.320 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:24:32.320 +03:00 [INF] Logging out user with ID: 0
+2025-05-19 16:24:32.320 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-19 16:24:36.517 +03:00 [INF] Application starting.
+2025-05-19 16:24:56.282 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-19 16:24:56.298 +03:00 [INF] Adding new user with username: saad
+2025-05-19 16:24:56.310 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-05-19 16:24:56.409 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-19 16:24:56.460 +03:00 [ERR] UserName or Email already exists for username: saad

@@ -23,8 +23,8 @@ namespace ShoppingAppAPI.Controllers
         }
 
         [HttpGet("getUser")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<UserDto>> GetUser(int id)
         {
@@ -33,14 +33,20 @@ namespace ShoppingAppAPI.Controllers
             if (user == null)
             {
                 _logger.LogWarning($"{_prefix}There is no user with this id");
-                return NotFound();
+                return NotFound(new ProblemDetails
+                {
+                    Title = "User not found",
+                    Detail = "There is no user with this id",
+                    Status = StatusCodes.Status404NotFound,
+                    Instance = HttpContext.Request.Path
+                });
             }
             return Ok(user);
         }
 
         [HttpPut("UpdateUser")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<UserDto>> UpdateUser(UserDto user, string oldPassword)
         {
@@ -49,7 +55,13 @@ namespace ShoppingAppAPI.Controllers
             if (UpdatedUser == null)
             {
                 _logger.LogWarning($"{_prefix}There is no user with this id or wrong password or you are not logged in");
-                return NotFound("There is no user with this id or wrong password or you are not logged in");
+                return NotFound(new ProblemDetails
+                {
+                    Title = "User update failed",
+                    Detail = "There is no user with this id or wrong password or you are not logged in",
+                    Status = StatusCodes.Status404NotFound,
+                    Instance = HttpContext.Request.Path
+                });
             }
 
             return Ok(UpdatedUser);
@@ -57,7 +69,7 @@ namespace ShoppingAppAPI.Controllers
 
         [HttpDelete("DeleteUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult> DeleteUser(int id)
         {
@@ -66,7 +78,13 @@ namespace ShoppingAppAPI.Controllers
             if (result == false)
             {
                 _logger.LogWarning($"{_prefix}There is no user with this id");
-                return NotFound("There is no user with this id");
+                return NotFound(new ProblemDetails
+                {
+                    Title = "User not found",
+                    Detail = "There is no user with this id",
+                    Status = StatusCodes.Status404NotFound,
+                    Instance = HttpContext.Request.Path
+                });
             }
             _logger.LogInformation($"{_prefix}User deleted successfully");
             return Ok();
@@ -74,17 +92,24 @@ namespace ShoppingAppAPI.Controllers
 
         [AllowAnonymous]
         [HttpPost("AddUser")]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(UserDto))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ProblemDetails))]
         public async Task<ActionResult<UserDto>> AddUser(UserDto user)
         {
+
             _logger.LogInformation($"{_prefix}AddUserAPI");
             UserDto? newUser = await _usersService.AddUserAsync(user);
 
             if (newUser == null)
             {
                 _logger.LogWarning($"{_prefix}User was not added");
-                return BadRequest("UserName or Email already exists");
+                return BadRequest(new ProblemDetails
+                {
+                    Title = "User creation failed",
+                    Detail = "UserName or Email already exists",
+                    Status = StatusCodes.Status400BadRequest,
+                    Instance = HttpContext.Request.Path
+                });
             }
             _logger.LogInformation($"{_prefix}Added user with id: {user.Id}");
             return CreatedAtAction(nameof(GetUser), new { id = newUser.Id }, newUser);

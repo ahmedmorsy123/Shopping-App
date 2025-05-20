@@ -21,8 +21,8 @@ namespace ShoppingAppAPI.Controllers
         }
 
         [HttpGet("GetUserOrders")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<OrderDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<IEnumerable<OrderDto>>> GetUserOrders(int userId)
         {
@@ -32,14 +32,20 @@ namespace ShoppingAppAPI.Controllers
             if (orders == null)
             {
                 _logger.LogWarning($"{_prefix}There is no orders for this user");
-                return NotFound("There is no orders for this user");
+                return NotFound(new ProblemDetails
+                {
+                    Status = StatusCodes.Status404NotFound,
+                    Title = "Orders Not Found",
+                    Detail = "There are no orders for this user.",
+                    Instance = HttpContext.Request.Path
+                });
             }
             return Ok(orders);
         }
 
         [HttpGet("GetOrderById")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<OrderDto>> GetOrderById(int orderId)
         {
@@ -48,14 +54,20 @@ namespace ShoppingAppAPI.Controllers
             if (order == null)
             {
                 _logger.LogWarning($"{_prefix}There is no order with this id");
-                return NotFound();
+                return NotFound(new ProblemDetails
+                {
+                    Status = StatusCodes.Status404NotFound,
+                    Title = "Order Not Found",
+                    Detail = "There is no order with this id.",
+                    Instance = HttpContext.Request.Path
+                });
             }
             return Ok(order);
         }
 
         [HttpPost("MakeOrders")]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(OrderDto))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<OrderDto>> AddOrders(int userId, string shippingAddress, string paymentMethod)
         {
@@ -66,7 +78,13 @@ namespace ShoppingAppAPI.Controllers
             if (order == null)
             {
                 _logger.LogError($"{_prefix}Order was not created");
-                return BadRequest("Order was not created");
+                return BadRequest(new ProblemDetails
+                {
+                    Status = StatusCodes.Status400BadRequest,
+                    Title = "Order Creation Failed",
+                    Detail = "Order was not created.",
+                    Instance = HttpContext.Request.Path
+                });
             }
 
             return CreatedAtAction(nameof(GetUserOrders), new { id = order.Id }, order);
@@ -74,7 +92,7 @@ namespace ShoppingAppAPI.Controllers
 
         [HttpDelete("CancelOrder")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult> CancelOrder(int orderId)
         {
@@ -82,8 +100,14 @@ namespace ShoppingAppAPI.Controllers
             var result = await _ordersService.GetOrderByIdAsync(orderId);
             if (result == null)
             {
-                _logger.LogWarning($"{_prefix}Thre is no order with this id");
-                return NotFound("Thre is no order with this id");
+                _logger.LogWarning($"{_prefix}There is no order with this id");
+                return NotFound(new ProblemDetails
+                {
+                    Status = StatusCodes.Status404NotFound,
+                    Title = "Order Not Found",
+                    Detail = "There is no order with this id.",
+                    Instance = HttpContext.Request.Path
+                });
             }
             await _ordersService.CancelOrderAsync(orderId);
             return Ok();

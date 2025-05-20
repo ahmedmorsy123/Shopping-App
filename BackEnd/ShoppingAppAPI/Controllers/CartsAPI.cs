@@ -21,8 +21,8 @@ namespace ShoppingAppAPI.Controllers
         }
 
         [HttpGet("GetUserCart")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CartDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<CartDto>> GetUserCart(int UserId)
         {
@@ -32,13 +32,19 @@ namespace ShoppingAppAPI.Controllers
             if (cart == null)
             {
                 _logger.LogWarning($"{_prefix}There is no cart for this user");
-                return NotFound("Thre is no cart for this user");
+                return NotFound(new ProblemDetails
+                {
+                    Status = StatusCodes.Status404NotFound,
+                    Title = "Cart Not Found",
+                    Detail = "There is no cart for this user.",
+                    Instance = HttpContext.Request.Path
+                });
             }
             return Ok(cart);
         }
 
         [HttpPut("UpdateCart")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CartDto))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<CartDto>> UpdateCart(CartDto cart)
         {
@@ -60,7 +66,7 @@ namespace ShoppingAppAPI.Controllers
         }
 
         [HttpPost("AddCart")]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CartDto))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<CartDto>> AddCart(CartDto cart)
         {
@@ -69,12 +75,12 @@ namespace ShoppingAppAPI.Controllers
             int id = await _cartsService.AddCartAsync(cart);
             cart.CartId = id;
             _logger.LogInformation($"{_prefix}Cart was added with id {id}");
-            return CreatedAtAction(nameof(GetUserCart), new { id = cart.UserId }, cart);
+            return CreatedAtAction(nameof(GetUserCart), new { UserId = cart.UserId }, cart);
         }
 
         [HttpDelete("DeleteCart")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult> DeleteCart(int cartId)
         {
@@ -83,7 +89,13 @@ namespace ShoppingAppAPI.Controllers
             if (result == false)
             {
                 _logger.LogWarning($"{_prefix}Cart was not found");
-                return NotFound("Thre is no user with this id");
+                return NotFound(new ProblemDetails
+                {
+                    Status = StatusCodes.Status404NotFound,
+                    Title = "Cart Not Found",
+                    Detail = "There is no cart with this id.",
+                    Instance = HttpContext.Request.Path
+                });
             }
             _logger.LogInformation($"{_prefix}Cart was deleted successfully");
             return Ok();

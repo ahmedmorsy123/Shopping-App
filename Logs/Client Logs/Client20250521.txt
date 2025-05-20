@@ -1,0 +1,458 @@
+2025-05-21 00:18:09.020 +03:00 [INF] Application starting.
+2025-05-21 00:18:11.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:18:11.231 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:18:11.262 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:19:57.746 +03:00 [INF] Application starting.
+2025-05-21 00:20:00.318 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:20:00.334 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:20:00.334 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:20:49.803 +03:00 [INF] Application starting.
+2025-05-21 00:20:51.934 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:20:51.951 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:20:51.965 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:20:52.146 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:21:48.813 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:21:48.813 +03:00 [INF] Clearing authorization token
+2025-05-21 00:21:55.344 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:21:55.344 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:21:55.344 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:22:31.545 +03:00 [INF] Application starting.
+2025-05-21 00:22:33.596 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:22:33.597 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:22:33.613 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:22:33.758 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:22:33.771 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:22:33.803 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:22:33.803 +03:00 [INF] Clearing authorization token
+2025-05-21 00:22:47.256 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:22:47.256 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:22:47.256 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:22:47.271 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:22:47.271 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:22:47.287 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:22:47.287 +03:00 [INF] Clearing authorization token
+2025-05-21 00:23:00.659 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:23:00.659 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:23:00.659 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:23:00.675 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:23:00.675 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:23:00.690 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:23:00.690 +03:00 [INF] Clearing authorization token
+2025-05-21 00:24:27.168 +03:00 [INF] Application starting.
+2025-05-21 00:24:30.015 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:24:30.031 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:24:30.031 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:24:30.126 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:24:30.158 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:24:30.190 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:24:30.190 +03:00 [INF] Clearing authorization token
+2025-05-21 00:24:33.584 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:24:33.584 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:24:33.584 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:24:33.600 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:24:33.600 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:24:33.616 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:24:33.616 +03:00 [INF] Clearing authorization token
+2025-05-21 00:24:39.500 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:24:39.500 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:24:39.500 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:24:39.521 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:24:39.521 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:24:39.547 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:24:39.547 +03:00 [INF] Clearing authorization token
+2025-05-21 00:25:15.843 +03:00 [INF] Application starting.
+2025-05-21 00:25:19.552 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:25:19.568 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:25:19.568 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:25:19.663 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:25:19.684 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:25:19.732 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:25:19.732 +03:00 [INF] Clearing authorization token
+2025-05-21 00:25:23.272 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:25:23.272 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:25:23.272 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:25:23.299 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:25:23.299 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:25:23.320 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:25:23.320 +03:00 [INF] Clearing authorization token
+2025-05-21 00:25:35.063 +03:00 [INF] Application starting.
+2025-05-21 00:25:37.583 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:25:37.599 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:25:37.599 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:25:37.720 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:25:37.741 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:25:37.777 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:25:37.777 +03:00 [INF] Clearing authorization token
+2025-05-21 00:25:42.787 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:25:42.787 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:25:42.787 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:25:42.803 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:25:42.803 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:25:42.841 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:25:42.841 +03:00 [INF] Clearing authorization token
+2025-05-21 00:26:18.694 +03:00 [INF] Application starting.
+2025-05-21 00:26:20.485 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:26:20.501 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:26:20.517 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:26:20.580 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:26:20.596 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:26:20.648 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:26:20.648 +03:00 [INF] Clearing authorization token
+2025-05-21 00:26:46.567 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:26:46.567 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:26:46.567 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:26:46.583 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:26:46.583 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:26:46.614 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:26:46.614 +03:00 [INF] Clearing authorization token
+2025-05-21 00:26:48.438 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:26:48.438 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:26:48.438 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:26:48.458 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:26:48.458 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:26:48.494 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:26:48.494 +03:00 [INF] Clearing authorization token
+2025-05-21 00:27:16.594 +03:00 [INF] Application starting.
+2025-05-21 00:27:19.690 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:27:19.699 +03:00 [INF] Logging in user with username: sfd
+2025-05-21 00:27:19.717 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:27:21.243 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-21 00:27:21.259 +03:00 [ERR] Error response: [Title: Invalid username or password] [Details: The username or password provided is incorrect.] [Path: /api/Auth/Login]
+2025-05-21 00:27:21.293 +03:00 [ERR] Invalid username or password for user: sfd
+2025-05-21 00:27:21.316 +03:00 [ERR] Login failed: Invalid username or password
+2025-05-21 00:27:29.919 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:27:29.919 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:27:29.919 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:27:30.380 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:27:30.380 +03:00 [INF] Setting authorization token
+2025-05-21 00:27:30.380 +03:00 [INF] Setting refresh token
+2025-05-21 00:27:30.380 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:27:30.380 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:27:30.380 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:27:30.380 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:27:36.191 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:27:36.191 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:27:36.191 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:27:36.191 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:27:36.191 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:27:36.254 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:27:45.336 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:27:45.336 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:27:45.336 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:27:45.336 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:27:45.336 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:27:45.387 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:27:52.697 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:27:52.697 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:27:52.698 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:27:52.705 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:27:52.705 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:27:52.746 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:27:52.746 +03:00 [INF] Clearing authorization token
+2025-05-21 00:29:16.695 +03:00 [INF] Application starting.
+2025-05-21 00:29:22.229 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:29:22.238 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:29:22.249 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:29:22.497 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:29:22.497 +03:00 [INF] Setting authorization token
+2025-05-21 00:29:22.497 +03:00 [INF] Setting refresh token
+2025-05-21 00:29:22.497 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:29:22.497 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:29:22.497 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:29:22.497 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:29:25.528 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:29:25.528 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:29:25.528 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:29:25.554 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:29:25.554 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:29:25.610 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:29:33.440 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:29:33.440 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:29:33.440 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:29:33.440 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:29:33.440 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:29:33.487 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:29:40.669 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:29:40.669 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:29:40.669 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:29:40.696 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:29:40.696 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:29:40.727 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:29:40.727 +03:00 [INF] Clearing authorization token
+2025-05-21 00:31:53.728 +03:00 [INF] Application starting.
+2025-05-21 00:31:58.950 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:31:58.966 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:31:58.971 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:31:59.224 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:31:59.224 +03:00 [INF] Setting authorization token
+2025-05-21 00:31:59.224 +03:00 [INF] Setting refresh token
+2025-05-21 00:31:59.224 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:31:59.224 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:31:59.224 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:31:59.224 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:32:03.302 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:32:03.304 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:32:03.304 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:32:03.306 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:32:03.306 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:32:03.377 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:32:07.846 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:32:07.846 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:32:07.846 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:32:07.870 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:32:07.870 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:32:07.894 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:32:07.894 +03:00 [INF] Clearing authorization token
+2025-05-21 00:32:35.101 +03:00 [INF] Application starting.
+2025-05-21 00:32:41.249 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:32:41.265 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:32:41.281 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:32:41.445 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:32:41.445 +03:00 [INF] Setting authorization token
+2025-05-21 00:32:41.445 +03:00 [INF] Setting refresh token
+2025-05-21 00:32:41.445 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:32:41.445 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:32:41.445 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:32:41.445 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:32:43.970 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:32:43.970 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:32:43.970 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:32:43.970 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:32:43.970 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:32:44.049 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:32:56.650 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:32:56.654 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:32:56.654 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:32:56.666 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:32:56.666 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:32:56.704 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:32:56.704 +03:00 [INF] Clearing authorization token
+2025-05-21 00:33:07.055 +03:00 [INF] Application starting.
+2025-05-21 00:33:12.077 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:33:12.093 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:33:12.093 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:33:12.305 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:33:12.305 +03:00 [INF] Setting authorization token
+2025-05-21 00:33:12.305 +03:00 [INF] Setting refresh token
+2025-05-21 00:33:12.305 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:33:12.305 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:33:12.305 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:33:12.305 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:33:14.531 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:33:14.531 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:33:14.531 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:33:14.531 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:33:14.531 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:33:14.598 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:33:20.235 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:33:20.235 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:33:20.235 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:33:20.251 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:33:20.251 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:33:20.284 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:33:20.284 +03:00 [INF] Clearing authorization token
+2025-05-21 00:33:28.900 +03:00 [INF] Application starting.
+2025-05-21 00:33:35.101 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:33:35.130 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:33:35.134 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:33:35.314 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:33:35.314 +03:00 [INF] Setting authorization token
+2025-05-21 00:33:35.314 +03:00 [INF] Setting refresh token
+2025-05-21 00:33:35.314 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:33:35.314 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:33:35.330 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:33:35.330 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:33:38.055 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:33:38.057 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:33:38.057 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:33:38.062 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:33:38.067 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:33:38.130 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:33:45.832 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:33:45.832 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:33:45.832 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:33:45.847 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:33:45.847 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:33:45.883 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:33:45.883 +03:00 [INF] Clearing authorization token
+2025-05-21 00:33:57.513 +03:00 [INF] Application starting.
+2025-05-21 00:34:03.108 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:34:03.124 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:34:03.140 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:34:03.308 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:34:03.317 +03:00 [INF] Setting authorization token
+2025-05-21 00:34:03.317 +03:00 [INF] Setting refresh token
+2025-05-21 00:34:03.317 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:34:03.317 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:34:03.317 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:34:03.317 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:34:06.428 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:34:06.428 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:34:06.428 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:34:06.444 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:34:06.444 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:34:06.491 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:34:12.734 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:34:12.734 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:34:12.734 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:34:12.750 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:34:12.750 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:34:12.789 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:34:12.789 +03:00 [INF] Clearing authorization token
+2025-05-21 00:34:56.874 +03:00 [INF] Application starting.
+2025-05-21 00:35:02.076 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:35:02.092 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:35:02.092 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:35:02.301 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:35:02.308 +03:00 [INF] Setting authorization token
+2025-05-21 00:35:02.308 +03:00 [INF] Setting refresh token
+2025-05-21 00:35:02.308 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:35:02.308 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:35:02.308 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:35:02.308 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:35:04.519 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:35:04.519 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:35:04.519 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:35:04.519 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:35:04.519 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:35:04.582 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:35:18.503 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:35:18.503 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:35:18.503 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:35:18.524 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:35:18.524 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:35:18.551 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:35:18.551 +03:00 [INF] Clearing authorization token
+2025-05-21 00:35:29.620 +03:00 [INF] Application starting.
+2025-05-21 00:35:34.298 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:35:34.326 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:35:34.330 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:35:34.498 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:35:34.504 +03:00 [INF] Setting authorization token
+2025-05-21 00:35:34.504 +03:00 [INF] Setting refresh token
+2025-05-21 00:35:34.504 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:35:34.504 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:35:34.506 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:35:34.506 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:35:38.987 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:35:38.987 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:35:38.987 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:35:39.009 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:35:39.009 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:35:39.054 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:35:39.054 +03:00 [INF] Clearing authorization token
+2025-05-21 00:36:53.138 +03:00 [INF] Application starting.
+2025-05-21 00:36:58.969 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:36:58.994 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:36:58.998 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:36:59.213 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:36:59.213 +03:00 [INF] Setting authorization token
+2025-05-21 00:36:59.213 +03:00 [INF] Setting refresh token
+2025-05-21 00:36:59.213 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:36:59.213 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:36:59.213 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:36:59.213 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:38:03.750 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:38:03.750 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:38:03.750 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:38:27.438 +03:00 [INF] Application starting.
+2025-05-21 00:38:32.568 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:38:32.584 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:38:32.584 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:38:32.764 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:38:32.764 +03:00 [INF] Setting authorization token
+2025-05-21 00:38:32.764 +03:00 [INF] Setting refresh token
+2025-05-21 00:38:32.764 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:38:32.764 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:38:32.764 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:38:32.764 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:38:36.763 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:38:36.770 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:38:36.770 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:38:36.777 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:38:36.777 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:38:36.825 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:38:36.825 +03:00 [INF] Clearing authorization token
+2025-05-21 00:38:58.912 +03:00 [INF] Application starting.
+2025-05-21 00:39:04.252 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:39:04.275 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:39:04.284 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:39:04.467 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:39:04.467 +03:00 [INF] Setting authorization token
+2025-05-21 00:39:04.467 +03:00 [INF] Setting refresh token
+2025-05-21 00:39:04.467 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:39:04.467 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:39:04.467 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:39:04.467 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:39:04.947 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:39:18.440 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:39:18.440 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:39:18.440 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:39:18.456 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:39:18.456 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:39:18.503 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:39:18.503 +03:00 [INF] Clearing authorization token
+2025-05-21 00:42:29.795 +03:00 [INF] Application starting.
+2025-05-21 00:42:34.783 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:42:34.803 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:42:34.811 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:42:34.986 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:42:34.986 +03:00 [INF] Setting authorization token
+2025-05-21 00:42:34.986 +03:00 [INF] Setting refresh token
+2025-05-21 00:42:34.986 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:42:34.986 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:42:34.986 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:42:34.986 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:42:35.304 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:42:35.304 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:42:39.362 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:42:39.362 +03:00 [INF] Logging out user with ID: 0
+2025-05-21 00:42:39.362 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:42:39.380 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:42:39.380 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:42:39.425 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-21 00:42:39.425 +03:00 [INF] Clearing authorization token
+2025-05-21 00:54:56.771 +03:00 [INF] Application starting.
+2025-05-21 00:55:02.374 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:55:02.390 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:55:02.406 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:55:02.587 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:55:02.587 +03:00 [INF] Setting authorization token
+2025-05-21 00:55:02.587 +03:00 [INF] Setting refresh token
+2025-05-21 00:55:02.587 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:55:02.587 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:57:04.291 +03:00 [INF] Application starting.
+2025-05-21 00:57:11.277 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:57:11.293 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:57:11.309 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:57:11.471 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:57:11.487 +03:00 [INF] Setting authorization token
+2025-05-21 00:57:11.487 +03:00 [INF] Setting refresh token
+2025-05-21 00:57:11.487 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:57:11.487 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:58:19.091 +03:00 [INF] Application starting.
+2025-05-21 00:58:23.350 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:58:23.364 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-21 00:58:23.369 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-21 00:58:23.555 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-21 00:58:23.568 +03:00 [INF] Setting authorization token
+2025-05-21 00:58:23.568 +03:00 [INF] Setting refresh token
+2025-05-21 00:58:23.568 +03:00 [INF] Setting current user ID from JWT
+2025-05-21 00:58:23.570 +03:00 [INF] Extracting user ID from JWT
+2025-05-21 00:58:23.570 +03:00 [INF] User logged in successfully with ID: 501
+2025-05-21 00:58:23.570 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-21 00:58:24.051 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:58:24.051 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:58:26.138 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:58:26.138 +03:00 [INF] Getting products for page number: 1
+2025-05-21 00:58:26.140 +03:00 [INF] Sending GET request to /api/Products/GetProductsPaginated with query string: Page=1&PageSize=12
+2025-05-21 00:58:26.145 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:58:26.145 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:58:26.208 +03:00 [ERR] Authentication required. Please login.
+2025-05-21 00:58:31.368 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-21 00:58:31.378 +03:00 [INF] Logging out user with ID: 501
+2025-05-21 00:58:31.378 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-21 00:58:31.387 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-21 00:58:31.387 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-21 00:58:31.424 +03:00 [ERR] User with ID: 501 is already logged out or token expired
+2025-05-21 00:58:31.424 +03:00 [INF] Clearing authorization token

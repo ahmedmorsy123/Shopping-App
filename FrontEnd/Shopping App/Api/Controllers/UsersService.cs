@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Serilog;
 using ShoppingApp.Api.Models;
 
 namespace ShoppingApp.Api.Controllers
@@ -18,6 +19,7 @@ namespace ShoppingApp.Api.Controllers
         /// <returns>User data if found</returns>
         public async Task<UserDto> GetUserAsync(int userId)
         {
+            Log.Information("Getting user with ID: {UserId}", userId);
             string queryString = $"id={userId}";
 
             try
@@ -28,6 +30,7 @@ namespace ShoppingApp.Api.Controllers
             {
                 if (ex.StatusCode == 404)
                 {
+                    Log.Error("User not found with ID: {UserId}", userId);
                     throw new ApiException(404, $"User with ID {userId} not found");
                 }
                 throw;
@@ -42,6 +45,7 @@ namespace ShoppingApp.Api.Controllers
         /// <returns>Updated user data</returns>
         public async Task<UserDto> UpdateUserAsync(UserDto user, string oldPassword = null)
         {
+            Log.Information("Updating user with ID: {UserId}", user.Id);
             string queryString = string.IsNullOrEmpty(oldPassword) ? "" : $"oldPassword={oldPassword}";
 
             try
@@ -52,6 +56,7 @@ namespace ShoppingApp.Api.Controllers
             {
                 if (ex.StatusCode == 404)
                 {
+                    Log.Error("User not found with ID: {UserId}", user.Id);
                     throw new ApiException(404, $"User with ID {user.Id} not found");
                 }
                 throw;
@@ -64,6 +69,7 @@ namespace ShoppingApp.Api.Controllers
         /// <param name="userId">User ID to delete</param>
         public async Task DeleteUserAsync(int userId)
         {
+            Log.Information("Deleting user with ID: {UserId}", userId);
             string queryString = $"id={userId}";
 
             try
@@ -74,6 +80,7 @@ namespace ShoppingApp.Api.Controllers
             {
                 if (ex.StatusCode == 404)
                 {
+                    Log.Error("User not found with ID: {UserId}", userId);
                     throw new ApiException(404, $"User with ID {userId} not found");
                 }
                 throw;
@@ -87,15 +94,18 @@ namespace ShoppingApp.Api.Controllers
         /// <returns>Created user data with ID</returns>
         public async Task<UserDto> AddUserAsync(UserDto user)
         {
+            Log.Information("Adding new user with username: {Username}", user.Name);
             try
             {
                 return await PostAsync<UserDto>(ADD_USER_ENDPOINT, user);
+
             }
             catch (ApiException ex)
             {
                 if (ex.StatusCode == 400)
                 {
-                    throw new ApiException(400, "Invalid user data. Please check your input.");
+                    Log.Error("UserName or Email already exists for username: {Username}", user.Name);
+                    throw new ApiException(400, "UserName or Email already exists");
                 }
                 throw;
             }
