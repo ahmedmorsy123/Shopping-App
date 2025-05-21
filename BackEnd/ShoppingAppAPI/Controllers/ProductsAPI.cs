@@ -20,12 +20,13 @@ namespace ShoppingAppAPI.Controllers
             _productsService = products;
         }
 
-        [HttpGet("GetProductsPaginated")]
+        [HttpGet("GetProducts")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedList<ProductDto>))]
-        public async Task<ActionResult<PagedList<ProductDto>>> GetProductsPaginated(string? SearchTerm, string? SortColumn, string? SortOrder, int Page, int PageSize)
+        public async Task<ActionResult<PagedList<ProductDto>>> GetProducts(string? SearchTerm, string? SortColumn, string? SortOrder, int Page, int PageSize)
         {
-            _logger.LogInformation($"{_prefix}GetAllProductsPaginated");
+            _logger.LogInformation($"{_prefix}GetProducts");
+
             return Ok(await _productsService.GetProducts(SearchTerm, SortColumn, SortOrder, Page, PageSize));
         }
     }

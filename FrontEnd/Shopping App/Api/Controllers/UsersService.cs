@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Net.Http;
+using System.Threading.Tasks;
 using Serilog;
 using ShoppingApp.Api.Models;
 
@@ -11,6 +12,10 @@ namespace ShoppingApp.Api.Controllers
         private const string DELETE_USER_ENDPOINT = "/api/Users/DeleteUser";
         private const string ADD_USER_ENDPOINT = "/api/Users/AddUser";
 
+        // set the http client
+        public UsersService(HttpClient httpClient) : base(httpClient)
+        {
+        }
 
         /// <summary>
         /// Gets user information by ID
@@ -43,21 +48,20 @@ namespace ShoppingApp.Api.Controllers
         /// <param name="user">Updated user data</param>
         /// <param name="oldPassword">Current password for verification</param>
         /// <returns>Updated user data</returns>
-        public async Task<UserDto> UpdateUserAsync(UserDto user, string oldPassword = null)
+        public async Task<UserDto> UpdateUserAsync(UpdateUserDto user)
         {
             Log.Information("Updating user with ID: {UserId}", user.Id);
-            string queryString = string.IsNullOrEmpty(oldPassword) ? "" : $"oldPassword={oldPassword}";
 
             try
             {
-                return await PutAsync<UserDto>(UPDATE_USER_ENDPOINT, user, queryString);
+                return await PutAsync<UserDto>(UPDATE_USER_ENDPOINT, user);
             }
             catch (ApiException ex)
             {
                 if (ex.StatusCode == 404)
                 {
-                    Log.Error("User not found with ID: {UserId}", user.Id);
-                    throw new ApiException(404, $"User with ID {user.Id} not found");
+                    Log.Error("Faild to update user with id: {UserId} wrong password", user.Id);
+                    throw new ApiException(400, $"Wrong Password");
                 }
                 throw;
             }

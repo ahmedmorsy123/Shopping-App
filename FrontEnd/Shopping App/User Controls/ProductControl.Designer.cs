@@ -33,6 +33,8 @@
             this.lbPrice = new System.Windows.Forms.Label();
             this.lbDescription = new System.Windows.Forms.Label();
             this.btnAddRemove = new System.Windows.Forms.Button();
+            this.Quentity = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.Quentity)).BeginInit();
             this.SuspendLayout();
             // 
             // lbProductName
@@ -84,11 +86,20 @@
             this.btnAddRemove.UseVisualStyleBackColor = true;
             this.btnAddRemove.Click += new System.EventHandler(this.btnAddRemove_Click);
             // 
+            // Quentity
+            // 
+            this.Quentity.Location = new System.Drawing.Point(7, 153);
+            this.Quentity.Name = "Quentity";
+            this.Quentity.Size = new System.Drawing.Size(47, 24);
+            this.Quentity.TabIndex = 5;
+            this.Quentity.ValueChanged += new System.EventHandler(this.Quentity_ValueChanged);
+            // 
             // ProductControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.Quentity);
             this.Controls.Add(this.btnAddRemove);
             this.Controls.Add(this.lbDescription);
             this.Controls.Add(this.lbPrice);
@@ -96,6 +107,7 @@
             this.Controls.Add(this.lbProductName);
             this.Name = "ProductControl";
             this.Size = new System.Drawing.Size(260, 180);
+            ((System.ComponentModel.ISupportInitialize)(this.Quentity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +120,6 @@
         private System.Windows.Forms.Label lbPrice;
         private System.Windows.Forms.Label lbDescription;
         private System.Windows.Forms.Button btnAddRemove;
+        private System.Windows.Forms.NumericUpDown Quentity;
     }
 }

@@ -68,16 +68,16 @@ namespace ShoppingAppDB
             }
         }
 
-        public async Task<UserDto?> UpdateUserAsync(UserDto user, string oldPassword)
+        public async Task<UserDto?> UpdateUserAsync(UpdateUserDto user)
         {
             using (var context = new AppDbContext())
             {
                 var userToUpdate = await context.Users.Where(u => u.Id == user.Id).FirstOrDefaultAsync();
-                if (userToUpdate != null && _passwordService.VerifyPassword(oldPassword, userToUpdate.PasswordHash))
+                if (userToUpdate != null && _passwordService.VerifyPassword(user.OldPassword, userToUpdate.PasswordHash))
                 {
                     userToUpdate.Name = string.IsNullOrEmpty(user.Name) ? userToUpdate.Name : user.Name;
                     userToUpdate.Email = string.IsNullOrEmpty(user.Email) ? userToUpdate.Email : user.Email;
-                    userToUpdate.PasswordHash = string.IsNullOrEmpty(user.Password) ? userToUpdate.PasswordHash : _passwordService.HashPassword(user.Password);
+                    userToUpdate.PasswordHash = string.IsNullOrEmpty(user.NewPassword) ? userToUpdate.PasswordHash : _passwordService.HashPassword(user.NewPassword);
 
                     await context.SaveChangesAsync();
                     _logger.LogInformation($"{_prefix}User updated successfully with id {userToUpdate.Id}");

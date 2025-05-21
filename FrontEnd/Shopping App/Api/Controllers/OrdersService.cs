@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Serilog;
 using ShoppingApp.Api.Models;
@@ -12,6 +13,9 @@ namespace ShoppingApp.Api.Controllers
         private const string MAKE_ORDERS_ENDPOINT = "/api/Orders/MakeOrders";
         private const string CANCEL_ORDER_ENDPOINT = "/api/Orders/CancelOrder";
 
+        public OrdersService(HttpClient httpClient) : base(httpClient)
+        {
+        }
 
         /// <summary>
         /// Gets all orders for a specific user

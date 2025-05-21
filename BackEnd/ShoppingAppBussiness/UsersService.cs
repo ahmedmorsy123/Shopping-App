@@ -28,10 +28,10 @@ namespace ShoppingAppBussiness
             return await _userData.AddUserAsync(user);
         }
 
-        public async Task<UserDto?> UpdateUserAsync(UserDto user, string oldPassword)
+        public async Task<UserDto?> UpdateUserAsync(UpdateUserDto user)
         {
             _logger.LogInformation($"{_prefix}UpdateUser");
-            return await _userData.UpdateUserAsync(user, oldPassword);
+            return await _userData.UpdateUserAsync(user);
         }
 
         public async Task<bool> DeleteUserAsync(int userId)

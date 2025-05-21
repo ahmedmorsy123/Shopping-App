@@ -51,6 +51,7 @@ namespace ShoppingAppDB
                         productName = p.Name,
                         productCategory = p.Category.CategoryName,
                         productDescription = p.Description,
+                        quantity = p.Quantity,
                         Weight = p.Weight,
                         price = p.Price
                     })

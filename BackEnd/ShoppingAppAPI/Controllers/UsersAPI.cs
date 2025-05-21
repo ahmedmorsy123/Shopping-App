@@ -48,18 +48,18 @@ namespace ShoppingAppAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        public async Task<ActionResult<UserDto>> UpdateUser(UserDto user, string oldPassword)
+        public async Task<ActionResult<UserDto>> UpdateUser(UpdateUserDto user)
         {
             _logger.LogInformation($"{_prefix}UpdateUserAPI");
-            var UpdatedUser = await _usersService.UpdateUserAsync(user, oldPassword);
+            var UpdatedUser = await _usersService.UpdateUserAsync(user);
             if (UpdatedUser == null)
             {
                 _logger.LogWarning($"{_prefix}There is no user with this id or wrong password or you are not logged in");
                 return NotFound(new ProblemDetails
                 {
                     Title = "User update failed",
-                    Detail = "There is no user with this id or wrong password or you are not logged in",
-                    Status = StatusCodes.Status404NotFound,
+                    Detail = "wrong password",
+                    Status = StatusCodes.Status400BadRequest,
                     Instance = HttpContext.Request.Path
                 });
             }

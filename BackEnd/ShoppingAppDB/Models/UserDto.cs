@@ -1,4 +1,5 @@
-﻿namespace ShoppingAppDB.Models
+﻿
+namespace ShoppingAppDB.Models
 {
     public class UserDto
     {

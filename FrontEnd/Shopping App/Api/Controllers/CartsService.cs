@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Net.Http;
+using System.Threading.Tasks;
 using Serilog;
 using ShoppingApp.Api.Models;
 
@@ -11,6 +12,9 @@ namespace ShoppingApp.Api.Controllers
         private const string ADD_CART_ENDPOINT = "/api/Carts/AddCart";
         private const string DELETE_CART_ENDPOINT = "/api/Carts/DeleteCart";
 
+        public CartsService(HttpClient httpClient) : base(httpClient)
+        {
+        }
 
         /// <summary>
         /// Gets the cart for a specific user

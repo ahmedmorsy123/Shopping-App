@@ -34,7 +34,7 @@
             this.myOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripCurrentUser = new System.Windows.Forms.MenuStrip();
             this.currentUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.menuStripCurrentUser.SuspendLayout();
@@ -93,24 +93,24 @@
             // currentUserToolStripMenuItem
             // 
             this.currentUserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.changePasswordToolStripMenuItem,
+            this.updateProfileToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.currentUserToolStripMenuItem.Name = "currentUserToolStripMenuItem";
             this.currentUserToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.currentUserToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.currentUserToolStripMenuItem.Text = "Current User";
             // 
-            // changePasswordToolStripMenuItem
+            // updateProfileToolStripMenuItem
             // 
-            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.changePasswordToolStripMenuItem.Text = "Change Password";
-            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
+            this.updateProfileToolStripMenuItem.Name = "updateProfileToolStripMenuItem";
+            this.updateProfileToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.updateProfileToolStripMenuItem.Text = "Update Profile";
+            this.updateProfileToolStripMenuItem.Click += new System.EventHandler(this.updateProfileToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -146,7 +146,7 @@
         private System.Windows.Forms.ToolStripMenuItem myOrderToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStripCurrentUser;
         private System.Windows.Forms.ToolStripMenuItem currentUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
     }
 }

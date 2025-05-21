@@ -1,0 +1,1148 @@
+2025-05-22 00:04:54.855 +03:00 [INF] Application starting.
+2025-05-22 00:05:00.734 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:05:00.738 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:05:00.738 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:05:00.738 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:05:00.738 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:05:00.739 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:05:00.804 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:05:01.524 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:05:01.527 +03:00 [INF] Setting authorization token
+2025-05-22 00:05:01.527 +03:00 [INF] Setting refresh token
+2025-05-22 00:05:01.528 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:05:01.528 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:05:01.529 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:05:01.531 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:05:01.532 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:05:01.532 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:05:01.558 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:05:02.105 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:05:02.105 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:05:02.215 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:05:25.080 +03:00 [INF] Updating user with ID: 501
+2025-05-22 00:05:25.083 +03:00 [INF] Sending PUT request to /api/Users/UpdateUser with data: ShoppingApp.Api.Models.UpdateUserDto and query string: 
+2025-05-22 00:05:25.229 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-22 00:05:25.232 +03:00 [ERR] Error response: [Title: One or more validation errors occurred.] [Details: ] [Path: ]
+2025-05-22 00:05:39.280 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:05:39.281 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:06:26.722 +03:00 [INF] Application starting.
+2025-05-22 00:06:31.941 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:06:31.945 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:06:31.945 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:06:31.945 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:06:31.945 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:06:31.947 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:06:31.960 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:06:32.645 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:06:32.653 +03:00 [INF] Setting authorization token
+2025-05-22 00:06:32.653 +03:00 [INF] Setting refresh token
+2025-05-22 00:06:32.655 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:06:32.655 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:06:32.659 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:06:32.664 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:06:32.667 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:06:32.667 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:06:32.716 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:06:33.316 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:06:33.316 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:06:33.465 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:06:47.106 +03:00 [INF] Updating user with ID: 501
+2025-05-22 00:06:47.108 +03:00 [INF] Sending PUT request to /api/Users/UpdateUser with data: ShoppingApp.Api.Models.UpdateUserDto and query string: 
+2025-05-22 00:06:47.120 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-22 00:06:47.123 +03:00 [ERR] Error response: [Title: One or more validation errors occurred.] [Details: ] [Path: ]
+2025-05-22 00:06:58.883 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:06:58.884 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:08:38.919 +03:00 [INF] Application starting.
+2025-05-22 00:09:29.226 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:09:29.233 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:09:29.233 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:09:29.233 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:09:29.234 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:09:29.236 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:09:29.255 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:09:36.580 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:09:36.587 +03:00 [INF] Setting authorization token
+2025-05-22 00:09:36.587 +03:00 [INF] Setting refresh token
+2025-05-22 00:09:36.588 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:09:36.589 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:09:36.592 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:09:36.595 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:09:36.597 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:09:36.597 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:09:37.133 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:09:38.856 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:09:38.856 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:09:39.410 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:09:44.923 +03:00 [INF] Updating user with ID: 501
+2025-05-22 00:09:44.925 +03:00 [INF] Sending PUT request to /api/Users/UpdateUser with data: ShoppingApp.Api.Models.UpdateUserDto and query string: 
+2025-05-22 00:09:45.761 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-05-22 00:09:45.764 +03:00 [ERR] Error response: [Title: User update failed] [Details: wrong password] [Path: /api/Users/UpdateUser]
+2025-05-22 00:09:45.906 +03:00 [ERR] Faild to update user with id: 501 wrong password
+2025-05-22 00:10:04.427 +03:00 [INF] Updating user with ID: 501
+2025-05-22 00:10:04.427 +03:00 [INF] Sending PUT request to /api/Users/UpdateUser with data: ShoppingApp.Api.Models.UpdateUserDto and query string: 
+2025-05-22 00:10:04.754 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:10:19.465 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:10:19.465 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:10:19.605 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:10:19.605 +03:00 [INF] Clearing authorization token
+2025-05-22 00:10:19.606 +03:00 [INF] Clearing refresh token
+2025-05-22 00:10:19.606 +03:00 [INF] Logging out user with ID: 0
+2025-05-22 00:10:19.606 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:10:19.782 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-22 00:10:19.783 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-22 00:10:19.867 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-22 00:10:19.867 +03:00 [INF] Clearing authorization token
+2025-05-22 00:10:55.968 +03:00 [INF] Application starting.
+2025-05-22 00:11:00.619 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:00.622 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:00.622 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:00.622 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:00.622 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:00.624 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:11:00.639 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:11:01.039 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-05-22 00:11:01.047 +03:00 [ERR] Error response: [Title: Invalid username or password] [Details: The username or password provided is incorrect.] [Path: /api/Auth/Login]
+2025-05-22 00:11:01.189 +03:00 [ERR] Invalid username or password for user: Ahmed
+2025-05-22 00:11:01.256 +03:00 [ERR] Login failed: Invalid username or password
+2025-05-22 00:11:05.255 +03:00 [INF] Logging in user with username: Ahmeddd
+2025-05-22 00:11:05.255 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:11:05.577 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:05.580 +03:00 [INF] Setting authorization token
+2025-05-22 00:11:05.580 +03:00 [INF] Setting refresh token
+2025-05-22 00:11:05.581 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:11:05.582 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:11:05.586 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:11:05.591 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:11:05.594 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:11:05.594 +03:00 [INF] User Ahmeddd Loged in Successfully
+2025-05-22 00:11:05.623 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:06.961 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:11:06.961 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:11:07.039 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:22.370 +03:00 [INF] Updating user with ID: 501
+2025-05-22 00:11:22.372 +03:00 [INF] Sending PUT request to /api/Users/UpdateUser with data: ShoppingApp.Api.Models.UpdateUserDto and query string: 
+2025-05-22 00:11:23.005 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:29.041 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:11:29.042 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:11:29.115 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:29.115 +03:00 [INF] Clearing authorization token
+2025-05-22 00:11:29.116 +03:00 [INF] Clearing refresh token
+2025-05-22 00:11:29.117 +03:00 [INF] Logging out user with ID: 0
+2025-05-22 00:11:29.117 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:11:29.304 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-05-22 00:11:29.305 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-05-22 00:11:29.350 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-05-22 00:11:29.350 +03:00 [INF] Clearing authorization token
+2025-05-22 00:11:32.730 +03:00 [INF] Application starting.
+2025-05-22 00:11:38.466 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:38.469 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:38.469 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:38.469 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:38.469 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:11:38.470 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:11:38.486 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:11:39.094 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:39.102 +03:00 [INF] Setting authorization token
+2025-05-22 00:11:39.103 +03:00 [INF] Setting refresh token
+2025-05-22 00:11:39.104 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:11:39.105 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:11:39.109 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:11:39.113 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:11:39.115 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:11:39.116 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:11:39.144 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:39.940 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:11:39.940 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:11:40.064 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:49.590 +03:00 [INF] Updating user with ID: 501
+2025-05-22 00:11:49.592 +03:00 [INF] Sending PUT request to /api/Users/UpdateUser with data: ShoppingApp.Api.Models.UpdateUserDto and query string: 
+2025-05-22 00:11:50.208 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:56.404 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:11:56.404 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:11:56.468 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:11:58.575 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:11:58.575 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:11:58.656 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:12:01.443 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:12:01.443 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:12:01.477 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:12:04.924 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:12:04.924 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:12:04.962 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:12:09.479 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:12:09.479 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:12:09.514 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:12:10.230 +03:00 [INF] Getting products for page number: 3
+2025-05-22 00:12:10.230 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=3&PageSize=12
+2025-05-22 00:12:10.262 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:12:16.746 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:12:16.746 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:12:16.861 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:12:19.680 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:12:19.680 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:12:19.733 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:12:24.586 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:12:24.586 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:27:53.169 +03:00 [INF] Application starting.
+2025-05-22 00:27:57.646 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:27:57.648 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:27:57.648 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:27:57.648 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:27:57.648 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:27:57.649 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:27:57.657 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:27:57.855 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:27:57.857 +03:00 [INF] Setting authorization token
+2025-05-22 00:27:57.858 +03:00 [INF] Setting refresh token
+2025-05-22 00:27:57.858 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:27:57.858 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:27:57.859 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:27:57.860 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:27:57.861 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:27:57.861 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:27:57.869 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:27:58.282 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:27:58.282 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:27:58.311 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:28:03.978 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:28:03.979 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:28:03.993 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:28:03.993 +03:00 [INF] Clearing authorization token
+2025-05-22 00:28:03.993 +03:00 [INF] Clearing refresh token
+2025-05-22 00:28:55.357 +03:00 [INF] Application starting.
+2025-05-22 00:29:01.214 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:29:01.217 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:29:01.217 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:29:01.217 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:29:01.217 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:29:01.218 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:29:01.226 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:29:01.466 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:29:01.468 +03:00 [INF] Setting authorization token
+2025-05-22 00:29:01.468 +03:00 [INF] Setting refresh token
+2025-05-22 00:29:01.469 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:29:01.469 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:29:01.469 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:29:01.470 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:29:01.471 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:29:01.471 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:29:01.478 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:29:01.776 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:29:01.776 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:29:01.808 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:29:06.313 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:29:06.314 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:29:06.329 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:29:06.329 +03:00 [INF] Clearing authorization token
+2025-05-22 00:29:06.329 +03:00 [INF] Clearing refresh token
+2025-05-22 00:37:04.695 +03:00 [INF] Application starting.
+2025-05-22 00:37:08.689 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:37:08.691 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:37:08.691 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:37:08.691 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:37:08.691 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:37:08.692 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:37:08.700 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:37:08.884 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:08.887 +03:00 [INF] Setting authorization token
+2025-05-22 00:37:08.887 +03:00 [INF] Setting refresh token
+2025-05-22 00:37:08.887 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:37:08.888 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:37:08.889 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:37:08.890 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:37:08.891 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:37:08.891 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:37:08.897 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:09.370 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:37:09.370 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:37:09.400 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:18.737 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:37:18.737 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:37:18.750 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:32.696 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:37:32.696 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:37:32.749 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:39.067 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:37:39.067 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:37:39.083 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:39.726 +03:00 [INF] Getting products for page number: 3
+2025-05-22 00:37:39.726 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=3&PageSize=12
+2025-05-22 00:37:39.746 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:40.454 +03:00 [INF] Getting products for page number: 4
+2025-05-22 00:37:40.455 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=4&PageSize=12
+2025-05-22 00:37:40.469 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:40.990 +03:00 [INF] Getting products for page number: 5
+2025-05-22 00:37:40.990 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=5&PageSize=12
+2025-05-22 00:37:41.000 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:41.482 +03:00 [INF] Getting products for page number: 6
+2025-05-22 00:37:41.482 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=6&PageSize=12
+2025-05-22 00:37:41.495 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:42.274 +03:00 [INF] Getting products for page number: 7
+2025-05-22 00:37:42.274 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=7&PageSize=12
+2025-05-22 00:37:42.284 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:42.962 +03:00 [INF] Getting products for page number: 8
+2025-05-22 00:37:42.962 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=8&PageSize=12
+2025-05-22 00:37:42.973 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:43.514 +03:00 [INF] Getting products for page number: 9
+2025-05-22 00:37:43.514 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=9&PageSize=12
+2025-05-22 00:37:43.525 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:44.078 +03:00 [INF] Getting products for page number: 10
+2025-05-22 00:37:44.078 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=10&PageSize=12
+2025-05-22 00:37:44.088 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:49.624 +03:00 [INF] Getting products for page number: 9
+2025-05-22 00:37:49.624 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=9&PageSize=12
+2025-05-22 00:37:49.634 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:50.321 +03:00 [INF] Getting products for page number: 8
+2025-05-22 00:37:50.321 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=8&PageSize=12
+2025-05-22 00:37:50.330 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:50.880 +03:00 [INF] Getting products for page number: 7
+2025-05-22 00:37:50.880 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=7&PageSize=12
+2025-05-22 00:37:50.890 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:51.748 +03:00 [INF] Getting products for page number: 6
+2025-05-22 00:37:51.748 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=6&PageSize=12
+2025-05-22 00:37:51.758 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:52.504 +03:00 [INF] Getting products for page number: 5
+2025-05-22 00:37:52.504 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=5&PageSize=12
+2025-05-22 00:37:52.514 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:53.211 +03:00 [INF] Getting products for page number: 4
+2025-05-22 00:37:53.211 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=4&PageSize=12
+2025-05-22 00:37:53.221 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:53.854 +03:00 [INF] Getting products for page number: 3
+2025-05-22 00:37:53.854 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=3&PageSize=12
+2025-05-22 00:37:53.864 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:54.462 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:37:54.463 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:37:54.472 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:37:54.970 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:37:54.970 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:37:54.980 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:02.729 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:38:02.729 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:38:02.739 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:05.505 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:38:05.505 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:38:05.517 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:14.062 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:38:14.062 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:38:14.072 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:14.747 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:38:14.747 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:38:14.756 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:15.870 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:38:15.870 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:38:15.881 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:16.874 +03:00 [INF] Getting products for page number: 3
+2025-05-22 00:38:16.874 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=3&PageSize=12
+2025-05-22 00:38:16.884 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:19.853 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:38:19.853 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:38:19.865 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:23.037 +03:00 [INF] Getting products for page number: 3
+2025-05-22 00:38:23.037 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=3&PageSize=12
+2025-05-22 00:38:23.047 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:23.592 +03:00 [INF] Getting products for page number: 4
+2025-05-22 00:38:23.592 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=4&PageSize=12
+2025-05-22 00:38:23.602 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:24.396 +03:00 [INF] Getting products for page number: 5
+2025-05-22 00:38:24.397 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=5&PageSize=12
+2025-05-22 00:38:24.406 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:24.968 +03:00 [INF] Getting products for page number: 6
+2025-05-22 00:38:24.968 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=6&PageSize=12
+2025-05-22 00:38:24.979 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:25.758 +03:00 [INF] Getting products for page number: 7
+2025-05-22 00:38:25.758 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=7&PageSize=12
+2025-05-22 00:38:25.769 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:26.471 +03:00 [INF] Getting products for page number: 8
+2025-05-22 00:38:26.471 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=8&PageSize=12
+2025-05-22 00:38:26.479 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:27.151 +03:00 [INF] Getting products for page number: 9
+2025-05-22 00:38:27.151 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=9&PageSize=12
+2025-05-22 00:38:27.162 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:28.854 +03:00 [INF] Getting products for page number: 10
+2025-05-22 00:38:28.854 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=10&PageSize=12
+2025-05-22 00:38:28.863 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:38:35.658 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:38:35.658 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:40:28.129 +03:00 [INF] Application starting.
+2025-05-22 00:40:32.754 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:40:32.757 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:40:32.757 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:40:32.757 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:40:32.757 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:40:32.757 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:40:32.765 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:40:32.978 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:40:32.980 +03:00 [INF] Setting authorization token
+2025-05-22 00:40:32.981 +03:00 [INF] Setting refresh token
+2025-05-22 00:40:32.981 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:40:32.981 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:40:32.982 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:40:32.983 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:40:32.984 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:40:32.984 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:40:32.989 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:40:33.578 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:40:33.578 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:40:33.598 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:40:51.144 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:40:51.144 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:40:58.091 +03:00 [INF] Application starting.
+2025-05-22 00:41:03.850 +03:00 [INF] Application starting.
+2025-05-22 00:41:08.117 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:08.119 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:08.119 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:08.119 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:08.119 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:08.120 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:41:08.129 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:41:08.334 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:41:08.336 +03:00 [INF] Setting authorization token
+2025-05-22 00:41:08.336 +03:00 [INF] Setting refresh token
+2025-05-22 00:41:08.337 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:41:08.337 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:41:08.338 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:41:08.339 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:41:08.340 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:41:08.340 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:41:08.346 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:41:08.604 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:41:08.604 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:41:08.635 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:41:16.562 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:41:16.563 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:41:16.578 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:41:16.578 +03:00 [INF] Clearing authorization token
+2025-05-22 00:41:16.578 +03:00 [INF] Clearing refresh token
+2025-05-22 00:41:21.955 +03:00 [INF] Application starting.
+2025-05-22 00:41:26.996 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:26.999 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:26.999 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:26.999 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:26.999 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:41:27.000 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:41:27.007 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:41:27.168 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:41:27.170 +03:00 [INF] Setting authorization token
+2025-05-22 00:41:27.171 +03:00 [INF] Setting refresh token
+2025-05-22 00:41:27.171 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:41:27.171 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:41:27.172 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:41:27.173 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:41:27.175 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:41:27.175 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:41:27.180 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:41:27.616 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:41:27.616 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:41:27.638 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:41:34.958 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:41:34.958 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:41:34.976 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:41:34.976 +03:00 [INF] Clearing authorization token
+2025-05-22 00:41:34.977 +03:00 [INF] Clearing refresh token
+2025-05-22 00:43:37.575 +03:00 [INF] Application starting.
+2025-05-22 00:43:42.096 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:43:42.098 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:43:42.098 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:43:42.098 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:43:42.098 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:43:42.099 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:43:42.107 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:43:42.292 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:43:42.294 +03:00 [INF] Setting authorization token
+2025-05-22 00:43:42.294 +03:00 [INF] Setting refresh token
+2025-05-22 00:43:42.295 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:43:42.295 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:43:42.296 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:43:42.297 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:43:42.298 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:43:42.298 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:43:42.304 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:43:42.730 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:43:42.730 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:43:42.764 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:43:51.452 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:43:51.453 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:43:51.469 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:43:51.469 +03:00 [INF] Clearing authorization token
+2025-05-22 00:43:51.469 +03:00 [INF] Clearing refresh token
+2025-05-22 00:44:04.310 +03:00 [INF] Application starting.
+2025-05-22 00:44:08.214 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:08.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:08.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:08.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:08.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:08.217 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:44:08.224 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:44:08.434 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:44:08.436 +03:00 [INF] Setting authorization token
+2025-05-22 00:44:08.436 +03:00 [INF] Setting refresh token
+2025-05-22 00:44:08.437 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:44:08.437 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:44:08.438 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:44:08.439 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:44:08.440 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:44:08.440 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:44:08.446 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:44:08.761 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:44:08.761 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:44:08.788 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:44:18.971 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:44:18.971 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:44:18.988 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:44:18.988 +03:00 [INF] Clearing authorization token
+2025-05-22 00:44:18.988 +03:00 [INF] Clearing refresh token
+2025-05-22 00:44:26.206 +03:00 [INF] Application starting.
+2025-05-22 00:44:30.545 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:30.549 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:30.549 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:30.549 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:30.549 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:44:30.549 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:44:30.558 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:44:30.732 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:44:30.734 +03:00 [INF] Setting authorization token
+2025-05-22 00:44:30.734 +03:00 [INF] Setting refresh token
+2025-05-22 00:44:30.734 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:44:30.735 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:44:30.736 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:44:30.737 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:44:30.738 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:44:30.738 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:44:30.743 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:44:30.956 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:44:30.956 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:44:30.978 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:44:34.167 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:44:34.168 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:44:34.185 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:44:34.186 +03:00 [INF] Clearing authorization token
+2025-05-22 00:44:34.186 +03:00 [INF] Clearing refresh token
+2025-05-22 00:46:12.063 +03:00 [INF] Application starting.
+2025-05-22 00:46:16.214 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:46:16.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:46:16.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:46:16.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:46:16.216 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:46:16.217 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:46:16.225 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:46:16.427 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:46:16.429 +03:00 [INF] Setting authorization token
+2025-05-22 00:46:16.430 +03:00 [INF] Setting refresh token
+2025-05-22 00:46:16.430 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:46:16.430 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:46:16.431 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:46:16.432 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:46:16.433 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:46:16.433 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:46:16.439 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:46:16.655 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:46:16.656 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:46:16.678 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:46:21.876 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:46:21.876 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:46:21.904 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:46:48.505 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:46:48.506 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:48:48.280 +03:00 [INF] Application starting.
+2025-05-22 00:48:53.887 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:48:53.890 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:48:53.890 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:48:53.890 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:48:53.890 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:48:53.890 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:48:53.899 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:48:54.078 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:48:54.081 +03:00 [INF] Setting authorization token
+2025-05-22 00:48:54.081 +03:00 [INF] Setting refresh token
+2025-05-22 00:48:54.081 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:48:54.082 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:48:54.083 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:48:54.084 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:48:54.085 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:48:54.085 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:48:54.092 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:48:54.526 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:48:54.526 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:48:54.557 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:48:57.801 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:48:57.801 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:48:57.810 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:49:01.300 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:49:01.301 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:49:01.315 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:49:01.315 +03:00 [INF] Clearing authorization token
+2025-05-22 00:49:01.315 +03:00 [INF] Clearing refresh token
+2025-05-22 00:49:48.889 +03:00 [INF] Application starting.
+2025-05-22 00:49:59.379 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:49:59.382 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:49:59.382 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:49:59.382 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:49:59.382 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:49:59.382 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:49:59.390 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:49:59.601 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:49:59.604 +03:00 [INF] Setting authorization token
+2025-05-22 00:49:59.604 +03:00 [INF] Setting refresh token
+2025-05-22 00:49:59.605 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:49:59.605 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:49:59.606 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:49:59.607 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:49:59.608 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:49:59.608 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:49:59.614 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:49:59.946 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:49:59.946 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:49:59.966 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:50:07.614 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:50:07.614 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:50:07.623 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:50:08.683 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:50:08.683 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:50:08.694 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:50:09.624 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:50:09.625 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:50:09.655 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:50:09.655 +03:00 [INF] Clearing authorization token
+2025-05-22 00:50:09.655 +03:00 [INF] Clearing refresh token
+2025-05-22 00:51:03.831 +03:00 [INF] Application starting.
+2025-05-22 00:51:15.473 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:51:15.476 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:51:15.476 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:51:15.476 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:51:15.476 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:51:15.476 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:51:15.484 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:51:15.665 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:15.667 +03:00 [INF] Setting authorization token
+2025-05-22 00:51:15.667 +03:00 [INF] Setting refresh token
+2025-05-22 00:51:15.667 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:51:15.667 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:51:15.669 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:51:15.669 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:51:15.671 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:51:15.671 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:51:15.676 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:16.153 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:51:16.153 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:51:16.184 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:19.254 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:51:19.254 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:51:19.270 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:21.038 +03:00 [INF] Getting products for page number: 2
+2025-05-22 00:51:21.038 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=2&PageSize=12
+2025-05-22 00:51:21.048 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:21.613 +03:00 [INF] Getting products for page number: 3
+2025-05-22 00:51:21.613 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=3&PageSize=12
+2025-05-22 00:51:21.622 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:22.262 +03:00 [INF] Getting products for page number: 4
+2025-05-22 00:51:22.262 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=4&PageSize=12
+2025-05-22 00:51:22.271 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:22.855 +03:00 [INF] Getting products for page number: 5
+2025-05-22 00:51:22.855 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=5&PageSize=12
+2025-05-22 00:51:22.863 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:23.419 +03:00 [INF] Getting products for page number: 6
+2025-05-22 00:51:23.420 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=6&PageSize=12
+2025-05-22 00:51:23.428 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:23.978 +03:00 [INF] Getting products for page number: 7
+2025-05-22 00:51:23.978 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=7&PageSize=12
+2025-05-22 00:51:23.987 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:24.523 +03:00 [INF] Getting products for page number: 8
+2025-05-22 00:51:24.523 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=8&PageSize=12
+2025-05-22 00:51:24.533 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:25.098 +03:00 [INF] Getting products for page number: 9
+2025-05-22 00:51:25.099 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=9&PageSize=12
+2025-05-22 00:51:25.108 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:25.647 +03:00 [INF] Getting products for page number: 10
+2025-05-22 00:51:25.647 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=10&PageSize=12
+2025-05-22 00:51:25.658 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:26.183 +03:00 [INF] Getting products for page number: 11
+2025-05-22 00:51:26.183 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=11&PageSize=12
+2025-05-22 00:51:26.192 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:26.691 +03:00 [INF] Getting products for page number: 12
+2025-05-22 00:51:26.691 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=12&PageSize=12
+2025-05-22 00:51:26.700 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:27.214 +03:00 [INF] Getting products for page number: 13
+2025-05-22 00:51:27.214 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=13&PageSize=12
+2025-05-22 00:51:27.223 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:27.711 +03:00 [INF] Getting products for page number: 14
+2025-05-22 00:51:27.711 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=14&PageSize=12
+2025-05-22 00:51:27.721 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:28.251 +03:00 [INF] Getting products for page number: 15
+2025-05-22 00:51:28.251 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=15&PageSize=12
+2025-05-22 00:51:28.261 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:31.606 +03:00 [INF] Getting products for page number: 14
+2025-05-22 00:51:31.606 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=14&PageSize=12
+2025-05-22 00:51:31.615 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:32.933 +03:00 [INF] Getting products for page number: 15
+2025-05-22 00:51:32.933 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=15&PageSize=12
+2025-05-22 00:51:32.944 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:36.117 +03:00 [INF] Getting products for page number: 16
+2025-05-22 00:51:36.117 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=16&PageSize=12
+2025-05-22 00:51:36.127 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:36.853 +03:00 [INF] Getting products for page number: 17
+2025-05-22 00:51:36.853 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=17&PageSize=12
+2025-05-22 00:51:36.862 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:37.637 +03:00 [INF] Getting products for page number: 18
+2025-05-22 00:51:37.637 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=18&PageSize=12
+2025-05-22 00:51:37.646 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:38.091 +03:00 [INF] Getting products for page number: 19
+2025-05-22 00:51:38.091 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=19&PageSize=12
+2025-05-22 00:51:38.099 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:38.446 +03:00 [INF] Getting products for page number: 20
+2025-05-22 00:51:38.446 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=20&PageSize=12
+2025-05-22 00:51:38.455 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:38.778 +03:00 [INF] Getting products for page number: 21
+2025-05-22 00:51:38.778 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=21&PageSize=12
+2025-05-22 00:51:38.787 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:39.131 +03:00 [INF] Getting products for page number: 22
+2025-05-22 00:51:39.131 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=22&PageSize=12
+2025-05-22 00:51:39.139 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:39.526 +03:00 [INF] Getting products for page number: 23
+2025-05-22 00:51:39.526 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=23&PageSize=12
+2025-05-22 00:51:39.535 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:39.919 +03:00 [INF] Getting products for page number: 24
+2025-05-22 00:51:39.919 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=24&PageSize=12
+2025-05-22 00:51:39.927 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:40.275 +03:00 [INF] Getting products for page number: 25
+2025-05-22 00:51:40.275 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=25&PageSize=12
+2025-05-22 00:51:40.285 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:40.623 +03:00 [INF] Getting products for page number: 26
+2025-05-22 00:51:40.623 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=26&PageSize=12
+2025-05-22 00:51:40.631 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:40.995 +03:00 [INF] Getting products for page number: 27
+2025-05-22 00:51:40.995 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=27&PageSize=12
+2025-05-22 00:51:41.003 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:41.319 +03:00 [INF] Getting products for page number: 28
+2025-05-22 00:51:41.319 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=28&PageSize=12
+2025-05-22 00:51:41.327 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:41.651 +03:00 [INF] Getting products for page number: 29
+2025-05-22 00:51:41.651 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=29&PageSize=12
+2025-05-22 00:51:41.664 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:41.979 +03:00 [INF] Getting products for page number: 30
+2025-05-22 00:51:41.979 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=30&PageSize=12
+2025-05-22 00:51:41.989 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:42.351 +03:00 [INF] Getting products for page number: 31
+2025-05-22 00:51:42.351 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=31&PageSize=12
+2025-05-22 00:51:42.359 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:42.675 +03:00 [INF] Getting products for page number: 32
+2025-05-22 00:51:42.675 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=32&PageSize=12
+2025-05-22 00:51:42.684 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:43.488 +03:00 [INF] Getting products for page number: 31
+2025-05-22 00:51:43.488 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=31&PageSize=12
+2025-05-22 00:51:43.498 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:43.838 +03:00 [INF] Getting products for page number: 30
+2025-05-22 00:51:43.838 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=30&PageSize=12
+2025-05-22 00:51:43.847 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:44.071 +03:00 [INF] Getting products for page number: 29
+2025-05-22 00:51:44.071 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=29&PageSize=12
+2025-05-22 00:51:44.079 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:44.253 +03:00 [INF] Getting products for page number: 28
+2025-05-22 00:51:44.253 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=28&PageSize=12
+2025-05-22 00:51:44.262 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:44.391 +03:00 [INF] Getting products for page number: 27
+2025-05-22 00:51:44.391 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=27&PageSize=12
+2025-05-22 00:51:44.401 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:44.559 +03:00 [INF] Getting products for page number: 26
+2025-05-22 00:51:44.559 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=26&PageSize=12
+2025-05-22 00:51:44.568 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:44.734 +03:00 [INF] Getting products for page number: 25
+2025-05-22 00:51:44.734 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=25&PageSize=12
+2025-05-22 00:51:44.745 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:44.871 +03:00 [INF] Getting products for page number: 24
+2025-05-22 00:51:44.871 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=24&PageSize=12
+2025-05-22 00:51:44.881 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:45.012 +03:00 [INF] Getting products for page number: 23
+2025-05-22 00:51:45.012 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=23&PageSize=12
+2025-05-22 00:51:45.021 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:45.255 +03:00 [INF] Getting products for page number: 22
+2025-05-22 00:51:45.255 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=22&PageSize=12
+2025-05-22 00:51:45.263 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:47.482 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:51:47.482 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:51:47.502 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:50.133 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:51:50.133 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:51:50.147 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:51.742 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:51:51.742 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:51:51.754 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:51:53.087 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:51:53.088 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:52:49.659 +03:00 [INF] Application starting.
+2025-05-22 00:52:55.023 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:52:55.025 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:52:55.025 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:52:55.025 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:52:55.025 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:52:55.026 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:52:55.034 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:52:55.235 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:52:55.237 +03:00 [INF] Setting authorization token
+2025-05-22 00:52:55.237 +03:00 [INF] Setting refresh token
+2025-05-22 00:52:55.237 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:52:55.237 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:52:55.238 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:52:55.240 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:52:55.240 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:52:55.240 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:52:55.246 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:52:55.553 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:52:55.553 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:52:55.575 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:53:01.408 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:53:01.409 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:54:23.940 +03:00 [INF] Application starting.
+2025-05-22 00:54:28.195 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:28.198 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:28.198 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:28.198 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:28.198 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:28.198 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:54:28.206 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:54:28.379 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:54:28.382 +03:00 [INF] Setting authorization token
+2025-05-22 00:54:28.382 +03:00 [INF] Setting refresh token
+2025-05-22 00:54:28.382 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:54:28.382 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:54:28.383 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:54:28.385 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:54:28.385 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:54:28.385 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:54:28.392 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:54:28.699 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:54:28.699 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:54:28.730 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:54:32.802 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:54:32.803 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:54:32.823 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:54:32.823 +03:00 [INF] Clearing authorization token
+2025-05-22 00:54:32.823 +03:00 [INF] Clearing refresh token
+2025-05-22 00:54:38.808 +03:00 [INF] Application starting.
+2025-05-22 00:54:44.635 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:44.637 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:44.637 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:44.637 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:44.637 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:54:44.638 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:54:44.645 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:54:44.808 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:54:44.810 +03:00 [INF] Setting authorization token
+2025-05-22 00:54:44.810 +03:00 [INF] Setting refresh token
+2025-05-22 00:54:44.811 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:54:44.811 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:54:44.812 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:54:44.813 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:54:44.814 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:54:44.814 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:54:44.818 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:54:45.215 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:54:45.215 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:54:45.234 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:54:51.103 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:54:51.104 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:54:51.124 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:54:51.124 +03:00 [INF] Clearing authorization token
+2025-05-22 00:54:51.124 +03:00 [INF] Clearing refresh token
+2025-05-22 00:56:05.112 +03:00 [INF] Application starting.
+2025-05-22 00:56:09.252 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:09.255 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:09.255 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:09.255 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:09.255 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:09.255 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:56:09.262 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:56:09.452 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:56:09.455 +03:00 [INF] Setting authorization token
+2025-05-22 00:56:09.455 +03:00 [INF] Setting refresh token
+2025-05-22 00:56:09.455 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:56:09.455 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:56:09.456 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:56:09.457 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:56:09.458 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:56:09.458 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:56:09.463 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:56:09.717 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:56:09.717 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:56:09.739 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:56:16.720 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:56:16.721 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:56:22.318 +03:00 [INF] Application starting.
+2025-05-22 00:56:26.906 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:26.908 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:26.908 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:26.908 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:26.908 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:56:26.909 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:56:26.917 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:56:27.118 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:56:27.120 +03:00 [INF] Setting authorization token
+2025-05-22 00:56:27.120 +03:00 [INF] Setting refresh token
+2025-05-22 00:56:27.121 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:56:27.121 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:56:27.122 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:56:27.123 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:56:27.124 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:56:27.124 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:56:27.135 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:56:27.289 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:56:27.289 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:56:27.315 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:56:33.641 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:56:33.641 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:56:33.663 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:56:33.663 +03:00 [INF] Clearing authorization token
+2025-05-22 00:56:33.663 +03:00 [INF] Clearing refresh token
+2025-05-22 00:56:56.210 +03:00 [INF] Application starting.
+2025-05-22 00:57:00.656 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:00.659 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:00.659 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:00.659 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:00.659 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:00.660 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:57:00.667 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:57:00.830 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:00.833 +03:00 [INF] Setting authorization token
+2025-05-22 00:57:00.833 +03:00 [INF] Setting refresh token
+2025-05-22 00:57:00.833 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:57:00.833 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:57:00.834 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:57:00.835 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:57:00.836 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:57:00.836 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:57:00.843 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:01.098 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:57:01.099 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:57:01.119 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:04.453 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:57:04.453 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:57:04.469 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:04.469 +03:00 [INF] Clearing authorization token
+2025-05-22 00:57:04.469 +03:00 [INF] Clearing refresh token
+2025-05-22 00:57:10.377 +03:00 [INF] Application starting.
+2025-05-22 00:57:17.065 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:17.068 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:17.068 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:17.068 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:17.068 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:17.068 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:57:17.077 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:57:17.265 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:17.267 +03:00 [INF] Setting authorization token
+2025-05-22 00:57:17.268 +03:00 [INF] Setting refresh token
+2025-05-22 00:57:17.268 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:57:17.268 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:57:17.269 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:57:17.270 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:57:17.271 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:57:17.271 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:57:17.277 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:17.539 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:57:17.539 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:57:17.586 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:24.089 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:57:24.090 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:57:31.704 +03:00 [INF] Application starting.
+2025-05-22 00:57:35.732 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:35.734 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:35.734 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:35.734 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:35.734 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:57:35.735 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:57:35.742 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:57:35.944 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:35.946 +03:00 [INF] Setting authorization token
+2025-05-22 00:57:35.946 +03:00 [INF] Setting refresh token
+2025-05-22 00:57:35.947 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:57:35.947 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:57:35.948 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:57:35.949 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:57:35.949 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:57:35.949 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:57:35.953 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:36.234 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:57:36.234 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:57:36.263 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:42.102 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:57:42.103 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:57:42.120 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:57:42.121 +03:00 [INF] Clearing authorization token
+2025-05-22 00:57:42.121 +03:00 [INF] Clearing refresh token
+2025-05-22 00:57:58.556 +03:00 [INF] Application starting.
+2025-05-22 00:58:05.126 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:05.128 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:05.129 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:05.129 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:05.129 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:05.129 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:58:05.138 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:58:05.339 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:58:05.341 +03:00 [INF] Setting authorization token
+2025-05-22 00:58:05.341 +03:00 [INF] Setting refresh token
+2025-05-22 00:58:05.342 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:58:05.342 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:58:05.343 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:58:05.344 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:58:05.345 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:58:05.345 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:58:05.351 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:58:05.421 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:58:05.421 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:58:05.441 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:58:12.805 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:58:12.805 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:58:12.823 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:58:12.823 +03:00 [INF] Clearing authorization token
+2025-05-22 00:58:12.824 +03:00 [INF] Clearing refresh token
+2025-05-22 00:58:21.428 +03:00 [INF] Application starting.
+2025-05-22 00:58:28.289 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:28.291 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:28.291 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:28.291 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:28.292 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 00:58:28.292 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 00:58:28.300 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 00:58:28.471 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:58:28.473 +03:00 [INF] Setting authorization token
+2025-05-22 00:58:28.473 +03:00 [INF] Setting refresh token
+2025-05-22 00:58:28.473 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 00:58:28.475 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 00:58:28.475 +03:00 [INF] Getting user with ID: 501
+2025-05-22 00:58:28.476 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 00:58:28.477 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 00:58:28.477 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 00:58:28.483 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:58:28.854 +03:00 [INF] Getting products for page number: 1
+2025-05-22 00:58:28.855 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 00:58:28.876 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:58:32.122 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 00:58:32.122 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 00:58:32.141 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 00:58:32.141 +03:00 [INF] Clearing authorization token
+2025-05-22 00:58:32.141 +03:00 [INF] Clearing refresh token
+2025-05-22 00:59:58.947 +03:00 [INF] Application starting.
+2025-05-22 01:00:05.699 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:00:05.702 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:00:05.702 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:00:05.702 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:00:05.702 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:00:05.703 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 01:00:05.710 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 01:00:05.936 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:00:05.938 +03:00 [INF] Setting authorization token
+2025-05-22 01:00:05.938 +03:00 [INF] Setting refresh token
+2025-05-22 01:00:05.938 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 01:00:05.939 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 01:00:05.940 +03:00 [INF] Getting user with ID: 501
+2025-05-22 01:00:05.941 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 01:00:05.942 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 01:00:05.942 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 01:00:05.949 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:00:06.257 +03:00 [INF] Getting products for page number: 1
+2025-05-22 01:00:06.257 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 01:00:06.281 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:00:09.370 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 01:00:09.371 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 01:00:09.390 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:00:09.390 +03:00 [INF] Clearing authorization token
+2025-05-22 01:00:09.390 +03:00 [INF] Clearing refresh token
+2025-05-22 01:00:58.655 +03:00 [INF] Application starting.
+2025-05-22 01:01:04.965 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:04.967 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:04.967 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:04.967 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:04.967 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:04.969 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 01:01:04.977 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 01:01:05.159 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:05.161 +03:00 [INF] Setting authorization token
+2025-05-22 01:01:05.161 +03:00 [INF] Setting refresh token
+2025-05-22 01:01:05.162 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 01:01:05.162 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 01:01:05.163 +03:00 [INF] Getting user with ID: 501
+2025-05-22 01:01:05.164 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 01:01:05.165 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 01:01:05.165 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 01:01:05.172 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:05.654 +03:00 [INF] Getting products for page number: 1
+2025-05-22 01:01:05.654 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 01:01:05.674 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:10.508 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 01:01:10.509 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 01:01:10.530 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:10.530 +03:00 [INF] Clearing authorization token
+2025-05-22 01:01:10.530 +03:00 [INF] Clearing refresh token
+2025-05-22 01:01:17.945 +03:00 [INF] Application starting.
+2025-05-22 01:01:25.387 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:25.390 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:25.390 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:25.390 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:25.390 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:25.390 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 01:01:25.398 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 01:01:25.562 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:25.564 +03:00 [INF] Setting authorization token
+2025-05-22 01:01:25.564 +03:00 [INF] Setting refresh token
+2025-05-22 01:01:25.565 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 01:01:25.565 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 01:01:25.566 +03:00 [INF] Getting user with ID: 501
+2025-05-22 01:01:25.567 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 01:01:25.569 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 01:01:25.569 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 01:01:25.575 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:25.871 +03:00 [INF] Getting products for page number: 1
+2025-05-22 01:01:25.871 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 01:01:25.894 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:30.219 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 01:01:30.220 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 01:01:30.244 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:30.244 +03:00 [INF] Clearing authorization token
+2025-05-22 01:01:30.244 +03:00 [INF] Clearing refresh token
+2025-05-22 01:01:51.318 +03:00 [INF] Application starting.
+2025-05-22 01:01:55.205 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:55.207 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:55.207 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:55.207 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:55.207 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:01:55.208 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 01:01:55.216 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 01:01:55.406 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:55.409 +03:00 [INF] Setting authorization token
+2025-05-22 01:01:55.409 +03:00 [INF] Setting refresh token
+2025-05-22 01:01:55.409 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 01:01:55.410 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 01:01:55.410 +03:00 [INF] Getting user with ID: 501
+2025-05-22 01:01:55.412 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 01:01:55.413 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 01:01:55.413 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 01:01:55.419 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:01:55.955 +03:00 [INF] Getting products for page number: 1
+2025-05-22 01:01:55.956 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 01:01:55.983 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:02:00.602 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 01:02:00.602 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-05-22 01:02:00.624 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:02:00.625 +03:00 [INF] Clearing authorization token
+2025-05-22 01:02:00.625 +03:00 [INF] Clearing refresh token
+2025-05-22 01:02:22.568 +03:00 [INF] Application starting.
+2025-05-22 01:02:28.352 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:02:28.355 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:02:28.355 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:02:28.355 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:02:28.355 +03:00 [INF] Initializing API client with base URL: https://localhost:7093
+2025-05-22 01:02:28.355 +03:00 [INF] Logging in user with username: Ahmed
+2025-05-22 01:02:28.363 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-05-22 01:02:28.530 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:02:28.532 +03:00 [INF] Setting authorization token
+2025-05-22 01:02:28.533 +03:00 [INF] Setting refresh token
+2025-05-22 01:02:28.533 +03:00 [INF] Setting current user ID from JWT
+2025-05-22 01:02:28.533 +03:00 [INF] Extracting user ID from JWT
+2025-05-22 01:02:28.534 +03:00 [INF] Getting user with ID: 501
+2025-05-22 01:02:28.535 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-05-22 01:02:28.536 +03:00 [INF] User logged in successfully with ID: 0
+2025-05-22 01:02:28.536 +03:00 [INF] User Ahmed Loged in Successfully
+2025-05-22 01:02:28.544 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:02:29.095 +03:00 [INF] Getting products for page number: 1
+2025-05-22 01:02:29.095 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-05-22 01:02:29.114 +03:00 [INF] Handling response errors for status code: "OK"
+2025-05-22 01:02:47.149 +03:00 [INF] Logging out user with ID: 501
+2025-05-22 01:02:47.150 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null

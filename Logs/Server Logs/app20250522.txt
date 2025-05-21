@@ -1,0 +1,1131 @@
+2025-05-22 00:05:01.101 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:05:01.134 +03:00 [INF] AuthBL Login
+2025-05-22 00:05:01.134 +03:00 [INF] ServAuth Login
+2025-05-22 00:05:01.201 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:05:01.505 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:05:01.506 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:05:01.506 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:05:01.506 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:05:01.507 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:05:01.508 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:05:01.511 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:05:01.520 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:05:01.538 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:05:01.538 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:05:01.538 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:05:02.107 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:05:02.107 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:05:02.107 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:05:02.168 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:05:39.284 +03:00 [INF] AuthBL Logout
+2025-05-22 00:05:39.284 +03:00 [INF] ServAuth Logout
+2025-05-22 00:05:39.299 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:06:32.238 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:06:32.238 +03:00 [INF] AuthBL Login
+2025-05-22 00:06:32.238 +03:00 [INF] ServAuth Login
+2025-05-22 00:06:32.309 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:06:32.624 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:06:32.625 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:06:32.625 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:06:32.625 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:06:32.625 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:06:32.626 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:06:32.628 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:06:32.637 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:06:32.668 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:06:32.668 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:06:32.668 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:06:33.320 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:06:33.320 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:06:33.320 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:06:33.338 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:06:58.888 +03:00 [INF] AuthBL Logout
+2025-05-22 00:06:58.889 +03:00 [INF] ServAuth Logout
+2025-05-22 00:06:58.901 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:09:16.592 +03:00 [INF] Starting web host
+2025-05-22 00:09:18.516 +03:00 [INF] Now listening on: https://localhost:7093
+2025-05-22 00:09:18.519 +03:00 [INF] Now listening on: http://localhost:5002
+2025-05-22 00:09:18.692 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 00:09:18.693 +03:00 [INF] Hosting environment: Development
+2025-05-22 00:09:18.693 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-05-22 00:09:30.007 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:09:30.016 +03:00 [INF] AuthBL Login
+2025-05-22 00:09:30.077 +03:00 [INF] ServAuth Login
+2025-05-22 00:09:35.274 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:09:36.318 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:09:36.319 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:09:36.322 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:09:36.337 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:09:36.398 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:09:36.404 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:09:36.499 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:09:36.546 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:09:36.772 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:09:36.775 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:09:36.782 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:09:38.904 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:09:38.906 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:09:38.915 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:09:39.234 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:09:44.970 +03:00 [INF] UsersAPI UpdateUserAPI
+2025-05-22 00:09:44.973 +03:00 [INF] UsersBL UpdateUser
+2025-05-22 00:09:45.020 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:09:45.730 +03:00 [WRN] UsersAPI There is no user with this id or wrong password or you are not logged in
+2025-05-22 00:10:04.439 +03:00 [INF] UsersAPI UpdateUserAPI
+2025-05-22 00:10:04.440 +03:00 [INF] UsersBL UpdateUser
+2025-05-22 00:10:04.460 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:10:04.743 +03:00 [INF] UserDA User updated successfully with id 501
+2025-05-22 00:10:19.486 +03:00 [INF] AuthBL Logout
+2025-05-22 00:10:19.489 +03:00 [INF] ServAuth Logout
+2025-05-22 00:10:19.552 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:11:01.014 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:11:01.015 +03:00 [INF] AuthBL Login
+2025-05-22 00:11:01.015 +03:00 [INF] ServAuth Login
+2025-05-22 00:11:01.030 +03:00 [WRN] ServAuth Login failed
+2025-05-22 00:11:01.030 +03:00 [WRN] AuthAPI Invalid username or password
+2025-05-22 00:11:05.269 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:11:05.270 +03:00 [INF] AuthBL Login
+2025-05-22 00:11:05.270 +03:00 [INF] ServAuth Login
+2025-05-22 00:11:05.278 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:11:05.561 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:11:05.561 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:11:05.561 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:11:05.561 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:11:05.562 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:11:05.562 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:11:05.570 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:11:05.575 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:11:05.597 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:11:05.597 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:11:05.597 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:11:06.967 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:11:06.967 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:11:06.967 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:11:06.988 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:11:22.389 +03:00 [INF] UsersAPI UpdateUserAPI
+2025-05-22 00:11:22.390 +03:00 [INF] UsersBL UpdateUser
+2025-05-22 00:11:22.420 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:11:22.679 +03:00 [INF] ServPass Hashing password
+2025-05-22 00:11:23.003 +03:00 [INF] UserDA User updated successfully with id 501
+2025-05-22 00:11:29.047 +03:00 [INF] AuthBL Logout
+2025-05-22 00:11:29.047 +03:00 [INF] ServAuth Logout
+2025-05-22 00:11:29.063 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:11:38.708 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:11:38.709 +03:00 [INF] AuthBL Login
+2025-05-22 00:11:38.709 +03:00 [INF] ServAuth Login
+2025-05-22 00:11:38.759 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:11:39.077 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:11:39.077 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:11:39.077 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:11:39.078 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:11:39.078 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:11:39.078 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:11:39.082 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:11:39.087 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:11:39.117 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:11:39.117 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:11:39.117 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:11:39.948 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:11:39.948 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:11:39.949 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:11:40.013 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:11:49.607 +03:00 [INF] UsersAPI UpdateUserAPI
+2025-05-22 00:11:49.607 +03:00 [INF] UsersBL UpdateUser
+2025-05-22 00:11:49.619 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:11:49.878 +03:00 [INF] ServPass Hashing password
+2025-05-22 00:11:50.205 +03:00 [INF] UserDA User updated successfully with id 501
+2025-05-22 00:11:56.409 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:11:56.409 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:11:56.409 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:11:56.444 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:11:58.580 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:11:58.580 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:11:58.580 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:11:58.640 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:12:01.448 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:12:01.448 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:12:01.448 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:12:01.462 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:12:04.928 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:12:04.928 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:12:04.928 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:12:04.943 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:12:09.484 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:12:09.484 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:12:09.484 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:12:09.499 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:12:10.234 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:12:10.234 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:12:10.235 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:12:10.247 +03:00 [INF] ProductDA Returned: page 3, pageSize 12
+2025-05-22 00:12:16.754 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:12:16.754 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:12:16.754 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:12:16.835 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:12:19.683 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:12:19.683 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:12:19.683 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:12:19.705 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:12:24.590 +03:00 [INF] AuthBL Logout
+2025-05-22 00:12:24.590 +03:00 [INF] ServAuth Logout
+2025-05-22 00:12:24.609 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:27:57.765 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:27:57.765 +03:00 [INF] AuthBL Login
+2025-05-22 00:27:57.765 +03:00 [INF] ServAuth Login
+2025-05-22 00:27:57.783 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:27:57.847 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:27:57.847 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:27:57.847 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:27:57.847 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:27:57.847 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:27:57.847 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:27:57.850 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:27:57.853 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:27:57.863 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:27:57.863 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:27:57.863 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:27:58.284 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:27:58.284 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:27:58.285 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:27:58.295 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:28:03.981 +03:00 [INF] AuthBL Logout
+2025-05-22 00:28:03.981 +03:00 [INF] ServAuth Logout
+2025-05-22 00:28:03.986 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:29:01.375 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:29:01.375 +03:00 [INF] AuthBL Login
+2025-05-22 00:29:01.376 +03:00 [INF] ServAuth Login
+2025-05-22 00:29:01.390 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:29:01.457 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:29:01.457 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:29:01.457 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:29:01.458 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:29:01.458 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:29:01.458 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:29:01.459 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:29:01.463 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:29:01.472 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:29:01.473 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:29:01.473 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:29:01.778 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:29:01.778 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:29:01.778 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:29:01.790 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:29:06.316 +03:00 [INF] AuthBL Logout
+2025-05-22 00:29:06.316 +03:00 [INF] ServAuth Logout
+2025-05-22 00:29:06.321 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:37:08.796 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:37:08.796 +03:00 [INF] AuthBL Login
+2025-05-22 00:37:08.796 +03:00 [INF] ServAuth Login
+2025-05-22 00:37:08.812 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:37:08.879 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:37:08.879 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:37:08.879 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:37:08.879 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:37:08.879 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:37:08.879 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:37:08.880 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:37:08.883 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:37:08.892 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:37:08.892 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:37:08.892 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:37:09.372 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:09.372 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:09.372 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:09.382 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:37:18.740 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:18.741 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:18.741 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:18.745 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:37:32.700 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:32.700 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:32.700 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:32.713 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:37:39.070 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:39.070 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:39.070 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:39.076 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:37:39.728 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:39.728 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:39.729 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:39.734 +03:00 [INF] ProductDA Returned: page 3, pageSize 12
+2025-05-22 00:37:40.457 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:40.457 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:40.457 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:40.462 +03:00 [INF] ProductDA Returned: page 4, pageSize 12
+2025-05-22 00:37:40.992 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:40.992 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:40.992 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:40.996 +03:00 [INF] ProductDA Returned: page 5, pageSize 12
+2025-05-22 00:37:41.486 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:41.486 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:41.486 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:41.491 +03:00 [INF] ProductDA Returned: page 6, pageSize 12
+2025-05-22 00:37:42.277 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:42.277 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:42.277 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:42.281 +03:00 [INF] ProductDA Returned: page 7, pageSize 12
+2025-05-22 00:37:42.965 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:42.965 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:42.965 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:42.969 +03:00 [INF] ProductDA Returned: page 8, pageSize 12
+2025-05-22 00:37:43.517 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:43.517 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:43.517 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:43.521 +03:00 [INF] ProductDA Returned: page 9, pageSize 12
+2025-05-22 00:37:44.081 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:44.081 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:44.081 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:44.085 +03:00 [INF] ProductDA Returned: page 10, pageSize 12
+2025-05-22 00:37:49.627 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:49.627 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:49.627 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:49.631 +03:00 [INF] ProductDA Returned: page 9, pageSize 12
+2025-05-22 00:37:50.323 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:50.323 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:50.323 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:50.326 +03:00 [INF] ProductDA Returned: page 8, pageSize 12
+2025-05-22 00:37:50.883 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:50.883 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:50.883 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:50.887 +03:00 [INF] ProductDA Returned: page 7, pageSize 12
+2025-05-22 00:37:51.751 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:51.751 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:51.751 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:51.755 +03:00 [INF] ProductDA Returned: page 6, pageSize 12
+2025-05-22 00:37:52.507 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:52.507 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:52.507 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:52.510 +03:00 [INF] ProductDA Returned: page 5, pageSize 12
+2025-05-22 00:37:53.213 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:53.213 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:53.213 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:53.217 +03:00 [INF] ProductDA Returned: page 4, pageSize 12
+2025-05-22 00:37:53.856 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:53.856 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:53.856 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:53.861 +03:00 [INF] ProductDA Returned: page 3, pageSize 12
+2025-05-22 00:37:54.465 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:54.465 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:54.465 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:54.469 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:37:54.973 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:37:54.973 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:37:54.973 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:37:54.977 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:38:02.732 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:02.732 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:02.732 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:02.736 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:38:05.507 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:05.507 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:05.507 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:05.511 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:38:14.065 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:14.065 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:14.065 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:14.068 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:38:14.748 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:14.749 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:14.749 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:14.752 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:38:15.873 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:15.873 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:15.873 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:15.877 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:38:16.876 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:16.876 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:16.876 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:16.880 +03:00 [INF] ProductDA Returned: page 3, pageSize 12
+2025-05-22 00:38:19.855 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:19.855 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:19.855 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:19.860 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:38:23.038 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:23.038 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:23.038 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:23.043 +03:00 [INF] ProductDA Returned: page 3, pageSize 12
+2025-05-22 00:38:23.594 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:23.594 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:23.594 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:23.598 +03:00 [INF] ProductDA Returned: page 4, pageSize 12
+2025-05-22 00:38:24.398 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:24.398 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:24.398 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:24.402 +03:00 [INF] ProductDA Returned: page 5, pageSize 12
+2025-05-22 00:38:24.971 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:24.971 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:24.971 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:24.975 +03:00 [INF] ProductDA Returned: page 6, pageSize 12
+2025-05-22 00:38:25.761 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:25.761 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:25.761 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:25.765 +03:00 [INF] ProductDA Returned: page 7, pageSize 12
+2025-05-22 00:38:26.472 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:26.472 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:26.472 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:26.475 +03:00 [INF] ProductDA Returned: page 8, pageSize 12
+2025-05-22 00:38:27.152 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:27.152 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:27.152 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:27.156 +03:00 [INF] ProductDA Returned: page 9, pageSize 12
+2025-05-22 00:38:28.856 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:38:28.856 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:38:28.856 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:38:28.860 +03:00 [INF] ProductDA Returned: page 10, pageSize 12
+2025-05-22 00:38:35.660 +03:00 [INF] AuthBL Logout
+2025-05-22 00:38:35.660 +03:00 [INF] ServAuth Logout
+2025-05-22 00:38:35.672 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:40:32.896 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:40:32.896 +03:00 [INF] AuthBL Login
+2025-05-22 00:40:32.896 +03:00 [INF] ServAuth Login
+2025-05-22 00:40:32.909 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:40:32.972 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:40:32.972 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:40:32.972 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:40:32.972 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:40:32.972 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:40:32.972 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:40:32.973 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:40:32.976 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:40:32.984 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:40:32.984 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:40:32.984 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:40:33.580 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:40:33.580 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:40:33.580 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:40:33.584 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:40:51.147 +03:00 [INF] AuthBL Logout
+2025-05-22 00:40:51.147 +03:00 [INF] ServAuth Logout
+2025-05-22 00:40:51.165 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:41:08.247 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:41:08.247 +03:00 [INF] AuthBL Login
+2025-05-22 00:41:08.247 +03:00 [INF] ServAuth Login
+2025-05-22 00:41:08.266 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:41:08.330 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:41:08.330 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:41:08.330 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:41:08.330 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:41:08.330 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:41:08.330 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:41:08.331 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:41:08.333 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:41:08.341 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:41:08.341 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:41:08.341 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:41:08.606 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:41:08.606 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:41:08.606 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:41:08.623 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:41:16.565 +03:00 [INF] AuthBL Logout
+2025-05-22 00:41:16.565 +03:00 [INF] ServAuth Logout
+2025-05-22 00:41:16.569 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:41:27.101 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:41:27.101 +03:00 [INF] AuthBL Login
+2025-05-22 00:41:27.101 +03:00 [INF] ServAuth Login
+2025-05-22 00:41:27.103 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:41:27.164 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:41:27.164 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:41:27.164 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:41:27.164 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:41:27.165 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:41:27.165 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:41:27.165 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:41:27.167 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:41:27.175 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:41:27.175 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:41:27.175 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:41:27.619 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:41:27.619 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:41:27.619 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:41:27.623 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:41:34.960 +03:00 [INF] AuthBL Logout
+2025-05-22 00:41:34.961 +03:00 [INF] ServAuth Logout
+2025-05-22 00:41:34.964 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:43:42.206 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:43:42.206 +03:00 [INF] AuthBL Login
+2025-05-22 00:43:42.206 +03:00 [INF] ServAuth Login
+2025-05-22 00:43:42.225 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:43:42.287 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:43:42.287 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:43:42.287 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:43:42.287 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:43:42.287 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:43:42.287 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:43:42.288 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:43:42.290 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:43:42.299 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:43:42.299 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:43:42.299 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:43:42.732 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:43:42.732 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:43:42.732 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:43:42.749 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:43:51.455 +03:00 [INF] AuthBL Logout
+2025-05-22 00:43:51.455 +03:00 [INF] ServAuth Logout
+2025-05-22 00:43:51.459 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:44:08.347 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:44:08.347 +03:00 [INF] AuthBL Login
+2025-05-22 00:44:08.347 +03:00 [INF] ServAuth Login
+2025-05-22 00:44:08.364 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:44:08.428 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:44:08.428 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:44:08.428 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:44:08.428 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:44:08.429 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:44:08.429 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:44:08.430 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:44:08.432 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:44:08.441 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:44:08.441 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:44:08.441 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:44:08.763 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:44:08.763 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:44:08.763 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:44:08.778 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:44:18.973 +03:00 [INF] AuthBL Logout
+2025-05-22 00:44:18.973 +03:00 [INF] ServAuth Logout
+2025-05-22 00:44:18.979 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:44:30.660 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:44:30.660 +03:00 [INF] AuthBL Login
+2025-05-22 00:44:30.660 +03:00 [INF] ServAuth Login
+2025-05-22 00:44:30.663 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:44:30.728 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:44:30.728 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:44:30.728 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:44:30.728 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:44:30.729 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:44:30.729 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:44:30.729 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:44:30.730 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:44:30.739 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:44:30.739 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:44:30.739 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:44:30.957 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:44:30.957 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:44:30.957 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:44:30.962 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:44:34.170 +03:00 [INF] AuthBL Logout
+2025-05-22 00:44:34.170 +03:00 [INF] ServAuth Logout
+2025-05-22 00:44:34.174 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:46:16.355 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:46:16.355 +03:00 [INF] AuthBL Login
+2025-05-22 00:46:16.355 +03:00 [INF] ServAuth Login
+2025-05-22 00:46:16.359 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:46:16.423 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:46:16.423 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:46:16.423 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:46:16.423 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:46:16.423 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:46:16.423 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:46:16.424 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:46:16.426 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:46:16.434 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:46:16.434 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:46:16.434 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:46:16.658 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:46:16.658 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:46:16.658 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:46:16.663 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:46:21.878 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:46:21.878 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:46:21.878 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:46:21.895 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:46:48.511 +03:00 [INF] AuthBL Logout
+2025-05-22 00:46:48.511 +03:00 [INF] ServAuth Logout
+2025-05-22 00:46:48.530 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:48:53.997 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:48:53.997 +03:00 [INF] AuthBL Login
+2025-05-22 00:48:53.997 +03:00 [INF] ServAuth Login
+2025-05-22 00:48:54.010 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:48:54.073 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:48:54.073 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:48:54.073 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:48:54.073 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:48:54.073 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:48:54.073 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:48:54.074 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:48:54.076 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:48:54.086 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:48:54.086 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:48:54.086 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:48:54.528 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:48:54.528 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:48:54.528 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:48:54.544 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:48:57.803 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:48:57.803 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:48:57.803 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:48:57.806 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:49:01.303 +03:00 [INF] AuthBL Logout
+2025-05-22 00:49:01.303 +03:00 [INF] ServAuth Logout
+2025-05-22 00:49:01.307 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:49:59.521 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:49:59.521 +03:00 [INF] AuthBL Login
+2025-05-22 00:49:59.521 +03:00 [INF] ServAuth Login
+2025-05-22 00:49:59.532 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:49:59.595 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:49:59.595 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:49:59.595 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:49:59.595 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:49:59.595 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:49:59.595 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:49:59.596 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:49:59.599 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:49:59.608 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:49:59.609 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:49:59.609 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:49:59.947 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:49:59.947 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:49:59.947 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:49:59.953 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:50:07.616 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:50:07.616 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:50:07.616 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:50:07.619 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:50:08.685 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:50:08.685 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:50:08.685 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:50:08.688 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:50:09.626 +03:00 [INF] AuthBL Logout
+2025-05-22 00:50:09.626 +03:00 [INF] ServAuth Logout
+2025-05-22 00:50:09.630 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:51:15.580 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:51:15.580 +03:00 [INF] AuthBL Login
+2025-05-22 00:51:15.580 +03:00 [INF] ServAuth Login
+2025-05-22 00:51:15.595 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:51:15.659 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:51:15.659 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:51:15.659 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:51:15.659 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:51:15.659 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:51:15.659 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:51:15.660 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:51:15.663 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:51:15.672 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:51:15.672 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:51:15.672 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:51:16.155 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:16.155 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:16.155 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:16.166 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:51:19.258 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:19.258 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:19.258 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:19.266 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:51:21.039 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:21.039 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:21.039 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:21.044 +03:00 [INF] ProductDA Returned: page 2, pageSize 12
+2025-05-22 00:51:21.615 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:21.615 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:21.615 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:21.618 +03:00 [INF] ProductDA Returned: page 3, pageSize 12
+2025-05-22 00:51:22.265 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:22.265 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:22.265 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:22.268 +03:00 [INF] ProductDA Returned: page 4, pageSize 12
+2025-05-22 00:51:22.856 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:22.856 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:22.856 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:22.859 +03:00 [INF] ProductDA Returned: page 5, pageSize 12
+2025-05-22 00:51:23.422 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:23.422 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:23.422 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:23.425 +03:00 [INF] ProductDA Returned: page 6, pageSize 12
+2025-05-22 00:51:23.981 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:23.981 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:23.981 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:23.984 +03:00 [INF] ProductDA Returned: page 7, pageSize 12
+2025-05-22 00:51:24.526 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:24.526 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:24.526 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:24.530 +03:00 [INF] ProductDA Returned: page 8, pageSize 12
+2025-05-22 00:51:25.101 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:25.101 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:25.101 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:25.104 +03:00 [INF] ProductDA Returned: page 9, pageSize 12
+2025-05-22 00:51:25.650 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:25.650 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:25.650 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:25.654 +03:00 [INF] ProductDA Returned: page 10, pageSize 12
+2025-05-22 00:51:26.185 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:26.185 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:26.185 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:26.189 +03:00 [INF] ProductDA Returned: page 11, pageSize 12
+2025-05-22 00:51:26.693 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:26.693 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:26.693 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:26.696 +03:00 [INF] ProductDA Returned: page 12, pageSize 12
+2025-05-22 00:51:27.217 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:27.217 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:27.217 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:27.220 +03:00 [INF] ProductDA Returned: page 13, pageSize 12
+2025-05-22 00:51:27.714 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:27.714 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:27.714 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:27.717 +03:00 [INF] ProductDA Returned: page 14, pageSize 12
+2025-05-22 00:51:28.253 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:28.253 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:28.253 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:28.257 +03:00 [INF] ProductDA Returned: page 15, pageSize 12
+2025-05-22 00:51:31.609 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:31.609 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:31.609 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:31.612 +03:00 [INF] ProductDA Returned: page 14, pageSize 12
+2025-05-22 00:51:32.936 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:32.936 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:32.936 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:32.940 +03:00 [INF] ProductDA Returned: page 15, pageSize 12
+2025-05-22 00:51:36.119 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:36.119 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:36.119 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:36.123 +03:00 [INF] ProductDA Returned: page 16, pageSize 12
+2025-05-22 00:51:36.855 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:36.855 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:36.855 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:36.858 +03:00 [INF] ProductDA Returned: page 17, pageSize 12
+2025-05-22 00:51:37.639 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:37.639 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:37.639 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:37.643 +03:00 [INF] ProductDA Returned: page 18, pageSize 12
+2025-05-22 00:51:38.093 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:38.093 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:38.093 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:38.096 +03:00 [INF] ProductDA Returned: page 19, pageSize 12
+2025-05-22 00:51:38.448 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:38.449 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:38.449 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:38.452 +03:00 [INF] ProductDA Returned: page 20, pageSize 12
+2025-05-22 00:51:38.781 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:38.781 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:38.781 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:38.784 +03:00 [INF] ProductDA Returned: page 21, pageSize 12
+2025-05-22 00:51:39.132 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:39.132 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:39.132 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:39.136 +03:00 [INF] ProductDA Returned: page 22, pageSize 12
+2025-05-22 00:51:39.528 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:39.528 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:39.528 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:39.532 +03:00 [INF] ProductDA Returned: page 23, pageSize 12
+2025-05-22 00:51:39.921 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:39.921 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:39.921 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:39.924 +03:00 [INF] ProductDA Returned: page 24, pageSize 12
+2025-05-22 00:51:40.278 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:40.278 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:40.278 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:40.281 +03:00 [INF] ProductDA Returned: page 25, pageSize 12
+2025-05-22 00:51:40.625 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:40.625 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:40.625 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:40.628 +03:00 [INF] ProductDA Returned: page 26, pageSize 12
+2025-05-22 00:51:40.997 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:40.997 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:40.997 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:41.000 +03:00 [INF] ProductDA Returned: page 27, pageSize 12
+2025-05-22 00:51:41.321 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:41.321 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:41.321 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:41.324 +03:00 [INF] ProductDA Returned: page 28, pageSize 12
+2025-05-22 00:51:41.653 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:41.653 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:41.653 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:41.658 +03:00 [INF] ProductDA Returned: page 29, pageSize 12
+2025-05-22 00:51:41.982 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:41.982 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:41.982 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:41.985 +03:00 [INF] ProductDA Returned: page 30, pageSize 12
+2025-05-22 00:51:42.353 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:42.353 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:42.353 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:42.356 +03:00 [INF] ProductDA Returned: page 31, pageSize 12
+2025-05-22 00:51:42.677 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:42.677 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:42.677 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:42.680 +03:00 [INF] ProductDA Returned: page 32, pageSize 12
+2025-05-22 00:51:43.490 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:43.490 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:43.490 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:43.494 +03:00 [INF] ProductDA Returned: page 31, pageSize 12
+2025-05-22 00:51:43.841 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:43.841 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:43.841 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:43.844 +03:00 [INF] ProductDA Returned: page 30, pageSize 12
+2025-05-22 00:51:44.072 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:44.073 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:44.073 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:44.076 +03:00 [INF] ProductDA Returned: page 29, pageSize 12
+2025-05-22 00:51:44.254 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:44.254 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:44.254 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:44.258 +03:00 [INF] ProductDA Returned: page 28, pageSize 12
+2025-05-22 00:51:44.392 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:44.392 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:44.392 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:44.396 +03:00 [INF] ProductDA Returned: page 27, pageSize 12
+2025-05-22 00:51:44.561 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:44.561 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:44.561 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:44.565 +03:00 [INF] ProductDA Returned: page 26, pageSize 12
+2025-05-22 00:51:44.737 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:44.737 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:44.737 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:44.741 +03:00 [INF] ProductDA Returned: page 25, pageSize 12
+2025-05-22 00:51:44.872 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:44.873 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:44.873 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:44.876 +03:00 [INF] ProductDA Returned: page 24, pageSize 12
+2025-05-22 00:51:45.014 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:45.014 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:45.014 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:45.017 +03:00 [INF] ProductDA Returned: page 23, pageSize 12
+2025-05-22 00:51:45.256 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:45.256 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:45.256 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:45.260 +03:00 [INF] ProductDA Returned: page 22, pageSize 12
+2025-05-22 00:51:47.484 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:47.484 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:47.484 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:47.495 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:51:50.135 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:50.135 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:50.135 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:50.139 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:51:51.743 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:51:51.743 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:51:51.743 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:51:51.748 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:51:53.089 +03:00 [INF] AuthBL Logout
+2025-05-22 00:51:53.089 +03:00 [INF] ServAuth Logout
+2025-05-22 00:51:53.102 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:52:55.149 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:52:55.150 +03:00 [INF] AuthBL Login
+2025-05-22 00:52:55.150 +03:00 [INF] ServAuth Login
+2025-05-22 00:52:55.166 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:52:55.229 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:52:55.229 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:52:55.229 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:52:55.229 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:52:55.229 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:52:55.229 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:52:55.230 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:52:55.233 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:52:55.241 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:52:55.242 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:52:55.242 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:52:55.554 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:52:55.554 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:52:55.554 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:52:55.559 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:53:01.411 +03:00 [INF] AuthBL Logout
+2025-05-22 00:53:01.411 +03:00 [INF] ServAuth Logout
+2025-05-22 00:53:01.415 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:54:28.299 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:54:28.299 +03:00 [INF] AuthBL Login
+2025-05-22 00:54:28.299 +03:00 [INF] ServAuth Login
+2025-05-22 00:54:28.309 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:54:28.374 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:54:28.374 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:54:28.374 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:54:28.375 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:54:28.375 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:54:28.375 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:54:28.376 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:54:28.378 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:54:28.386 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:54:28.386 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:54:28.386 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:54:28.700 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:54:28.700 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:54:28.700 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:54:28.718 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:54:32.805 +03:00 [INF] AuthBL Logout
+2025-05-22 00:54:32.805 +03:00 [INF] ServAuth Logout
+2025-05-22 00:54:32.809 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:54:44.738 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:54:44.739 +03:00 [INF] AuthBL Login
+2025-05-22 00:54:44.739 +03:00 [INF] ServAuth Login
+2025-05-22 00:54:44.740 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:54:44.802 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:54:44.802 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:54:44.802 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:54:44.802 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:54:44.802 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:54:44.802 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:54:44.803 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:54:44.805 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:54:44.815 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:54:44.815 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:54:44.815 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:54:45.216 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:54:45.216 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:54:45.216 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:54:45.219 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:54:51.106 +03:00 [INF] AuthBL Logout
+2025-05-22 00:54:51.106 +03:00 [INF] ServAuth Logout
+2025-05-22 00:54:51.110 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:56:09.369 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:56:09.369 +03:00 [INF] AuthBL Login
+2025-05-22 00:56:09.369 +03:00 [INF] ServAuth Login
+2025-05-22 00:56:09.382 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:56:09.447 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:56:09.447 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:56:09.447 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:56:09.447 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:56:09.447 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:56:09.447 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:56:09.448 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:56:09.450 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:56:09.458 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:56:09.459 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:56:09.459 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:56:09.718 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:56:09.718 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:56:09.718 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:56:09.729 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:56:16.723 +03:00 [INF] AuthBL Logout
+2025-05-22 00:56:16.723 +03:00 [INF] ServAuth Logout
+2025-05-22 00:56:16.743 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:56:27.048 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:56:27.048 +03:00 [INF] AuthBL Login
+2025-05-22 00:56:27.048 +03:00 [INF] ServAuth Login
+2025-05-22 00:56:27.053 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:56:27.114 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:56:27.114 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:56:27.114 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:56:27.114 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:56:27.115 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:56:27.115 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:56:27.115 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:56:27.116 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:56:27.125 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:56:27.125 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:56:27.125 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:56:27.291 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:56:27.291 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:56:27.291 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:56:27.303 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:56:33.644 +03:00 [INF] AuthBL Logout
+2025-05-22 00:56:33.644 +03:00 [INF] ServAuth Logout
+2025-05-22 00:56:33.648 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:57:00.759 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:57:00.760 +03:00 [INF] AuthBL Login
+2025-05-22 00:57:00.760 +03:00 [INF] ServAuth Login
+2025-05-22 00:57:00.762 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:57:00.826 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:57:00.826 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:57:00.826 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:57:00.826 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:57:00.826 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:57:00.826 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:57:00.827 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:57:00.828 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:57:00.837 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:57:00.837 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:57:00.837 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:57:01.100 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:57:01.100 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:57:01.100 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:57:01.104 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:57:04.455 +03:00 [INF] AuthBL Logout
+2025-05-22 00:57:04.455 +03:00 [INF] ServAuth Logout
+2025-05-22 00:57:04.458 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:57:17.178 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:57:17.178 +03:00 [INF] AuthBL Login
+2025-05-22 00:57:17.178 +03:00 [INF] ServAuth Login
+2025-05-22 00:57:17.195 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:57:17.258 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:57:17.258 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:57:17.258 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:57:17.258 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:57:17.258 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:57:17.258 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:57:17.259 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:57:17.262 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:57:17.272 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:57:17.272 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:57:17.272 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:57:17.541 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:57:17.541 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:57:17.541 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:57:17.559 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:57:24.092 +03:00 [INF] AuthBL Logout
+2025-05-22 00:57:24.092 +03:00 [INF] ServAuth Logout
+2025-05-22 00:57:24.105 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:57:35.874 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:57:35.874 +03:00 [INF] AuthBL Login
+2025-05-22 00:57:35.874 +03:00 [INF] ServAuth Login
+2025-05-22 00:57:35.877 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:57:35.940 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:57:35.940 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:57:35.940 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:57:35.940 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:57:35.940 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:57:35.940 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:57:35.941 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:57:35.942 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:57:35.950 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:57:35.950 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:57:35.950 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:57:36.235 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:57:36.236 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:57:36.236 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:57:36.252 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:57:42.104 +03:00 [INF] AuthBL Logout
+2025-05-22 00:57:42.104 +03:00 [INF] ServAuth Logout
+2025-05-22 00:57:42.108 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:58:05.267 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:58:05.267 +03:00 [INF] AuthBL Login
+2025-05-22 00:58:05.267 +03:00 [INF] ServAuth Login
+2025-05-22 00:58:05.269 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:58:05.335 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:58:05.335 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:58:05.335 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:58:05.335 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:58:05.335 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:58:05.335 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:58:05.336 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:58:05.337 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:58:05.346 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:58:05.346 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:58:05.346 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:58:05.422 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:58:05.423 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:58:05.423 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:58:05.426 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:58:12.807 +03:00 [INF] AuthBL Logout
+2025-05-22 00:58:12.807 +03:00 [INF] ServAuth Logout
+2025-05-22 00:58:12.811 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 00:58:28.393 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 00:58:28.393 +03:00 [INF] AuthBL Login
+2025-05-22 00:58:28.393 +03:00 [INF] ServAuth Login
+2025-05-22 00:58:28.404 +03:00 [INF] ServPass Verifying password
+2025-05-22 00:58:28.466 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 00:58:28.466 +03:00 [INF] ServAuth Creating token response
+2025-05-22 00:58:28.466 +03:00 [INF] ServAuth Creating token
+2025-05-22 00:58:28.466 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 00:58:28.466 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 00:58:28.466 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 00:58:28.467 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 00:58:28.469 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 00:58:28.478 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 00:58:28.478 +03:00 [INF] UsersBL GetUserById
+2025-05-22 00:58:28.478 +03:00 [INF] UserDA Getting user by id
+2025-05-22 00:58:28.856 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 00:58:28.856 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 00:58:28.856 +03:00 [INF] ProductDA Get Products
+2025-05-22 00:58:28.861 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 00:58:32.125 +03:00 [INF] AuthBL Logout
+2025-05-22 00:58:32.125 +03:00 [INF] ServAuth Logout
+2025-05-22 00:58:32.128 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 01:00:05.816 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 01:00:05.816 +03:00 [INF] AuthBL Login
+2025-05-22 01:00:05.816 +03:00 [INF] ServAuth Login
+2025-05-22 01:00:05.860 +03:00 [INF] ServPass Verifying password
+2025-05-22 01:00:05.930 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 01:00:05.930 +03:00 [INF] ServAuth Creating token response
+2025-05-22 01:00:05.930 +03:00 [INF] ServAuth Creating token
+2025-05-22 01:00:05.931 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 01:00:05.931 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 01:00:05.931 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 01:00:05.932 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 01:00:05.934 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 01:00:05.943 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 01:00:05.943 +03:00 [INF] UsersBL GetUserById
+2025-05-22 01:00:05.943 +03:00 [INF] UserDA Getting user by id
+2025-05-22 01:00:06.259 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 01:00:06.259 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 01:00:06.259 +03:00 [INF] ProductDA Get Products
+2025-05-22 01:00:06.265 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 01:00:09.373 +03:00 [INF] AuthBL Logout
+2025-05-22 01:00:09.373 +03:00 [INF] ServAuth Logout
+2025-05-22 01:00:09.377 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 01:01:05.078 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 01:01:05.078 +03:00 [INF] AuthBL Login
+2025-05-22 01:01:05.078 +03:00 [INF] ServAuth Login
+2025-05-22 01:01:05.088 +03:00 [INF] ServPass Verifying password
+2025-05-22 01:01:05.154 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 01:01:05.154 +03:00 [INF] ServAuth Creating token response
+2025-05-22 01:01:05.154 +03:00 [INF] ServAuth Creating token
+2025-05-22 01:01:05.154 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 01:01:05.154 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 01:01:05.154 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 01:01:05.155 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 01:01:05.157 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 01:01:05.166 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 01:01:05.166 +03:00 [INF] UsersBL GetUserById
+2025-05-22 01:01:05.166 +03:00 [INF] UserDA Getting user by id
+2025-05-22 01:01:05.656 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 01:01:05.656 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 01:01:05.656 +03:00 [INF] ProductDA Get Products
+2025-05-22 01:01:05.661 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 01:01:10.511 +03:00 [INF] AuthBL Logout
+2025-05-22 01:01:10.511 +03:00 [INF] ServAuth Logout
+2025-05-22 01:01:10.515 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 01:01:25.490 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 01:01:25.490 +03:00 [INF] AuthBL Login
+2025-05-22 01:01:25.490 +03:00 [INF] ServAuth Login
+2025-05-22 01:01:25.492 +03:00 [INF] ServPass Verifying password
+2025-05-22 01:01:25.556 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 01:01:25.556 +03:00 [INF] ServAuth Creating token response
+2025-05-22 01:01:25.556 +03:00 [INF] ServAuth Creating token
+2025-05-22 01:01:25.556 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 01:01:25.557 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 01:01:25.557 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 01:01:25.557 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 01:01:25.559 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 01:01:25.569 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 01:01:25.569 +03:00 [INF] UsersBL GetUserById
+2025-05-22 01:01:25.569 +03:00 [INF] UserDA Getting user by id
+2025-05-22 01:01:25.873 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 01:01:25.873 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 01:01:25.873 +03:00 [INF] ProductDA Get Products
+2025-05-22 01:01:25.877 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 01:01:30.221 +03:00 [INF] AuthBL Logout
+2025-05-22 01:01:30.221 +03:00 [INF] ServAuth Logout
+2025-05-22 01:01:30.225 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 01:01:55.313 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 01:01:55.313 +03:00 [INF] AuthBL Login
+2025-05-22 01:01:55.313 +03:00 [INF] ServAuth Login
+2025-05-22 01:01:55.336 +03:00 [INF] ServPass Verifying password
+2025-05-22 01:01:55.400 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 01:01:55.400 +03:00 [INF] ServAuth Creating token response
+2025-05-22 01:01:55.400 +03:00 [INF] ServAuth Creating token
+2025-05-22 01:01:55.400 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 01:01:55.400 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 01:01:55.400 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 01:01:55.401 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 01:01:55.404 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 01:01:55.413 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 01:01:55.413 +03:00 [INF] UsersBL GetUserById
+2025-05-22 01:01:55.413 +03:00 [INF] UserDA Getting user by id
+2025-05-22 01:01:55.957 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 01:01:55.957 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 01:01:55.957 +03:00 [INF] ProductDA Get Products
+2025-05-22 01:01:55.970 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 01:02:00.605 +03:00 [INF] AuthBL Logout
+2025-05-22 01:02:00.605 +03:00 [INF] ServAuth Logout
+2025-05-22 01:02:00.609 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-05-22 01:02:28.457 +03:00 [INF] AuthAPI LoginAPI
+2025-05-22 01:02:28.457 +03:00 [INF] AuthBL Login
+2025-05-22 01:02:28.457 +03:00 [INF] ServAuth Login
+2025-05-22 01:02:28.464 +03:00 [INF] ServPass Verifying password
+2025-05-22 01:02:28.526 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-05-22 01:02:28.526 +03:00 [INF] ServAuth Creating token response
+2025-05-22 01:02:28.526 +03:00 [INF] ServAuth Creating token
+2025-05-22 01:02:28.526 +03:00 [INF] ServAuth Token created successfully
+2025-05-22 01:02:28.526 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-05-22 01:02:28.526 +03:00 [INF] ServAuth Generating refresh token
+2025-05-22 01:02:28.527 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-05-22 01:02:28.528 +03:00 [INF] AuthAPI User logged in successfully
+2025-05-22 01:02:28.537 +03:00 [INF] UsersAPI GetUserAPI
+2025-05-22 01:02:28.537 +03:00 [INF] UsersBL GetUserById
+2025-05-22 01:02:28.537 +03:00 [INF] UserDA Getting user by id
+2025-05-22 01:02:29.097 +03:00 [INF] ProductsAPI GetProducts
+2025-05-22 01:02:29.097 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-05-22 01:02:29.097 +03:00 [INF] ProductDA Get Products
+2025-05-22 01:02:29.101 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-05-22 01:02:47.153 +03:00 [INF] AuthBL Logout
+2025-05-22 01:02:47.153 +03:00 [INF] ServAuth Logout
+2025-05-22 01:02:47.172 +03:00 [INF] ServAuth User logged out successfully with id 501

@@ -15,25 +15,29 @@ namespace Shopping_App.User_Controls
     {
         private ProductDto _product;
         private bool _isInCart = false;
+        private bool _suppressQuantityEvent;
 
-        public delegate void OnProductStatusChanged(bool IsInCart);
+        public delegate void OnProductStatusChanged(bool IsInCart, ProductDto product, int MaxQuentity);
         public event OnProductStatusChanged ProductStatusChanged;
 
-
-        public ProductControl()
-        {
-            InitializeComponent();
-            this.Size = new Size(225, 150);
-        }
-        public ProductControl(ProductDto product)
+        public ProductControl(ProductDto product, int? ProductQuentityInCart)
         {
             InitializeComponent();
             _product = product;
 
+            Quentity.Maximum = _product.Quantity;
+
+            if (ProductQuentityInCart != null)
+            {
+                _isInCart = true;
+                btnAddRemove.Text = "Remove from Cart";
+                Quentity.Value = (int)ProductQuentityInCart;
+            }
+
             lbProductName.Text = _product.ProductName;
             lbCategory.Text = _product.ProductCategory;
             lbPrice.Text = _product.Price.ToString("C") + "$";
-            lbDescription.Text = "Description: " + _product.ProductDescription.Substring(0, 60) + "...";
+            lbDescription.Text = string.IsNullOrEmpty(_product.ProductDescription) ? "" : "Description: " + _product.ProductDescription.Substring(0, Math.Min(60, _product.ProductDescription.Length)) + "...";
         }
 
         private void btnAddRemove_Click(object sender, EventArgs e)
@@ -42,13 +46,42 @@ namespace Shopping_App.User_Controls
             {
                 _isInCart = false;
                 btnAddRemove.Text = "Add to Cart";
-                ProductStatusChanged?.Invoke(_isInCart);
+                _suppressQuantityEvent = true;
+                Quentity.Value = 0;
+                _product.Quantity = 0;
+                _suppressQuantityEvent = false;
+                ProductStatusChanged?.Invoke(_isInCart, _product, (int)Quentity.Maximum);
             }
             else
             {
                 _isInCart = true;
                 btnAddRemove.Text = "Remove from Cart";
-                ProductStatusChanged?.Invoke(_isInCart);
+                _product.Quantity = 1;
+                _suppressQuantityEvent = true;
+                Quentity.Value = 1;
+                _suppressQuantityEvent = false;
+                ProductStatusChanged?.Invoke(_isInCart, _product, (int)Quentity.Maximum);
+            }
+        }
+
+        private void Quentity_ValueChanged(object sender, EventArgs e)
+        {
+            if (_suppressQuantityEvent)
+                return;
+            
+            if (Quentity.Value == 0)
+            {
+                _isInCart = false;
+                btnAddRemove.Text = "Add to Cart";
+                _product.Quantity = 0;
+                ProductStatusChanged?.Invoke(_isInCart, _product, (int)Quentity.Maximum);
+            }
+            else
+            {
+                _isInCart = true;
+                btnAddRemove.Text = "Remove from Cart";
+                _product.Quantity = (int)Quentity.Value;
+                ProductStatusChanged?.Invoke(_isInCart, _product, (int)Quentity.Maximum);
             }
         }
     }

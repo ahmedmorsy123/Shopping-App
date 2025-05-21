@@ -38,11 +38,9 @@ namespace Shopping_App.Forms
                 return;
             }
 
-            AuthService authService = new AuthService();
-
             try
             {
-                await authService.LoginAsync(username, password);
+                await ApiManger.Instance.AuthService.LoginAsync(username, password);
             }
             catch (ApiException ex)
             {
@@ -81,7 +79,6 @@ namespace Shopping_App.Forms
                 return;
             }
 
-            UsersService authService = new UsersService();
             UserDto user = new UserDto
             {
                 Name = username,
@@ -90,7 +87,7 @@ namespace Shopping_App.Forms
             };
             try
             {
-                await authService.AddUserAsync(user);
+                await ApiManger.Instance.UserService.AddUserAsync(user);
             }
             catch (ApiException ex)
             {

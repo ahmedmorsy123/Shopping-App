@@ -1,14 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Serilog;
+using Shopping_App;
 using ShoppingApp.Api.Models;
 
 namespace ShoppingApp.Api.Controllers
 {
     public class ProductsService : ApiClient
     {
-        private const string GET_PRODUCTS_ENDPOINT = "/api/Products/GetProductsPaginated";
-        private const string GET_PAGES_COUNT = "/api/Products/GetPagesCount";
+        private const string GET_PRODUCTS_ENDPOINT = "/api/Products/GetProducts";
+
+        public ProductsService(HttpClient httpClient) : base(httpClient)
+        {
+        }
 
         /// <summary>
         /// Gets a paginated list of products

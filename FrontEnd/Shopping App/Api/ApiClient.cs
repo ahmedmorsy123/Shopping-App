@@ -15,15 +15,17 @@ namespace ShoppingApp.Api
     public class ApiClient
     {
         private readonly HttpClient _httpClient;
+        private const string baseUrl = "https://localhost:7093";
+        public string RefreshToken { get; set; }
+        public string AccessToken { get; set; }
 
 
-        public ApiClient(string baseUrl = "https://localhost:7093")
+        public ApiClient(HttpClient httpClient)
         {
             Log.Information("Initializing API client with base URL: {BaseUrl}", baseUrl);
-            _httpClient = new HttpClient
-            {
-                BaseAddress = new Uri(baseUrl)
-            };
+
+            _httpClient = httpClient;
+            _httpClient.BaseAddress = new Uri(baseUrl);
             _httpClient.DefaultRequestHeaders.Accept.Clear();
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
@@ -31,26 +33,26 @@ namespace ShoppingApp.Api
         public void SetAuthorizationToken(string token)
         {
             Log.Information("Setting authorization token");
-            AppState.AccessToken = token;
+            AccessToken = token;
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
 
         public void SetRefereshToken(string token)
         {
             Log.Information("Setting refresh token");
-            AppState.RefreshToken = token;
+            RefreshToken = token;
         }
         public void ClearAuthorizationToken()
         {
             Log.Information("Clearing authorization token");
-            AppState.AccessToken = null;
+            AccessToken = null;
             _httpClient.DefaultRequestHeaders.Authorization = null;
         }
 
         public void ClearRefereshToken()
         {
             Log.Information("Clearing refresh token");
-            AppState.RefreshToken = null;
+            RefreshToken = null;
         }
 
         protected async Task<T> GetAsync<T>(string endpoint, string queryString = "")
