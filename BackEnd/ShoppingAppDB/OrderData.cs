@@ -20,7 +20,7 @@ namespace ShoppingAppDB
             _userData = userData;
         }
 
-        public async Task<OrderDto> AddOrderAsync(int userId, string shippingAddress, string paymentMethod)
+        public async Task<OrderDto?> AddOrderAsync(int userId, string shippingAddress, string paymentMethod)
         {
             _logger.LogInformation($"{_prefix}Add Order");
             using (var context = new AppDbContext())
@@ -34,13 +34,16 @@ namespace ShoppingAppDB
                 orderToAdd.PaymentMethod = paymentMethod;
                 await context.Orders.AddAsync(orderToAdd);
 
-                await context.SaveChangesAsync();
                 _logger.LogInformation($"{_prefix}Order Added with id {orderToAdd.Id}");
 
-                var cartItems = await context.CartItems
+                var cartItems = await context.CartItems.AsNoTracking()
                     .Where(ci => ci.Cart.UserId == userId)
                     .Include(ci => ci.Product)
                     .ToListAsync();
+
+                if (cartItems.Count == 0) return null;
+                await context.SaveChangesAsync();
+
                 foreach (var item in cartItems)
                 {
                     var orderItemToAdd = new OrderItem();
@@ -48,10 +51,11 @@ namespace ShoppingAppDB
                     orderItemToAdd.ProductId = item.ProductId;
                     orderItemToAdd.Quantity = item.Quantity;
                     orderItemToAdd.UnitPrice = item.Product.Price;
-                    context.OrderItems.AddAsync(orderItemToAdd);
+                    await context.OrderItems.AddAsync(orderItemToAdd);
 
                     var product = await context.Products.Where(p => p.Id == item.ProductId).FirstAsync();
                     product.Quantity -= item.Quantity;
+                    if (product.Quantity == 0) product.IsActive = false;
                     await context.SaveChangesAsync();
 
                     _logger.LogInformation($"{_prefix}OrderItem Added with id {orderItemToAdd.Id}");
@@ -103,6 +107,7 @@ namespace ShoppingAppDB
                         {
                             productName = oi.Product.Name,
                             quantity = oi.Quantity,
+                            maxQuantity = oi.Product.Quantity,
                             price = oi.Product.Price
                         }).ToList()
                     }).FirstOrDefaultAsync();
@@ -139,6 +144,7 @@ namespace ShoppingAppDB
                             Id = oi.Product.Id,
                             productName = oi.Product.Name,
                             quantity = oi.Quantity,
+                            maxQuantity = oi.Product.Quantity,
                             price = oi.Product.Price
                         }).ToList()
                     }).ToListAsync();

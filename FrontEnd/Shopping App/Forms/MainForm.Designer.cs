@@ -51,7 +51,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip.Size = new System.Drawing.Size(682, 28);
+            this.menuStrip.Size = new System.Drawing.Size(697, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -86,7 +86,7 @@
             this.menuStripCurrentUser.Location = new System.Drawing.Point(0, 0);
             this.menuStripCurrentUser.Name = "menuStripCurrentUser";
             this.menuStripCurrentUser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStripCurrentUser.Size = new System.Drawing.Size(260, 28);
+            this.menuStripCurrentUser.Size = new System.Drawing.Size(110, 28);
             this.menuStripCurrentUser.TabIndex = 1;
             this.menuStripCurrentUser.Text = "menuStrip1";
             // 
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 653);
+            this.ClientSize = new System.Drawing.Size(697, 683);
             this.Controls.Add(this.menuStripCurrentUser);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;

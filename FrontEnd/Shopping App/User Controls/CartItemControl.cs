@@ -11,10 +11,12 @@ using System.Windows.Forms;
 
 namespace Shopping_App.User_Controls
 {
-    public partial class CartItem : UserControl
+    public partial class CartItemControl : UserControl
     {
         private ProductDto _product;
-        public CartItem(ProductDto product, int MaxQuentity)
+        public delegate void OnCartItemStatusChanged(bool IsInCart, ProductDto product);
+        public event OnCartItemStatusChanged CartItemStatusChanged;
+        public CartItemControl(ProductDto product)
         {
             InitializeComponent();
             this.Size = new Size(680, 50);
@@ -22,27 +24,29 @@ namespace Shopping_App.User_Controls
 
             _product = product;
 
-            Quantity.Maximum = MaxQuentity;
+            Quentity.Maximum = product.maxQuantity;
 
             lbProductName.Text = _product.ProductName;
-            Quantity.Value = _product.Quantity;
+            Quentity.Value = _product.Quantity;
             lbTotalPrice.Text = (_product.Price * _product.Quantity).ToString("C") + "$";
         }
 
-        public CartItem()
-        {
-            InitializeComponent();
-            this.Size = new Size(680, 50);
-        }
 
         private void Quantity_ValueChanged(object sender, EventArgs e)
         {
-
+            if(Quentity.Value == 0)
+            {
+                CartItemStatusChanged?.Invoke(false, _product);
+                return;
+            }
+            _product.Quantity = (int)Quentity.Value;
+            lbTotalPrice.Text = (_product.Price * _product.Quantity).ToString("C") + "$";
+            CartItemStatusChanged?.Invoke(true, _product);
         }
 
         private void lbRemove_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            CartItemStatusChanged?.Invoke(false, _product);
         }
     }
 }

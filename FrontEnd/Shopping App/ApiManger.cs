@@ -34,6 +34,7 @@ namespace Shopping_App
 
         public static ApiManger Instance => _instance.Value;
         public static UserDto CurrentLoggedInUser { get; set; } = new UserDto();
+        public static int CurrentUserCartId { get; set; }
     }
 
 }

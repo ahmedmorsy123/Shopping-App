@@ -1,6 +1,6 @@
 ﻿namespace Shopping_App.User_Controls
 {
-    partial class CartItem
+    partial class CartItemControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,10 +31,10 @@
             this.lbProductName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbTotalPrice = new System.Windows.Forms.Label();
-            this.Quantity = new System.Windows.Forms.NumericUpDown();
+            this.Quentity = new System.Windows.Forms.NumericUpDown();
             this.lbRemove = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Quantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quentity)).BeginInit();
             this.SuspendLayout();
             // 
             // lbProductName
@@ -67,19 +67,19 @@
             this.lbTotalPrice.TabIndex = 3;
             this.lbTotalPrice.Text = "564.6";
             // 
-            // Quantity
+            // Quentity
             // 
-            this.Quantity.Location = new System.Drawing.Point(318, 21);
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(54, 24);
-            this.Quantity.TabIndex = 4;
-            this.Quantity.ValueChanged += new System.EventHandler(this.Quantity_ValueChanged);
+            this.Quentity.Location = new System.Drawing.Point(318, 21);
+            this.Quentity.Name = "Quentity";
+            this.Quentity.Size = new System.Drawing.Size(54, 24);
+            this.Quentity.TabIndex = 4;
+            this.Quentity.ValueChanged += new System.EventHandler(this.Quantity_ValueChanged);
             // 
             // lbRemove
             // 
             this.lbRemove.AutoSize = true;
             this.lbRemove.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lbRemove.Location = new System.Drawing.Point(598, 21);
+            this.lbRemove.Location = new System.Drawing.Point(625, 22);
             this.lbRemove.Name = "lbRemove";
             this.lbRemove.Size = new System.Drawing.Size(62, 18);
             this.lbRemove.TabIndex = 5;
@@ -104,13 +104,13 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbRemove);
-            this.Controls.Add(this.Quantity);
+            this.Controls.Add(this.Quentity);
             this.Controls.Add(this.lbTotalPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbProductName);
             this.Name = "CartItem";
-            this.Size = new System.Drawing.Size(690, 60);
-            ((System.ComponentModel.ISupportInitialize)(this.Quantity)).EndInit();
+            this.Size = new System.Drawing.Size(680, 60);
+            ((System.ComponentModel.ISupportInitialize)(this.Quentity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,7 +121,7 @@
         private System.Windows.Forms.Label lbProductName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbTotalPrice;
-        private System.Windows.Forms.NumericUpDown Quantity;
+        private System.Windows.Forms.NumericUpDown Quentity;
         private System.Windows.Forms.LinkLabel lbRemove;
         private System.Windows.Forms.Label label2;
     }

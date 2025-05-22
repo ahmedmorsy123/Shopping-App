@@ -35,6 +35,7 @@ namespace ShoppingAppDB
                             Id = ci.Product.Id,
                             productName = ci.Product.Name,
                             quantity = ci.Quantity,
+                            maxQuantity = ci.Product.Quantity,
                             price = ci.Product.Price
                         }).ToList()
                     })

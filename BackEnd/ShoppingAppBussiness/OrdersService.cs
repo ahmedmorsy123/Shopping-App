@@ -22,7 +22,7 @@ namespace ShoppingAppBussiness
             return await _orderData.GetUserOrdersAsync(UserId);
         }
 
-        public async Task<OrderDto> AddOrderAsync(int userId, string shippingAddress, string paymentMethod)
+        public async Task<OrderDto?> AddOrderAsync(int userId, string shippingAddress, string paymentMethod)
         {
             _logger.LogInformation($"{_prefix}AddOrder");
             return await _orderData.AddOrderAsync(userId, shippingAddress, paymentMethod);

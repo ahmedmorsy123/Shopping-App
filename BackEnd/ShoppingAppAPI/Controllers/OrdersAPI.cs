@@ -69,11 +69,20 @@ namespace ShoppingAppAPI.Controllers
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(OrderDto))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        public async Task<ActionResult<OrderDto>> AddOrders(int userId, string shippingAddress, string paymentMethod)
+        public async Task<ActionResult<OrderDto?>> AddOrders(int userId, string shippingAddress, string paymentMethod)
         {
             _logger.LogInformation($"{_prefix}Add Order");
 
-            OrderDto order = await _ordersService.AddOrderAsync(userId, shippingAddress, paymentMethod);
+            if(string.IsNullOrEmpty(shippingAddress) || string.IsNullOrEmpty(paymentMethod)) 
+                return BadRequest(new ProblemDetails
+                {
+                    Status = StatusCodes.Status400BadRequest,
+                    Title = "Order Creation Failed",
+                    Detail = "Shipping Address and/or PaymentMethod Can't by empty.",
+                    Instance = HttpContext.Request.Path
+                }); 
+
+            OrderDto? order = await _ordersService.AddOrderAsync(userId, shippingAddress, paymentMethod);
 
             if (order == null)
             {
@@ -82,7 +91,7 @@ namespace ShoppingAppAPI.Controllers
                 {
                     Status = StatusCodes.Status400BadRequest,
                     Title = "Order Creation Failed",
-                    Detail = "Order was not created.",
+                    Detail = "The Cart is empty.",
                     Instance = HttpContext.Request.Path
                 });
             }

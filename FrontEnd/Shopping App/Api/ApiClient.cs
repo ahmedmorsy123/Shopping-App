@@ -130,6 +130,7 @@ namespace ShoppingApp.Api
                 string errorMessage = problemDetails != null
                     ? $"{problemDetails.Title}: {problemDetails.Detail} {problemDetails.Instance}"
                     : $"Error: {response.StatusCode} - {errorContent}";
+
                 switch (response.StatusCode)
                 {
                     case System.Net.HttpStatusCode.BadRequest:

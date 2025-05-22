@@ -7,6 +7,7 @@
         public string? productCategory { get; set; }
         public string? productDescription { get; set; }
         public int quantity { get; set; }
+        public int maxQuantity { get; set; }
         public decimal Weight { get; set; }
         public decimal price { get; set; }
     }
