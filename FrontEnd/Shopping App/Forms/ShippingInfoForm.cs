@@ -18,6 +18,8 @@ namespace Shopping_App.Forms
         public ShippingInfoForm()
         {
             InitializeComponent();
+
+            cbPaymentMethod.DataSource = new List<string> { "Credit Card", "PayPal", "Bank Transfer", "Visa" };
         }
 
         private void btnConfirme_Click(object sender, EventArgs e)

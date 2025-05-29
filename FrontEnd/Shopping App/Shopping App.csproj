@@ -121,6 +121,12 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OrderItemsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderItemsListForm.Designer.cs">
+      <DependentUpon>OrderItemsListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ShippingInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     </Compile>
     <Compile Include="User Controls\CartItemControl.Designer.cs">
       <DependentUpon>CartItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\OrderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\OrderControl.Designer.cs">
+      <DependentUpon>OrderControl.cs</DependentUpon>
     </Compile>
     <Compile Include="User Controls\OrderItemControl.cs">
       <SubType>UserControl</SubType>
@@ -163,6 +175,9 @@
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OrderItemsListForm.resx">
+      <DependentUpon>OrderItemsListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ShippingInfoForm.resx">
       <DependentUpon>ShippingInfoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +195,9 @@
     </Compile>
     <EmbeddedResource Include="User Controls\CartItemControl.resx">
       <DependentUpon>CartItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\OrderControl.resx">
+      <DependentUpon>OrderControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\OrderItemControl.resx">
       <DependentUpon>OrderItemControl.cs</DependentUpon>

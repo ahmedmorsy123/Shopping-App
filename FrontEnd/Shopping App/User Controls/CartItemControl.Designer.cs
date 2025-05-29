@@ -97,7 +97,7 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Total Price: ";
             // 
-            // CartItem
+            // CartItemControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,7 +108,7 @@
             this.Controls.Add(this.lbTotalPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbProductName);
-            this.Name = "CartItem";
+            this.Name = "CartItemControl";
             this.Size = new System.Drawing.Size(680, 60);
             ((System.ComponentModel.ISupportInitialize)(this.Quentity)).EndInit();
             this.ResumeLayout(false);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShoppingApp.Api.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,14 @@ namespace Shopping_App.User_Controls
 {
     public partial class OrderItemControl : UserControl
     {
-        public OrderItemControl()
+        public OrderItemControl(ProductDto product)
         {
             InitializeComponent();
+            this.Size = new Size(500, 50);
+
+            lbProductName.Text = product.ProductName;
+            lbQuentity.Text = product.Quantity.ToString();
+            lbTotalPrice.Text = (product.Price * product.Quantity).ToString("C") + "$";
         }
     }
 }

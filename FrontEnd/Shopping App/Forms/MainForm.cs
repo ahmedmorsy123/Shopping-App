@@ -18,13 +18,6 @@ namespace Shopping_App.Forms
 {
     public partial class MainForm : Form
     {
-        // Products
-        //private int _page = 1;
-        //private bool _hasNextPage = true;
-        //private bool _hasPreviousPage = false;
-        PictureBox RightArrow;
-        Label PageNumber;
-        PictureBox LeftArrow;
 
         // Carts
         private List<ProductDto> CartProducts = new List<ProductDto>();
@@ -74,8 +67,9 @@ namespace Shopping_App.Forms
 
         }
 
-        private void myOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void myOrderToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            await Orders.LoadOrders(this);
 
         }
 

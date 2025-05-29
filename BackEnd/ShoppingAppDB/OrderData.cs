@@ -56,10 +56,10 @@ namespace ShoppingAppDB
                     var product = await context.Products.Where(p => p.Id == item.ProductId).FirstAsync();
                     product.Quantity -= item.Quantity;
                     if (product.Quantity == 0) product.IsActive = false;
-                    await context.SaveChangesAsync();
 
                     _logger.LogInformation($"{_prefix}OrderItem Added with id {orderItemToAdd.Id}");
                     orderToAdd.TotalPrice += item.Product.Price * item.Quantity;
+                    await context.SaveChangesAsync();
                 }
 
                 await _cartData.DeleteCartAsync(_cartData.GetCartIdByUserId(userId));
@@ -149,7 +149,6 @@ namespace ShoppingAppDB
                         }).ToList()
                     }).ToListAsync();
             }
-
             return OrderItems.Count == 0 ? null : OrderItems;
         }
 

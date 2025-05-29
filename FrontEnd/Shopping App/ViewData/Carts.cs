@@ -1,4 +1,5 @@
-﻿using Shopping_App.User_Controls;
+﻿using Shopping_App.Forms;
+using Shopping_App.User_Controls;
 using ShoppingApp.Api;
 using ShoppingApp.Api.Models;
 using System;
@@ -150,7 +151,7 @@ namespace Shopping_App.ViewData
             CheckoutBtn.Text = "Checkout";
             CheckoutBtn.Size = new Size(100, 30);
             CheckoutBtn.Location = new Point(230, 30);
-            CheckoutBtn.Click += Orders.Checkout;
+            CheckoutBtn.Click += Checkout;
             form.Controls.Add(CheckoutBtn);
             CheckoutBtn.BringToFront();
 
@@ -177,6 +178,32 @@ namespace Shopping_App.ViewData
                 Hellpers.ClearForm((sender as Button).Parent as Form);
                 MessageBox.Show("Cart cleared successfully!");
             }
+        }
+
+        private static void Checkout(object sender, EventArgs e)
+        {
+            SaveCart(null, null);
+            ShippingInfoForm shippingInfoForm = new ShippingInfoForm();
+            shippingInfoForm.CheckOutConfirmed += async (string shippingAddress, string paymentMethod) =>
+            {
+                try
+                {
+                    await ApiManger.Instance.OrderService.MakeOrderAsync(ApiManger.CurrentLoggedInUser.Id, shippingAddress, paymentMethod);
+                    CartProducts.Clear();
+                    Form form = (sender as Button).Parent as Form;
+                    Hellpers.ClearForm(form);
+                    AddTotalPriceLabelAndButtons(form);
+                    TotalPriceLabel.Text = "Total Price: 0$";
+                    MessageBox.Show("Order placed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    shippingInfoForm.Close();
+                }
+                catch (ApiException ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            };
+            shippingInfoForm.ShowDialog();
         }
 
     }

@@ -40,7 +40,7 @@ namespace Shopping_App
                 }
             }
 
-            //Application.Run(new MainForm());
+            //Application.Run(new OrderItemsListForm());
 
         }
     }
