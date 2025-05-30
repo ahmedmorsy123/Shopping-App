@@ -47,7 +47,7 @@ namespace Shopping_App.ViewData
         private static void AddProductsToForm(List<ProductDto> products, Form form)
         {
             // Clear existing controls
-            Hellpers.ClearForm(form);
+            HellpersMethodes.ClearForm(form);
 
             //Create new controls for each product
 

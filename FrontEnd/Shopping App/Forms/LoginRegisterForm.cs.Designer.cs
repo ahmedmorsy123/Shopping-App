@@ -49,6 +49,7 @@
             this.btnClearRegister = new System.Windows.Forms.Button();
             this.txtUserNameRegister = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.cbRememberMe = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabLogin.SuspendLayout();
             this.tabRegister.SuspendLayout();
@@ -68,6 +69,7 @@
             // 
             // tabLogin
             // 
+            this.tabLogin.Controls.Add(this.cbRememberMe);
             this.tabLogin.Controls.Add(this.cbShowPasswordLogin);
             this.tabLogin.Controls.Add(this.Login);
             this.tabLogin.Controls.Add(this.txtPasswordLogin);
@@ -96,7 +98,7 @@
             // 
             // Login
             // 
-            this.Login.Location = new System.Drawing.Point(151, 154);
+            this.Login.Location = new System.Drawing.Point(152, 184);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(75, 23);
             this.Login.TabIndex = 3;
@@ -124,7 +126,7 @@
             // 
             // btnClearLogin
             // 
-            this.btnClearLogin.Location = new System.Drawing.Point(232, 154);
+            this.btnClearLogin.Location = new System.Drawing.Point(233, 184);
             this.btnClearLogin.Name = "btnClearLogin";
             this.btnClearLogin.Size = new System.Drawing.Size(75, 23);
             this.btnClearLogin.TabIndex = 5;
@@ -270,6 +272,16 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "User Name: ";
             // 
+            // cbRememberMe
+            // 
+            this.cbRememberMe.AutoSize = true;
+            this.cbRememberMe.Location = new System.Drawing.Point(181, 157);
+            this.cbRememberMe.Name = "cbRememberMe";
+            this.cbRememberMe.Size = new System.Drawing.Size(118, 21);
+            this.cbRememberMe.TabIndex = 16;
+            this.cbRememberMe.Text = "Remember Me";
+            this.cbRememberMe.UseVisualStyleBackColor = true;
+            // 
             // LoginRegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -313,5 +325,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox cbShowPasswordLogin;
         private System.Windows.Forms.CheckBox cbShowPasswordRegister;
+        private System.Windows.Forms.CheckBox cbRememberMe;
     }
 }

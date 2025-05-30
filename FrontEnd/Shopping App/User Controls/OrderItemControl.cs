@@ -16,7 +16,7 @@ namespace Shopping_App.User_Controls
         public OrderItemControl(ProductDto product)
         {
             InitializeComponent();
-            this.Size = new Size(500, 50);
+            this.Size = new Size(520, 50);
 
             lbProductName.Text = product.ProductName;
             lbQuentity.Text = product.Quantity.ToString();

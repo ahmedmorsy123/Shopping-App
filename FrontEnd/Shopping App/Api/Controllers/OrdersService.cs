@@ -1,27 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Serilog;
+using Shopping_App.Hellpers;
 using ShoppingApp.Api.Models;
 
 namespace ShoppingApp.Api.Controllers
 {
     public class OrdersService : ApiClient
     {
-        private const string GET_USER_ORDERS_ENDPOINT = "/api/Orders/GetUserOrders";
-        private const string GET_ORDER_BY_ID_ENDPOINT = "/api/Orders/GetOrderById";
-        private const string MAKE_ORDERS_ENDPOINT = "/api/Orders/MakeOrders";
-        private const string CANCEL_ORDER_ENDPOINT = "/api/Orders/CancelOrder";
-
         public OrdersService(HttpClient httpClient) : base(httpClient)
         {
         }
-
-        /// <summary>
-        /// Gets all orders for a specific user
-        /// </summary>
-        /// <param name="userId">User ID to get orders for</param>
-        /// <returns>List of user's orders</returns>
         public async Task<List<OrderDto>> GetUserOrdersAsync(int userId)
         {
             Log.Information("Getting orders for user ID: {UserId}", userId);
@@ -29,7 +22,7 @@ namespace ShoppingApp.Api.Controllers
 
             try
             {
-                return await GetAsync<List<OrderDto>>(GET_USER_ORDERS_ENDPOINT, queryString);
+                return await GetAsync<List<OrderDto>>(Config.GetApiEndpoint("Orders", "GetUserOrders"), queryString);
             }
             catch (ApiException ex)
             {
@@ -41,12 +34,6 @@ namespace ShoppingApp.Api.Controllers
                 throw;
             }
         }
-
-        /// <summary>
-        /// Gets a specific order by ID
-        /// </summary>
-        /// <param name="orderId">Order ID to retrieve</param>
-        /// <returns>Order information</returns>
         public async Task<OrderDto> GetOrderByIdAsync(int orderId)
         {
             Log.Information("Getting order by ID: {OrderId}", orderId);
@@ -54,7 +41,7 @@ namespace ShoppingApp.Api.Controllers
 
             try
             {
-                return await GetAsync<OrderDto>(GET_ORDER_BY_ID_ENDPOINT, queryString);
+                return await GetAsync<OrderDto>(Config.GetApiEndpoint("Orders", "GetOrderById"), queryString);
             }
             catch (ApiException ex)
             {
@@ -66,22 +53,16 @@ namespace ShoppingApp.Api.Controllers
                 throw;
             }
         }
-
-        /// <summary>
-        /// Creates a new order
-        /// </summary>
-        /// <param name="userId">User ID placing the order</param>
-        /// <param name="shippingAddress">Shipping address for the order</param>
-        /// <param name="paymentMethod">Payment method for the order</param>
-        /// <returns>Created order information</returns>
         public async Task<OrderDto> MakeOrderAsync(int userId, string shippingAddress, string paymentMethod)
         {
             Log.Information("Creating order for user ID: {UserId}", userId);
             string queryString = $"userId={userId}&shippingAddress={shippingAddress}&paymentMethod={paymentMethod}";
 
+            OrderDto order;
             try
             {
-                return await PostAsync<OrderDto>(MAKE_ORDERS_ENDPOINT + "?" + queryString, null);
+                order = await PostAsync<OrderDto>(Config.GetApiEndpoint("Orders", "MakeOrder") + "?" + queryString, null);
+                Config.SetCurrentUserCartId(0);
             }
             catch (ApiException ex)
             {
@@ -92,12 +73,9 @@ namespace ShoppingApp.Api.Controllers
                 }
                 throw;
             }
-        }
 
-        /// <summary>
-        /// Cancels an existing order
-        /// </summary>
-        /// <param name="orderId">Order ID to cancel</param>
+            return order;
+        }
         public async Task CancelOrderAsync(int orderId)
         {
             Log.Information("Cancelling order with ID: {OrderId}", orderId);
@@ -105,7 +83,7 @@ namespace ShoppingApp.Api.Controllers
 
             try
             {
-                await DeleteAsync(CANCEL_ORDER_ENDPOINT, queryString);
+                await DeleteAsync(Config.GetApiEndpoint("Orders", "CancelOrder"), queryString);
             }
             catch (ApiException ex)
             {

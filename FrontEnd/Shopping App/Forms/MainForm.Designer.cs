@@ -36,6 +36,7 @@
             this.currentUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.menuStripCurrentUser.SuspendLayout();
             this.SuspendLayout();
@@ -86,7 +87,7 @@
             this.menuStripCurrentUser.Location = new System.Drawing.Point(0, 0);
             this.menuStripCurrentUser.Name = "menuStripCurrentUser";
             this.menuStripCurrentUser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStripCurrentUser.Size = new System.Drawing.Size(110, 28);
+            this.menuStripCurrentUser.Size = new System.Drawing.Size(260, 28);
             this.menuStripCurrentUser.TabIndex = 1;
             this.menuStripCurrentUser.Text = "menuStrip1";
             // 
@@ -94,7 +95,8 @@
             // 
             this.currentUserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateProfileToolStripMenuItem,
-            this.logOutToolStripMenuItem});
+            this.logOutToolStripMenuItem,
+            this.deleteAccountToolStripMenuItem});
             this.currentUserToolStripMenuItem.Name = "currentUserToolStripMenuItem";
             this.currentUserToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.currentUserToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
@@ -103,16 +105,23 @@
             // updateProfileToolStripMenuItem
             // 
             this.updateProfileToolStripMenuItem.Name = "updateProfileToolStripMenuItem";
-            this.updateProfileToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.updateProfileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.updateProfileToolStripMenuItem.Text = "Update Profile";
             this.updateProfileToolStripMenuItem.Click += new System.EventHandler(this.updateProfileToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
+            // 
+            // deleteAccountToolStripMenuItem
+            // 
+            this.deleteAccountToolStripMenuItem.Name = "deleteAccountToolStripMenuItem";
+            this.deleteAccountToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteAccountToolStripMenuItem.Text = "Delete Account";
+            this.deleteAccountToolStripMenuItem.Click += new System.EventHandler(this.deleteAccountToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -148,5 +157,6 @@
         private System.Windows.Forms.ToolStripMenuItem currentUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteAccountToolStripMenuItem;
     }
 }

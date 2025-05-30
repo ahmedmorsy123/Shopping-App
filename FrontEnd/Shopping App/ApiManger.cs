@@ -14,7 +14,6 @@ namespace Shopping_App
         private static readonly Lazy<ApiManger> _instance = new Lazy<ApiManger>(() => new ApiManger());
         private HttpClient _httpClient = new HttpClient();
 
-        // Example service properties
         public AuthService AuthService { get; }
         public CartsService CartService { get; }
         public OrdersService OrderService { get; }
@@ -33,8 +32,6 @@ namespace Shopping_App
         }
 
         public static ApiManger Instance => _instance.Value;
-        public static UserDto CurrentLoggedInUser { get; set; } = new UserDto();
-        public static int CurrentUserCartId { get; set; }
     }
 
 }

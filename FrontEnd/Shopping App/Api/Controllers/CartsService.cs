@@ -1,26 +1,19 @@
-﻿using System.Net.Http;
+﻿using System.IO;
+using System;
+using System.Net.Http;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Serilog;
 using ShoppingApp.Api.Models;
+using Shopping_App.Hellpers;
 
 namespace ShoppingApp.Api.Controllers
 {
     public class CartsService : ApiClient
     {
-        private const string GET_USER_CART_ENDPOINT = "/api/Carts/GetUserCart";
-        private const string UPDATE_CART_ENDPOINT = "/api/Carts/UpdateCart";
-        private const string ADD_CART_ENDPOINT = "/api/Carts/AddCart";
-        private const string DELETE_CART_ENDPOINT = "/api/Carts/DeleteCart";
-
         public CartsService(HttpClient httpClient) : base(httpClient)
         {
         }
-
-        /// <summary>
-        /// Gets the cart for a specific user
-        /// </summary>
-        /// <param name="userId">User ID to get cart for</param>
-        /// <returns>User's cart information</returns>
         public async Task<CartDto> GetUserCartAsync(int userId)
         {
             Log.Information("Getting cart for user ID: {UserId}", userId);
@@ -28,7 +21,7 @@ namespace ShoppingApp.Api.Controllers
 
             try
             {
-                return await GetAsync<CartDto>(GET_USER_CART_ENDPOINT, queryString);
+                return await GetAsync<CartDto>(Config.GetApiEndpoint("Carts", "GetUserCart"), queryString);
             }
             catch (ApiException ex)
             {
@@ -45,18 +38,12 @@ namespace ShoppingApp.Api.Controllers
                 throw;
             }
         }
-
-        /// <summary>
-        /// Updates an existing cart
-        /// </summary>
-        /// <param name="cart">Updated cart data</param>
-        /// <returns>Updated cart information</returns>
         public async Task<CartDto> UpdateCartAsync(CartDto cart)
         {
             Log.Information("Updating cart with ID: {CartId}", cart.CartId);
             try
             {
-                return await PutAsync<CartDto>(UPDATE_CART_ENDPOINT, cart);
+                return await PutAsync<CartDto>(Config.GetApiEndpoint("Carts", "UpdateCart"), cart);
             }
             catch (ApiException ex)
             {
@@ -68,18 +55,12 @@ namespace ShoppingApp.Api.Controllers
                 throw;
             }
         }
-
-        /// <summary>
-        /// Creates a new cart
-        /// </summary>
-        /// <param name="cart">Cart data to create</param>
-        /// <returns>Created cart information</returns>
         public async Task<CartDto> AddCartAsync(CartDto cart)
         {
             Log.Information("Adding new cart for user ID: {UserId}", cart.UserId);
             try
             {
-                return await PostAsync<CartDto>(ADD_CART_ENDPOINT, cart);
+                return await PostAsync<CartDto>(Config.GetApiEndpoint("Carts", "AddCart"), cart);
             }
             catch (ApiException ex)
             {
@@ -91,11 +72,6 @@ namespace ShoppingApp.Api.Controllers
                 throw;
             }
         }
-
-        /// <summary>
-        /// Deletes a cart by ID
-        /// </summary>
-        /// <param name="cartId">Cart ID to delete</param>
         public async Task DeleteCartAsync(int cartId)
         {
             Log.Information("Deleting cart with ID: {CartId}", cartId);
@@ -103,7 +79,7 @@ namespace ShoppingApp.Api.Controllers
 
             try
             {
-                await DeleteAsync(DELETE_CART_ENDPOINT, queryString);
+                await DeleteAsync(Config.GetApiEndpoint("Carts", "DeleteCart"), queryString);
             }
             catch (ApiException ex)
             {

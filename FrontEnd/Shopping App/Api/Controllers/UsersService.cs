@@ -1,27 +1,19 @@
-﻿using System.Net.Http;
+﻿using System.IO;
+using System;
+using System.Net.Http;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Serilog;
 using ShoppingApp.Api.Models;
+using Shopping_App.Hellpers;
 
 namespace ShoppingApp.Api.Controllers
 {
     public class UsersService : ApiClient
     {
-        private const string GET_USER_ENDPOINT = "/api/Users/getUser";
-        private const string UPDATE_USER_ENDPOINT = "/api/Users/UpdateUser";
-        private const string DELETE_USER_ENDPOINT = "/api/Users/DeleteUser";
-        private const string ADD_USER_ENDPOINT = "/api/Users/AddUser";
-
-        // set the http client
         public UsersService(HttpClient httpClient) : base(httpClient)
         {
         }
-
-        /// <summary>
-        /// Gets user information by ID
-        /// </summary>
-        /// <param name="userId">User ID to retrieve</param>
-        /// <returns>User data if found</returns>
         public async Task<UserDto> GetUserAsync(int userId)
         {
             Log.Information("Getting user with ID: {UserId}", userId);
@@ -29,7 +21,7 @@ namespace ShoppingApp.Api.Controllers
 
             try
             {
-                return await GetAsync<UserDto>(GET_USER_ENDPOINT, queryString);
+                return await GetAsync<UserDto>(Config.GetApiEndpoint("Users", "GetUser"), queryString);
             }
             catch (ApiException ex)
             {
@@ -41,20 +33,13 @@ namespace ShoppingApp.Api.Controllers
                 throw;
             }
         }
-
-        /// <summary>
-        /// Updates user information
-        /// </summary>
-        /// <param name="user">Updated user data</param>
-        /// <param name="oldPassword">Current password for verification</param>
-        /// <returns>Updated user data</returns>
         public async Task<UserDto> UpdateUserAsync(UpdateUserDto user)
         {
             Log.Information("Updating user with ID: {UserId}", user.Id);
 
             try
             {
-                return await PutAsync<UserDto>(UPDATE_USER_ENDPOINT, user);
+                return await PutAsync<UserDto>(Config.GetApiEndpoint("Users", "UpdateUser"), user);
             }
             catch (ApiException ex)
             {
@@ -66,11 +51,6 @@ namespace ShoppingApp.Api.Controllers
                 throw;
             }
         }
-
-        /// <summary>
-        /// Deletes a user by ID
-        /// </summary>
-        /// <param name="userId">User ID to delete</param>
         public async Task DeleteUserAsync(int userId)
         {
             Log.Information("Deleting user with ID: {UserId}", userId);
@@ -78,7 +58,7 @@ namespace ShoppingApp.Api.Controllers
 
             try
             {
-                await DeleteAsync(DELETE_USER_ENDPOINT, queryString);
+                await DeleteAsync(Config.GetApiEndpoint("Users", "DeleteUser"), queryString);
             }
             catch (ApiException ex)
             {
@@ -90,18 +70,12 @@ namespace ShoppingApp.Api.Controllers
                 throw;
             }
         }
-
-        /// <summary>
-        /// Creates a new user
-        /// </summary>
-        /// <param name="user">User data to create</param>
-        /// <returns>Created user data with ID</returns>
         public async Task<UserDto> AddUserAsync(UserDto user)
         {
             Log.Information("Adding new user with username: {Username}", user.Name);
             try
             {
-                return await PostAsync<UserDto>(ADD_USER_ENDPOINT, user);
+                return await PostAsync<UserDto>(Config.GetApiEndpoint("Users", "AddUser"), user);
 
             }
             catch (ApiException ex)

@@ -1,4 +1,6 @@
 ﻿using Serilog;
+using Shopping_App.Hellpers;
+using Shopping_App.ViewData;
 using ShoppingApp.Api;
 using ShoppingApp.Api.Controllers;
 using ShoppingApp.Api.Models;
@@ -19,13 +21,36 @@ namespace Shopping_App.Forms
         public LoginRegisterForm()
         {
             InitializeComponent();
-            tabControl.SelectedTab = tabLogin;
-            this.Text = "Login";
+            
 
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.SizeGripStyle = SizeGripStyle.Hide;
+
+            if (string.IsNullOrEmpty(Config.GetRememberedRefreshToken()))
+            {
+                tabControl.SelectedTab = tabLogin;
+                this.Text = "Login";
+            }
+            else
+            {
+                UserIsRemembered().ContinueWith(t =>
+                {
+                    if (t.IsCompleted)
+                    {
+                        this.DialogResult = DialogResult.OK;
+                        this.Close();
+                    }
+                    else
+                    {
+                        Log.Error($"Error during token refresh: {t.Exception?.Message}");
+                        Config.ClearRemeberedData();
+                        tabControl.SelectedTab = tabLogin;
+                        this.Text = "Login";
+                    }
+                }, TaskScheduler.FromCurrentSynchronizationContext());
+            }
         }
 
         private async void Login_Click(object sender, EventArgs e)
@@ -38,9 +63,11 @@ namespace Shopping_App.Forms
                 return;
             }
 
+            TokenResponseDto tokenResponse;
+
             try
             {
-                await ApiManger.Instance.AuthService.LoginAsync(username, password);
+                tokenResponse = await ApiManger.Instance.AuthService.LoginAsync(username, password);
             }
             catch (ApiException ex)
             {
@@ -49,11 +76,33 @@ namespace Shopping_App.Forms
                 return;
             }
 
+            if (cbRememberMe.Checked)
+            {
+                Config.SetRememberMe(tokenResponse.RefreshToken, Config.GetCurrentUserId());
+            }
+
+
             Log.Information($"User {username} Loged in Successfully");
             MessageBox.Show("Login successful!");
 
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private async Task UserIsRemembered()
+        {
+            TokenResponseDto tokenResponse;
+            try
+            {
+                tokenResponse = await ApiManger.Instance.AuthService.RefreshTokenAsync();
+            }
+            catch (ApiException ex)
+            {
+                Log.Error($"Token refresh failed: {ex.Message}, Forward user to login");
+                return;
+            }
+
+            
         }
 
         private void btnClearLogin_Click(object sender, EventArgs e)

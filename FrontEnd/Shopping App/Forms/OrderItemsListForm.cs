@@ -23,7 +23,7 @@ namespace Shopping_App.Forms
             this.MinimizeBox = false;
             this.SizeGripStyle = SizeGripStyle.Hide;
             this.Text = "Order Items List";
-            this.Size = new Size(540, 600);
+            this.Size = new Size(560, 600);
             this.StartPosition = FormStartPosition.CenterParent;
             this.AutoScroll = true;
 

@@ -1,14 +1,17 @@
 ﻿using Shopping_App.Forms;
+using Shopping_App.Hellpers;
 using Shopping_App.User_Controls;
 using ShoppingApp.Api;
 using ShoppingApp.Api.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Shopping_App.ViewData
 {
@@ -19,10 +22,11 @@ namespace Shopping_App.ViewData
         private static Button SaveBtn;
         private static Button ClearCartBtn;
         private static Button CheckoutBtn;
+
         public static void LoadCartItems(Form form)
         {
             // Clear existing controls
-            Hellpers.ClearForm(form);
+            HellpersMethodes.ClearForm(form);
 
             form.AutoScroll = true;
             AddTotalPriceLabelAndButtons(form);
@@ -79,7 +83,7 @@ namespace Shopping_App.ViewData
             CartDto UserCart;
             try
             {
-                UserCart = await ApiManger.Instance.CartService.GetUserCartAsync(ApiManger.CurrentLoggedInUser.Id);
+                UserCart = await ApiManger.Instance.CartService.GetUserCartAsync(Config.GetCurrentUserId());
                 if (UserCart != null)
                 {
                     CartProducts = UserCart.Products;
@@ -90,7 +94,7 @@ namespace Shopping_App.ViewData
                 if (ex.StatusCode == (int)System.Net.HttpStatusCode.NotFound)
                 {
                     CartProducts = new List<ProductDto>();
-                    ApiManger.CurrentUserCartId = 0;
+                    Config.SetCurrentUserCartId(0);
                     return;
                 }
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -98,14 +102,14 @@ namespace Shopping_App.ViewData
             }
 
             UserCart.Products.ForEach(p => AddUpdateCart(p));
-            ApiManger.CurrentUserCartId = UserCart.CartId;
+            Config.SetCurrentUserCartId(UserCart.CartId);
         }
         public static async void SaveCart(object sender, EventArgs e)
         {
             CartDto cart = new CartDto
             {
-                UserId = ApiManger.CurrentLoggedInUser.Id,
-                CartId = ApiManger.CurrentUserCartId,
+                UserId = Config.GetCurrentUserId(),
+                CartId = Config.GetCurrentUserCartId(),
                 Products = CartProducts
             };
             try
@@ -113,11 +117,12 @@ namespace Shopping_App.ViewData
                 if(cart.CartId == 0)
                 {
                     cart = await ApiManger.Instance.CartService.AddCartAsync(cart);
-                    ApiManger.CurrentUserCartId = cart.CartId;
+                    Config.SetCurrentUserCartId(cart.CartId);
                 }
                 else
                 {
-                    await ApiManger.Instance.CartService.UpdateCartAsync(cart);
+                    cart = await ApiManger.Instance.CartService.UpdateCartAsync(cart);
+                    Config.SetCurrentUserCartId(cart.CartId);
                 }
             }
             catch (ApiException ex)
@@ -174,8 +179,8 @@ namespace Shopping_App.ViewData
             {
                 CartProducts.Clear();
                 TotalPriceLabel.Text = "Total Price: 0$";
-                await ApiManger.Instance.CartService.DeleteCartAsync(ApiManger.CurrentUserCartId);
-                Hellpers.ClearForm((sender as Button).Parent as Form);
+                await ApiManger.Instance.CartService.DeleteCartAsync(Config.GetCurrentUserCartId());
+                HellpersMethodes.ClearForm((sender as Button).Parent as Form);
                 MessageBox.Show("Cart cleared successfully!");
             }
         }
@@ -188,10 +193,10 @@ namespace Shopping_App.ViewData
             {
                 try
                 {
-                    await ApiManger.Instance.OrderService.MakeOrderAsync(ApiManger.CurrentLoggedInUser.Id, shippingAddress, paymentMethod);
+                    await ApiManger.Instance.OrderService.MakeOrderAsync(Config.GetCurrentUserId(), shippingAddress, paymentMethod);
                     CartProducts.Clear();
                     Form form = (sender as Button).Parent as Form;
-                    Hellpers.ClearForm(form);
+                    HellpersMethodes.ClearForm(form);
                     AddTotalPriceLabelAndButtons(form);
                     TotalPriceLabel.Text = "Total Price: 0$";
                     MessageBox.Show("Order placed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

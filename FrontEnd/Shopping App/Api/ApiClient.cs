@@ -1,12 +1,16 @@
 ﻿using System;
+using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Newtonsoft.Json;
 using Serilog;
 using Shopping_App;
+using Shopping_App.Hellpers;
 using ShoppingApp.Api.Models;
 using static System.Net.WebRequestMethods;
 
@@ -14,45 +18,36 @@ namespace ShoppingApp.Api
 {
     public class ApiClient
     {
-        private readonly HttpClient _httpClient;
-        private const string baseUrl = "https://localhost:7093";
-        public string RefreshToken { get; set; }
-        public string AccessToken { get; set; }
-
+        public readonly HttpClient _httpClient;
 
         public ApiClient(HttpClient httpClient)
         {
-            Log.Information("Initializing API client with base URL: {BaseUrl}", baseUrl);
+            Log.Information("Initializing API client Http");
+
 
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri(baseUrl);
+            _httpClient.BaseAddress = new Uri(Config.GetApiBaseUri());
             _httpClient.DefaultRequestHeaders.Accept.Clear();
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public void SetAuthorizationToken(string token)
+        private void SetAuthorizationToken(string token)
         {
             Log.Information("Setting authorization token");
-            AccessToken = token;
+            Config.SetCurrentUserAccessToken(token);
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
+        public void SetTokens(string accessToken, string refreshToken)
+        {
+            Log.Information("Setting access and refresh tokens");
+            SetAuthorizationToken(accessToken);
+            SetRefreshToken(refreshToken);
+        }
 
-        public void SetRefereshToken(string token)
+        private void SetRefreshToken(string token)
         {
             Log.Information("Setting refresh token");
-            RefreshToken = token;
-        }
-        public void ClearAuthorizationToken()
-        {
-            Log.Information("Clearing authorization token");
-            AccessToken = null;
-            _httpClient.DefaultRequestHeaders.Authorization = null;
-        }
-
-        public void ClearRefereshToken()
-        {
-            Log.Information("Clearing refresh token");
-            RefreshToken = null;
+            Config.SetCurrentUserRefreshToken(token);
         }
 
         protected async Task<T> GetAsync<T>(string endpoint, string queryString = "")
@@ -144,6 +139,7 @@ namespace ShoppingApp.Api
                 }
             }
         }
+
     }
 
     public class ApiException : Exception

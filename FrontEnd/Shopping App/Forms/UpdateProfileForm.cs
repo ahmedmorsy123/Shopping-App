@@ -1,14 +1,17 @@
-﻿using ShoppingApp.Api;
+﻿using Shopping_App.Hellpers;
+using ShoppingApp.Api;
 using ShoppingApp.Api.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Shopping_App.Forms
 {
@@ -18,8 +21,8 @@ namespace Shopping_App.Forms
         {
             InitializeComponent();
 
-            tbUserName.Text = ApiManger.CurrentLoggedInUser.Name;
-            tbEmail.Text = ApiManger.CurrentLoggedInUser.Email;
+            tbUserName.Text = Config.GetCurrentUserName();
+            tbEmail.Text = Config.GetCurrentUserEmail();
         }
 
         private async void btnUpdate_Click(object sender, EventArgs e)
@@ -39,9 +42,9 @@ namespace Shopping_App.Forms
 
             UpdateUserDto user = new UpdateUserDto
             {
-                Id = ApiManger.CurrentLoggedInUser.Id,
-                Name = tbUserName.Text == ApiManger.CurrentLoggedInUser.Name ? "" : tbUserName.Text,
-                Email = tbEmail.Text == ApiManger.CurrentLoggedInUser.Email ? "" : tbEmail.Text,
+                Id = Config.GetCurrentUserId(),
+                Name = tbUserName.Text == Config.GetCurrentUserName() ? "" : tbUserName.Text,
+                Email = tbEmail.Text == Config.GetCurrentUserEmail() ? "" : tbEmail.Text,
                 OldPassword = tbOldPassword.Text,
                 NewPassword = tbNewPassword.Text
             };
