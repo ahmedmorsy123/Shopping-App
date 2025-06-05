@@ -39,6 +39,30 @@ namespace Shopping_App
             Config.Initialize();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
+            if (!string.IsNullOrEmpty(Config.GetRememberedRefreshToken()))
+            {
+                bool result = UserIsRemembered().GetAwaiter().GetResult();
+                
+                if (result)   
+                {
+                    Log.Information("User is remembered, proceeding to main form.");
+                    Application.Run(new MainForm());
+                }
+                else
+                {
+                    Log.Error("Token refresh failed, prompting user to login.");
+                    LogIn();
+                }
+            }
+            else
+            {
+                LogIn();
+            }
+        }
+
+        private static void LogIn()
+        {
             using (var loginForm = new LoginRegisterForm())
             {
                 if (loginForm.ShowDialog() == DialogResult.OK)
@@ -46,20 +70,20 @@ namespace Shopping_App
                     Application.Run(new MainForm());
                 }
             }
-
-            //Application.Run(new OrderItemsListForm());
-
-
-
-
-
-            //// read data from XML file
-            //StringBuilder sb = new StringBuilder();
-            //foreach ( var item in doc.Root.Elements("Item"))
-            //{
-            //    sb.AppendLine($"Id: {item.Element("Id").Value}, Name: {item.Element("Name").Value}, Quantity: {item.Element("Quantity").Value}, Price: {item.Element("Price").Value}");
-            //}
-            //MessageBox.Show(sb.ToString(), "Items in XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private static async Task<bool> UserIsRemembered()
+        {
+            TokenResponseDto tokenResponse;
+            try
+            {
+                tokenResponse = await ApiManger.Instance.AuthService.RefreshTokenAsync();
+                return true;
+            }
+            catch (ApiException ex)
+            {
+                Log.Error($"Token refresh failed: {ex.Message}, Forward user to login");
+                return false;
+            }
         }
     }
 }

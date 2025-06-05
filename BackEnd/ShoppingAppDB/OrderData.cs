@@ -160,7 +160,7 @@ namespace ShoppingAppDB
                 var order = await context.Orders.FindAsync(orderId);
                 if (order != null)
                 {
-                    order.Status = "Canceled";
+                    order.Status = "Cancelled";
                     await context.SaveChangesAsync();
                     _logger.LogInformation($"{_prefix}Order Canceled");
                 }

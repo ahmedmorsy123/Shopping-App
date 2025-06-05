@@ -48,7 +48,6 @@ namespace Shopping_App.ViewData
                         RemoveFromCart(product);
                         LoadCartItems(form);
                     }
-                    Console.WriteLine(CartProducts.Count);
                 };
                 form.Controls.Add(cartItem);
                 cartItem.BringToFront();

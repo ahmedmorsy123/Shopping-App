@@ -127,7 +127,6 @@ namespace Shopping_App.Hellpers
 
         public static void SetCurrentUser(UserDto user)
         {
-            Console.WriteLine("Current user is setted");
             doc.Root.Element("CurrentUser").Element("Id").Value = user.Id.ToString();
             doc.Root.Element("CurrentUser").Element("Name").Value = user.Name;
             doc.Root.Element("CurrentUser").Element("Email").Value = user.Email;

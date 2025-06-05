@@ -76,11 +76,7 @@ public class Program
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
-            }
+
 
             app.UseHttpsRedirection();
             app.UseAuthentication();

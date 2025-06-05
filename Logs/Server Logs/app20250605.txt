@@ -1,0 +1,205 @@
+2025-06-05 19:23:20.565 +03:00 [INF] Starting web host
+2025-06-05 19:23:21.851 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-05 19:23:21.853 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-05 19:23:21.940 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-05 19:23:21.940 +03:00 [INF] Hosting environment: Development
+2025-06-05 19:23:21.940 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-05 19:37:17.021 +03:00 [INF] AuthAPI LoginAPI
+2025-06-05 19:37:17.023 +03:00 [INF] AuthBL Login
+2025-06-05 19:37:17.061 +03:00 [INF] ServAuth Login
+2025-06-05 19:37:18.427 +03:00 [INF] ServPass Verifying password
+2025-06-05 19:37:18.679 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-05 19:37:18.679 +03:00 [INF] ServAuth Creating token response
+2025-06-05 19:37:18.680 +03:00 [INF] ServAuth Creating token
+2025-06-05 19:37:18.684 +03:00 [INF] ServAuth Token created successfully
+2025-06-05 19:37:18.704 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-05 19:37:18.706 +03:00 [INF] ServAuth Generating refresh token
+2025-06-05 19:37:18.739 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-05 19:37:18.752 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-05 19:37:18.841 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-05 19:37:18.842 +03:00 [INF] UsersBL GetUserById
+2025-06-05 19:37:18.843 +03:00 [INF] UserDA Getting user by id
+2025-06-05 19:37:21.949 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-05 19:37:21.951 +03:00 [INF] CartsBL Get User Cart
+2025-06-05 19:37:21.953 +03:00 [INF] CartDA Get User Cart
+2025-06-05 19:37:21.955 +03:00 [INF] ProductsAPI GetProducts
+2025-06-05 19:37:21.955 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-05 19:37:21.958 +03:00 [INF] ProductDA Get Products
+2025-06-05 19:37:22.035 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-05 19:37:22.082 +03:00 [WRN] CartsAPI There is no cart for this user
+2025-06-05 19:37:28.734 +03:00 [INF] CartsAPI Add Cart
+2025-06-05 19:37:28.735 +03:00 [INF] CartsBL Add Cart
+2025-06-05 19:37:28.736 +03:00 [INF] CartDA Add Cart
+2025-06-05 19:37:28.840 +03:00 [INF] CartDA Cart Added
+2025-06-05 19:37:28.879 +03:00 [INF] CartDA Cart Items Added
+2025-06-05 19:37:28.879 +03:00 [INF] CartsAPI Cart was added with id 507
+2025-06-05 22:18:50.286 +03:00 [INF] Starting web host
+2025-06-05 22:18:52.185 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-05 22:18:52.187 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-05 22:18:52.295 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-05 22:18:52.296 +03:00 [INF] Hosting environment: Development
+2025-06-05 22:18:52.296 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-05 22:21:24.783 +03:00 [INF] AuthBL RefreshToken
+2025-06-05 22:21:24.790 +03:00 [INF] ServAuth Refreshing tokens
+2025-06-05 22:21:24.841 +03:00 [INF] ServAuth Validating refresh token
+2025-06-05 22:21:30.146 +03:00 [INF] ServAuth Refresh token validation successful
+2025-06-05 22:21:30.158 +03:00 [INF] ServAuth Refresh token validation successful
+2025-06-05 22:21:30.159 +03:00 [INF] ServAuth Creating token response
+2025-06-05 22:21:30.161 +03:00 [INF] ServAuth Creating token
+2025-06-05 22:21:30.173 +03:00 [INF] ServAuth Token created successfully
+2025-06-05 22:21:30.285 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-05 22:21:30.294 +03:00 [INF] ServAuth Generating refresh token
+2025-06-05 22:21:30.426 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-05 22:21:30.988 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-05 22:21:30.990 +03:00 [INF] UsersBL GetUserById
+2025-06-05 22:21:30.994 +03:00 [INF] UserDA Getting user by id
+2025-06-05 22:21:31.608 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-05 22:21:31.610 +03:00 [INF] CartsBL Get User Cart
+2025-06-05 22:21:31.615 +03:00 [INF] ProductsAPI GetProducts
+2025-06-05 22:21:31.617 +03:00 [INF] CartDA Get User Cart
+2025-06-05 22:21:31.617 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-05 22:21:31.622 +03:00 [INF] ProductDA Get Products
+2025-06-05 22:21:31.851 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-05 22:21:40.162 +03:00 [INF] CartsAPI Update Cart
+2025-06-05 22:21:40.165 +03:00 [INF] CartsBL Update Cart
+2025-06-05 22:21:40.172 +03:00 [INF] CartDA Update Cart
+2025-06-05 22:21:40.824 +03:00 [INF] CartDA Cart Updated
+2025-06-05 22:21:40.825 +03:00 [INF] CartsAPI Cart was updated
+2025-06-05 22:21:43.448 +03:00 [INF] AuthBL RefreshToken
+2025-06-05 22:21:43.448 +03:00 [INF] ServAuth Refreshing tokens
+2025-06-05 22:21:43.448 +03:00 [INF] ServAuth Validating refresh token
+2025-06-05 22:21:43.506 +03:00 [INF] ServAuth Refresh token validation successful
+2025-06-05 22:21:43.506 +03:00 [INF] ServAuth Refresh token validation successful
+2025-06-05 22:21:43.506 +03:00 [INF] ServAuth Creating token response
+2025-06-05 22:21:43.506 +03:00 [INF] ServAuth Creating token
+2025-06-05 22:21:43.507 +03:00 [INF] ServAuth Token created successfully
+2025-06-05 22:21:43.507 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-05 22:21:43.508 +03:00 [INF] ServAuth Generating refresh token
+2025-06-05 22:21:43.514 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-05 22:21:43.555 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-05 22:21:43.555 +03:00 [INF] UsersBL GetUserById
+2025-06-05 22:21:43.556 +03:00 [INF] UserDA Getting user by id
+2025-06-05 22:21:43.719 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-05 22:21:43.720 +03:00 [INF] CartsBL Get User Cart
+2025-06-05 22:21:43.720 +03:00 [INF] CartDA Get User Cart
+2025-06-05 22:21:43.746 +03:00 [INF] ProductsAPI GetProducts
+2025-06-05 22:21:43.746 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-05 22:21:43.747 +03:00 [INF] ProductDA Get Products
+2025-06-05 22:21:43.762 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-05 22:21:48.803 +03:00 [INF] AuthBL Logout
+2025-06-05 22:21:48.806 +03:00 [INF] ServAuth Logout
+2025-06-05 22:21:48.844 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-06-05 22:21:48.876 +03:00 [INF] AuthBL Logout
+2025-06-05 22:21:48.876 +03:00 [INF] ServAuth Logout
+2025-06-05 22:21:48.890 +03:00 [WRN] ServAuth Logout failed
+2025-06-05 22:21:48.904 +03:00 [INF] CartsAPI Add Cart
+2025-06-05 22:21:48.907 +03:00 [INF] CartsBL Add Cart
+2025-06-05 22:21:48.911 +03:00 [INF] CartDA Add Cart
+2025-06-05 22:21:49.553 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Carts_Users_UserId". The conflict occurred in database "Shopping App", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e622fa7f-9c00-426c-a0a7-d211087edabb
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ShoppingAppDB.CartData.AddCartAsync(CartDto cart) in C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppDB\CartData.cs:line 116
+   at ShoppingAppBussiness.CartsService.AddCartAsync(CartDto cart) in C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppBussiness\CartsService.cs:line 34
+   at ShoppingAppAPI.Controllers.CartsAPI.AddCart(CartDto cart) in C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI\Controllers\CartsAPI.cs:line 75
+   at lambda_method359(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-05 22:22:15.096 +03:00 [INF] AuthAPI LoginAPI
+2025-06-05 22:22:15.098 +03:00 [INF] AuthBL Login
+2025-06-05 22:22:15.101 +03:00 [INF] ServAuth Login
+2025-06-05 22:22:15.213 +03:00 [INF] ServPass Verifying password
+2025-06-05 22:22:15.807 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-05 22:22:15.808 +03:00 [INF] ServAuth Creating token response
+2025-06-05 22:22:15.808 +03:00 [INF] ServAuth Creating token
+2025-06-05 22:22:15.808 +03:00 [INF] ServAuth Token created successfully
+2025-06-05 22:22:15.808 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-05 22:22:15.808 +03:00 [INF] ServAuth Generating refresh token
+2025-06-05 22:22:15.811 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-05 22:22:15.821 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-05 22:22:15.857 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-05 22:22:15.857 +03:00 [INF] UsersBL GetUserById
+2025-06-05 22:22:15.857 +03:00 [INF] UserDA Getting user by id
+2025-06-05 22:22:16.832 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-05 22:22:16.832 +03:00 [INF] CartsBL Get User Cart
+2025-06-05 22:22:16.832 +03:00 [INF] CartDA Get User Cart
+2025-06-05 22:22:16.881 +03:00 [INF] ProductsAPI GetProducts
+2025-06-05 22:22:16.881 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-05 22:22:16.881 +03:00 [INF] ProductDA Get Products
+2025-06-05 22:22:16.901 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-05 22:22:30.474 +03:00 [INF] CartsAPI Update Cart
+2025-06-05 22:22:30.474 +03:00 [INF] CartsBL Update Cart
+2025-06-05 22:22:30.474 +03:00 [INF] CartDA Update Cart
+2025-06-05 22:22:30.475 +03:00 [INF] AuthBL Logout
+2025-06-05 22:22:30.475 +03:00 [INF] ServAuth Logout
+2025-06-05 22:22:30.492 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-06-05 22:22:30.571 +03:00 [INF] CartDA Cart Updated
+2025-06-05 22:22:30.572 +03:00 [INF] CartsAPI Cart was updated
+2025-06-05 22:25:24.649 +03:00 [INF] AuthAPI LoginAPI
+2025-06-05 22:25:24.653 +03:00 [INF] AuthBL Login
+2025-06-05 22:25:24.653 +03:00 [INF] ServAuth Login
+2025-06-05 22:25:24.741 +03:00 [INF] ServPass Verifying password
+2025-06-05 22:25:25.063 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-05 22:25:25.063 +03:00 [INF] ServAuth Creating token response
+2025-06-05 22:25:25.063 +03:00 [INF] ServAuth Creating token
+2025-06-05 22:25:25.063 +03:00 [INF] ServAuth Token created successfully
+2025-06-05 22:25:25.064 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-05 22:25:25.064 +03:00 [INF] ServAuth Generating refresh token
+2025-06-05 22:25:25.067 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-05 22:25:25.075 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-05 22:25:25.109 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-05 22:25:25.109 +03:00 [INF] UsersBL GetUserById
+2025-06-05 22:25:25.109 +03:00 [INF] UserDA Getting user by id
+2025-06-05 22:25:25.704 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-05 22:25:25.704 +03:00 [INF] CartsBL Get User Cart
+2025-06-05 22:25:25.704 +03:00 [INF] CartDA Get User Cart
+2025-06-05 22:25:25.729 +03:00 [INF] ProductsAPI GetProducts
+2025-06-05 22:25:25.730 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-05 22:25:25.730 +03:00 [INF] ProductDA Get Products
+2025-06-05 22:25:25.752 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-05 22:25:28.466 +03:00 [INF] CartsAPI Update Cart
+2025-06-05 22:25:28.466 +03:00 [INF] CartsBL Update Cart
+2025-06-05 22:25:28.466 +03:00 [INF] CartDA Update Cart
+2025-06-05 22:25:28.467 +03:00 [INF] AuthBL Logout
+2025-06-05 22:25:28.467 +03:00 [INF] ServAuth Logout
+2025-06-05 22:25:28.486 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-06-05 22:25:28.540 +03:00 [INF] CartDA Cart Updated
+2025-06-05 22:25:28.540 +03:00 [INF] CartsAPI Cart was updated

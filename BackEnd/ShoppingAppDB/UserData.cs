@@ -46,9 +46,14 @@ namespace ShoppingAppDB
 
             using (var context = new AppDbContext())
             {
-                if (context.Users.Any(u => u.Email == user.Email || u.Name == user.Name))
+                if (context.Users.Any(u => u.Email == user.Email))
                 {
                     _logger.LogWarning($"{_prefix}User with email {user.Email} already exists");
+                    return null;
+                }
+                if (context.Users.Any(u => u.Name == user.Name))
+                {
+                    _logger.LogWarning($"{_prefix}User with UserName {user.Email} already exists");
                     return null;
                 }
 
@@ -59,6 +64,7 @@ namespace ShoppingAppDB
                 userToAdd.PasswordHash = _passwordService.HashPassword(user.Password!);
                 userToAdd.CreatedAt = DateTime.Now;
                 userToAdd.LastLogin = DateTime.Now;
+                userToAdd.Role = "User";
                 await context.Users.AddAsync(userToAdd);
 
                 await context.SaveChangesAsync();

@@ -18,6 +18,7 @@ namespace Shopping_App.Forms
 {
     public partial class LoginRegisterForm : Form
     {
+        public bool IsAdmin;
         public LoginRegisterForm()
         {
             InitializeComponent();
@@ -28,29 +29,8 @@ namespace Shopping_App.Forms
             this.MinimizeBox = false;
             this.SizeGripStyle = SizeGripStyle.Hide;
 
-            if (string.IsNullOrEmpty(Config.GetRememberedRefreshToken()))
-            {
-                tabControl.SelectedTab = tabLogin;
-                this.Text = "Login";
-            }
-            else
-            {
-                UserIsRemembered().ContinueWith(t =>
-                {
-                    if (t.IsCompleted)
-                    {
-                        this.DialogResult = DialogResult.OK;
-                        this.Close();
-                    }
-                    else
-                    {
-                        Log.Error($"Error during token refresh: {t.Exception?.Message}");
-                        Config.ClearRemeberedData();
-                        tabControl.SelectedTab = tabLogin;
-                        this.Text = "Login";
-                    }
-                }, TaskScheduler.FromCurrentSynchronizationContext());
-            }
+            tabControl.SelectedTab = tabLogin;
+            this.Text = "Login";
         }
 
         private async void Login_Click(object sender, EventArgs e)
@@ -89,21 +69,6 @@ namespace Shopping_App.Forms
             this.Close();
         }
 
-        private async Task UserIsRemembered()
-        {
-            TokenResponseDto tokenResponse;
-            try
-            {
-                tokenResponse = await ApiManger.Instance.AuthService.RefreshTokenAsync();
-            }
-            catch (ApiException ex)
-            {
-                Log.Error($"Token refresh failed: {ex.Message}, Forward user to login");
-                return;
-            }
-
-            
-        }
 
         private void btnClearLogin_Click(object sender, EventArgs e)
         {

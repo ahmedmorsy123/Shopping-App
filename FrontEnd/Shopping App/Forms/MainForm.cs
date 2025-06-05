@@ -48,7 +48,6 @@ namespace Shopping_App.Forms
         private async void LoadProducts()
         {
             await Products.LoadProducts(1, 12, this, null, null, null);
-
         }
 
         private async void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -68,13 +67,11 @@ namespace Shopping_App.Forms
         private void myCartToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Carts.LoadCartItems(this);
-
         }
 
         private async void myOrderToolStripMenuItem_Click(object sender, EventArgs e)
         {
             await Orders.LoadOrders(this);
-
         }
 
         private void updateProfileToolStripMenuItem_Click(object sender, EventArgs e)

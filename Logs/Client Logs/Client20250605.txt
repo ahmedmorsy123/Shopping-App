@@ -1,0 +1,157 @@
+2025-06-05 19:23:39.897 +03:00 [INF] Application starting.
+2025-06-05 19:37:06.431 +03:00 [INF] Application starting.
+2025-06-05 19:37:16.496 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:16.498 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:16.498 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:16.498 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:16.498 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:16.501 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-05 19:37:16.569 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-05 19:37:18.768 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 19:37:18.774 +03:00 [INF] Setting access and refresh tokens
+2025-06-05 19:37:18.774 +03:00 [INF] Setting authorization token
+2025-06-05 19:37:18.779 +03:00 [INF] Setting refresh token
+2025-06-05 19:37:18.780 +03:00 [INF] Setting current user ID from JWT
+2025-06-05 19:37:18.781 +03:00 [INF] Extracting user ID from JWT
+2025-06-05 19:37:18.785 +03:00 [INF] Getting user with ID: 501
+2025-06-05 19:37:18.786 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-05 19:37:18.920 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 19:37:18.922 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-05 19:37:18.922 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-05 19:37:21.935 +03:00 [INF] Getting cart for user ID: 501
+2025-06-05 19:37:21.935 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-05 19:37:21.938 +03:00 [INF] Getting products for page number: 1
+2025-06-05 19:37:21.939 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-05 19:37:22.087 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 19:37:22.198 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-05 19:37:22.199 +03:00 [ERR] Error response: [Title: Cart Not Found] [Details: There is no cart for this user.] [Path: /api/Carts/GetUserCart]
+2025-06-05 19:37:22.272 +03:00 [ERR] Cart not found for user ID: 501
+2025-06-05 19:37:28.696 +03:00 [INF] Adding new cart for user ID: 501
+2025-06-05 19:37:28.696 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-05 19:37:32.202 +03:00 [INF] Application starting.
+2025-06-05 19:37:32.259 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:32.259 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:32.260 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:32.260 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:32.260 +03:00 [INF] Initializing API client Http
+2025-06-05 19:37:32.261 +03:00 [INF] Refreshing token for user ID: 501
+2025-06-05 19:37:32.298 +03:00 [INF] Sending POST request to /api/Auth/refresh-token with data: ShoppingApp.Api.Models.RefreshTokenRequestDto
+2025-06-05 22:21:23.729 +03:00 [INF] Application starting.
+2025-06-05 22:21:23.868 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:23.870 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:23.870 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:23.870 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:23.870 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:23.876 +03:00 [INF] Refreshing token for user ID: 501
+2025-06-05 22:21:23.930 +03:00 [INF] Sending POST request to /api/Auth/refresh-token with data: ShoppingApp.Api.Models.RefreshTokenRequestDto
+2025-06-05 22:21:30.747 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:30.761 +03:00 [INF] Setting access and refresh tokens
+2025-06-05 22:21:30.761 +03:00 [INF] Setting authorization token
+2025-06-05 22:21:30.762 +03:00 [INF] Setting refresh token
+2025-06-05 22:21:30.763 +03:00 [INF] Getting user with ID: 501
+2025-06-05 22:21:30.765 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-05 22:21:31.441 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:31.445 +03:00 [INF] Token refreshed successfully for user ID: 501
+2025-06-05 22:21:31.445 +03:00 [INF] User is remembered, proceeding to main form.
+2025-06-05 22:21:31.557 +03:00 [INF] Getting cart for user ID: 501
+2025-06-05 22:21:31.558 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-05 22:21:31.565 +03:00 [INF] Getting products for page number: 1
+2025-06-05 22:21:31.565 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-05 22:21:32.023 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:32.311 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:40.049 +03:00 [INF] Updating cart with ID: 507
+2025-06-05 22:21:40.052 +03:00 [INF] Sending PUT request to /api/Carts/UpdateCart with data: ShoppingApp.Api.Models.CartDto and query string: 
+2025-06-05 22:21:43.127 +03:00 [INF] Application starting.
+2025-06-05 22:21:43.238 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:43.238 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:43.238 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:43.238 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:43.238 +03:00 [INF] Initializing API client Http
+2025-06-05 22:21:43.240 +03:00 [INF] Refreshing token for user ID: 501
+2025-06-05 22:21:43.264 +03:00 [INF] Sending POST request to /api/Auth/refresh-token with data: ShoppingApp.Api.Models.RefreshTokenRequestDto
+2025-06-05 22:21:43.529 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:43.537 +03:00 [INF] Setting access and refresh tokens
+2025-06-05 22:21:43.537 +03:00 [INF] Setting authorization token
+2025-06-05 22:21:43.539 +03:00 [INF] Setting refresh token
+2025-06-05 22:21:43.542 +03:00 [INF] Getting user with ID: 501
+2025-06-05 22:21:43.545 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-05 22:21:43.576 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:43.585 +03:00 [INF] Token refreshed successfully for user ID: 501
+2025-06-05 22:21:43.586 +03:00 [INF] User is remembered, proceeding to main form.
+2025-06-05 22:21:43.711 +03:00 [INF] Getting cart for user ID: 501
+2025-06-05 22:21:43.711 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-05 22:21:43.719 +03:00 [INF] Getting products for page number: 1
+2025-06-05 22:21:43.720 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-05 22:21:43.790 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:43.801 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:48.779 +03:00 [INF] Logging out user with ID: 501
+2025-06-05 22:21:48.780 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-05 22:21:48.863 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:21:48.869 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-05 22:21:48.869 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-05 22:21:48.873 +03:00 [INF] Logging out user with ID: 0
+2025-06-05 22:21:48.873 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-05 22:21:49.003 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-05 22:21:49.006 +03:00 [ERR] Error response: [Title: User not found or Refresh token expired] [Details: The user was not found or the refresh token has expired.] [Path: /api/Auth/logout]
+2025-06-05 22:21:49.219 +03:00 [ERR] User not found or referesh token expired for user ID: 0
+2025-06-05 22:21:49.304 +03:00 [ERR] Logout Faild User not found or referesh token expired
+2025-06-05 22:21:52.331 +03:00 [INF] Application starting.
+2025-06-05 22:22:01.043 +03:00 [INF] Application starting.
+2025-06-05 22:22:14.773 +03:00 [INF] Initializing API client Http
+2025-06-05 22:22:14.774 +03:00 [INF] Initializing API client Http
+2025-06-05 22:22:14.774 +03:00 [INF] Initializing API client Http
+2025-06-05 22:22:14.774 +03:00 [INF] Initializing API client Http
+2025-06-05 22:22:14.774 +03:00 [INF] Initializing API client Http
+2025-06-05 22:22:14.777 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-05 22:22:14.800 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-05 22:22:15.829 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:22:15.836 +03:00 [INF] Setting access and refresh tokens
+2025-06-05 22:22:15.836 +03:00 [INF] Setting authorization token
+2025-06-05 22:22:15.839 +03:00 [INF] Setting refresh token
+2025-06-05 22:22:15.842 +03:00 [INF] Setting current user ID from JWT
+2025-06-05 22:22:15.843 +03:00 [INF] Extracting user ID from JWT
+2025-06-05 22:22:15.847 +03:00 [INF] Getting user with ID: 501
+2025-06-05 22:22:15.850 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-05 22:22:15.876 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:22:15.882 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-05 22:22:15.882 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-05 22:22:16.828 +03:00 [INF] Getting cart for user ID: 501
+2025-06-05 22:22:16.828 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-05 22:22:16.835 +03:00 [INF] Getting products for page number: 1
+2025-06-05 22:22:16.835 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-05 22:22:16.897 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:22:16.937 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:22:30.458 +03:00 [INF] Updating cart with ID: 507
+2025-06-05 22:22:30.461 +03:00 [INF] Sending PUT request to /api/Carts/UpdateCart with data: ShoppingApp.Api.Models.CartDto and query string: 
+2025-06-05 22:22:30.468 +03:00 [INF] Logging out user with ID: 501
+2025-06-05 22:22:30.469 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-05 22:22:33.393 +03:00 [INF] Application starting.
+2025-06-05 22:25:19.608 +03:00 [INF] Application starting.
+2025-06-05 22:25:24.378 +03:00 [INF] Initializing API client Http
+2025-06-05 22:25:24.379 +03:00 [INF] Initializing API client Http
+2025-06-05 22:25:24.379 +03:00 [INF] Initializing API client Http
+2025-06-05 22:25:24.379 +03:00 [INF] Initializing API client Http
+2025-06-05 22:25:24.379 +03:00 [INF] Initializing API client Http
+2025-06-05 22:25:24.381 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-05 22:25:24.396 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-05 22:25:25.081 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:25:25.088 +03:00 [INF] Setting access and refresh tokens
+2025-06-05 22:25:25.088 +03:00 [INF] Setting authorization token
+2025-06-05 22:25:25.090 +03:00 [INF] Setting refresh token
+2025-06-05 22:25:25.094 +03:00 [INF] Setting current user ID from JWT
+2025-06-05 22:25:25.095 +03:00 [INF] Extracting user ID from JWT
+2025-06-05 22:25:25.100 +03:00 [INF] Getting user with ID: 501
+2025-06-05 22:25:25.105 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-05 22:25:25.122 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:25:25.131 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-05 22:25:25.132 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-05 22:25:25.700 +03:00 [INF] Getting cart for user ID: 501
+2025-06-05 22:25:25.701 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-05 22:25:25.710 +03:00 [INF] Getting products for page number: 1
+2025-06-05 22:25:25.710 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-05 22:25:25.780 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:25:25.796 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-05 22:25:28.450 +03:00 [INF] Updating cart with ID: 507
+2025-06-05 22:25:28.453 +03:00 [INF] Sending PUT request to /api/Carts/UpdateCart with data: ShoppingApp.Api.Models.CartDto and query string: 
+2025-06-05 22:25:28.462 +03:00 [INF] Logging out user with ID: 501
+2025-06-05 22:25:28.463 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
