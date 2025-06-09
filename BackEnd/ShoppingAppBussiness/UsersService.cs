@@ -39,5 +39,10 @@ namespace ShoppingAppBussiness
             _logger.LogInformation($"{_prefix}DeleteUser");
             return await _userData.DeleteUserAsync(userId);
         }
+        public async Task<List<UserDto>> GetAllUsersAsync()
+        {
+            _logger.LogInformation($"{_prefix}GetAllUsersAsync called");
+            return await _userData.GetAllUsersAsync();
+        }
     }
 }

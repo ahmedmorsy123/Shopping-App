@@ -1,4 +1,5 @@
-﻿using ShoppingApp.Api.Controllers;
+﻿using Shopping_App.Api.Controllers;
+using ShoppingApp.Api.Controllers;
 using ShoppingApp.Api.Models;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Shopping_App
         public OrdersService OrderService { get; }
         public ProductsService ProductService { get; }
         public UsersService UserService { get; }
-
+        public AdminService AdminService { get; }
 
 
         private ApiManger()
@@ -29,6 +30,7 @@ namespace Shopping_App
             OrderService = new OrdersService(_httpClient);
             ProductService = new ProductsService(_httpClient);
             UserService = new UsersService(_httpClient);
+            AdminService = new AdminService(_httpClient);
         }
 
         public static ApiManger Instance => _instance.Value;

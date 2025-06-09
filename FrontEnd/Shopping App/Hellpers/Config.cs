@@ -27,31 +27,48 @@ namespace Shopping_App.Hellpers
                             // Api section
                             new XElement("Api",
                                 new XElement("BaseUri", "https://localhost:7093"),
+                                new XElement("Admin",
+                                    new XElement("AddAdmin", "/api/Admin/AddAdmin"),
+                                    new XElement("RemoveAdmin", "/api/Admin/RemoveAdmin"),
+                                    new XElement("MakeAdmin", "/api/Admin/MakeAdmin"),
+                                    new XElement("ListAdmins", "/api/Admin/ListAdmins")
+                                 ),
                                 new XElement("Auth",
                                     new XElement("LogIn", "/api/Auth/Login"),
                                     new XElement("RefreshToken", "/api/Auth/refresh-token"),
-                                    new XElement("LogOut", "/api/Auth/logout")
-                                ),
-                                new XElement("Products",
-                                    new XElement("GetProducts", "/api/Products/GetProducts")
-                                ),
-                                new XElement("Orders",
-                                    new XElement("GetUserOrders", "/api/Orders/GetUserOrders"),
-                                    new XElement("GetOrderById", "/api/Orders/GetOrderById"),
-                                    new XElement("MakeOrder", "/api/Orders/MakeOrders"),
-                                    new XElement("CancelOrder", "/api/Orders/CancelOrder")
+                                    new XElement("LogOut", "/api/Auth/logout"),
+                                    new XElement("GetRegisterationCountByDuration", "/api/Auth/GetRegisterationCountByDuration"),
+                                    new XElement("GetLoginCountByDuration", "/api/Auth/GetLoginCountByDuration")
                                 ),
                                 new XElement("Carts",
                                     new XElement("GetUserCart", "/api/Carts/GetUserCart"),
                                     new XElement("UpdateCart", "/api/Carts/UpdateCart"),
                                     new XElement("AddCart", "/api/Carts/AddCart"),
-                                    new XElement("DeleteCart", "/api/Carts/DeleteCart")
+                                    new XElement("DeleteCart", "/api/Carts/DeleteCart"),
+                                    new XElement("GetCartsCount", "/api/Carts/GetCartsCount")
+                                ),
+                                new XElement("Orders",
+                                    new XElement("GetUserOrders", "/api/Orders/GetUserOrders"),
+                                    new XElement("GetOrderById", "/api/Orders/GetOrderById"),
+                                    new XElement("MakeOrder", "/api/Orders/MakeOrders"),
+                                    new XElement("CancelOrder", "/api/Orders/CancelOrder"),
+                                    new XElement("ProcessOrder", "/api/Orders/ProcessOrder"),
+                                    new XElement("ShipOrder", "/api/Orders/ShipOrder"),
+                                    new XElement("DeliverOrder", "/api/Orders/DeliverOrder"),
+                                    new XElement("GetOrdersByDurationAndStatus", "/api/Orders/GetOrdersByDurationAndStatus")
+                                ),
+                                new XElement("Products",
+                                    new XElement("GetProducts", "/api/Products/GetProducts"),
+                                    new XElement("LowStockProducts", "/api/Products/LowStockProducts"),
+                                    new XElement("OutOfStockProducts", "/api/Products/OutOfStockProducts"),
+                                    new XElement("UpdateProductStock", "/api/Products/UpdateProductStock")
                                 ),
                                 new XElement("Users",
                                     new XElement("GetUser", "/api/Users/getUser"),
                                     new XElement("UpdateUser", "/api/Users/UpdateUser"),
                                     new XElement("DeleteUser", "/api/Users/DeleteUser"),
-                                    new XElement("AddUser", "/api/Users/AddUser")
+                                    new XElement("AddUserForm", "/api/Users/AddUserForm"),
+                                    new XElement("GetAllUsers", "/api/Users/GetAllUsers")
                                 )
                             ),
                             // CurrentUser section (empty values for tokens)
@@ -66,7 +83,8 @@ namespace Shopping_App.Hellpers
                             // LoginInfo section
                             new XElement("LoginInfo",
                                 new XElement("RefreshToken", ""),
-                                new XElement("Id", "")
+                                new XElement("Id", ""),
+                                new XElement("IsAdmin", "")
                             )
                         )
                     );
@@ -115,16 +133,6 @@ namespace Shopping_App.Hellpers
             return Convert.ToInt32(doc.Root.Element("CurrentUser").Element("CartId").Value);
         }
 
-        public static string GetCurrentUserRefreshToken()
-        {
-            return doc.Root.Element("CurrentUser").Element("RefreshToken").Value;
-        }
-
-        public static string GetCurrentUserAccessToken()
-        {
-            return doc.Root.Element("CurrentUser").Element("AccessToken").Value;
-        }
-
         public static void SetCurrentUser(UserDto user)
         {
             doc.Root.Element("CurrentUser").Element("Id").Value = user.Id.ToString();
@@ -148,18 +156,6 @@ namespace Shopping_App.Hellpers
         public static void SetCurrentUserAccessToken(string accessToken)
         {
             doc.Root.Element("CurrentUser").Element("AccessToken").Value = accessToken;
-            doc.Save(path);
-        }
-
-        public static void ClearRefreshToken()
-        {
-            doc.Root.Element("CurrentUser").Element("RefreshToken").Value = "";
-            doc.Save(path);
-        }
-
-        public static void ClearAccessToken()
-        {
-            doc.Root.Element("CurrentUser").Element("AccessToken").Value = "";
             doc.Save(path);
         }
 
@@ -191,10 +187,22 @@ namespace Shopping_App.Hellpers
             return Convert.ToInt32(doc.Root.Element("LoginInfo").Element("Id").Value);
         }
 
+        public static bool IsUserAdmin()
+        {
+            return Convert.ToBoolean(doc.Root.Element("LoginInfo").Element("IsAdmin").Value);
+        }
+
+        public static void SetIsUserAdmin(bool isAdmin)
+        {
+            doc.Root.Element("LoginInfo").Element("IsAdmin").Value = isAdmin.ToString();
+            doc.Save(path);
+        }
+
         public static void ClearRemeberedData()
         {
             doc.Root.Element("LoginInfo").Element("RefreshToken").Value = "";
             doc.Root.Element("LoginInfo").Element("Id").Value = "";
+            doc.Root.Element("LoginInfo").Element("IsAdmin").Value = "";
             doc.Save(path);
         }
 

@@ -34,8 +34,10 @@ namespace ShoppingApp.Api.Controllers
                     Log.Error("Unauthorized to access cart for user ID: {UserId}", userId);
                     throw new ApiException(401, "Unauthorized to access this cart");
                 }
-
-                throw;
+                else
+                {
+                    throw;
+                }
             }
         }
         public async Task<CartDto> UpdateCartAsync(CartDto cart)
@@ -52,7 +54,10 @@ namespace ShoppingApp.Api.Controllers
                     Log.Error("Unauthorized to update cart with ID: {CartId}", cart.CartId);
                     throw new ApiException(401, "Unauthorized to update this cart");
                 }
-                throw;
+                else
+                {
+                    throw;
+                }
             }
         }
         public async Task<CartDto> AddCartAsync(CartDto cart)
@@ -69,7 +74,10 @@ namespace ShoppingApp.Api.Controllers
                     Log.Error("Unauthorized to create cart for user ID: {UserId}", cart.UserId);
                     throw new ApiException(401, "Unauthorized to create a cart");
                 }
-                throw;
+                else
+                {
+                    throw;
+                }
             }
         }
         public async Task DeleteCartAsync(int cartId)
@@ -88,7 +96,36 @@ namespace ShoppingApp.Api.Controllers
                     Log.Error("Cart not found for ID: {CartId}", cartId);
                     throw new ApiException(404, $"Cart with ID {cartId} not found");
                 }
-                throw;
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public async Task<int> GetCartsCountAsync()
+        {
+            Log.Information("Getting total number of carts");
+            try
+            {
+                string endpoint = Config.GetApiEndpoint("Carts", "GetCartsCount");
+                return await GetAsync<int>(endpoint);
+            }
+            catch (ApiException ex)
+            {
+                if (ex.StatusCode == 401)
+                {
+                    Log.Error("Unauthorized to access carts count");
+                    throw new ApiException(401, "Unauthorized to access carts count");
+                } else if(ex.StatusCode == 403)
+                {
+                    Log.Error("Forbidden access to carts count");
+                    throw new ApiException(403, "Forbidden access to carts count");
+                }
+                else
+                {
+                    throw;
+                }
             }
         }
     }

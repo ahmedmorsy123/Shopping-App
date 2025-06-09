@@ -22,14 +22,20 @@ namespace Shopping_App.ViewData
         private static Button SaveBtn;
         private static Button ClearCartBtn;
         private static Button CheckoutBtn;
+        private static Form _form;
 
-        public static void LoadCartItems(Form form)
+        public static void SetForm(Form form)
+        {
+            _form = form;
+        }
+
+        public static void LoadCartItems()
         {
             // Clear existing controls
-            HellpersMethodes.ClearForm(form);
+            HellpersMethodes.ClearForm(_form);
 
-            form.AutoScroll = true;
-            AddTotalPriceLabelAndButtons(form);
+            _form.AutoScroll = true;
+            AddTotalPriceLabelAndButtons();
 
             // Create new controls for each product in the cart
             int i = 0;
@@ -46,10 +52,10 @@ namespace Shopping_App.ViewData
                     else
                     {
                         RemoveFromCart(product);
-                        LoadCartItems(form);
+                        LoadCartItems();
                     }
                 };
-                form.Controls.Add(cartItem);
+                _form.Controls.Add(cartItem);
                 cartItem.BringToFront();
                 i++;
             }
@@ -132,14 +138,14 @@ namespace Shopping_App.ViewData
             if (sender != null ) MessageBox.Show("Cart saved successfully!");
             
         }
-        private static void AddTotalPriceLabelAndButtons(Form form)
+        private static void AddTotalPriceLabelAndButtons()
         {
             SaveBtn = new Button();
             SaveBtn.Text = "Save Cart";
             SaveBtn.Size = new Size(100, 30);
             SaveBtn.Location = new Point(10, 30);
             SaveBtn.Click += SaveCart;
-            form.Controls.Add(SaveBtn);
+            _form.Controls.Add(SaveBtn);
             SaveBtn.BringToFront();
 
             ClearCartBtn = new Button();
@@ -147,7 +153,7 @@ namespace Shopping_App.ViewData
             ClearCartBtn.Size = new Size(100, 30);
             ClearCartBtn.Location = new Point(120, 30);
             ClearCartBtn.Click += ClearCart;
-            form.Controls.Add(ClearCartBtn);
+            _form.Controls.Add(ClearCartBtn);
             ClearCartBtn.BringToFront();
 
 
@@ -156,7 +162,7 @@ namespace Shopping_App.ViewData
             CheckoutBtn.Size = new Size(100, 30);
             CheckoutBtn.Location = new Point(230, 30);
             CheckoutBtn.Click += Checkout;
-            form.Controls.Add(CheckoutBtn);
+            _form.Controls.Add(CheckoutBtn);
             CheckoutBtn.BringToFront();
 
 
@@ -165,7 +171,7 @@ namespace Shopping_App.ViewData
             TotalPriceLabel.Size = new Size(200, 30);
             TotalPriceLabel.Font = new Font("Arial", 12, FontStyle.Bold);
             TotalPriceLabel.Location = new Point(450, 30);
-            form.Controls.Add(TotalPriceLabel);
+            _form.Controls.Add(TotalPriceLabel);
             TotalPriceLabel.BringToFront();
         }
 
@@ -194,9 +200,8 @@ namespace Shopping_App.ViewData
                 {
                     await ApiManger.Instance.OrderService.MakeOrderAsync(Config.GetCurrentUserId(), shippingAddress, paymentMethod);
                     CartProducts.Clear();
-                    Form form = (sender as Button).Parent as Form;
-                    HellpersMethodes.ClearForm(form);
-                    AddTotalPriceLabelAndButtons(form);
+                    HellpersMethodes.ClearForm(_form);
+                    AddTotalPriceLabelAndButtons();
                     TotalPriceLabel.Text = "Total Price: 0$";
                     MessageBox.Show("Order placed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     shippingInfoForm.Close();

@@ -110,5 +110,25 @@ namespace ShoppingAppDB
             }
             return false;
         }
+
+        public async Task<List<UserDto>> GetAllUsersAsync()
+        {
+            _logger.LogInformation($"{_prefix}Getting all users");
+            using (var context = new AppDbContext())
+            {
+                var users = await context.Users.AsNoTracking()
+                    .Where(u => u.Role != "Admin")
+                    .Select(u => new UserDto(u.Id, u.Name, u.Email, null))
+                    .ToListAsync();
+
+                if (users.Count == 0)
+                {
+                    _logger.LogWarning($"{_prefix}No users found");
+                    return new List<UserDto>();
+                }
+                _logger.LogInformation($"{_prefix}Found {users.Count} users");
+                return users;
+            }
+        }
     }
 }

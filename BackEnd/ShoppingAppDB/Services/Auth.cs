@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using ShoppingAppDB.Data;
@@ -8,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using static ShoppingAppDB.Enums.Enums;
 
 namespace ShoppingAppDB.Services
 {
@@ -163,5 +165,34 @@ namespace ShoppingAppDB.Services
                 return true;
             }
         }
+
+        public async Task<int> GetLoginCountByDurationAsync(TimeDuration duration)
+        {
+            _logger.LogInformation($"{_prefix}Fetching login count for duration: {duration}");
+            using (var context = new AppDbContext())
+            {
+                DateTime startDate = CalculateStartDate(duration);
+                int loginCount = await context.Users.AsNoTracking()
+                    .Where(u => u.LastLogin >= startDate)
+                    .CountAsync();
+                _logger.LogInformation($"{_prefix}Login count for duration {duration}: {loginCount}");
+                return loginCount;
+            }
+        }
+
+        public async Task<int> GetRegisterationCountByDurationAsync(TimeDuration duration)
+        {
+            _logger.LogInformation($"{_prefix}Fetching registration count for duration: {duration}");
+            using (var context = new AppDbContext())
+            {
+                DateTime startDate = CalculateStartDate(duration);
+                int registrationCount = await context.Users.AsNoTracking()
+                    .Where(u => u.CreatedAt >= startDate)
+                    .CountAsync();
+                _logger.LogInformation($"{_prefix}Registration count for duration {duration}: {registrationCount}");
+                return registrationCount;
+            }
+        }
+
     }
 }

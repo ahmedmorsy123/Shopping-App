@@ -38,6 +38,9 @@ namespace Shopping_App.Forms
 
             FetchAndUpdateCart();
             LoadProducts();
+
+            Carts.SetForm(this);
+            Products.SetForm(this);
         }
 
         private async void FetchAndUpdateCart()
@@ -47,7 +50,7 @@ namespace Shopping_App.Forms
 
         private async void LoadProducts()
         {
-            await Products.LoadProducts(1, 12, this, null, null, null);
+            await Products.LoadProducts(1, 12, null, null, null);
         }
 
         private async void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -61,17 +64,17 @@ namespace Shopping_App.Forms
 
         private async void productsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            await Products.LoadProducts(1,12,this);
+            await Products.LoadProducts(1,12);
         }
 
         private void myCartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Carts.LoadCartItems(this);
+            Carts.LoadCartItems();
         }
 
         private async void myOrderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            await Orders.LoadOrders(this);
+            await Orders.LoadUserOrders(this);
         }
 
         private void updateProfileToolStripMenuItem_Click(object sender, EventArgs e)

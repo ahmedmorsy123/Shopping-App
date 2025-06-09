@@ -37,28 +37,41 @@ namespace Shopping_App
 
 
             Config.Initialize();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
-            if (!string.IsNullOrEmpty(Config.GetRememberedRefreshToken()))
-            {
-                bool result = UserIsRemembered().GetAwaiter().GetResult();
-                
-                if (result)   
-                {
-                    Log.Information("User is remembered, proceeding to main form.");
-                    Application.Run(new MainForm());
-                }
-                else
-                {
-                    Log.Error("Token refresh failed, prompting user to login.");
-                    LogIn();
-                }
-            }
-            else
-            {
-                LogIn();
-            }
+
+            Application.Run(new AdminForm());
+
+
+            //if (!string.IsNullOrEmpty(Config.GetRememberedRefreshToken()))
+            //{
+            //    bool result = UserIsRemembered().GetAwaiter().GetResult();
+            //    bool isAdmin = Config.IsUserAdmin();
+
+            //    if (result)
+            //    {
+            //        if (isAdmin)
+            //        {
+            //            Log.Information("User is remembered as admin, proceeding to admin form.");
+            //            Application.Run(new AdminForm());
+            //        }
+            //        else
+            //        {
+            //            Log.Information("User is remembered, proceeding to main form.");
+            //            Application.Run(new MainForm());
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Log.Error("Token refresh failed, prompting user to login.");
+            //        LogIn();
+            //    }
+            //}
+            //else
+            //{
+            //    LogIn();
+            //}
         }
 
         private static void LogIn()
@@ -67,7 +80,16 @@ namespace Shopping_App
             {
                 if (loginForm.ShowDialog() == DialogResult.OK)
                 {
-                    Application.Run(new MainForm());
+                    if (loginForm.IsAdmin)
+                    {
+                        Log.Information("Admin logged in, proceeding to admin form.");
+                        Application.Run(new AdminForm());
+                    }
+                    else
+                    {
+                        Log.Information("User logged in, proceeding to main form.");
+                        Application.Run(new MainForm());
+                    }
                 }
             }
         }

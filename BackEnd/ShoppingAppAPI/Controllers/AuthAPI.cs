@@ -5,20 +5,21 @@ using ShoppingAppBussiness;
 using ShoppingAppDB.Models;
 using ShoppingAppDB.Services;
 using System.Security.Claims;
+using static ShoppingAppDB.Enums.Enums;
 
 
 namespace ShoppingAppAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Auth")]
     [ApiController]
-    public class Auth : ControllerBase
+    public class AuthAPI : ControllerBase
     {
         private const string _prefix = "AuthAPI ";
 
         private readonly AuthService _authService;
-        private readonly ILogger<Auth> _logger;
+        private readonly ILogger<AuthAPI> _logger;
 
-        public Auth(ILogger<Auth> logger, AuthService authService)
+        public AuthAPI(ILogger<AuthAPI> logger, AuthService authService)
         {
             _logger = logger;
             _authService = authService;
@@ -101,5 +102,28 @@ namespace ShoppingAppAPI.Controllers
 
             return Ok("Logged out successfully.");
         }
+
+        //[Authorize(Roles = "Admin")]
+        [HttpGet("GetLoginCountByDuration")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(int))]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        public async Task<ActionResult<int>> GetLoginCountByDuration([FromQuery] TimeDuration duration)
+        {
+            _logger.LogInformation($"{_prefix}GetLoginCountByDuration called with duration: {duration}");
+            return Ok(await _authService.GetLoginCountByDurationAsync(duration));
+        }
+
+        //[Authorize(Roles = "Admin")]
+        [HttpGet("GetRegisterationCountByDuration")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(int))]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        public async Task<ActionResult<int>> GetRegisterationCountByDuration([FromQuery] TimeDuration duration)
+        {
+            _logger.LogInformation($"{_prefix}GetRegisterationCountByDuration called with duration: {duration}");
+            return Ok(await _authService.GetRegisterationCountByDurationAsync(duration));
+        }
+
     }
 }

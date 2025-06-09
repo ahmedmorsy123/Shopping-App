@@ -10,6 +10,7 @@ using System.Xml.Linq;
 using System.IO;
 using Shopping_App.Hellpers;
 using Shopping_App.ViewData;
+using static ShoppingAppDB.Enums.Enums;
 
 namespace ShoppingApp.Api.Controllers
 {
@@ -42,7 +43,10 @@ namespace ShoppingApp.Api.Controllers
                     Log.Error("Invalid username or password for user: {Username}", username);
                     throw new ApiException(400, "Invalid username or password");
                 }
-                throw;
+                else
+                {
+                    throw;
+                }
             }
         }
         public async Task<TokenResponseDto> RefreshTokenAsync()
@@ -82,7 +86,10 @@ namespace ShoppingApp.Api.Controllers
                     Log.Error("Failed to refresh token for user ID: {UserId}", Config.GetCurrentUserId());
                     throw new ApiException(400, "Invalid or expired refresh token");
                 }
-                throw;
+                else
+                {
+                    throw;
+                }
             }
         }
         public async Task LogoutAsync()
@@ -113,8 +120,65 @@ namespace ShoppingApp.Api.Controllers
                     Log.Error("User not found or referesh token expired for user ID: {UserId}", Config.GetCurrentUserId());
                     throw new ApiException(404, "User not found or referesh token expired");
                 }
+                else
+                {
+                    throw;
+                }
 
-                throw;
+                
+            }
+        }
+
+        public async Task<int> GetLoginCountByDurationAsync(TimeDuration duration)
+        {
+            Log.Information("Getting login count in duration: {Duration}", duration);
+            string queryString = $"duration={duration}";
+            try
+            {
+                return await GetAsync<int>(Config.GetApiEndpoint("Auth", "GetLoginCountByDuration"), queryString);
+            }
+            catch (ApiException ex)
+            {
+                if(ex.StatusCode == 401)
+                {
+                    Log.Error("Unauthorized access to login count for user ID: {UserId}", Config.GetCurrentUserId());
+                    throw new ApiException(401, "Unauthorized access to login count");
+                } else if(ex.StatusCode == 403)
+                {
+                    Log.Error("Forbidden access to login count for user ID: {UserId}", Config.GetCurrentUserId());
+                    throw new ApiException(403, "Forbidden access to login count");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public async Task<int> GetRegisterationCountByDurationAsync(TimeDuration duration)
+        {
+            Log.Information("Getting registration count in duration: {Duration}", duration);
+            string queryString = $"duration={duration}";
+            try
+            {
+                return await GetAsync<int>(Config.GetApiEndpoint("Auth", "GetRegisterationCountByDuration"), queryString);
+            }
+            catch (ApiException ex)
+            {
+                if (ex.StatusCode == 401)
+                {
+                    Log.Error("Unauthorized access to registration count for user ID: {UserId}", Config.GetCurrentUserId());
+                    throw new ApiException(401, "Unauthorized access to registration count");
+                }
+                else if (ex.StatusCode == 403)
+                {
+                    Log.Error("Forbidden access to registration count for user ID: {UserId}", Config.GetCurrentUserId());
+                    throw new ApiException(403, "Forbidden access to registration count");
+                }
+                else
+                {
+                    throw;
+                }
             }
         }
         private async Task SetCurrentUserId(string jwt)

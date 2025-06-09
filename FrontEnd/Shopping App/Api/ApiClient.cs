@@ -84,12 +84,19 @@ namespace ShoppingApp.Api
             await HandleResponseErrors(response);
         }
 
+        protected async Task PutAsync(string endpoint, string queryString)
+        {
+            Log.Information("Sending PUT request to {Endpoint} with query string: {QueryString}", endpoint, queryString);
+            string url = string.IsNullOrEmpty(queryString) ? endpoint : $"{endpoint}?{queryString}";
+            HttpResponseMessage response = await _httpClient.PutAsync(url, null);
+            await HandleResponseErrors(response);
+        }
+
         protected async Task<T> PutAsync<T>(string endpoint, object data, string queryString = "")
         {
             Log.Information("Sending PUT request to {Endpoint} with data: {Data} and query string: {QueryString}", endpoint, data, queryString);
             string url = string.IsNullOrEmpty(queryString) ? endpoint : $"{endpoint}?{queryString}";
             HttpContent content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
-
             HttpResponseMessage response = await _httpClient.PutAsync(url, content);
             await HandleResponseErrors(response);
             string responseContent = await response.Content.ReadAsStringAsync();
@@ -98,8 +105,11 @@ namespace ShoppingApp.Api
 
         protected async Task DeleteAsync(string endpoint, string queryString = "")
         {
+            
             Log.Information("Sending DELETE request to {Endpoint} with query string: {QueryString}", endpoint, queryString);
             string url = string.IsNullOrEmpty(queryString) ? endpoint : $"{endpoint}?{queryString}";
+            Console.WriteLine($"query is {queryString}");
+            Console.WriteLine($"url is {url}");
             HttpResponseMessage response = await _httpClient.DeleteAsync(url);
             await HandleResponseErrors(response);
         }
@@ -154,8 +164,10 @@ namespace ShoppingApp.Api
 
     public class ProblemDetails
     {
+        public string Type { get; set; }
         public string Title { get; set; }
         public int Status { get; set; }
+        public string TraceId { get; set; }
         public string Detail { get; set; }
         public string Instance { get; set; }
     }

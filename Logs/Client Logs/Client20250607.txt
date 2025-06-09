@@ -1,0 +1,139 @@
+2025-06-07 12:39:06.162 +03:00 [INF] Application starting.
+2025-06-07 12:39:06.245 +03:00 [INF] XML file created successfully at: C:\Users\ENG Ahmed\source\repos\ShoppingApp\FrontEnd\Shopping App\bin\Debug\data.xml
+2025-06-07 22:33:24.603 +03:00 [INF] Application starting.
+2025-06-07 23:45:52.281 +03:00 [INF] Application starting.
+2025-06-07 23:46:21.524 +03:00 [INF] Initializing API client Http
+2025-06-07 23:46:21.525 +03:00 [INF] Initializing API client Http
+2025-06-07 23:46:21.525 +03:00 [INF] Initializing API client Http
+2025-06-07 23:46:21.525 +03:00 [INF] Initializing API client Http
+2025-06-07 23:46:21.525 +03:00 [INF] Initializing API client Http
+2025-06-07 23:46:21.528 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-07 23:46:21.605 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-07 23:46:23.882 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:46:23.888 +03:00 [INF] Setting access and refresh tokens
+2025-06-07 23:46:23.888 +03:00 [INF] Setting authorization token
+2025-06-07 23:46:23.894 +03:00 [INF] Setting refresh token
+2025-06-07 23:46:23.896 +03:00 [INF] Setting current user ID from JWT
+2025-06-07 23:46:23.896 +03:00 [INF] Extracting user ID from JWT
+2025-06-07 23:46:23.898 +03:00 [INF] Getting user with ID: 501
+2025-06-07 23:46:23.899 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-07 23:46:24.012 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:46:24.015 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-07 23:46:24.015 +03:00 [INF] Checking if user is admin
+2025-06-07 23:46:24.078 +03:00 [ERR] Error checking if user is admin
+System.InvalidCastException: Unable to cast object of type 'Newtonsoft.Json.Linq.JValue' to type 'Newtonsoft.Json.Linq.JArray'.
+   at Shopping_App.ViewData.HellpersMethodes.IsUserAdmin(String jwt) in C:\Users\ENG Ahmed\source\repos\ShoppingApp\FrontEnd\Shopping App\Hellpers\HellpersMethodes.cs:line 38
+2025-06-07 23:46:24.113 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-07 23:46:25.725 +03:00 [INF] Getting cart for user ID: 501
+2025-06-07 23:46:25.725 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-07 23:46:25.729 +03:00 [INF] Getting products for page number: 1
+2025-06-07 23:46:25.729 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-07 23:46:25.920 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:46:25.931 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:47:48.443 +03:00 [INF] Application starting.
+2025-06-07 23:47:54.211 +03:00 [INF] Initializing API client Http
+2025-06-07 23:47:54.212 +03:00 [INF] Initializing API client Http
+2025-06-07 23:47:54.212 +03:00 [INF] Initializing API client Http
+2025-06-07 23:47:54.212 +03:00 [INF] Initializing API client Http
+2025-06-07 23:47:54.212 +03:00 [INF] Initializing API client Http
+2025-06-07 23:47:54.213 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-07 23:47:54.222 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-07 23:47:54.468 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:47:54.470 +03:00 [INF] Setting access and refresh tokens
+2025-06-07 23:47:54.470 +03:00 [INF] Setting authorization token
+2025-06-07 23:47:54.471 +03:00 [INF] Setting refresh token
+2025-06-07 23:47:54.472 +03:00 [INF] Setting current user ID from JWT
+2025-06-07 23:47:54.472 +03:00 [INF] Extracting user ID from JWT
+2025-06-07 23:47:54.473 +03:00 [INF] Getting user with ID: 501
+2025-06-07 23:47:54.475 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-07 23:47:54.484 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:47:54.492 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-07 23:47:54.493 +03:00 [INF] Checking if user is admin
+2025-06-07 23:47:54.525 +03:00 [ERR] Error checking if user is admin
+System.InvalidCastException: Unable to cast object of type 'Newtonsoft.Json.Linq.JValue' to type 'Newtonsoft.Json.Linq.JArray'.
+   at Shopping_App.ViewData.HellpersMethodes.IsUserAdmin(String jwt) in C:\Users\ENG Ahmed\source\repos\ShoppingApp\FrontEnd\Shopping App\Hellpers\HellpersMethodes.cs:line 38
+2025-06-07 23:47:54.540 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-07 23:47:55.651 +03:00 [INF] Getting cart for user ID: 501
+2025-06-07 23:47:55.651 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-07 23:47:55.655 +03:00 [INF] Getting products for page number: 1
+2025-06-07 23:47:55.655 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-07 23:47:55.696 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:47:55.704 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:48:36.405 +03:00 [INF] Application starting.
+2025-06-07 23:48:42.434 +03:00 [INF] Initializing API client Http
+2025-06-07 23:48:42.434 +03:00 [INF] Initializing API client Http
+2025-06-07 23:48:42.434 +03:00 [INF] Initializing API client Http
+2025-06-07 23:48:42.434 +03:00 [INF] Initializing API client Http
+2025-06-07 23:48:42.434 +03:00 [INF] Initializing API client Http
+2025-06-07 23:48:42.435 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-07 23:48:42.446 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-07 23:48:42.708 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:48:42.711 +03:00 [INF] Setting access and refresh tokens
+2025-06-07 23:48:42.711 +03:00 [INF] Setting authorization token
+2025-06-07 23:48:42.713 +03:00 [INF] Setting refresh token
+2025-06-07 23:48:42.714 +03:00 [INF] Setting current user ID from JWT
+2025-06-07 23:48:42.715 +03:00 [INF] Extracting user ID from JWT
+2025-06-07 23:48:42.716 +03:00 [INF] Getting user with ID: 501
+2025-06-07 23:48:42.717 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-07 23:48:42.727 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:48:42.736 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-07 23:48:42.737 +03:00 [INF] Checking if user is admin
+2025-06-07 23:48:42.773 +03:00 [ERR] Error checking if user is admin
+System.InvalidCastException: Unable to cast object of type 'Newtonsoft.Json.Linq.JValue' to type 'Newtonsoft.Json.Linq.JArray'.
+   at Shopping_App.ViewData.HellpersMethodes.IsUserAdmin(String jwt) in C:\Users\ENG Ahmed\source\repos\ShoppingApp\FrontEnd\Shopping App\Hellpers\HellpersMethodes.cs:line 38
+2025-06-07 23:53:52.792 +03:00 [INF] Application starting.
+2025-06-07 23:53:57.981 +03:00 [INF] Initializing API client Http
+2025-06-07 23:53:57.982 +03:00 [INF] Initializing API client Http
+2025-06-07 23:53:57.982 +03:00 [INF] Initializing API client Http
+2025-06-07 23:53:57.982 +03:00 [INF] Initializing API client Http
+2025-06-07 23:53:57.982 +03:00 [INF] Initializing API client Http
+2025-06-07 23:53:57.984 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-07 23:53:57.994 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-07 23:53:58.192 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:53:58.194 +03:00 [INF] Setting access and refresh tokens
+2025-06-07 23:53:58.194 +03:00 [INF] Setting authorization token
+2025-06-07 23:53:58.195 +03:00 [INF] Setting refresh token
+2025-06-07 23:53:58.196 +03:00 [INF] Setting current user ID from JWT
+2025-06-07 23:53:58.196 +03:00 [INF] Extracting user ID from JWT
+2025-06-07 23:53:58.197 +03:00 [INF] Getting user with ID: 501
+2025-06-07 23:53:58.199 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-07 23:53:58.207 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:53:58.219 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-07 23:53:58.219 +03:00 [INF] Checking if user is admin
+2025-06-07 23:53:58.220 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-07 23:53:58.839 +03:00 [INF] Getting cart for user ID: 501
+2025-06-07 23:53:58.839 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-07 23:53:58.843 +03:00 [INF] Getting products for page number: 1
+2025-06-07 23:53:58.843 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-07 23:53:58.870 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:53:58.899 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:54:52.259 +03:00 [INF] Application starting.
+2025-06-07 23:54:59.459 +03:00 [INF] Initializing API client Http
+2025-06-07 23:54:59.459 +03:00 [INF] Initializing API client Http
+2025-06-07 23:54:59.459 +03:00 [INF] Initializing API client Http
+2025-06-07 23:54:59.459 +03:00 [INF] Initializing API client Http
+2025-06-07 23:54:59.459 +03:00 [INF] Initializing API client Http
+2025-06-07 23:54:59.460 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-07 23:54:59.471 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-07 23:54:59.647 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:54:59.650 +03:00 [INF] Setting access and refresh tokens
+2025-06-07 23:54:59.650 +03:00 [INF] Setting authorization token
+2025-06-07 23:54:59.651 +03:00 [INF] Setting refresh token
+2025-06-07 23:54:59.652 +03:00 [INF] Setting current user ID from JWT
+2025-06-07 23:54:59.652 +03:00 [INF] Extracting user ID from JWT
+2025-06-07 23:54:59.653 +03:00 [INF] Getting user with ID: 501
+2025-06-07 23:54:59.654 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-07 23:54:59.661 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:54:59.670 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-07 23:54:59.671 +03:00 [INF] Checking if user is admin
+2025-06-07 23:54:59.671 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-07 23:55:00.052 +03:00 [INF] Getting cart for user ID: 501
+2025-06-07 23:55:00.052 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-07 23:55:00.055 +03:00 [INF] Getting products for page number: 1
+2025-06-07 23:55:00.055 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-07 23:55:00.076 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:55:00.090 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-07 23:58:18.252 +03:00 [INF] Updating cart with ID: 507
+2025-06-07 23:58:18.253 +03:00 [INF] Sending PUT request to /api/Carts/UpdateCart with data: ShoppingApp.Api.Models.CartDto and query string: 
+2025-06-07 23:58:18.260 +03:00 [INF] Logging out user with ID: 501
+2025-06-07 23:58:18.261 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null

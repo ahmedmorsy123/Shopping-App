@@ -45,5 +45,11 @@ namespace ShoppingAppBussiness
             _logger.LogInformation($"{_prefix}Get Cart Id By User Id");
             return _cartData.GetCartIdByUserId(userId);
         }
+
+        public async Task<int> GetCartsCountAsync()
+        {
+            _logger.LogInformation($"{_prefix}GetCartsCountAsync called");
+            return await _cartData.GetCartsCountAsync();
+        }
     }
 }

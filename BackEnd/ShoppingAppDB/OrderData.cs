@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using ShoppingAppDB.Data;
 using ShoppingAppDB.Entities;
 using ShoppingAppDB.Models;
+using static ShoppingAppDB.Enums.Enums;
 
 namespace ShoppingAppDB
 {
@@ -170,5 +171,123 @@ namespace ShoppingAppDB
                 }
             }
         }
+
+        public async Task<bool> ProcessOrderAsync(int orderId)
+        {
+            _logger.LogInformation($"{_prefix}Processing order with id {orderId}");
+            using (var context = new AppDbContext())
+            {
+                var order = await context.Orders.FindAsync(orderId);
+                if (order != null)
+                {
+                    order.Status = "Processing";
+                    await context.SaveChangesAsync();
+                    _logger.LogInformation($"{_prefix}Order {orderId} has been processed");
+                    return true;
+                }
+                else
+                {
+                    _logger.LogWarning($"{_prefix}Order with id {orderId} not found");
+                    return false;
+                }
+            }
+        }
+        public async Task<bool> ShipOrderAsync(int orderId)
+        {
+            _logger.LogInformation($"{_prefix}Shipping order with id {orderId}");
+            using (var context = new AppDbContext())
+            {
+                var order = await context.Orders.FindAsync(orderId);
+                if (order != null)
+                {
+                    order.Status = "Shipped";
+                    await context.SaveChangesAsync();
+                    _logger.LogInformation($"{_prefix}Order {orderId} has been shipped");
+                    return true;
+                }
+                else
+                {
+                    _logger.LogWarning($"{_prefix}Order with id {orderId} not found");
+                    return false;
+                }
+            }
+        }
+
+        public async Task<bool> DeliverOrderAsync(int orderId)
+        {
+            _logger.LogInformation($"{_prefix}Delivering order with id {orderId}");
+            using (var context = new AppDbContext())
+            {
+                var order = await context.Orders.FindAsync(orderId);
+                if (order != null)
+                {
+                    order.Status = "Delivered";
+                    await context.SaveChangesAsync();
+                    _logger.LogInformation($"{_prefix}Order {orderId} has been delivered");
+                    return true;
+                }
+                else
+                {
+                    _logger.LogWarning($"{_prefix}Order with id {orderId} not found");
+                    return false;
+                }
+            }
+        }
+
+        public async Task<List<OrderDto>> GetOrdersByDurationAndStatusAsync(TimeDuration duration, OrderStatus status)
+        {
+            _logger.LogInformation($"{_prefix}Fetching orders for duration: {duration} and status: {status}");
+            using (var context = new AppDbContext())
+            {
+                DateTime startDate = CalculateStartDate(duration);
+                var ordersQuery = context.Orders.AsNoTracking()
+                    .Where(o => o.OrderDate >= startDate);
+                if (status != OrderStatus.All)
+                {
+                    ordersQuery = ordersQuery.Where(o => o.Status == status.ToString());
+                }
+                var orders = await ordersQuery
+                    .Include(o => o.OrderItems)
+                    .ThenInclude(oi => oi.Product)
+                    .Select(o => new OrderDto()
+                    {
+                        Id = o.Id,
+                        CreatedAt = o.OrderDate,
+                        TotalPrice = o.TotalPrice,
+                        Status = o.Status,
+                        ShippingAddress = o.ShippingAddress,
+                        PaymentMethod = o.PaymentMethod,
+                        OrderItems = o.OrderItems.Select(oi => new ProductDto()
+                        {
+                            productName = oi.Product.Name,
+                            quantity = oi.Quantity,
+                            maxQuantity = oi.Product.Quantity,
+                            price = oi.Product.Price
+                        }).ToList()
+                    })
+                    .ToListAsync();
+                if (orders.Count == 0)
+                {
+                    _logger.LogWarning($"{_prefix}No orders found for the specified duration and status");
+                    return new List<OrderDto>();
+                }
+
+                _logger.LogInformation($"{_prefix}Found {orders.Count} orders for the specified duration and status");
+                return orders;
+            }
+        }
+
+        public async Task<OrderStatus> GetOrderStatusAsync(int orderId)
+        {
+            _logger.LogInformation($"GetOrderStatus: {orderId}");
+            using (var context = new AppDbContext())
+            {
+                var order = await context.Orders.FindAsync(orderId);
+
+                Enum.TryParse(order!.Status, false, out OrderStatus orderStatusEnum);
+                return orderStatusEnum;
+            }
+        }
+
     }
 }

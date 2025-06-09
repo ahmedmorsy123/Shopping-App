@@ -1,0 +1,508 @@
+2025-06-07 11:16:38.687 +03:00 [INF] Starting web host
+2025-06-07 11:16:40.388 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 11:16:40.390 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 11:16:40.573 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 11:16:40.574 +03:00 [INF] Hosting environment: Development
+2025-06-07 11:16:40.574 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 11:17:03.235 +03:00 [INF] AuthAPI GetAllUsers called
+2025-06-07 11:17:03.242 +03:00 [INF] AdminBL GetAllUsersAsync called
+2025-06-07 11:17:03.328 +03:00 [INF] AdminDA Getting all users
+2025-06-07 11:17:08.358 +03:00 [INF] AdminDA Found 104 users
+2025-06-07 11:18:02.129 +03:00 [INF] AuthAPI GetCartsCount called
+2025-06-07 11:18:02.131 +03:00 [INF] AdminBL GetCartsCountAsync called
+2025-06-07 11:18:02.133 +03:00 [INF] AdminDA Fetching total carts count
+2025-06-07 11:18:02.373 +03:00 [INF] AdminDA Total carts count: 89
+2025-06-07 15:23:01.422 +03:00 [INF] Starting web host
+2025-06-07 15:23:02.566 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:23:02.567 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:23:02.639 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:23:02.640 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:23:02.640 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:25:07.030 +03:00 [INF] Starting web host
+2025-06-07 15:25:08.016 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:25:08.018 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:25:08.096 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:25:08.097 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:25:08.097 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:25:38.256 +03:00 [INF] Starting web host
+2025-06-07 15:25:39.201 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:25:39.202 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:25:39.274 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:25:39.274 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:25:39.274 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:26:53.179 +03:00 [INF] Starting web host
+2025-06-07 15:26:54.042 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:26:54.044 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:26:54.107 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:26:54.107 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:26:54.107 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:27:29.625 +03:00 [INF] Starting web host
+2025-06-07 15:27:30.495 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:27:30.497 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:27:30.572 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:27:30.572 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:27:30.573 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:28:28.321 +03:00 [INF] Starting web host
+2025-06-07 15:28:29.218 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:28:29.219 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:28:29.292 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:28:29.292 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:28:29.292 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:28:35.599 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-07 15:30:37.000 +03:00 [INF] Starting web host
+2025-06-07 15:30:37.956 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:30:37.957 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:30:38.033 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:30:38.033 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:30:38.033 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:30:46.852 +03:00 [INF] Starting web host
+2025-06-07 15:30:47.807 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:30:47.809 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:30:47.884 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:30:47.885 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:30:47.885 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:31:58.024 +03:00 [INF] Starting web host
+2025-06-07 15:31:58.917 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:31:58.919 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:31:58.992 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:31:58.992 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:31:58.992 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:32:23.180 +03:00 [INF] Starting web host
+2025-06-07 15:32:24.096 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:32:24.097 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:32:24.165 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:32:24.165 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:32:24.165 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:32:30.023 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-07 15:37:29.366 +03:00 [INF] Starting web host
+2025-06-07 15:37:30.277 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:37:30.278 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:37:30.345 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:37:30.345 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:37:30.345 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:37:37.040 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-07 15:38:04.832 +03:00 [INF] Starting web host
+2025-06-07 15:38:05.877 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:38:05.878 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:38:05.974 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:38:05.975 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:38:05.975 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:38:11.600 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-07 15:49:02.955 +03:00 [INF] Starting web host
+2025-06-07 15:49:04.019 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:49:04.020 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:49:04.086 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:49:04.087 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:49:04.087 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:49:10.449 +03:00 [INF] Starting web host
+2025-06-07 15:49:11.418 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:49:11.419 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:49:11.489 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:49:11.489 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:49:11.489 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:49:15.867 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-07 15:52:14.310 +03:00 [INF] Starting web host
+2025-06-07 15:52:15.207 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:52:15.208 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:52:15.282 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:52:15.282 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:52:15.282 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:52:33.074 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 15:53:28.430 +03:00 [INF] Starting web host
+2025-06-07 15:53:29.345 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:53:29.347 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:53:29.427 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:53:29.428 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:53:29.428 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:56:35.763 +03:00 [INF] Starting web host
+2025-06-07 15:56:36.845 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:56:36.846 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:56:36.909 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:56:36.909 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:56:36.909 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 15:56:42.930 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 15:56:56.067 +03:00 [INF] Starting web host
+2025-06-07 15:56:56.955 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 15:56:56.957 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 15:56:57.018 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:56:57.018 +03:00 [INF] Hosting environment: Development
+2025-06-07 15:56:57.018 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:03:22.777 +03:00 [INF] Starting web host
+2025-06-07 16:03:23.817 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 16:03:23.819 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 16:03:23.890 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:03:23.891 +03:00 [INF] Hosting environment: Development
+2025-06-07 16:03:23.891 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:03:28.323 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: traceId
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Program.<>c__DisplayClass0_0.<Main>b__2(ProblemDetailsContext context) in C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI\Program.cs:line 69
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultProblemDetailsFactory.ApplyProblemDetailsDefaults(HttpContext httpContext, ProblemDetails problemDetails, Int32 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultProblemDetailsFactory.CreateProblemDetails(HttpContext httpContext, Nullable`1 statusCode, String title, String type, String detail, String instance)
+   at Microsoft.AspNetCore.Mvc.ControllerBase.Problem(String detail, String instance, Nullable`1 statusCode, String title, String type)
+   at ShoppingAppAPI.Controllers.AuthAPI.test() in C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI\Controllers\AuthAPI.cs:line 158
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 16:16:02.084 +03:00 [INF] Starting web host
+2025-06-07 16:16:03.078 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 16:16:03.079 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 16:16:03.154 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:16:03.154 +03:00 [INF] Hosting environment: Development
+2025-06-07 16:16:03.154 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:16:15.072 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/test. TraceId: 0HND5OLQ2RR4Q:00000001
+2025-06-07 16:17:05.319 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 16:17:05.342 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5OLQ2RR4Q:00000003
+2025-06-07 16:21:51.802 +03:00 [INF] Starting web host
+2025-06-07 16:21:52.776 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 16:21:52.777 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 16:21:52.849 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:21:52.849 +03:00 [INF] Hosting environment: Development
+2025-06-07 16:21:52.849 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:22:16.273 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-07 16:22:16.311 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5OP2CDCJP:00000001
+2025-06-07 16:23:22.162 +03:00 [INF] Starting web host
+2025-06-07 16:23:23.100 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 16:23:23.101 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 16:23:23.174 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:23:23.174 +03:00 [INF] Hosting environment: Development
+2025-06-07 16:23:23.174 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:23:31.288 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 16:23:31.326 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5OPT9G0KH:00000001
+2025-06-07 16:23:40.841 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OPT9G0KH:00000003
+2025-06-07 16:24:02.680 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 16:24:02.683 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5OPT9G0KH:00000005
+2025-06-07 16:25:26.273 +03:00 [INF] Starting web host
+2025-06-07 16:25:27.185 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 16:25:27.186 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 16:25:27.254 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:25:27.254 +03:00 [INF] Hosting environment: Development
+2025-06-07 16:25:27.254 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:25:34.442 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 16:25:34.479 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5OR28B15A:00000001
+2025-06-07 16:25:38.656 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 16:25:38.657 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5OR28B15A:00000003
+2025-06-07 16:25:39.315 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 16:25:39.316 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5OR28B15A:00000005
+2025-06-07 16:25:39.953 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 16:25:39.954 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5OR28B15A:00000007
+2025-06-07 16:25:47.736 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OR28B15A:00000009
+2025-06-07 16:26:23.274 +03:00 [INF] Starting web host
+2025-06-07 16:26:24.262 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 16:26:24.263 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 16:26:24.347 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:26:24.348 +03:00 [INF] Hosting environment: Development
+2025-06-07 16:26:24.348 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:26:29.836 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5ORJ945SM:00000007
+2025-06-07 16:28:34.930 +03:00 [INF] Starting web host
+2025-06-07 16:28:35.966 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 16:28:35.968 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 16:28:36.039 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:28:36.039 +03:00 [INF] Hosting environment: Development
+2025-06-07 16:28:36.039 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:28:49.844 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OSQG55MI:00000001
+2025-06-07 16:29:02.466 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OSQG55MI:00000003
+2025-06-07 16:29:03.089 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OSQG55MI:00000005
+2025-06-07 16:29:03.650 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OSQG55MI:00000007
+2025-06-07 16:30:19.305 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Carts/GetUserCart. TraceId: 0HND5OSQG55MI:00000009
+2025-06-07 16:32:53.453 +03:00 [INF] Starting web host
+2025-06-07 16:32:54.411 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 16:32:54.413 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 16:32:54.485 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:32:54.485 +03:00 [INF] Hosting environment: Development
+2025-06-07 16:32:54.486 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 16:33:05.897 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000001
+2025-06-07 16:33:18.930 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000003
+2025-06-07 16:33:19.327 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000005
+2025-06-07 16:33:19.683 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000007
+2025-06-07 16:33:19.998 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000009
+2025-06-07 16:33:20.251 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:0000000B
+2025-06-07 16:33:20.461 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:0000000D
+2025-06-07 16:33:20.666 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:0000000F
+2025-06-07 16:33:20.855 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000011
+2025-06-07 16:33:21.014 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000013
+2025-06-07 16:33:21.169 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000015
+2025-06-07 16:33:21.321 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000017
+2025-06-07 16:33:21.443 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000019
+2025-06-07 16:33:21.580 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:0000001B
+2025-06-07 16:33:21.708 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:0000001D
+2025-06-07 16:33:21.835 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:0000001F
+2025-06-07 16:33:21.978 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000021
+2025-06-07 16:33:22.099 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000023
+2025-06-07 16:33:25.298 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000025
+2025-06-07 16:33:25.725 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000027
+2025-06-07 16:33:26.122 +03:00 [WRN] ProblemDetails generated for status 401 at /api/Auth/logout. TraceId: 0HND5OV7HQH89:00000029
+2025-06-07 18:14:05.990 +03:00 [INF] Starting web host
+2025-06-07 18:14:07.980 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 18:14:07.982 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 18:14:08.104 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 18:14:08.105 +03:00 [INF] Hosting environment: Development
+2025-06-07 18:14:08.105 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 18:14:41.354 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-07 18:14:41.463 +03:00 [WRN] ProblemDetails generated for status 500 at /api/Auth/GetRegisterationCountByDuration. TraceId: 0HND5QNPJ2RE3:0000000B
+2025-06-07 18:16:56.172 +03:00 [INF] Starting web host
+2025-06-07 18:16:57.727 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 18:16:57.729 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 18:16:57.833 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 18:16:57.834 +03:00 [INF] Hosting environment: Development
+2025-06-07 18:16:57.834 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 18:17:15.390 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-07 18:17:33.105 +03:00 [INF] Starting web host
+2025-06-07 18:17:34.832 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 18:17:34.834 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 18:17:34.955 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 18:17:34.955 +03:00 [INF] Hosting environment: Development
+2025-06-07 18:17:34.955 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 18:17:52.784 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-07 18:21:29.817 +03:00 [INF] Starting web host
+2025-06-07 18:21:31.460 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 18:21:31.462 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 18:21:31.633 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 18:21:31.633 +03:00 [INF] Hosting environment: Development
+2025-06-07 18:21:31.633 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 23:46:07.900 +03:00 [INF] Starting web host
+2025-06-07 23:46:09.181 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-07 23:46:09.182 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-07 23:46:09.256 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 23:46:09.257 +03:00 [INF] Hosting environment: Development
+2025-06-07 23:46:09.257 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-07 23:46:22.033 +03:00 [INF] AuthAPI LoginAPI
+2025-06-07 23:46:22.034 +03:00 [INF] AuthBL Login
+2025-06-07 23:46:22.076 +03:00 [INF] ServAuth Login
+2025-06-07 23:46:23.555 +03:00 [INF] ServPass Verifying password
+2025-06-07 23:46:23.800 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-07 23:46:23.800 +03:00 [INF] ServAuth Creating token response
+2025-06-07 23:46:23.801 +03:00 [INF] ServAuth Creating token
+2025-06-07 23:46:23.804 +03:00 [INF] ServAuth Token created successfully
+2025-06-07 23:46:23.824 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-07 23:46:23.827 +03:00 [INF] ServAuth Generating refresh token
+2025-06-07 23:46:23.856 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-07 23:46:23.869 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-07 23:46:23.944 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-07 23:46:23.945 +03:00 [INF] UsersBL GetUserById
+2025-06-07 23:46:23.946 +03:00 [INF] UserDA Getting user by id
+2025-06-07 23:46:25.742 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-07 23:46:25.744 +03:00 [INF] CartsBL Get User Cart
+2025-06-07 23:46:25.747 +03:00 [INF] CartDA Get User Cart
+2025-06-07 23:46:25.750 +03:00 [INF] ProductsAPI GetProducts
+2025-06-07 23:46:25.751 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-07 23:46:25.754 +03:00 [INF] ProductDA Get Products
+2025-06-07 23:46:25.861 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-07 23:47:54.322 +03:00 [INF] AuthAPI LoginAPI
+2025-06-07 23:47:54.322 +03:00 [INF] AuthBL Login
+2025-06-07 23:47:54.322 +03:00 [INF] ServAuth Login
+2025-06-07 23:47:54.335 +03:00 [INF] ServPass Verifying password
+2025-06-07 23:47:54.460 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-07 23:47:54.460 +03:00 [INF] ServAuth Creating token response
+2025-06-07 23:47:54.460 +03:00 [INF] ServAuth Creating token
+2025-06-07 23:47:54.461 +03:00 [INF] ServAuth Token created successfully
+2025-06-07 23:47:54.461 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-07 23:47:54.461 +03:00 [INF] ServAuth Generating refresh token
+2025-06-07 23:47:54.463 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-07 23:47:54.466 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-07 23:47:54.478 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-07 23:47:54.478 +03:00 [INF] UsersBL GetUserById
+2025-06-07 23:47:54.478 +03:00 [INF] UserDA Getting user by id
+2025-06-07 23:47:55.657 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-07 23:47:55.657 +03:00 [INF] CartsBL Get User Cart
+2025-06-07 23:47:55.658 +03:00 [INF] CartDA Get User Cart
+2025-06-07 23:47:55.668 +03:00 [INF] ProductsAPI GetProducts
+2025-06-07 23:47:55.669 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-07 23:47:55.669 +03:00 [INF] ProductDA Get Products
+2025-06-07 23:47:55.679 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-07 23:48:42.546 +03:00 [INF] AuthAPI LoginAPI
+2025-06-07 23:48:42.546 +03:00 [INF] AuthBL Login
+2025-06-07 23:48:42.546 +03:00 [INF] ServAuth Login
+2025-06-07 23:48:42.560 +03:00 [INF] ServPass Verifying password
+2025-06-07 23:48:42.696 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-07 23:48:42.696 +03:00 [INF] ServAuth Creating token response
+2025-06-07 23:48:42.696 +03:00 [INF] ServAuth Creating token
+2025-06-07 23:48:42.696 +03:00 [INF] ServAuth Token created successfully
+2025-06-07 23:48:42.696 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-07 23:48:42.697 +03:00 [INF] ServAuth Generating refresh token
+2025-06-07 23:48:42.698 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-07 23:48:42.704 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-07 23:48:42.721 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-07 23:48:42.721 +03:00 [INF] UsersBL GetUserById
+2025-06-07 23:48:42.721 +03:00 [INF] UserDA Getting user by id
+2025-06-07 23:53:58.091 +03:00 [INF] AuthAPI LoginAPI
+2025-06-07 23:53:58.093 +03:00 [INF] AuthBL Login
+2025-06-07 23:53:58.093 +03:00 [INF] ServAuth Login
+2025-06-07 23:53:58.121 +03:00 [INF] ServPass Verifying password
+2025-06-07 23:53:58.185 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-07 23:53:58.185 +03:00 [INF] ServAuth Creating token response
+2025-06-07 23:53:58.185 +03:00 [INF] ServAuth Creating token
+2025-06-07 23:53:58.185 +03:00 [INF] ServAuth Token created successfully
+2025-06-07 23:53:58.186 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-07 23:53:58.186 +03:00 [INF] ServAuth Generating refresh token
+2025-06-07 23:53:58.187 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-07 23:53:58.190 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-07 23:53:58.202 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-07 23:53:58.202 +03:00 [INF] UsersBL GetUserById
+2025-06-07 23:53:58.202 +03:00 [INF] UserDA Getting user by id
+2025-06-07 23:53:58.844 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-07 23:53:58.844 +03:00 [INF] CartsBL Get User Cart
+2025-06-07 23:53:58.844 +03:00 [INF] CartDA Get User Cart
+2025-06-07 23:53:58.856 +03:00 [INF] ProductsAPI GetProducts
+2025-06-07 23:53:58.856 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-07 23:53:58.856 +03:00 [INF] ProductDA Get Products
+2025-06-07 23:53:58.882 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-07 23:54:59.573 +03:00 [INF] AuthAPI LoginAPI
+2025-06-07 23:54:59.573 +03:00 [INF] AuthBL Login
+2025-06-07 23:54:59.573 +03:00 [INF] ServAuth Login
+2025-06-07 23:54:59.578 +03:00 [INF] ServPass Verifying password
+2025-06-07 23:54:59.642 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-07 23:54:59.642 +03:00 [INF] ServAuth Creating token response
+2025-06-07 23:54:59.642 +03:00 [INF] ServAuth Creating token
+2025-06-07 23:54:59.642 +03:00 [INF] ServAuth Token created successfully
+2025-06-07 23:54:59.643 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-07 23:54:59.643 +03:00 [INF] ServAuth Generating refresh token
+2025-06-07 23:54:59.644 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-07 23:54:59.645 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-07 23:54:59.656 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-07 23:54:59.656 +03:00 [INF] UsersBL GetUserById
+2025-06-07 23:54:59.656 +03:00 [INF] UserDA Getting user by id
+2025-06-07 23:55:00.055 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-07 23:55:00.055 +03:00 [INF] CartsBL Get User Cart
+2025-06-07 23:55:00.055 +03:00 [INF] CartDA Get User Cart
+2025-06-07 23:55:00.074 +03:00 [INF] ProductsAPI GetProducts
+2025-06-07 23:55:00.075 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-07 23:55:00.075 +03:00 [INF] ProductDA Get Products
+2025-06-07 23:55:00.080 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-07 23:58:18.308 +03:00 [INF] AuthBL Logout
+2025-06-07 23:58:18.309 +03:00 [INF] ServAuth Logout
+2025-06-07 23:58:18.332 +03:00 [INF] CartsAPI Update Cart
+2025-06-07 23:58:18.333 +03:00 [INF] CartsBL Update Cart
+2025-06-07 23:58:18.339 +03:00 [INF] CartDA Update Cart
+2025-06-07 23:58:18.359 +03:00 [INF] ServAuth User logged out successfully with id 501
+2025-06-07 23:58:18.551 +03:00 [INF] CartDA Cart Updated
+2025-06-07 23:58:18.552 +03:00 [INF] CartsAPI Cart was updated

@@ -48,6 +48,7 @@ namespace Shopping_App.Forms
             try
             {
                 tokenResponse = await ApiManger.Instance.AuthService.LoginAsync(username, password);
+                IsAdmin = HellpersMethodes.IsUserAdmin(tokenResponse.AccessToken);
             }
             catch (ApiException ex)
             {

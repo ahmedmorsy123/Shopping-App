@@ -1,0 +1,1691 @@
+2025-06-09 00:00:23.426 +03:00 [INF] Application starting.
+2025-06-09 00:00:23.545 +03:00 [INF] Initializing API client Http
+2025-06-09 00:00:23.545 +03:00 [INF] Initializing API client Http
+2025-06-09 00:00:23.545 +03:00 [INF] Initializing API client Http
+2025-06-09 00:00:23.545 +03:00 [INF] Initializing API client Http
+2025-06-09 00:00:23.545 +03:00 [INF] Initializing API client Http
+2025-06-09 00:00:23.545 +03:00 [INF] Initializing API client Http
+2025-06-09 00:00:23.555 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 00:00:23.681 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 00:00:28.501 +03:00 [INF] Getting user with ID: 422
+2025-06-09 00:00:28.501 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=422
+2025-06-09 00:00:28.509 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 00:00:29.462 +03:00 [INF] Sending DELETE request to /api/Admin/RemoveAdmin with query string: adminId=422
+2025-06-09 00:00:29.472 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 00:00:29.473 +03:00 [ERR] Error response: [Title: Admin Not Found] [Details: No admin found with the provided ID.] [Path: /api/Admin/RemoveAdmin]
+2025-06-09 00:00:43.076 +03:00 [INF] Getting user with ID: 5555
+2025-06-09 00:00:43.076 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=5555
+2025-06-09 00:00:43.085 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 00:00:43.085 +03:00 [ERR] Error response: [Title: User not found] [Details: There is no user with this id] [Path: /api/Users/getUser]
+2025-06-09 00:00:43.129 +03:00 [ERR] User not found with ID: 5555
+2025-06-09 00:00:45.979 +03:00 [INF] Getting user with ID: 5555
+2025-06-09 00:00:45.979 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=5555
+2025-06-09 00:00:45.994 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 00:00:45.994 +03:00 [ERR] Error response: [Title: User not found] [Details: There is no user with this id] [Path: /api/Users/getUser]
+2025-06-09 00:00:46.032 +03:00 [ERR] User not found with ID: 5555
+2025-06-09 00:00:52.194 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 00:00:52.201 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 00:00:53.547 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 00:00:53.553 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 00:00:54.944 +03:00 [INF] Getting all users
+2025-06-09 00:00:54.944 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 00:00:54.950 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 00:02:08.332 +03:00 [INF] Application starting.
+2025-06-09 00:02:08.454 +03:00 [INF] Initializing API client Http
+2025-06-09 00:02:08.454 +03:00 [INF] Initializing API client Http
+2025-06-09 00:02:08.454 +03:00 [INF] Initializing API client Http
+2025-06-09 00:02:08.454 +03:00 [INF] Initializing API client Http
+2025-06-09 00:02:08.454 +03:00 [INF] Initializing API client Http
+2025-06-09 00:02:08.454 +03:00 [INF] Initializing API client Http
+2025-06-09 00:02:08.462 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 00:02:08.581 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 00:02:10.564 +03:00 [INF] Getting total number of carts
+2025-06-09 00:02:10.564 +03:00 [INF] Sending GET request to /api/Carts/GetCartsCount with query string: 
+2025-06-09 00:02:10.597 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 12:44:44.475 +03:00 [INF] Application starting.
+2025-06-09 12:44:44.725 +03:00 [INF] Initializing API client Http
+2025-06-09 12:44:44.726 +03:00 [INF] Initializing API client Http
+2025-06-09 12:44:44.726 +03:00 [INF] Initializing API client Http
+2025-06-09 12:44:44.726 +03:00 [INF] Initializing API client Http
+2025-06-09 12:44:44.726 +03:00 [INF] Initializing API client Http
+2025-06-09 12:44:44.726 +03:00 [INF] Initializing API client Http
+2025-06-09 12:44:44.879 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 12:45:19.124 +03:00 [INF] Application starting.
+2025-06-09 12:45:19.397 +03:00 [INF] Initializing API client Http
+2025-06-09 12:45:19.398 +03:00 [INF] Initializing API client Http
+2025-06-09 12:45:19.398 +03:00 [INF] Initializing API client Http
+2025-06-09 12:45:19.398 +03:00 [INF] Initializing API client Http
+2025-06-09 12:45:19.398 +03:00 [INF] Initializing API client Http
+2025-06-09 12:45:19.399 +03:00 [INF] Initializing API client Http
+2025-06-09 12:45:19.498 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 12:45:25.613 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 12:46:19.085 +03:00 [INF] Application starting.
+2025-06-09 12:46:19.320 +03:00 [INF] Initializing API client Http
+2025-06-09 12:46:19.322 +03:00 [INF] Initializing API client Http
+2025-06-09 12:46:19.322 +03:00 [INF] Initializing API client Http
+2025-06-09 12:46:19.322 +03:00 [INF] Initializing API client Http
+2025-06-09 12:46:19.322 +03:00 [INF] Initializing API client Http
+2025-06-09 12:46:19.322 +03:00 [INF] Initializing API client Http
+2025-06-09 12:46:19.348 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 12:46:19.719 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 12:46:34.029 +03:00 [INF] Getting all users
+2025-06-09 12:46:34.030 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 12:46:34.307 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 12:46:36.265 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 12:46:36.291 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 12:52:19.166 +03:00 [INF] Application starting.
+2025-06-09 12:52:19.415 +03:00 [INF] Initializing API client Http
+2025-06-09 12:52:19.415 +03:00 [INF] Initializing API client Http
+2025-06-09 12:52:19.415 +03:00 [INF] Initializing API client Http
+2025-06-09 12:52:19.415 +03:00 [INF] Initializing API client Http
+2025-06-09 12:52:19.415 +03:00 [INF] Initializing API client Http
+2025-06-09 12:52:19.416 +03:00 [INF] Initializing API client Http
+2025-06-09 12:52:19.428 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 12:52:19.695 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 12:52:29.002 +03:00 [INF] Getting all users
+2025-06-09 12:52:29.002 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 12:52:29.042 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 12:54:09.921 +03:00 [INF] Application starting.
+2025-06-09 12:54:10.109 +03:00 [INF] Initializing API client Http
+2025-06-09 12:54:10.110 +03:00 [INF] Initializing API client Http
+2025-06-09 12:54:10.110 +03:00 [INF] Initializing API client Http
+2025-06-09 12:54:10.110 +03:00 [INF] Initializing API client Http
+2025-06-09 12:54:10.110 +03:00 [INF] Initializing API client Http
+2025-06-09 12:54:10.110 +03:00 [INF] Initializing API client Http
+2025-06-09 12:54:10.187 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 12:54:10.375 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 12:54:12.637 +03:00 [INF] Getting all users
+2025-06-09 12:54:12.637 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 12:54:12.662 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:05:29.006 +03:00 [INF] Application starting.
+2025-06-09 14:05:29.227 +03:00 [INF] Initializing API client Http
+2025-06-09 14:05:29.228 +03:00 [INF] Initializing API client Http
+2025-06-09 14:05:29.228 +03:00 [INF] Initializing API client Http
+2025-06-09 14:05:29.228 +03:00 [INF] Initializing API client Http
+2025-06-09 14:05:29.228 +03:00 [INF] Initializing API client Http
+2025-06-09 14:05:29.229 +03:00 [INF] Initializing API client Http
+2025-06-09 14:05:29.252 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:05:29.564 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:05:43.231 +03:00 [INF] Sending POST request to /api/Admin/AddAdmin with data: ShoppingApp.Api.Models.UserDto
+2025-06-09 14:05:45.551 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:05:53.782 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:05:53.808 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:05:57.824 +03:00 [INF] Sending DELETE request to /api/Admin/RemoveAdmin with query string: adminId=513
+2025-06-09 14:05:58.120 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 14:06:07.058 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:06:07.078 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:07:22.923 +03:00 [INF] Application starting.
+2025-06-09 14:07:23.208 +03:00 [INF] Initializing API client Http
+2025-06-09 14:07:23.209 +03:00 [INF] Initializing API client Http
+2025-06-09 14:07:23.209 +03:00 [INF] Initializing API client Http
+2025-06-09 14:07:23.209 +03:00 [INF] Initializing API client Http
+2025-06-09 14:07:23.209 +03:00 [INF] Initializing API client Http
+2025-06-09 14:07:23.209 +03:00 [INF] Initializing API client Http
+2025-06-09 14:07:23.220 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:07:23.455 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:07:25.546 +03:00 [INF] Getting all users
+2025-06-09 14:07:25.546 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 14:07:25.566 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:07:28.154 +03:00 [INF] Sending PUT request to /api/Admin/MakeAdmin with data: 401 and query string: 
+2025-06-09 14:07:28.413 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 14:07:31.600 +03:00 [INF] Getting all users
+2025-06-09 14:07:31.600 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 14:07:31.669 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:07:34.371 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:07:34.390 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:07:41.930 +03:00 [INF] Sending POST request to /api/Admin/AddAdmin with data: ShoppingApp.Api.Models.UserDto
+2025-06-09 14:07:42.341 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:07:44.628 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:07:44.651 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:07:46.860 +03:00 [INF] Sending DELETE request to /api/Admin/RemoveAdmin with query string: adminId=514
+2025-06-09 14:07:46.914 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 14:07:50.177 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:07:50.194 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:14:42.434 +03:00 [INF] Application starting.
+2025-06-09 14:14:48.781 +03:00 [INF] Initializing API client Http
+2025-06-09 14:14:48.781 +03:00 [INF] Initializing API client Http
+2025-06-09 14:14:48.782 +03:00 [INF] Initializing API client Http
+2025-06-09 14:14:48.782 +03:00 [INF] Initializing API client Http
+2025-06-09 14:14:48.782 +03:00 [INF] Initializing API client Http
+2025-06-09 14:14:48.782 +03:00 [INF] Initializing API client Http
+2025-06-09 14:14:48.783 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-09 14:14:48.802 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-09 14:14:49.732 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:14:49.740 +03:00 [INF] Setting access and refresh tokens
+2025-06-09 14:14:49.740 +03:00 [INF] Setting authorization token
+2025-06-09 14:14:49.748 +03:00 [INF] Setting refresh token
+2025-06-09 14:14:49.751 +03:00 [INF] Setting current user ID from JWT
+2025-06-09 14:14:49.752 +03:00 [INF] Extracting user ID from JWT
+2025-06-09 14:14:49.759 +03:00 [INF] Getting user with ID: 501
+2025-06-09 14:14:49.763 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-09 14:14:49.951 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:14:49.957 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-09 14:14:49.960 +03:00 [INF] Checking if user is admin
+2025-06-09 14:14:49.960 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-09 14:14:50.667 +03:00 [INF] Admin logged in, proceeding to admin form.
+2025-06-09 14:14:50.740 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:14:50.806 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:15:10.791 +03:00 [INF] Application starting.
+2025-06-09 14:15:14.891 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:14.892 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:14.892 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:14.892 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:14.892 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:14.892 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:14.894 +03:00 [INF] Logging in user with username: Ahmed
+2025-06-09 14:15:14.911 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-09 14:15:15.577 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:15:15.584 +03:00 [INF] Setting access and refresh tokens
+2025-06-09 14:15:15.584 +03:00 [INF] Setting authorization token
+2025-06-09 14:15:15.587 +03:00 [INF] Setting refresh token
+2025-06-09 14:15:15.589 +03:00 [INF] Setting current user ID from JWT
+2025-06-09 14:15:15.590 +03:00 [INF] Extracting user ID from JWT
+2025-06-09 14:15:15.594 +03:00 [INF] Getting user with ID: 501
+2025-06-09 14:15:15.598 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=501
+2025-06-09 14:15:15.617 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:15:15.634 +03:00 [INF] User logged in successfully with ID: 501
+2025-06-09 14:15:15.635 +03:00 [INF] Checking if user is admin
+2025-06-09 14:15:15.635 +03:00 [INF] User Ahmed Loged in Successfully
+2025-06-09 14:15:16.256 +03:00 [INF] Admin logged in, proceeding to admin form.
+2025-06-09 14:15:16.359 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:15:16.430 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:15:34.340 +03:00 [INF] Application starting.
+2025-06-09 14:15:44.417 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:44.417 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:44.417 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:44.417 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:44.417 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:44.417 +03:00 [INF] Initializing API client Http
+2025-06-09 14:15:44.418 +03:00 [INF] Adding new user with username: notadmin
+2025-06-09 14:16:42.770 +03:00 [INF] Application starting.
+2025-06-09 14:16:53.399 +03:00 [INF] Initializing API client Http
+2025-06-09 14:16:53.399 +03:00 [INF] Initializing API client Http
+2025-06-09 14:16:53.399 +03:00 [INF] Initializing API client Http
+2025-06-09 14:16:53.400 +03:00 [INF] Initializing API client Http
+2025-06-09 14:16:53.400 +03:00 [INF] Initializing API client Http
+2025-06-09 14:16:53.400 +03:00 [INF] Initializing API client Http
+2025-06-09 14:16:53.401 +03:00 [INF] Adding new user with username: not admin
+2025-06-09 14:16:53.420 +03:00 [INF] Sending POST request to /api/Users/AddUser with data: ShoppingApp.Api.Models.UserDto
+2025-06-09 14:16:54.153 +03:00 [INF] Handling response errors for status code: "Created"
+2025-06-09 14:16:54.158 +03:00 [INF] User not admin Registared successfully
+2025-06-09 14:16:55.115 +03:00 [INF] User logged in, proceeding to main form.
+2025-06-09 14:16:55.173 +03:00 [INF] Getting cart for user ID: 501
+2025-06-09 14:16:55.179 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=501
+2025-06-09 14:16:55.192 +03:00 [INF] Getting products for page number: 1
+2025-06-09 14:16:55.193 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-09 14:16:55.263 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 14:16:55.265 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 14:16:55.457 +03:00 [ERR] Unauthorized access to products for page number: 1
+2025-06-09 14:16:55.550 +03:00 [ERR] Unauthorized access to products
+2025-06-09 14:16:55.576 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 14:16:55.577 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 14:16:55.837 +03:00 [ERR] Unauthorized to access cart for user ID: 501
+2025-06-09 14:17:39.032 +03:00 [INF] Application starting.
+2025-06-09 14:17:48.238 +03:00 [INF] Initializing API client Http
+2025-06-09 14:17:48.240 +03:00 [INF] Initializing API client Http
+2025-06-09 14:17:48.240 +03:00 [INF] Initializing API client Http
+2025-06-09 14:17:48.240 +03:00 [INF] Initializing API client Http
+2025-06-09 14:17:48.240 +03:00 [INF] Initializing API client Http
+2025-06-09 14:17:48.240 +03:00 [INF] Initializing API client Http
+2025-06-09 14:17:48.256 +03:00 [INF] Logging in user with username: not admin
+2025-06-09 14:17:48.282 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-09 14:17:48.924 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:17:48.931 +03:00 [INF] Setting access and refresh tokens
+2025-06-09 14:17:48.931 +03:00 [INF] Setting authorization token
+2025-06-09 14:17:48.935 +03:00 [INF] Setting refresh token
+2025-06-09 14:17:48.938 +03:00 [INF] Setting current user ID from JWT
+2025-06-09 14:17:48.939 +03:00 [INF] Extracting user ID from JWT
+2025-06-09 14:17:48.942 +03:00 [INF] Getting user with ID: 515
+2025-06-09 14:17:48.947 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=515
+2025-06-09 14:17:48.966 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:17:48.980 +03:00 [INF] User logged in successfully with ID: 515
+2025-06-09 14:17:48.981 +03:00 [INF] Checking if user is admin
+2025-06-09 14:17:48.981 +03:00 [INF] User not admin Loged in Successfully
+2025-06-09 14:17:49.677 +03:00 [INF] User logged in, proceeding to main form.
+2025-06-09 14:17:49.707 +03:00 [INF] Getting cart for user ID: 515
+2025-06-09 14:17:49.708 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=515
+2025-06-09 14:17:49.717 +03:00 [INF] Getting products for page number: 1
+2025-06-09 14:17:49.718 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-09 14:17:50.233 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 14:17:50.237 +03:00 [ERR] Error response: [Title: Cart Not Found] [Details: There is no cart for this user.] [Path: /api/Carts/GetUserCart]
+2025-06-09 14:17:50.427 +03:00 [ERR] Cart not found for user ID: 515
+2025-06-09 14:17:50.529 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:17:54.772 +03:00 [INF] Getting orders for user ID: 515
+2025-06-09 14:17:54.773 +03:00 [INF] Sending GET request to /api/Orders/GetUserOrders with query string: userId=515
+2025-06-09 14:17:54.910 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 14:17:54.911 +03:00 [ERR] Error response: [Title: Orders Not Found] [Details: There are no orders for this user.] [Path: /api/Orders/GetUserOrders]
+2025-06-09 14:17:54.961 +03:00 [ERR] No orders found for user ID: 515
+2025-06-09 14:19:33.245 +03:00 [INF] Application starting.
+2025-06-09 14:19:38.088 +03:00 [INF] Initializing API client Http
+2025-06-09 14:19:38.089 +03:00 [INF] Initializing API client Http
+2025-06-09 14:19:38.089 +03:00 [INF] Initializing API client Http
+2025-06-09 14:19:38.089 +03:00 [INF] Initializing API client Http
+2025-06-09 14:19:38.089 +03:00 [INF] Initializing API client Http
+2025-06-09 14:19:38.089 +03:00 [INF] Initializing API client Http
+2025-06-09 14:19:38.091 +03:00 [INF] Logging in user with username: not admin
+2025-06-09 14:19:38.107 +03:00 [INF] Sending POST request to /api/Auth/Login with data: ShoppingApp.Api.Models.LoginRequestDto
+2025-06-09 14:19:38.661 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:19:38.666 +03:00 [INF] Setting access and refresh tokens
+2025-06-09 14:19:38.667 +03:00 [INF] Setting authorization token
+2025-06-09 14:19:38.668 +03:00 [INF] Setting refresh token
+2025-06-09 14:19:38.670 +03:00 [INF] Setting current user ID from JWT
+2025-06-09 14:19:38.671 +03:00 [INF] Extracting user ID from JWT
+2025-06-09 14:19:38.673 +03:00 [INF] Getting user with ID: 515
+2025-06-09 14:19:38.675 +03:00 [INF] Sending GET request to /api/Users/getUser with query string: id=515
+2025-06-09 14:19:38.691 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:19:38.706 +03:00 [INF] User logged in successfully with ID: 515
+2025-06-09 14:19:38.707 +03:00 [INF] Checking if user is admin
+2025-06-09 14:19:38.707 +03:00 [INF] User not admin Loged in Successfully
+2025-06-09 14:19:39.206 +03:00 [INF] User logged in, proceeding to main form.
+2025-06-09 14:19:39.257 +03:00 [INF] Getting cart for user ID: 515
+2025-06-09 14:19:39.257 +03:00 [INF] Sending GET request to /api/Carts/GetUserCart with query string: UserId=515
+2025-06-09 14:19:39.268 +03:00 [INF] Getting products for page number: 1
+2025-06-09 14:19:39.269 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-09 14:19:39.355 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 14:19:39.358 +03:00 [ERR] Error response: [Title: Cart Not Found] [Details: There is no cart for this user.] [Path: /api/Carts/GetUserCart]
+2025-06-09 14:19:39.550 +03:00 [ERR] Cart not found for user ID: 515
+2025-06-09 14:19:39.651 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:19:41.454 +03:00 [INF] Getting orders for user ID: 515
+2025-06-09 14:19:41.455 +03:00 [INF] Sending GET request to /api/Orders/GetUserOrders with query string: userId=515
+2025-06-09 14:19:41.552 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 14:19:41.553 +03:00 [ERR] Error response: [Title: Orders Not Found] [Details: There are no orders for this user.] [Path: /api/Orders/GetUserOrders]
+2025-06-09 14:19:41.671 +03:00 [ERR] No orders found for user ID: 515
+2025-06-09 14:19:49.044 +03:00 [INF] Getting products for page number: 1
+2025-06-09 14:19:49.044 +03:00 [INF] Sending GET request to /api/Products/GetProducts with query string: Page=1&PageSize=12
+2025-06-09 14:19:49.080 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:19:53.249 +03:00 [INF] Adding new cart for user ID: 515
+2025-06-09 14:19:53.251 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 14:19:53.533 +03:00 [INF] Handling response errors for status code: "Created"
+2025-06-09 14:19:55.201 +03:00 [INF] Updating cart with ID: 509
+2025-06-09 14:19:55.203 +03:00 [INF] Sending PUT request to /api/Carts/UpdateCart with data: ShoppingApp.Api.Models.CartDto and query string: 
+2025-06-09 14:19:55.455 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:19:57.455 +03:00 [INF] Creating order for user ID: 515
+2025-06-09 14:19:57.455 +03:00 [INF] Sending POST request to /api/Orders/MakeOrders?userId=515&shippingAddress=fds&paymentMethod=Credit Card with data: null
+2025-06-09 14:19:58.042 +03:00 [INF] Handling response errors for status code: "Created"
+2025-06-09 14:20:00.310 +03:00 [INF] Getting orders for user ID: 515
+2025-06-09 14:20:00.310 +03:00 [INF] Sending GET request to /api/Orders/GetUserOrders with query string: userId=515
+2025-06-09 14:20:00.351 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:20:01.886 +03:00 [INF] Adding new cart for user ID: 515
+2025-06-09 14:20:01.886 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 14:20:01.889 +03:00 [INF] Logging out user with ID: 515
+2025-06-09 14:20:01.890 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 14:20:01.940 +03:00 [INF] Handling response errors for status code: "Created"
+2025-06-09 14:20:01.942 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:23:09.760 +03:00 [INF] Application starting.
+2025-06-09 14:23:09.898 +03:00 [INF] Initializing API client Http
+2025-06-09 14:23:09.898 +03:00 [INF] Initializing API client Http
+2025-06-09 14:23:09.898 +03:00 [INF] Initializing API client Http
+2025-06-09 14:23:09.898 +03:00 [INF] Initializing API client Http
+2025-06-09 14:23:09.898 +03:00 [INF] Initializing API client Http
+2025-06-09 14:23:09.899 +03:00 [INF] Initializing API client Http
+2025-06-09 14:23:09.908 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:23:10.104 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:23:14.009 +03:00 [INF] Getting all users
+2025-06-09 14:23:14.009 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 14:23:14.016 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:31:54.447 +03:00 [INF] Application starting.
+2025-06-09 14:31:54.563 +03:00 [INF] Initializing API client Http
+2025-06-09 14:31:54.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:31:54.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:31:54.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:31:54.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:31:54.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:31:54.573 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:31:54.745 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:32:14.226 +03:00 [INF] Getting all users
+2025-06-09 14:32:14.226 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 14:32:14.244 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:33:14.441 +03:00 [INF] Application starting.
+2025-06-09 14:33:14.588 +03:00 [INF] Initializing API client Http
+2025-06-09 14:33:14.589 +03:00 [INF] Initializing API client Http
+2025-06-09 14:33:14.589 +03:00 [INF] Initializing API client Http
+2025-06-09 14:33:14.589 +03:00 [INF] Initializing API client Http
+2025-06-09 14:33:14.589 +03:00 [INF] Initializing API client Http
+2025-06-09 14:33:14.589 +03:00 [INF] Initializing API client Http
+2025-06-09 14:33:14.597 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:33:14.769 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:33:17.797 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 14:33:17.797 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 14:33:17.885 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:34:09.446 +03:00 [INF] Application starting.
+2025-06-09 14:34:09.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:34:09.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:34:09.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:34:09.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:34:09.564 +03:00 [INF] Initializing API client Http
+2025-06-09 14:34:09.565 +03:00 [INF] Initializing API client Http
+2025-06-09 14:34:09.607 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:34:09.726 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:34:12.005 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 14:34:12.005 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 14:34:12.060 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:37:42.574 +03:00 [INF] Application starting.
+2025-06-09 14:37:42.693 +03:00 [INF] Initializing API client Http
+2025-06-09 14:37:42.694 +03:00 [INF] Initializing API client Http
+2025-06-09 14:37:42.694 +03:00 [INF] Initializing API client Http
+2025-06-09 14:37:42.694 +03:00 [INF] Initializing API client Http
+2025-06-09 14:37:42.694 +03:00 [INF] Initializing API client Http
+2025-06-09 14:37:42.694 +03:00 [INF] Initializing API client Http
+2025-06-09 14:37:42.702 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:37:42.830 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:37:45.833 +03:00 [INF] Getting all users
+2025-06-09 14:37:45.833 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 14:37:45.841 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:37:48.513 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 14:37:48.513 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 14:37:48.576 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:38:27.254 +03:00 [INF] Application starting.
+2025-06-09 14:38:27.382 +03:00 [INF] Initializing API client Http
+2025-06-09 14:38:27.383 +03:00 [INF] Initializing API client Http
+2025-06-09 14:38:27.383 +03:00 [INF] Initializing API client Http
+2025-06-09 14:38:27.383 +03:00 [INF] Initializing API client Http
+2025-06-09 14:38:27.383 +03:00 [INF] Initializing API client Http
+2025-06-09 14:38:27.383 +03:00 [INF] Initializing API client Http
+2025-06-09 14:38:27.391 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:38:27.540 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:38:29.738 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 14:38:29.738 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 14:38:29.792 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:39:18.162 +03:00 [INF] Application starting.
+2025-06-09 14:39:18.281 +03:00 [INF] Initializing API client Http
+2025-06-09 14:39:18.281 +03:00 [INF] Initializing API client Http
+2025-06-09 14:39:18.281 +03:00 [INF] Initializing API client Http
+2025-06-09 14:39:18.281 +03:00 [INF] Initializing API client Http
+2025-06-09 14:39:18.281 +03:00 [INF] Initializing API client Http
+2025-06-09 14:39:18.281 +03:00 [INF] Initializing API client Http
+2025-06-09 14:39:18.290 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 14:39:18.457 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 14:39:20.235 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 14:39:20.235 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 14:39:20.259 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:02:50.484 +03:00 [INF] Application starting.
+2025-06-09 15:02:50.792 +03:00 [INF] Initializing API client Http
+2025-06-09 15:02:50.792 +03:00 [INF] Initializing API client Http
+2025-06-09 15:02:50.792 +03:00 [INF] Initializing API client Http
+2025-06-09 15:02:50.793 +03:00 [INF] Initializing API client Http
+2025-06-09 15:02:50.793 +03:00 [INF] Initializing API client Http
+2025-06-09 15:02:50.793 +03:00 [INF] Initializing API client Http
+2025-06-09 15:02:50.807 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:02:51.188 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:03:20.016 +03:00 [INF] Application starting.
+2025-06-09 15:03:20.234 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:20.234 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:20.235 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:20.235 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:20.235 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:20.235 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:20.253 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:03:20.445 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:03:24.562 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:03:24.562 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:03:24.743 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:03:50.693 +03:00 [INF] Application starting.
+2025-06-09 15:03:50.902 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:50.903 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:50.903 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:50.903 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:50.903 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:50.904 +03:00 [INF] Initializing API client Http
+2025-06-09 15:03:50.928 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:03:51.162 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:03:54.345 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:03:54.345 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:03:54.437 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:04:07.067 +03:00 [INF] Application starting.
+2025-06-09 15:04:07.312 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:07.313 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:07.313 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:07.313 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:07.313 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:07.313 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:07.328 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:04:07.566 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:04:10.573 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:04:10.574 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:04:10.787 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:04:23.971 +03:00 [INF] Application starting.
+2025-06-09 15:04:24.167 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:24.168 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:24.168 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:24.168 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:24.168 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:24.168 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:24.188 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:04:24.526 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:04:27.652 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:04:27.652 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:04:27.804 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:04:39.829 +03:00 [INF] Application starting.
+2025-06-09 15:04:40.058 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:40.060 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:40.060 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:40.060 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:40.061 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:40.061 +03:00 [INF] Initializing API client Http
+2025-06-09 15:04:40.085 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:04:40.361 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:04:43.396 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:04:43.396 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:04:43.506 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:05:20.609 +03:00 [INF] Application starting.
+2025-06-09 15:05:20.897 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:20.899 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:20.899 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:20.900 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:20.900 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:20.900 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:20.961 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:05:21.154 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:05:25.176 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:05:25.177 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:05:25.363 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:05:52.305 +03:00 [INF] Application starting.
+2025-06-09 15:05:52.608 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:52.609 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:52.609 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:52.610 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:52.610 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:52.610 +03:00 [INF] Initializing API client Http
+2025-06-09 15:05:52.632 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:05:52.829 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:06:13.030 +03:00 [INF] Application starting.
+2025-06-09 15:06:13.219 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:13.219 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:13.219 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:13.219 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:13.220 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:13.220 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:13.234 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:06:13.518 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:06:16.320 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:06:16.320 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:06:16.420 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:06:30.372 +03:00 [INF] Application starting.
+2025-06-09 15:06:30.557 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:30.558 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:30.558 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:30.558 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:30.558 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:30.558 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:30.578 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:06:30.859 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:06:33.425 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:06:33.426 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:06:33.578 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:06:43.556 +03:00 [INF] Application starting.
+2025-06-09 15:06:43.777 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:43.778 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:43.778 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:43.778 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:43.779 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:43.779 +03:00 [INF] Initializing API client Http
+2025-06-09 15:06:43.849 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:06:44.022 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:06:46.739 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:06:46.739 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:06:46.830 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:07:45.914 +03:00 [INF] Application starting.
+2025-06-09 15:07:46.169 +03:00 [INF] Initializing API client Http
+2025-06-09 15:07:46.170 +03:00 [INF] Initializing API client Http
+2025-06-09 15:07:46.170 +03:00 [INF] Initializing API client Http
+2025-06-09 15:07:46.170 +03:00 [INF] Initializing API client Http
+2025-06-09 15:07:46.170 +03:00 [INF] Initializing API client Http
+2025-06-09 15:07:46.170 +03:00 [INF] Initializing API client Http
+2025-06-09 15:07:46.233 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:07:46.464 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:07:49.068 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:07:49.068 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:07:49.217 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:08:45.631 +03:00 [INF] Application starting.
+2025-06-09 15:08:45.823 +03:00 [INF] Initializing API client Http
+2025-06-09 15:08:45.823 +03:00 [INF] Initializing API client Http
+2025-06-09 15:08:45.824 +03:00 [INF] Initializing API client Http
+2025-06-09 15:08:45.824 +03:00 [INF] Initializing API client Http
+2025-06-09 15:08:45.824 +03:00 [INF] Initializing API client Http
+2025-06-09 15:08:45.825 +03:00 [INF] Initializing API client Http
+2025-06-09 15:08:45.841 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:08:46.051 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:08:49.704 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:08:49.705 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:08:49.916 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:09:27.201 +03:00 [INF] Application starting.
+2025-06-09 15:09:27.551 +03:00 [INF] Initializing API client Http
+2025-06-09 15:09:27.553 +03:00 [INF] Initializing API client Http
+2025-06-09 15:09:27.553 +03:00 [INF] Initializing API client Http
+2025-06-09 15:09:27.553 +03:00 [INF] Initializing API client Http
+2025-06-09 15:09:27.553 +03:00 [INF] Initializing API client Http
+2025-06-09 15:09:27.553 +03:00 [INF] Initializing API client Http
+2025-06-09 15:09:27.575 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:09:27.814 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:09:31.244 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:09:31.244 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:09:31.346 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:09:33.935 +03:00 [INF] Getting all users
+2025-06-09 15:09:33.935 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 15:09:33.957 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:09:36.594 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:09:36.611 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:09:44.978 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:09:44.978 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:09:45.174 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:11:12.702 +03:00 [INF] Application starting.
+2025-06-09 15:11:12.944 +03:00 [INF] Initializing API client Http
+2025-06-09 15:11:12.945 +03:00 [INF] Initializing API client Http
+2025-06-09 15:11:12.945 +03:00 [INF] Initializing API client Http
+2025-06-09 15:11:12.945 +03:00 [INF] Initializing API client Http
+2025-06-09 15:11:12.945 +03:00 [INF] Initializing API client Http
+2025-06-09 15:11:12.945 +03:00 [INF] Initializing API client Http
+2025-06-09 15:11:12.963 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:11:13.233 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:11:16.741 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:11:16.741 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:11:16.964 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:14:09.318 +03:00 [INF] Application starting.
+2025-06-09 15:14:09.519 +03:00 [INF] Initializing API client Http
+2025-06-09 15:14:09.520 +03:00 [INF] Initializing API client Http
+2025-06-09 15:14:09.520 +03:00 [INF] Initializing API client Http
+2025-06-09 15:14:09.520 +03:00 [INF] Initializing API client Http
+2025-06-09 15:14:09.520 +03:00 [INF] Initializing API client Http
+2025-06-09 15:14:09.520 +03:00 [INF] Initializing API client Http
+2025-06-09 15:14:09.584 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:14:09.781 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:14:12.621 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:14:12.622 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:14:12.896 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:14:17.043 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:14:17.043 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:14:17.143 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:18:48.599 +03:00 [INF] Application starting.
+2025-06-09 15:18:48.815 +03:00 [INF] Initializing API client Http
+2025-06-09 15:18:48.815 +03:00 [INF] Initializing API client Http
+2025-06-09 15:18:48.815 +03:00 [INF] Initializing API client Http
+2025-06-09 15:18:48.815 +03:00 [INF] Initializing API client Http
+2025-06-09 15:18:48.815 +03:00 [INF] Initializing API client Http
+2025-06-09 15:18:48.815 +03:00 [INF] Initializing API client Http
+2025-06-09 15:18:48.827 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:18:49.091 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:20:46.212 +03:00 [INF] Application starting.
+2025-06-09 15:20:46.427 +03:00 [INF] Initializing API client Http
+2025-06-09 15:20:46.428 +03:00 [INF] Initializing API client Http
+2025-06-09 15:20:46.428 +03:00 [INF] Initializing API client Http
+2025-06-09 15:20:46.428 +03:00 [INF] Initializing API client Http
+2025-06-09 15:20:46.428 +03:00 [INF] Initializing API client Http
+2025-06-09 15:20:46.428 +03:00 [INF] Initializing API client Http
+2025-06-09 15:20:46.445 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:20:46.675 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:20:49.707 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:20:49.707 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:20:49.878 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:23:13.831 +03:00 [INF] Application starting.
+2025-06-09 15:23:14.076 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:14.077 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:14.077 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:14.077 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:14.077 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:14.077 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:14.093 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:23:14.389 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:23:18.084 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:23:18.084 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:23:18.204 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:23:34.536 +03:00 [INF] Application starting.
+2025-06-09 15:23:34.895 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:34.896 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:34.896 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:34.896 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:34.896 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:34.896 +03:00 [INF] Initializing API client Http
+2025-06-09 15:23:35.087 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:23:35.297 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:23:40.834 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:23:40.835 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:23:40.948 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:34:42.056 +03:00 [INF] Application starting.
+2025-06-09 15:34:42.337 +03:00 [INF] Initializing API client Http
+2025-06-09 15:34:42.338 +03:00 [INF] Initializing API client Http
+2025-06-09 15:34:42.338 +03:00 [INF] Initializing API client Http
+2025-06-09 15:34:42.338 +03:00 [INF] Initializing API client Http
+2025-06-09 15:34:42.338 +03:00 [INF] Initializing API client Http
+2025-06-09 15:34:42.338 +03:00 [INF] Initializing API client Http
+2025-06-09 15:34:42.356 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:34:42.669 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:42:01.877 +03:00 [INF] Application starting.
+2025-06-09 15:42:02.106 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:02.107 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:02.107 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:02.107 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:02.107 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:02.107 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:02.170 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:42:02.477 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:42:07.325 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:42:07.325 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:42:07.327 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:42:07.327 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:42:07.601 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:42:07.640 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:42:10.904 +03:00 [INF] Getting orders by duration: "AllTime" and status: "Pending"
+2025-06-09 15:42:10.904 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=Pending
+2025-06-09 15:42:11.058 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:42:14.747 +03:00 [INF] Getting orders by duration: "Last7Days" and status: "Pending"
+2025-06-09 15:42:14.747 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=Last7Days&status=Pending
+2025-06-09 15:42:14.786 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:42:18.426 +03:00 [INF] Getting orders by duration: "Last7Days" and status: "Processing"
+2025-06-09 15:42:18.426 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=Last7Days&status=Processing
+2025-06-09 15:42:18.470 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 15:42:18.473 +03:00 [ERR] Error response: [Title: No Orders Found] [Details: There are no orders matching the specified criteria.] [Path: /api/Orders/GetOrdersByDurationAndStatus]
+2025-06-09 15:42:18.674 +03:00 [ERR] No orders found for duration: "Last7Days" and status: "Processing"
+2025-06-09 15:42:18.771 +03:00 [ERR] No orders found for duration Last7Days and status Processing
+2025-06-09 15:42:59.266 +03:00 [INF] Application starting.
+2025-06-09 15:42:59.441 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:59.442 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:59.442 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:59.442 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:59.442 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:59.442 +03:00 [INF] Initializing API client Http
+2025-06-09 15:42:59.456 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:42:59.697 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:43:03.277 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:43:03.277 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:43:03.280 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 15:43:03.280 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 15:43:03.463 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:43:03.504 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:43:06.761 +03:00 [INF] Getting orders by duration: "AllTime" and status: "Cancelled"
+2025-06-09 15:43:06.762 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=Cancelled
+2025-06-09 15:43:06.830 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:43:10.732 +03:00 [INF] Getting orders by duration: "Last30Days" and status: "Cancelled"
+2025-06-09 15:43:10.732 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=Last30Days&status=Cancelled
+2025-06-09 15:43:10.747 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 15:43:10.751 +03:00 [ERR] Error response: [Title: No Orders Found] [Details: There are no orders matching the specified criteria.] [Path: /api/Orders/GetOrdersByDurationAndStatus]
+2025-06-09 15:43:10.922 +03:00 [ERR] No orders found for duration: "Last30Days" and status: "Cancelled"
+2025-06-09 15:43:13.493 +03:00 [INF] Getting orders by duration: "Last30Days" and status: "Pending"
+2025-06-09 15:43:13.493 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=Last30Days&status=Pending
+2025-06-09 15:43:13.513 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 15:43:21.091 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 15:43:21.107 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:01:47.715 +03:00 [INF] Application starting.
+2025-06-09 16:01:47.870 +03:00 [INF] Initializing API client Http
+2025-06-09 16:01:47.870 +03:00 [INF] Initializing API client Http
+2025-06-09 16:01:47.870 +03:00 [INF] Initializing API client Http
+2025-06-09 16:01:47.870 +03:00 [INF] Initializing API client Http
+2025-06-09 16:01:47.870 +03:00 [INF] Initializing API client Http
+2025-06-09 16:01:47.870 +03:00 [INF] Initializing API client Http
+2025-06-09 16:01:47.933 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:02:09.881 +03:00 [INF] Application starting.
+2025-06-09 16:02:10.013 +03:00 [INF] Initializing API client Http
+2025-06-09 16:02:10.014 +03:00 [INF] Initializing API client Http
+2025-06-09 16:02:10.014 +03:00 [INF] Initializing API client Http
+2025-06-09 16:02:10.014 +03:00 [INF] Initializing API client Http
+2025-06-09 16:02:10.014 +03:00 [INF] Initializing API client Http
+2025-06-09 16:02:10.014 +03:00 [INF] Initializing API client Http
+2025-06-09 16:02:10.023 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:02:11.694 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:15.472 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:02:15.472 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:02:15.474 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:02:15.474 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:02:15.729 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:15.752 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:17.446 +03:00 [INF] Getting orders by duration: "ThisMonth" and status: "All"
+2025-06-09 16:02:17.446 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisMonth&status=All
+2025-06-09 16:02:17.489 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:19.477 +03:00 [INF] Getting orders by duration: "ThisMonth" and status: "Delivered"
+2025-06-09 16:02:19.477 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisMonth&status=Delivered
+2025-06-09 16:02:19.530 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 16:02:19.531 +03:00 [ERR] Error response: [Title: No Orders Found] [Details: There are no orders matching the specified criteria.] [Path: /api/Orders/GetOrdersByDurationAndStatus]
+2025-06-09 16:02:19.601 +03:00 [ERR] No orders found for duration: "ThisMonth" and status: "Delivered"
+2025-06-09 16:02:22.189 +03:00 [INF] Getting orders by duration: "ThisMonth" and status: "Cancelled"
+2025-06-09 16:02:22.189 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisMonth&status=Cancelled
+2025-06-09 16:02:22.199 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 16:02:22.199 +03:00 [ERR] Error response: [Title: No Orders Found] [Details: There are no orders matching the specified criteria.] [Path: /api/Orders/GetOrdersByDurationAndStatus]
+2025-06-09 16:02:22.222 +03:00 [ERR] No orders found for duration: "ThisMonth" and status: "Cancelled"
+2025-06-09 16:02:23.838 +03:00 [INF] Getting orders by duration: "ThisMonth" and status: "Processing"
+2025-06-09 16:02:23.838 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisMonth&status=Processing
+2025-06-09 16:02:23.847 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 16:02:23.847 +03:00 [ERR] Error response: [Title: No Orders Found] [Details: There are no orders matching the specified criteria.] [Path: /api/Orders/GetOrdersByDurationAndStatus]
+2025-06-09 16:02:23.872 +03:00 [ERR] No orders found for duration: "ThisMonth" and status: "Processing"
+2025-06-09 16:02:25.337 +03:00 [INF] Getting orders by duration: "ThisMonth" and status: "Pending"
+2025-06-09 16:02:25.337 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisMonth&status=Pending
+2025-06-09 16:02:25.348 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:27.692 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "Pending"
+2025-06-09 16:02:27.692 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=Pending
+2025-06-09 16:02:27.711 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:29.016 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "Cancelled"
+2025-06-09 16:02:29.016 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=Cancelled
+2025-06-09 16:02:29.027 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:30.683 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "Processing"
+2025-06-09 16:02:30.683 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=Processing
+2025-06-09 16:02:30.698 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:38.471 +03:00 [INF] Getting all users
+2025-06-09 16:02:38.472 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 16:02:38.490 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:41.970 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:02:41.988 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:02:50.970 +03:00 [INF] Getting total number of carts
+2025-06-09 16:02:50.971 +03:00 [INF] Sending GET request to /api/Carts/GetCartsCount with query string: 
+2025-06-09 16:02:50.999 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:26:12.825 +03:00 [INF] Application starting.
+2025-06-09 16:26:12.976 +03:00 [INF] Initializing API client Http
+2025-06-09 16:26:12.977 +03:00 [INF] Initializing API client Http
+2025-06-09 16:26:12.977 +03:00 [INF] Initializing API client Http
+2025-06-09 16:26:12.977 +03:00 [INF] Initializing API client Http
+2025-06-09 16:26:12.977 +03:00 [INF] Initializing API client Http
+2025-06-09 16:26:12.977 +03:00 [INF] Initializing API client Http
+2025-06-09 16:26:13.067 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:26:13.268 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:26:17.394 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:26:17.394 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:26:17.395 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:26:17.395 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:26:17.445 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:26:17.460 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:26:38.958 +03:00 [INF] Delivering order with ID: 863
+2025-06-09 16:26:38.959 +03:00 [INF] Sending POST request to /api/Orders/DeliverOrder with data: orderId=863
+2025-06-09 16:26:38.985 +03:00 [INF] Handling response errors for status code: "MethodNotAllowed"
+2025-06-09 16:26:38.986 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 16:26:39.042 +03:00 [ERR] Server error occurred: Error: MethodNotAllowed - 
+2025-06-09 16:29:41.121 +03:00 [INF] Application starting.
+2025-06-09 16:29:41.252 +03:00 [INF] Initializing API client Http
+2025-06-09 16:29:41.253 +03:00 [INF] Initializing API client Http
+2025-06-09 16:29:41.253 +03:00 [INF] Initializing API client Http
+2025-06-09 16:29:41.253 +03:00 [INF] Initializing API client Http
+2025-06-09 16:29:41.253 +03:00 [INF] Initializing API client Http
+2025-06-09 16:29:41.253 +03:00 [INF] Initializing API client Http
+2025-06-09 16:29:41.266 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:29:41.440 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:29:45.775 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:29:45.775 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:29:45.777 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:29:45.777 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:29:45.840 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:29:45.858 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:29:49.403 +03:00 [INF] Shipping order with ID: 862
+2025-06-09 16:29:49.404 +03:00 [INF] Sending PUT request to /api/Orders/ShipOrder with query string: orderId=862
+2025-06-09 16:29:49.416 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 16:29:49.417 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 16:29:49.456 +03:00 [ERR] Unauthorized to ship order with ID: 862
+2025-06-09 16:29:49.474 +03:00 [ERR] Unauthorized to ship this order
+2025-06-09 16:30:38.954 +03:00 [INF] Application starting.
+2025-06-09 16:30:39.068 +03:00 [INF] Initializing API client Http
+2025-06-09 16:30:39.068 +03:00 [INF] Initializing API client Http
+2025-06-09 16:30:39.068 +03:00 [INF] Initializing API client Http
+2025-06-09 16:30:39.068 +03:00 [INF] Initializing API client Http
+2025-06-09 16:30:39.068 +03:00 [INF] Initializing API client Http
+2025-06-09 16:30:39.068 +03:00 [INF] Initializing API client Http
+2025-06-09 16:30:39.076 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:30:40.678 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:30:43.285 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:30:43.285 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:30:43.287 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:30:43.287 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:30:43.559 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:30:43.573 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:30:45.711 +03:00 [INF] Delivering order with ID: 863
+2025-06-09 16:30:45.712 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=863
+2025-06-09 16:30:45.969 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 16:30:45.970 +03:00 [ERR] Error response: [Title: Deliver Order Faild] [Details: Order is not in Shipping state] [Path: /api/Orders/DeliverOrder]
+2025-06-09 16:30:46.016 +03:00 [ERR] Invalid order Id 863, It must be posstive or or order status not shipped
+2025-06-09 16:30:46.041 +03:00 [ERR] Invalid order Id 863, It must be posstive or or order status not shipped
+2025-06-09 16:54:16.654 +03:00 [INF] Application starting.
+2025-06-09 16:54:16.767 +03:00 [INF] Initializing API client Http
+2025-06-09 16:54:16.768 +03:00 [INF] Initializing API client Http
+2025-06-09 16:54:16.768 +03:00 [INF] Initializing API client Http
+2025-06-09 16:54:16.768 +03:00 [INF] Initializing API client Http
+2025-06-09 16:54:16.768 +03:00 [INF] Initializing API client Http
+2025-06-09 16:54:16.768 +03:00 [INF] Initializing API client Http
+2025-06-09 16:54:16.778 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:54:16.936 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:54:19.461 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:54:19.461 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:54:19.462 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:54:19.462 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:54:19.569 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:54:19.593 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:54:23.149 +03:00 [INF] Delivering order with ID: 866
+2025-06-09 16:54:23.150 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=866
+2025-06-09 16:54:23.170 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 16:54:23.171 +03:00 [ERR] Error response: [Title: Deliver Order Faild] [Details: Order is not in Shipping state] [Path: /api/Orders/DeliverOrder]
+2025-06-09 16:54:23.247 +03:00 [ERR] Invalid order Id 866, It must be posstive or or order status not shipped
+2025-06-09 16:54:23.269 +03:00 [ERR] Invalid order Id 866, It must be posstive or or order status not shipped
+2025-06-09 16:55:13.869 +03:00 [INF] Application starting.
+2025-06-09 16:55:13.983 +03:00 [INF] Initializing API client Http
+2025-06-09 16:55:13.983 +03:00 [INF] Initializing API client Http
+2025-06-09 16:55:13.983 +03:00 [INF] Initializing API client Http
+2025-06-09 16:55:13.983 +03:00 [INF] Initializing API client Http
+2025-06-09 16:55:13.983 +03:00 [INF] Initializing API client Http
+2025-06-09 16:55:13.983 +03:00 [INF] Initializing API client Http
+2025-06-09 16:55:13.991 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:55:14.151 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:55:16.470 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:55:16.471 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:55:16.472 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:55:16.472 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:55:16.534 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:55:16.561 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:55:37.048 +03:00 [INF] Shipping order with ID: 862
+2025-06-09 16:55:37.048 +03:00 [INF] Sending PUT request to /api/Orders/ShipOrder with query string: orderId=862
+2025-06-09 16:55:37.090 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 16:55:37.091 +03:00 [ERR] Error response: [Title: Ship order faild] [Details: Order is not in Processing state] [Path: /api/Orders/ShipOrder]
+2025-06-09 16:55:37.133 +03:00 [ERR] Invalid order Id 862, It must be posstive or or order status not processed
+2025-06-09 16:55:37.152 +03:00 [ERR] Invalid order Id 862, It must be posstive or or order status not processed
+2025-06-09 16:55:57.717 +03:00 [INF] Shipping order with ID: 862
+2025-06-09 16:55:57.717 +03:00 [INF] Sending PUT request to /api/Orders/ShipOrder with query string: orderId=862
+2025-06-09 16:55:57.769 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 16:55:57.769 +03:00 [ERR] Error response: [Title: Ship order faild] [Details: Order is not in Processing state] [Path: /api/Orders/ShipOrder]
+2025-06-09 16:55:57.798 +03:00 [ERR] Invalid order Id 862, It must be posstive or or order status not processed
+2025-06-09 16:55:57.821 +03:00 [ERR] Invalid order Id 862, It must be posstive or or order status not processed
+2025-06-09 16:58:02.050 +03:00 [INF] Application starting.
+2025-06-09 16:58:02.174 +03:00 [INF] Initializing API client Http
+2025-06-09 16:58:02.174 +03:00 [INF] Initializing API client Http
+2025-06-09 16:58:02.174 +03:00 [INF] Initializing API client Http
+2025-06-09 16:58:02.174 +03:00 [INF] Initializing API client Http
+2025-06-09 16:58:02.174 +03:00 [INF] Initializing API client Http
+2025-06-09 16:58:02.174 +03:00 [INF] Initializing API client Http
+2025-06-09 16:58:02.183 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 16:58:02.289 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:58:04.495 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:58:04.496 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:58:04.497 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 16:58:04.497 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 16:58:04.589 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:58:04.603 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 16:58:07.659 +03:00 [INF] Delivering order with ID: 862
+2025-06-09 16:58:07.659 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=862
+2025-06-09 16:58:07.672 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 16:58:07.673 +03:00 [ERR] Error response: [Title: Deliver Order Faild] [Details: Order is not in Shipping state] [Path: /api/Orders/DeliverOrder]
+2025-06-09 16:58:07.716 +03:00 [ERR] Invalid order Id 862, It must be posstive or or order status not shipped
+2025-06-09 16:58:07.737 +03:00 [ERR] Invalid order Id gg862, It must be posstive or or order status not shipped
+2025-06-09 17:00:32.826 +03:00 [INF] Application starting.
+2025-06-09 17:00:32.935 +03:00 [INF] Initializing API client Http
+2025-06-09 17:00:32.935 +03:00 [INF] Initializing API client Http
+2025-06-09 17:00:32.936 +03:00 [INF] Initializing API client Http
+2025-06-09 17:00:32.936 +03:00 [INF] Initializing API client Http
+2025-06-09 17:00:32.936 +03:00 [INF] Initializing API client Http
+2025-06-09 17:00:32.936 +03:00 [INF] Initializing API client Http
+2025-06-09 17:00:32.944 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:00:33.162 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:00:36.707 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:00:36.707 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:00:36.708 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:00:36.708 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:00:36.798 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:00:36.813 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:00:41.651 +03:00 [INF] Shipping order with ID: 868
+2025-06-09 17:00:41.652 +03:00 [INF] Sending PUT request to /api/Orders/ShipOrder with query string: orderId=868
+2025-06-09 17:00:41.666 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:00:41.667 +03:00 [ERR] Error response: [Title: Ship order faild] [Details: Order is not in Processing state] [Path: /api/Orders/ShipOrder]
+2025-06-09 17:00:41.712 +03:00 [ERR] Invalid order Id 868, It must be posstive or or order status not processed
+2025-06-09 17:00:41.737 +03:00 [ERR] Invalid order Id 868, It must be posstive or or order status not processed
+2025-06-09 17:01:08.919 +03:00 [INF] Delivering order with ID: 870
+2025-06-09 17:01:08.920 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=870
+2025-06-09 17:01:08.971 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:01:08.972 +03:00 [ERR] Error response: [Title: Deliver Order Faild] [Details: Order is not in Shipping state] [Path: /api/Orders/DeliverOrder]
+2025-06-09 17:01:08.993 +03:00 [ERR] Invalid order Id 870, It must be posstive or or order status not shipped
+2025-06-09 17:01:09.011 +03:00 [ERR] Invalid order Id 870, It must be posstive or or order status not shipped
+2025-06-09 17:01:34.720 +03:00 [INF] Application starting.
+2025-06-09 17:01:34.837 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:34.837 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:34.837 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:34.837 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:34.837 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:34.837 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:34.846 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:01:35.005 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:01:37.416 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:01:37.416 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:01:37.418 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:01:37.418 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:01:37.474 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:01:37.489 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:01:40.820 +03:00 [INF] Delivering order with ID: 868
+2025-06-09 17:01:40.820 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=868
+2025-06-09 17:01:40.836 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:01:40.837 +03:00 [ERR] Error response: [Title: Deliver Order Faild] [Details: Order is not in Shipping state] [Path: /api/Orders/DeliverOrder]
+2025-06-09 17:01:40.875 +03:00 [ERR] Invalid order Id 868, It must be posstive or or order status not shipped
+2025-06-09 17:01:40.893 +03:00 [ERR] Invalid order Id 868, It must be posstive or or order status not shipped
+2025-06-09 17:01:59.840 +03:00 [INF] Application starting.
+2025-06-09 17:01:59.955 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:59.955 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:59.956 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:59.956 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:59.956 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:59.956 +03:00 [INF] Initializing API client Http
+2025-06-09 17:01:59.963 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:02:00.100 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:02:02.114 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:02:02.114 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:02:02.116 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:02:02.116 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:02:02.152 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:02:02.167 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:02:06.330 +03:00 [INF] Delivering order with ID: 873
+2025-06-09 17:02:06.330 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=873
+2025-06-09 17:02:06.342 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:02:06.343 +03:00 [ERR] Error response: [Title: Deliver Order Faild] [Details: Order is not in Shipping state] [Path: /api/Orders/DeliverOrder]
+2025-06-09 17:02:06.390 +03:00 [ERR] Invalid order Id 873, It must be posstive or or order status not shipped
+2025-06-09 17:02:06.412 +03:00 [ERR] Invalid order Id 873, It must be posstive or or order status not shipped
+2025-06-09 17:03:33.132 +03:00 [INF] Shipping order with ID: 872
+2025-06-09 17:03:33.132 +03:00 [INF] Sending PUT request to /api/Orders/ShipOrder with query string: orderId=872
+2025-06-09 17:03:33.234 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:03:33.234 +03:00 [ERR] Error response: [Title: Ship order faild] [Details: Order is not in Processing state] [Path: /api/Orders/ShipOrder]
+2025-06-09 17:03:33.255 +03:00 [ERR] Invalid order Id 872, It must be posstive or or order status not processed
+2025-06-09 17:03:33.273 +03:00 [ERR] Invalid order Id 872, It must be posstive or or order status not processed
+2025-06-09 17:03:41.186 +03:00 [INF] Shipping order with ID: 872
+2025-06-09 17:03:41.186 +03:00 [INF] Sending PUT request to /api/Orders/ShipOrder with query string: orderId=872
+2025-06-09 17:03:41.194 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:03:41.194 +03:00 [ERR] Error response: [Title: Ship order faild] [Details: Order is not in Processing state] [Path: /api/Orders/ShipOrder]
+2025-06-09 17:03:41.215 +03:00 [ERR] Invalid order Id 872, It must be posstive or or order status not processed
+2025-06-09 17:03:41.230 +03:00 [ERR] Invalid order Id 872, It must be posstive or or order status not processed
+2025-06-09 17:07:26.497 +03:00 [INF] Shipping order with ID: 872
+2025-06-09 17:07:26.497 +03:00 [INF] Sending PUT request to /api/Orders/ShipOrder with query string: orderId=872
+2025-06-09 17:07:26.528 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:07:26.528 +03:00 [ERR] Error response: [Title: Ship order faild] [Details: Order is not in Processing state] [Path: /api/Orders/ShipOrder]
+2025-06-09 17:07:26.550 +03:00 [ERR] Invalid order Id 872, It must be posstive or or order status not processed
+2025-06-09 17:07:26.565 +03:00 [ERR] Invalid order Id 872, It must be posstive or or order status not processed
+2025-06-09 17:07:56.464 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:07:56.464 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:07:56.475 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:07:56.475 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:07:56.476 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:07:56.476 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:07:56.547 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:07:56.559 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:07:56.573 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:09:15.554 +03:00 [INF] Application starting.
+2025-06-09 17:09:15.661 +03:00 [INF] Initializing API client Http
+2025-06-09 17:09:15.661 +03:00 [INF] Initializing API client Http
+2025-06-09 17:09:15.661 +03:00 [INF] Initializing API client Http
+2025-06-09 17:09:15.661 +03:00 [INF] Initializing API client Http
+2025-06-09 17:09:15.661 +03:00 [INF] Initializing API client Http
+2025-06-09 17:09:15.661 +03:00 [INF] Initializing API client Http
+2025-06-09 17:09:15.670 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:09:15.801 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:09:17.496 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:09:17.497 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:09:17.498 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:09:17.498 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:09:17.537 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:09:17.552 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:09:51.258 +03:00 [INF] Delivering order with ID: 872
+2025-06-09 17:09:55.392 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=872
+2025-06-09 17:09:58.060 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:10:00.819 +03:00 [ERR] Error response: [Title: Deliver Order Faild] [Details: Order is not in Shipping state] [Path: /api/Orders/DeliverOrder]
+2025-06-09 17:10:19.837 +03:00 [ERR] Invalid order Id 872, It must be posstive or or order status not shipped
+2025-06-09 17:10:27.622 +03:00 [ERR] Invalid order Id 872, It must be posstive or or order status not shipped
+2025-06-09 17:10:59.534 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:10:59.534 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:10:59.542 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:10:59.542 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:10:59.543 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:10:59.543 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:10:59.612 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:10:59.622 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:10:59.634 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:11:07.729 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:11:07.729 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:11:07.736 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:11:07.736 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:11:07.737 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:11:07.737 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:11:07.759 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:11:07.768 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:11:07.779 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:11:22.062 +03:00 [INF] Application starting.
+2025-06-09 17:11:22.176 +03:00 [INF] Initializing API client Http
+2025-06-09 17:11:22.177 +03:00 [INF] Initializing API client Http
+2025-06-09 17:11:22.177 +03:00 [INF] Initializing API client Http
+2025-06-09 17:11:22.177 +03:00 [INF] Initializing API client Http
+2025-06-09 17:11:22.177 +03:00 [INF] Initializing API client Http
+2025-06-09 17:11:22.177 +03:00 [INF] Initializing API client Http
+2025-06-09 17:11:22.186 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:11:22.328 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:11:23.959 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:11:23.960 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:11:23.961 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:11:23.961 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:11:23.988 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:11:24.145 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:11:36.697 +03:00 [INF] Delivering order with ID: 881
+2025-06-09 17:11:36.698 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=881
+2025-06-09 17:11:37.238 +03:00 [INF] Handling response errors for status code: "BadRequest"
+2025-06-09 17:11:37.239 +03:00 [ERR] Error response: [Title: Deliver Order Faild] [Details: Order is not in Shipping state] [Path: /api/Orders/DeliverOrder]
+2025-06-09 17:11:37.272 +03:00 [ERR] Invalid order Id 881, It must be posstive or or order status not shipped
+2025-06-09 17:11:49.360 +03:00 [ERR] Invalid order Id 881, It must be posstive or or order status not shipped
+2025-06-09 17:14:28.381 +03:00 [INF] Application starting.
+2025-06-09 17:14:28.488 +03:00 [INF] Initializing API client Http
+2025-06-09 17:14:28.488 +03:00 [INF] Initializing API client Http
+2025-06-09 17:14:28.488 +03:00 [INF] Initializing API client Http
+2025-06-09 17:14:28.488 +03:00 [INF] Initializing API client Http
+2025-06-09 17:14:28.488 +03:00 [INF] Initializing API client Http
+2025-06-09 17:14:28.488 +03:00 [INF] Initializing API client Http
+2025-06-09 17:14:28.496 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:14:30.127 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:14:33.967 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:14:33.967 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:14:33.968 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:14:33.968 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:14:34.207 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:14:34.225 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:14:44.127 +03:00 [INF] Processing order with ID: 867
+2025-06-09 17:14:44.127 +03:00 [INF] Sending PUT request to /api/Orders/ProcessOrder with query string: orderId=867
+2025-06-09 17:14:44.331 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:14:45.808 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:14:45.808 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:14:45.849 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:15:07.726 +03:00 [INF] Delivering order with ID: 946
+2025-06-09 17:15:07.726 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=946
+2025-06-09 17:15:07.757 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:15:09.896 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:15:09.897 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:15:09.942 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:15:21.524 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "All"
+2025-06-09 17:15:21.524 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=All
+2025-06-09 17:15:21.543 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:15:24.414 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "Shipped"
+2025-06-09 17:15:24.414 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=Shipped
+2025-06-09 17:15:24.449 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:15:32.415 +03:00 [INF] Delivering order with ID: 1070
+2025-06-09 17:15:32.415 +03:00 [INF] Sending PUT request to /api/Orders/DeliverOrder with query string: orderId=1070
+2025-06-09 17:15:32.434 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:15:33.242 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:15:33.242 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:15:33.273 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:15:37.228 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "Delivered"
+2025-06-09 17:15:37.228 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=Delivered
+2025-06-09 17:15:37.237 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:17:07.792 +03:00 [INF] Application starting.
+2025-06-09 17:17:07.907 +03:00 [INF] Initializing API client Http
+2025-06-09 17:17:07.908 +03:00 [INF] Initializing API client Http
+2025-06-09 17:17:07.908 +03:00 [INF] Initializing API client Http
+2025-06-09 17:17:07.908 +03:00 [INF] Initializing API client Http
+2025-06-09 17:17:07.908 +03:00 [INF] Initializing API client Http
+2025-06-09 17:17:07.908 +03:00 [INF] Initializing API client Http
+2025-06-09 17:17:07.917 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:17:08.087 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:17:09.935 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:17:09.935 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:17:09.937 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:17:09.937 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:17:10.003 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:17:10.018 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:17:12.585 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "All"
+2025-06-09 17:17:12.585 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=All
+2025-06-09 17:17:12.632 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:17:14.800 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "Pending"
+2025-06-09 17:17:14.800 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=Pending
+2025-06-09 17:17:14.818 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:17:21.549 +03:00 [INF] Processing order with ID: 1075
+2025-06-09 17:17:21.549 +03:00 [INF] Sending PUT request to /api/Orders/ProcessOrder with query string: orderId=1075
+2025-06-09 17:17:21.563 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:17:29.209 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "Pending"
+2025-06-09 17:17:29.210 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=Pending
+2025-06-09 17:17:29.219 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:18:21.720 +03:00 [INF] Application starting.
+2025-06-09 17:18:21.839 +03:00 [INF] Initializing API client Http
+2025-06-09 17:18:21.839 +03:00 [INF] Initializing API client Http
+2025-06-09 17:18:21.839 +03:00 [INF] Initializing API client Http
+2025-06-09 17:18:21.839 +03:00 [INF] Initializing API client Http
+2025-06-09 17:18:21.839 +03:00 [INF] Initializing API client Http
+2025-06-09 17:18:21.839 +03:00 [INF] Initializing API client Http
+2025-06-09 17:18:21.848 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:18:22.039 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:18:25.380 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:18:25.380 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:18:25.381 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:18:25.381 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:18:25.478 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:18:25.493 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:18:27.801 +03:00 [INF] Getting orders by duration: "ThisDay" and status: "All"
+2025-06-09 17:18:27.801 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisDay&status=All
+2025-06-09 17:18:27.813 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:18:35.216 +03:00 [INF] Getting orders by duration: "ThisDay" and status: "Processing"
+2025-06-09 17:18:35.216 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisDay&status=Processing
+2025-06-09 17:18:35.237 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 17:18:35.239 +03:00 [ERR] Error response: [Title: No Orders Found] [Details: There are no orders matching the specified criteria.] [Path: /api/Orders/GetOrdersByDurationAndStatus]
+2025-06-09 17:18:35.282 +03:00 [ERR] No orders found for duration: "ThisDay" and status: "Processing"
+2025-06-09 17:18:37.970 +03:00 [INF] Getting orders by duration: "ThisYear" and status: "Processing"
+2025-06-09 17:18:37.970 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=ThisYear&status=Processing
+2025-06-09 17:18:37.985 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:18:40.818 +03:00 [INF] Getting orders by duration: "Last90Days" and status: "Processing"
+2025-06-09 17:18:40.818 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=Last90Days&status=Processing
+2025-06-09 17:18:40.828 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:18:46.011 +03:00 [INF] Shipping order with ID: 1043
+2025-06-09 17:18:46.012 +03:00 [INF] Sending PUT request to /api/Orders/ShipOrder with query string: orderId=1043
+2025-06-09 17:18:46.029 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:18:52.137 +03:00 [INF] Getting orders by duration: "Last90Days" and status: "Processing"
+2025-06-09 17:18:52.137 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=Last90Days&status=Processing
+2025-06-09 17:18:52.150 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:28:27.422 +03:00 [INF] Application starting.
+2025-06-09 17:28:27.529 +03:00 [INF] Initializing API client Http
+2025-06-09 17:28:27.529 +03:00 [INF] Initializing API client Http
+2025-06-09 17:28:27.529 +03:00 [INF] Initializing API client Http
+2025-06-09 17:28:27.529 +03:00 [INF] Initializing API client Http
+2025-06-09 17:28:27.529 +03:00 [INF] Initializing API client Http
+2025-06-09 17:28:27.529 +03:00 [INF] Initializing API client Http
+2025-06-09 17:28:27.537 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:28:27.711 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:28:49.087 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 17:28:49.088 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 17:28:49.100 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 17:28:49.101 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 17:29:29.471 +03:00 [INF] Application starting.
+2025-06-09 17:29:29.590 +03:00 [INF] Initializing API client Http
+2025-06-09 17:29:29.590 +03:00 [INF] Initializing API client Http
+2025-06-09 17:29:29.591 +03:00 [INF] Initializing API client Http
+2025-06-09 17:29:29.591 +03:00 [INF] Initializing API client Http
+2025-06-09 17:29:29.591 +03:00 [INF] Initializing API client Http
+2025-06-09 17:29:29.591 +03:00 [INF] Initializing API client Http
+2025-06-09 17:29:29.599 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:29:29.767 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:29:33.547 +03:00 [INF] Getting all users
+2025-06-09 17:29:33.547 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 17:29:33.573 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:29:35.252 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:29:35.252 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:29:35.253 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:29:35.253 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:29:35.316 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:29:35.331 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:29:38.307 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:30:49.086 +03:00 [INF] Application starting.
+2025-06-09 17:30:49.206 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:49.207 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:49.207 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:49.207 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:49.207 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:49.208 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:49.216 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:30:49.329 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:30:52.398 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 17:30:52.399 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 17:30:52.406 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 17:30:52.407 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 17:30:52.426 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:30:52.427 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:30:52.474 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 17:30:52.524 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:30:52.524 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:30:52.556 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 17:30:54.461 +03:00 [INF] Application starting.
+2025-06-09 17:30:54.580 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:54.580 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:54.580 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:54.580 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:54.580 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:54.580 +03:00 [INF] Initializing API client Http
+2025-06-09 17:30:54.588 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:30:54.696 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:30:55.781 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:30:55.781 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:30:55.818 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:31:03.143 +03:00 [INF] Getting out of stock products
+2025-06-09 17:31:03.143 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:31:03.164 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:31:05.883 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 17:31:05.884 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 17:31:05.890 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 17:31:05.891 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 17:31:05.908 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:31:05.909 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:31:05.951 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 17:31:05.982 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:31:05.982 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:31:06.037 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 17:31:50.336 +03:00 [INF] Application starting.
+2025-06-09 17:31:50.471 +03:00 [INF] Initializing API client Http
+2025-06-09 17:31:50.471 +03:00 [INF] Initializing API client Http
+2025-06-09 17:31:50.471 +03:00 [INF] Initializing API client Http
+2025-06-09 17:31:50.471 +03:00 [INF] Initializing API client Http
+2025-06-09 17:31:50.471 +03:00 [INF] Initializing API client Http
+2025-06-09 17:31:50.471 +03:00 [INF] Initializing API client Http
+2025-06-09 17:31:50.481 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:31:50.646 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:31:55.050 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:31:55.050 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:31:55.080 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:31:57.526 +03:00 [INF] Getting all users
+2025-06-09 17:31:57.526 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 17:31:57.535 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:31:58.760 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:31:58.760 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:31:58.761 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:31:58.761 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:31:58.827 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:31:58.840 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:32:02.756 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:32:02.756 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:32:02.764 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:32:02.764 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:32:02.765 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:32:02.765 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:32:02.791 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:32:02.803 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:32:02.953 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:32:04.711 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:32:04.711 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:32:04.719 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:32:04.719 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:32:04.719 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:32:04.721 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:32:04.744 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:32:04.755 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:32:04.766 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:32:05.518 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 17:32:05.519 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 17:32:05.525 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 17:32:05.525 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 17:32:05.569 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:32:05.570 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:32:05.620 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 17:32:05.659 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:32:05.659 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:32:05.715 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 17:34:03.179 +03:00 [INF] Application starting.
+2025-06-09 17:34:03.289 +03:00 [INF] Initializing API client Http
+2025-06-09 17:34:03.289 +03:00 [INF] Initializing API client Http
+2025-06-09 17:34:03.289 +03:00 [INF] Initializing API client Http
+2025-06-09 17:34:03.289 +03:00 [INF] Initializing API client Http
+2025-06-09 17:34:03.289 +03:00 [INF] Initializing API client Http
+2025-06-09 17:34:03.289 +03:00 [INF] Initializing API client Http
+2025-06-09 17:34:03.296 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:34:03.444 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:34:05.460 +03:00 [INF] Getting all users
+2025-06-09 17:34:05.461 +03:00 [INF] Sending GET request to /api/Users/GetAllUsers with query string: 
+2025-06-09 17:34:05.468 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:34:06.788 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:34:06.788 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:34:06.789 +03:00 [INF] Getting orders by duration: "AllTime" and status: "All"
+2025-06-09 17:34:06.789 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=AllTime&status=All
+2025-06-09 17:34:06.871 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:34:06.887 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:34:10.800 +03:00 [INF] Getting orders by duration: "Last30Days" and status: "All"
+2025-06-09 17:34:10.800 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=Last30Days&status=All
+2025-06-09 17:34:10.813 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:34:13.157 +03:00 [INF] Getting orders by duration: "Last30Days" and status: "Shipped"
+2025-06-09 17:34:13.157 +03:00 [INF] Sending GET request to /api/Orders/GetOrdersByDurationAndStatus with query string: duration=Last30Days&status=Shipped
+2025-06-09 17:34:13.169 +03:00 [INF] Handling response errors for status code: "NotFound"
+2025-06-09 17:34:13.171 +03:00 [ERR] Error response: [Title: No Orders Found] [Details: There are no orders matching the specified criteria.] [Path: /api/Orders/GetOrdersByDurationAndStatus]
+2025-06-09 17:34:13.212 +03:00 [ERR] No orders found for duration: "Last30Days" and status: "Shipped"
+2025-06-09 17:34:15.971 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:34:15.971 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:34:15.985 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:34:18.232 +03:00 [INF] Getting out of stock products
+2025-06-09 17:34:18.232 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:34:18.240 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:49:56.434 +03:00 [INF] Application starting.
+2025-06-09 17:49:56.546 +03:00 [INF] Initializing API client Http
+2025-06-09 17:49:56.546 +03:00 [INF] Initializing API client Http
+2025-06-09 17:49:56.546 +03:00 [INF] Initializing API client Http
+2025-06-09 17:49:56.546 +03:00 [INF] Initializing API client Http
+2025-06-09 17:49:56.546 +03:00 [INF] Initializing API client Http
+2025-06-09 17:49:56.546 +03:00 [INF] Initializing API client Http
+2025-06-09 17:49:56.554 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:49:56.723 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:49:59.143 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:49:59.143 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:49:59.191 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:50:07.985 +03:00 [INF] Getting out of stock products
+2025-06-09 17:50:07.985 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:50:08.008 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:50:18.452 +03:00 [INF] Updating stock for product ID: 1447
+2025-06-09 17:50:18.452 +03:00 [INF] Sending POST request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest
+2025-06-09 17:50:18.460 +03:00 [INF] Handling response errors for status code: "MethodNotAllowed"
+2025-06-09 17:50:18.460 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:50:21.595 +03:00 [INF] Getting out of stock products
+2025-06-09 17:50:21.595 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:50:21.602 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:50:22.393 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 17:50:22.394 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 17:50:22.399 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 17:50:22.399 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 17:50:22.418 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:50:22.418 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:50:22.450 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 17:50:22.482 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:50:22.482 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:50:22.536 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 17:51:46.459 +03:00 [INF] Application starting.
+2025-06-09 17:51:46.569 +03:00 [INF] Initializing API client Http
+2025-06-09 17:51:46.569 +03:00 [INF] Initializing API client Http
+2025-06-09 17:51:46.569 +03:00 [INF] Initializing API client Http
+2025-06-09 17:51:46.569 +03:00 [INF] Initializing API client Http
+2025-06-09 17:51:46.569 +03:00 [INF] Initializing API client Http
+2025-06-09 17:51:46.569 +03:00 [INF] Initializing API client Http
+2025-06-09 17:51:46.609 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:51:46.721 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:51:50.236 +03:00 [INF] Getting out of stock products
+2025-06-09 17:51:50.236 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:51:50.245 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:51:54.995 +03:00 [INF] Updating stock for product ID: 1447
+2025-06-09 17:51:54.999 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:51:55.088 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:51:57.726 +03:00 [INF] Getting out of stock products
+2025-06-09 17:51:57.726 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:51:57.733 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:52:02.332 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:52:02.332 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:52:02.344 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:52:17.626 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:52:17.626 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:52:17.676 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:52:19.355 +03:00 [INF] Getting out of stock products
+2025-06-09 17:52:19.355 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:52:19.366 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:52:42.994 +03:00 [INF] Updating stock for product ID: 1447
+2025-06-09 17:52:42.994 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:52:43.046 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:52:47.814 +03:00 [INF] Getting out of stock products
+2025-06-09 17:52:47.814 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:52:47.824 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:52:51.492 +03:00 [INF] Getting out of stock products
+2025-06-09 17:52:51.492 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:52:51.498 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:53:10.650 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 17:53:10.651 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 17:53:10.657 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 17:53:10.659 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 17:53:10.691 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:53:10.692 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:53:10.746 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 17:53:10.779 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:53:10.779 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:53:10.834 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 17:53:50.292 +03:00 [INF] Application starting.
+2025-06-09 17:53:50.400 +03:00 [INF] Initializing API client Http
+2025-06-09 17:53:50.401 +03:00 [INF] Initializing API client Http
+2025-06-09 17:53:50.401 +03:00 [INF] Initializing API client Http
+2025-06-09 17:53:50.401 +03:00 [INF] Initializing API client Http
+2025-06-09 17:53:50.401 +03:00 [INF] Initializing API client Http
+2025-06-09 17:53:50.401 +03:00 [INF] Initializing API client Http
+2025-06-09 17:53:50.409 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:53:50.531 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:53:52.426 +03:00 [INF] Getting out of stock products
+2025-06-09 17:53:52.426 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:53:52.440 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:53:57.688 +03:00 [INF] Updating stock for product ID: 1447
+2025-06-09 17:53:57.690 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:53:57.701 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:53:59.965 +03:00 [INF] Getting out of stock products
+2025-06-09 17:53:59.966 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:53:59.973 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:55:36.942 +03:00 [INF] Getting out of stock products
+2025-06-09 17:55:36.942 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:55:36.960 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:55:40.469 +03:00 [INF] Getting out of stock products
+2025-06-09 17:55:40.469 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:55:40.481 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:55:41.520 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:55:41.520 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:55:41.530 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:56:04.296 +03:00 [INF] Updating stock for product ID: 317
+2025-06-09 17:56:04.296 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:56:04.312 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:56:08.078 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:56:08.078 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:56:08.096 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:56:12.488 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:56:12.488 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:56:12.496 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:56:23.407 +03:00 [INF] Updating stock for product ID: 342
+2025-06-09 17:56:23.407 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:56:23.413 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:56:25.144 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:56:25.144 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:56:25.153 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:56:28.026 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:56:28.026 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:56:28.033 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:57:42.979 +03:00 [INF] Application starting.
+2025-06-09 17:57:43.085 +03:00 [INF] Initializing API client Http
+2025-06-09 17:57:43.086 +03:00 [INF] Initializing API client Http
+2025-06-09 17:57:43.086 +03:00 [INF] Initializing API client Http
+2025-06-09 17:57:43.086 +03:00 [INF] Initializing API client Http
+2025-06-09 17:57:43.086 +03:00 [INF] Initializing API client Http
+2025-06-09 17:57:43.086 +03:00 [INF] Initializing API client Http
+2025-06-09 17:57:43.094 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 17:57:43.210 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:57:44.849 +03:00 [INF] Getting out of stock products
+2025-06-09 17:57:44.850 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:57:44.868 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:57:46.835 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:57:46.835 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:57:46.846 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:57:52.873 +03:00 [INF] Updating stock for product ID: 342
+2025-06-09 17:57:52.875 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:57:52.890 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:57:54.761 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:57:54.761 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:57:54.773 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:58:19.634 +03:00 [INF] Updating stock for product ID: 72
+2025-06-09 17:58:19.634 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:58:19.650 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:58:22.236 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:58:22.236 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:58:22.245 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:58:33.888 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:58:33.888 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:58:33.897 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:58:44.672 +03:00 [INF] Updating stock for product ID: 1144
+2025-06-09 17:58:44.672 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:58:44.717 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:58:46.546 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:58:46.546 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:58:46.554 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:58:58.336 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:58:58.336 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:58:58.349 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:59:06.989 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:59:06.989 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:59:06.997 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:59:08.789 +03:00 [INF] Getting out of stock products
+2025-06-09 17:59:08.789 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:59:08.797 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:59:14.890 +03:00 [INF] Getting out of stock products
+2025-06-09 17:59:14.890 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:59:14.897 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:59:22.558 +03:00 [INF] Updating stock for product ID: 2601
+2025-06-09 17:59:22.558 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 17:59:22.571 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 17:59:24.448 +03:00 [INF] Getting out of stock products
+2025-06-09 17:59:24.448 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:59:24.454 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:59:28.874 +03:00 [INF] Getting out of stock products
+2025-06-09 17:59:28.874 +03:00 [INF] Sending GET request to /api/Products/OutOfStockProducts with query string: 
+2025-06-09 17:59:28.880 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:59:30.141 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 17:59:30.141 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 17:59:30.149 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 17:59:38.453 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 17:59:38.454 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 17:59:38.458 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 17:59:38.459 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 17:59:38.486 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:59:38.487 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:59:38.533 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 17:59:38.571 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 17:59:38.571 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 17:59:38.634 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:01:53.142 +03:00 [INF] Application starting.
+2025-06-09 18:01:53.243 +03:00 [INF] Initializing API client Http
+2025-06-09 18:01:53.243 +03:00 [INF] Initializing API client Http
+2025-06-09 18:01:53.243 +03:00 [INF] Initializing API client Http
+2025-06-09 18:01:53.243 +03:00 [INF] Initializing API client Http
+2025-06-09 18:01:53.243 +03:00 [INF] Initializing API client Http
+2025-06-09 18:01:53.243 +03:00 [INF] Initializing API client Http
+2025-06-09 18:01:53.251 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:01:53.410 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:01:55.182 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 18:01:55.182 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 18:01:55.213 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:02:06.408 +03:00 [INF] Updating stock for product ID: 224
+2025-06-09 18:02:06.409 +03:00 [INF] Sending PUT request to /api/Products/UpdateProductStock with data: ShoppingAppDB.Models.UpdateProductStockRequest and query string: 
+2025-06-09 18:02:06.424 +03:00 [INF] Handling response errors for status code: "NoContent"
+2025-06-09 18:02:08.715 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 18:02:08.715 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 18:02:08.745 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:02:14.033 +03:00 [INF] Getting low stock products with threshold: 5
+2025-06-09 18:02:14.033 +03:00 [INF] Sending GET request to /api/Products/LowStockProducts with query string: threshold=5
+2025-06-09 18:02:14.060 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:02:27.430 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:02:27.431 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:02:27.436 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:02:27.436 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:02:27.455 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:02:27.456 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:02:27.504 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:02:27.536 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:02:27.536 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:02:27.586 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:02:29.845 +03:00 [INF] Application starting.
+2025-06-09 18:02:29.950 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:29.950 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:29.950 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:29.950 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:29.950 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:29.950 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:29.958 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:02:30.056 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:02:35.379 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:02:35.380 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:02:35.387 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:02:35.388 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:02:35.401 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:02:35.402 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:02:35.445 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:02:35.478 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:02:35.478 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:02:35.528 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:02:45.895 +03:00 [INF] Application starting.
+2025-06-09 18:02:45.997 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:45.997 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:45.997 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:45.997 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:45.997 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:45.997 +03:00 [INF] Initializing API client Http
+2025-06-09 18:02:46.006 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:02:46.110 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:02:51.188 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:02:51.190 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:02:51.197 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:02:51.197 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:02:51.211 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:02:51.212 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:02:51.262 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:02:51.294 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:02:51.295 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:02:51.351 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:03:10.576 +03:00 [INF] Application starting.
+2025-06-09 18:03:10.709 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:10.709 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:10.710 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:10.710 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:10.710 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:10.710 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:10.718 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:03:10.883 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:03:18.722 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:03:18.723 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:03:18.734 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:03:18.735 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:03:18.748 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:03:18.748 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:03:18.798 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:03:18.829 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:03:18.830 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:03:18.880 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:03:26.793 +03:00 [INF] Application starting.
+2025-06-09 18:03:26.901 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:26.901 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:26.901 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:26.902 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:26.902 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:26.902 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:26.933 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:03:27.046 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:03:34.038 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:03:34.039 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:03:34.045 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:03:34.046 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:03:34.058 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:03:34.059 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:03:34.106 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:03:34.138 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:03:34.139 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:03:34.192 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:03:43.937 +03:00 [INF] Application starting.
+2025-06-09 18:03:44.053 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:44.053 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:44.053 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:44.053 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:44.053 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:44.053 +03:00 [INF] Initializing API client Http
+2025-06-09 18:03:44.062 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:03:44.196 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:03:51.245 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:03:51.246 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:03:51.254 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:03:51.254 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:03:51.267 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:03:51.268 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:03:51.318 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:03:51.355 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:03:51.355 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:03:51.411 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:05:17.327 +03:00 [INF] Application starting.
+2025-06-09 18:05:17.434 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:17.434 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:17.434 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:17.434 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:17.435 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:17.435 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:17.443 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:05:17.560 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:05:25.796 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:05:25.797 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:05:25.805 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:05:25.805 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:05:25.820 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:05:25.821 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:05:25.874 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:05:25.909 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:05:25.910 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:05:25.964 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:05:40.203 +03:00 [INF] Application starting.
+2025-06-09 18:05:40.325 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:40.326 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:40.326 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:40.326 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:40.326 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:40.326 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:40.334 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:05:40.436 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:05:44.021 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:05:44.023 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:05:44.032 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:05:44.032 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:05:44.047 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:05:44.048 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:05:44.094 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:05:44.129 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:05:44.129 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:05:44.179 +03:00 [ERR] User with ID: 0 is already logged out or token expired
+2025-06-09 18:05:58.753 +03:00 [INF] Application starting.
+2025-06-09 18:05:58.860 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:58.860 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:58.860 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:58.860 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:58.860 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:58.860 +03:00 [INF] Initializing API client Http
+2025-06-09 18:05:58.868 +03:00 [INF] Sending GET request to /api/Admin/ListAdmins with query string: 
+2025-06-09 18:05:59.014 +03:00 [INF] Handling response errors for status code: "OK"
+2025-06-09 18:06:02.042 +03:00 [INF] Adding new cart for user ID: 0
+2025-06-09 18:06:02.043 +03:00 [INF] Sending POST request to /api/Carts/AddCart with data: ShoppingApp.Api.Models.CartDto
+2025-06-09 18:06:02.051 +03:00 [INF] Logging out user with ID: 0
+2025-06-09 18:06:02.051 +03:00 [INF] Sending POST request to /api/Auth/logout with data: null
+2025-06-09 18:06:02.066 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:06:02.067 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:06:02.115 +03:00 [ERR] Unauthorized to create cart for user ID: 0
+2025-06-09 18:06:02.150 +03:00 [INF] Handling response errors for status code: "Unauthorized"
+2025-06-09 18:06:02.150 +03:00 [ERR] Error response: [Title: ] [Details: ] [Path: ]
+2025-06-09 18:06:02.203 +03:00 [ERR] User with ID: 0 is already logged out or token expired

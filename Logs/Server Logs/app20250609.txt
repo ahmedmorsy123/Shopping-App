@@ -1,0 +1,1229 @@
+2025-06-09 00:00:23.665 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 00:00:23.669 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 00:00:23.669 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 00:00:23.678 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 00:00:28.504 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-09 00:00:28.504 +03:00 [INF] UsersBL GetUserById
+2025-06-09 00:00:28.504 +03:00 [INF] UserDA Getting user by id
+2025-06-09 00:00:29.464 +03:00 [INF] AuthAPI RemoveAdmin called for adminId: 422
+2025-06-09 00:00:29.464 +03:00 [INF] AdminBL RemoveAdminAsync called for adminId: 422
+2025-06-09 00:00:29.466 +03:00 [INF] AdminDA Deleted admin with id 422
+2025-06-09 00:00:29.471 +03:00 [WRN] AuthAPI Failed to remove admin with id: 422
+2025-06-09 00:00:43.079 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-09 00:00:43.079 +03:00 [INF] UsersBL GetUserById
+2025-06-09 00:00:43.079 +03:00 [INF] UserDA Getting user by id
+2025-06-09 00:00:43.084 +03:00 [WRN] UsersAPI There is no user with this id
+2025-06-09 00:00:45.982 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-09 00:00:45.982 +03:00 [INF] UsersBL GetUserById
+2025-06-09 00:00:45.982 +03:00 [INF] UserDA Getting user by id
+2025-06-09 00:00:45.987 +03:00 [WRN] UsersAPI There is no user with this id
+2025-06-09 00:00:52.197 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 00:00:52.197 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 00:00:52.197 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 00:00:52.201 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 00:00:53.549 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 00:00:53.549 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 00:00:53.549 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 00:00:53.553 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 00:00:54.946 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 00:00:54.946 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 00:00:54.946 +03:00 [INF] UserDA Getting all users
+2025-06-09 00:00:54.950 +03:00 [INF] UserDA Found 103 users
+2025-06-09 00:02:08.569 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 00:02:08.569 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 00:02:08.569 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 00:02:08.577 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 00:02:10.572 +03:00 [INF] CartsAPI GetCartsCount called
+2025-06-09 00:02:10.573 +03:00 [INF] CartsBL GetCartsCountAsync called
+2025-06-09 00:02:10.574 +03:00 [INF] CartDA Fetching total carts count
+2025-06-09 00:02:10.595 +03:00 [INF] CartDA Total carts count: 89
+2025-06-09 12:45:05.032 +03:00 [INF] Starting web host
+2025-06-09 12:45:08.103 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-09 12:45:08.110 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-09 12:45:08.480 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 12:45:08.481 +03:00 [INF] Hosting environment: Development
+2025-06-09 12:45:08.481 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-09 12:45:20.003 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 12:45:20.015 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 12:45:20.109 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 12:45:25.515 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 12:46:19.560 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 12:46:19.561 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 12:46:19.561 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 12:46:19.709 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 12:46:34.061 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 12:46:34.064 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 12:46:34.069 +03:00 [INF] UserDA Getting all users
+2025-06-09 12:46:34.303 +03:00 [INF] UserDA Found 103 users
+2025-06-09 12:46:36.275 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 12:46:36.275 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 12:46:36.275 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 12:46:36.288 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 12:52:19.633 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 12:52:19.633 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 12:52:19.633 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 12:52:19.688 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 12:52:29.011 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 12:52:29.013 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 12:52:29.013 +03:00 [INF] UserDA Getting all users
+2025-06-09 12:52:29.032 +03:00 [INF] UserDA Found 103 users
+2025-06-09 12:54:10.351 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 12:54:10.352 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 12:54:10.352 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 12:54:10.366 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 12:54:12.645 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 12:54:12.645 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 12:54:12.645 +03:00 [INF] UserDA Getting all users
+2025-06-09 12:54:12.660 +03:00 [INF] UserDA Found 103 users
+2025-06-09 14:05:29.480 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:05:29.480 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:05:29.480 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:05:29.556 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 14:05:43.455 +03:00 [INF] AuthAPI AddAdmin called for admin: fsd
+2025-06-09 14:05:43.458 +03:00 [INF] AdminBL AddAdminAsync called for admin: fsd
+2025-06-09 14:05:43.464 +03:00 [INF] AdminDA Adding admin
+2025-06-09 14:05:43.985 +03:00 [INF] ServPass Hashing password
+2025-06-09 14:05:45.548 +03:00 [INF] AdminDA Admin added successfully with id 513
+2025-06-09 14:05:53.786 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:05:53.786 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:05:53.786 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:05:53.806 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:05:57.865 +03:00 [INF] AuthAPI RemoveAdmin called for adminId: 513
+2025-06-09 14:05:57.867 +03:00 [INF] AdminBL RemoveAdminAsync called for adminId: 513
+2025-06-09 14:05:57.872 +03:00 [INF] AdminDA Deleted admin with id 513
+2025-06-09 14:05:58.115 +03:00 [INF] AdminDA Admin with id 513 deleted
+2025-06-09 14:06:07.063 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:06:07.063 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:06:07.064 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:06:07.077 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 14:07:23.392 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:07:23.392 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:07:23.392 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:07:23.450 +03:00 [INF] AdminDA Found 2 admins
+2025-06-09 14:07:25.552 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 14:07:25.552 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 14:07:25.552 +03:00 [INF] UserDA Getting all users
+2025-06-09 14:07:25.565 +03:00 [INF] UserDA Found 103 users
+2025-06-09 14:07:28.264 +03:00 [INF] AuthAPI MakeAdmin called for userId: 401
+2025-06-09 14:07:28.267 +03:00 [INF] AdminBL MakeAdminAsync called for userId: 401
+2025-06-09 14:07:28.270 +03:00 [INF] AdminDA Making user with id 401 an admin
+2025-06-09 14:07:28.411 +03:00 [INF] AdminDA User with id 401 is now an admin
+2025-06-09 14:07:31.603 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 14:07:31.603 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 14:07:31.603 +03:00 [INF] UserDA Getting all users
+2025-06-09 14:07:31.666 +03:00 [INF] UserDA Found 102 users
+2025-06-09 14:07:34.373 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:07:34.374 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:07:34.374 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:07:34.388 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:07:41.948 +03:00 [INF] AuthAPI AddAdmin called for admin: fff
+2025-06-09 14:07:41.948 +03:00 [INF] AdminBL AddAdminAsync called for admin: fff
+2025-06-09 14:07:41.948 +03:00 [INF] AdminDA Adding admin
+2025-06-09 14:07:42.011 +03:00 [INF] ServPass Hashing password
+2025-06-09 14:07:42.339 +03:00 [INF] AdminDA Admin added successfully with id 514
+2025-06-09 14:07:44.631 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:07:44.631 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:07:44.631 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:07:44.640 +03:00 [INF] AdminDA Found 4 admins
+2025-06-09 14:07:46.864 +03:00 [INF] AuthAPI RemoveAdmin called for adminId: 514
+2025-06-09 14:07:46.864 +03:00 [INF] AdminBL RemoveAdminAsync called for adminId: 514
+2025-06-09 14:07:46.864 +03:00 [INF] AdminDA Deleted admin with id 514
+2025-06-09 14:07:46.912 +03:00 [INF] AdminDA Admin with id 514 deleted
+2025-06-09 14:07:50.180 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:07:50.180 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:07:50.180 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:07:50.193 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:14:49.176 +03:00 [INF] AuthAPI LoginAPI
+2025-06-09 14:14:49.179 +03:00 [INF] AuthBL Login
+2025-06-09 14:14:49.185 +03:00 [INF] ServAuth Login
+2025-06-09 14:14:49.247 +03:00 [INF] ServPass Verifying password
+2025-06-09 14:14:49.541 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-09 14:14:49.541 +03:00 [INF] ServAuth Creating token response
+2025-06-09 14:14:49.544 +03:00 [INF] ServAuth Creating token
+2025-06-09 14:14:49.560 +03:00 [INF] ServAuth Token created successfully
+2025-06-09 14:14:49.676 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-09 14:14:49.677 +03:00 [INF] ServAuth Generating refresh token
+2025-06-09 14:14:49.691 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-09 14:14:49.725 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-09 14:14:49.911 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-09 14:14:49.912 +03:00 [INF] UsersBL GetUserById
+2025-06-09 14:14:49.916 +03:00 [INF] UserDA Getting user by id
+2025-06-09 14:14:50.745 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:14:50.745 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:14:50.745 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:14:50.796 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:15:15.195 +03:00 [INF] AuthAPI LoginAPI
+2025-06-09 14:15:15.196 +03:00 [INF] AuthBL Login
+2025-06-09 14:15:15.196 +03:00 [INF] ServAuth Login
+2025-06-09 14:15:15.235 +03:00 [INF] ServPass Verifying password
+2025-06-09 14:15:15.557 +03:00 [INF] ServAuth User logged in successfully with id 501
+2025-06-09 14:15:15.557 +03:00 [INF] ServAuth Creating token response
+2025-06-09 14:15:15.557 +03:00 [INF] ServAuth Creating token
+2025-06-09 14:15:15.558 +03:00 [INF] ServAuth Token created successfully
+2025-06-09 14:15:15.558 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-09 14:15:15.558 +03:00 [INF] ServAuth Generating refresh token
+2025-06-09 14:15:15.562 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-09 14:15:15.571 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-09 14:15:15.602 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-09 14:15:15.603 +03:00 [INF] UsersBL GetUserById
+2025-06-09 14:15:15.603 +03:00 [INF] UserDA Getting user by id
+2025-06-09 14:15:16.362 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:15:16.362 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:15:16.362 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:15:16.377 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:16:53.737 +03:00 [INF] UsersAPI AddUserAPI
+2025-06-09 14:16:53.747 +03:00 [INF] UsersBL AddUser
+2025-06-09 14:16:53.753 +03:00 [INF] UserDA Adding user
+2025-06-09 14:16:53.799 +03:00 [INF] ServPass Hashing password
+2025-06-09 14:16:54.084 +03:00 [INF] UserDA User added successfully with id 515
+2025-06-09 14:16:54.084 +03:00 [INF] UsersAPI Added user with id: 0
+2025-06-09 14:17:48.510 +03:00 [INF] AuthAPI LoginAPI
+2025-06-09 14:17:48.511 +03:00 [INF] AuthBL Login
+2025-06-09 14:17:48.511 +03:00 [INF] ServAuth Login
+2025-06-09 14:17:48.581 +03:00 [INF] ServPass Verifying password
+2025-06-09 14:17:48.902 +03:00 [INF] ServAuth User logged in successfully with id 515
+2025-06-09 14:17:48.903 +03:00 [INF] ServAuth Creating token response
+2025-06-09 14:17:48.903 +03:00 [INF] ServAuth Creating token
+2025-06-09 14:17:48.903 +03:00 [INF] ServAuth Token created successfully
+2025-06-09 14:17:48.903 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-09 14:17:48.903 +03:00 [INF] ServAuth Generating refresh token
+2025-06-09 14:17:48.905 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-09 14:17:48.917 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-09 14:17:48.951 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-09 14:17:48.951 +03:00 [INF] UsersBL GetUserById
+2025-06-09 14:17:48.951 +03:00 [INF] UserDA Getting user by id
+2025-06-09 14:17:49.755 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-09 14:17:49.758 +03:00 [INF] CartsBL Get User Cart
+2025-06-09 14:17:49.770 +03:00 [INF] ProductsAPI GetProducts
+2025-06-09 14:17:49.773 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-09 14:17:49.806 +03:00 [INF] CartDA Get User Cart
+2025-06-09 14:17:49.806 +03:00 [INF] ProductDA Get Products
+2025-06-09 14:17:50.047 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-09 14:17:50.148 +03:00 [WRN] CartsAPI There is no cart for this user
+2025-06-09 14:17:54.796 +03:00 [INF] OrdersAPI Get User Orders
+2025-06-09 14:17:54.798 +03:00 [INF] OrdersBL GetUserOrders
+2025-06-09 14:17:54.805 +03:00 [INF] OrderDA Get User Orders
+2025-06-09 14:17:54.805 +03:00 [INF] UserDA Getting user by id
+2025-06-09 14:17:54.908 +03:00 [WRN] OrdersAPI There is no orders for this user
+2025-06-09 14:19:38.308 +03:00 [INF] AuthAPI LoginAPI
+2025-06-09 14:19:38.308 +03:00 [INF] AuthBL Login
+2025-06-09 14:19:38.308 +03:00 [INF] ServAuth Login
+2025-06-09 14:19:38.322 +03:00 [INF] ServPass Verifying password
+2025-06-09 14:19:38.639 +03:00 [INF] ServAuth User logged in successfully with id 515
+2025-06-09 14:19:38.639 +03:00 [INF] ServAuth Creating token response
+2025-06-09 14:19:38.639 +03:00 [INF] ServAuth Creating token
+2025-06-09 14:19:38.640 +03:00 [INF] ServAuth Token created successfully
+2025-06-09 14:19:38.641 +03:00 [INF] ServAuth Generating and saving refresh token
+2025-06-09 14:19:38.641 +03:00 [INF] ServAuth Generating refresh token
+2025-06-09 14:19:38.644 +03:00 [INF] ServAuth Refresh token saved successfully
+2025-06-09 14:19:38.655 +03:00 [INF] AuthAPI User logged in successfully
+2025-06-09 14:19:38.678 +03:00 [INF] UsersAPI GetUserAPI
+2025-06-09 14:19:38.678 +03:00 [INF] UsersBL GetUserById
+2025-06-09 14:19:38.678 +03:00 [INF] UserDA Getting user by id
+2025-06-09 14:19:39.264 +03:00 [INF] CartsAPI Get Current User Cart
+2025-06-09 14:19:39.264 +03:00 [INF] CartsBL Get User Cart
+2025-06-09 14:19:39.264 +03:00 [INF] CartDA Get User Cart
+2025-06-09 14:19:39.309 +03:00 [INF] ProductsAPI GetProducts
+2025-06-09 14:19:39.309 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-09 14:19:39.309 +03:00 [INF] ProductDA Get Products
+2025-06-09 14:19:39.336 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-09 14:19:39.347 +03:00 [WRN] CartsAPI There is no cart for this user
+2025-06-09 14:19:41.465 +03:00 [INF] OrdersAPI Get User Orders
+2025-06-09 14:19:41.465 +03:00 [INF] OrdersBL GetUserOrders
+2025-06-09 14:19:41.465 +03:00 [INF] OrderDA Get User Orders
+2025-06-09 14:19:41.465 +03:00 [INF] UserDA Getting user by id
+2025-06-09 14:19:41.551 +03:00 [WRN] OrdersAPI There is no orders for this user
+2025-06-09 14:19:49.053 +03:00 [INF] ProductsAPI GetProducts
+2025-06-09 14:19:49.053 +03:00 [INF] ProductsBL GetProductsPaginated
+2025-06-09 14:19:49.053 +03:00 [INF] ProductDA Get Products
+2025-06-09 14:19:49.066 +03:00 [INF] ProductDA Returned: page 1, pageSize 12
+2025-06-09 14:19:53.330 +03:00 [INF] CartsAPI Add Cart
+2025-06-09 14:19:53.332 +03:00 [INF] CartsBL Add Cart
+2025-06-09 14:19:53.334 +03:00 [INF] CartDA Add Cart
+2025-06-09 14:19:53.417 +03:00 [INF] CartDA Cart Added
+2025-06-09 14:19:53.523 +03:00 [INF] CartDA Cart Items Added
+2025-06-09 14:19:53.523 +03:00 [INF] CartsAPI Cart was added with id 509
+2025-06-09 14:19:55.229 +03:00 [INF] CartsAPI Update Cart
+2025-06-09 14:19:55.231 +03:00 [INF] CartsBL Update Cart
+2025-06-09 14:19:55.237 +03:00 [INF] CartDA Update Cart
+2025-06-09 14:19:55.451 +03:00 [INF] CartDA Cart Updated
+2025-06-09 14:19:55.452 +03:00 [INF] CartsAPI Cart was updated
+2025-06-09 14:19:57.481 +03:00 [INF] OrdersAPI Add Order
+2025-06-09 14:19:57.483 +03:00 [INF] OrdersBL AddOrder
+2025-06-09 14:19:57.492 +03:00 [INF] OrderDA Add Order
+2025-06-09 14:19:57.553 +03:00 [INF] OrderDA Order Added with id 0
+2025-06-09 14:19:57.811 +03:00 [INF] OrderDA OrderItem Added with id 0
+2025-06-09 14:19:57.922 +03:00 [INF] CartDA Get Cart Id By User Id
+2025-06-09 14:19:57.955 +03:00 [INF] CartDA Delete Cart
+2025-06-09 14:19:57.983 +03:00 [INF] CartDA Cart Deleted
+2025-06-09 14:20:00.314 +03:00 [INF] OrdersAPI Get User Orders
+2025-06-09 14:20:00.314 +03:00 [INF] OrdersBL GetUserOrders
+2025-06-09 14:20:00.314 +03:00 [INF] OrderDA Get User Orders
+2025-06-09 14:20:00.314 +03:00 [INF] UserDA Getting user by id
+2025-06-09 14:20:01.895 +03:00 [INF] CartsAPI Add Cart
+2025-06-09 14:20:01.895 +03:00 [INF] CartsBL Add Cart
+2025-06-09 14:20:01.895 +03:00 [INF] CartDA Add Cart
+2025-06-09 14:20:01.903 +03:00 [INF] CartDA Cart Added
+2025-06-09 14:20:01.903 +03:00 [INF] CartDA Cart Items Added
+2025-06-09 14:20:01.903 +03:00 [INF] CartsAPI Cart was added with id 510
+2025-06-09 14:20:01.909 +03:00 [INF] AuthBL Logout
+2025-06-09 14:20:01.912 +03:00 [INF] ServAuth Logout
+2025-06-09 14:20:01.923 +03:00 [INF] ServAuth User logged out successfully with id 515
+2025-06-09 14:23:10.084 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:23:10.084 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:23:10.084 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:23:10.100 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:23:14.010 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 14:23:14.011 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 14:23:14.011 +03:00 [INF] UserDA Getting all users
+2025-06-09 14:23:14.015 +03:00 [INF] UserDA Found 103 users
+2025-06-09 14:31:54.709 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:31:54.709 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:31:54.709 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:31:54.740 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:32:14.230 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 14:32:14.230 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 14:32:14.230 +03:00 [INF] UserDA Getting all users
+2025-06-09 14:32:14.240 +03:00 [INF] UserDA Found 103 users
+2025-06-09 14:33:14.758 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:33:14.758 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:33:14.758 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:33:14.765 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:33:17.808 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 14:33:17.809 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 14:33:17.812 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 14:33:17.882 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 14:34:09.716 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:34:09.717 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:34:09.717 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:34:09.723 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:34:12.008 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 14:34:12.009 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 14:34:12.009 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 14:34:12.058 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 14:37:42.822 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:37:42.822 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:37:42.822 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:37:42.827 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:37:45.836 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 14:37:45.836 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 14:37:45.836 +03:00 [INF] UserDA Getting all users
+2025-06-09 14:37:45.841 +03:00 [INF] UserDA Found 103 users
+2025-06-09 14:37:48.515 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 14:37:48.515 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 14:37:48.515 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 14:37:48.574 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 14:38:27.532 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:38:27.532 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:38:27.532 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:38:27.537 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:38:29.741 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 14:38:29.741 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 14:38:29.741 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 14:38:29.791 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 14:39:18.449 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 14:39:18.449 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 14:39:18.449 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 14:39:18.454 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 14:39:20.238 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 14:39:20.238 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 14:39:20.238 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 14:39:20.257 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:02:50.995 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:02:50.995 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:02:50.995 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:02:51.183 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:03:20.422 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:03:20.423 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:03:20.423 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:03:20.439 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:03:24.568 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:03:24.568 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:03:24.568 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:03:24.731 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:03:51.144 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:03:51.144 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:03:51.144 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:03:51.156 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:03:54.349 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:03:54.349 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:03:54.349 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:03:54.430 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:04:07.552 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:04:07.552 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:04:07.552 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:04:07.561 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:04:10.577 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:04:10.577 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:04:10.577 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:04:10.777 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:04:24.501 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:04:24.501 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:04:24.501 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:04:24.521 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:04:27.656 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:04:27.656 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:04:27.656 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:04:27.796 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:04:40.343 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:04:40.344 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:04:40.344 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:04:40.353 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:04:43.401 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:04:43.401 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:04:43.401 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:04:43.495 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:05:21.131 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:05:21.131 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:05:21.131 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:05:21.149 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:05:25.180 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:05:25.180 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:05:25.180 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:05:25.354 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:05:52.812 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:05:52.812 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:05:52.812 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:05:52.823 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:06:13.496 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:06:13.496 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:06:13.496 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:06:13.509 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:06:16.324 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:06:16.324 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:06:16.324 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:06:16.411 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:06:30.828 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:06:30.828 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:06:30.828 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:06:30.851 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:06:33.429 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:06:33.429 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:06:33.429 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:06:33.570 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:06:44.004 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:06:44.004 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:06:44.004 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:06:44.015 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:06:46.742 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:06:46.742 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:06:46.742 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:06:46.824 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:07:46.406 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:07:46.406 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:07:46.406 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:07:46.460 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:07:49.072 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:07:49.072 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:07:49.072 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:07:49.211 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:08:45.980 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:08:45.980 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:08:45.980 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:08:46.044 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:08:49.709 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:08:49.709 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:08:49.710 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:08:49.906 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:09:27.795 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:09:27.795 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:09:27.796 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:09:27.806 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:09:31.248 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:09:31.248 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:09:31.248 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:09:31.337 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:09:33.939 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 15:09:33.939 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 15:09:33.939 +03:00 [INF] UserDA Getting all users
+2025-06-09 15:09:33.954 +03:00 [INF] UserDA Found 103 users
+2025-06-09 15:09:36.597 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:09:36.597 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:09:36.597 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:09:36.605 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:09:44.981 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:09:44.982 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:09:44.982 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:09:45.163 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:11:13.202 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:11:13.202 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:11:13.202 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:11:13.226 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:11:16.744 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:11:16.744 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:11:16.744 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:11:16.954 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:14:09.748 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:14:09.749 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:14:09.749 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:14:09.774 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:14:12.624 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:14:12.624 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:14:12.624 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:14:12.774 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:14:17.047 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:14:17.048 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:14:17.048 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:14:17.135 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:18:49.016 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:18:49.016 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:18:49.016 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:18:49.083 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:20:46.640 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:20:46.641 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:20:46.641 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:20:46.669 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:20:49.711 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:20:49.711 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:20:49.711 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:20:49.867 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:23:14.361 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:23:14.361 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:23:14.361 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:23:14.382 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:23:18.088 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:23:18.088 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:23:18.088 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:23:18.194 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:23:35.253 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:23:35.253 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:23:35.253 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:23:35.292 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:23:40.840 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:23:40.841 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:23:40.841 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:23:40.941 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:34:42.566 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:34:42.566 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:34:42.566 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:34:42.661 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:42:02.401 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:42:02.401 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:42:02.401 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:42:02.468 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:42:07.328 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:42:07.328 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:42:07.328 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:42:07.370 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:42:07.370 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:42:07.370 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:42:07.572 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:42:07.574 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:42:10.909 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: Pending
+2025-06-09 15:42:10.909 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: Pending
+2025-06-09 15:42:10.909 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: Pending
+2025-06-09 15:42:11.050 +03:00 [INF] OrderDA Found 61 orders for the specified duration and status
+2025-06-09 15:42:14.750 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: Last7Days, status: Pending
+2025-06-09 15:42:14.750 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: Last7Days, status: Pending
+2025-06-09 15:42:14.750 +03:00 [INF] OrderDA Fetching orders for duration: Last7Days and status: Pending
+2025-06-09 15:42:14.784 +03:00 [INF] OrderDA Found 1 orders for the specified duration and status
+2025-06-09 15:42:18.429 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: Last7Days, status: Processing
+2025-06-09 15:42:18.430 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: Last7Days, status: Processing
+2025-06-09 15:42:18.430 +03:00 [INF] OrderDA Fetching orders for duration: Last7Days and status: Processing
+2025-06-09 15:42:18.462 +03:00 [WRN] OrderDA No orders found for the specified duration and status
+2025-06-09 15:42:18.462 +03:00 [WRN] OrdersAPI No orders found for the specified duration and status
+2025-06-09 15:42:59.657 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:42:59.657 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:42:59.657 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:42:59.692 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 15:43:03.281 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:43:03.281 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:43:03.281 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:43:03.296 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 15:43:03.297 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 15:43:03.297 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 15:43:03.441 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:43:03.443 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 15:43:06.765 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: Cancelled
+2025-06-09 15:43:06.765 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: Cancelled
+2025-06-09 15:43:06.766 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: Cancelled
+2025-06-09 15:43:06.813 +03:00 [INF] OrderDA Found 41 orders for the specified duration and status
+2025-06-09 15:43:10.735 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: Last30Days, status: Cancelled
+2025-06-09 15:43:10.735 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: Last30Days, status: Cancelled
+2025-06-09 15:43:10.735 +03:00 [INF] OrderDA Fetching orders for duration: Last30Days and status: Cancelled
+2025-06-09 15:43:10.747 +03:00 [WRN] OrderDA No orders found for the specified duration and status
+2025-06-09 15:43:10.747 +03:00 [WRN] OrdersAPI No orders found for the specified duration and status
+2025-06-09 15:43:13.497 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: Last30Days, status: Pending
+2025-06-09 15:43:13.497 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: Last30Days, status: Pending
+2025-06-09 15:43:13.497 +03:00 [INF] OrderDA Fetching orders for duration: Last30Days and status: Pending
+2025-06-09 15:43:13.511 +03:00 [INF] OrderDA Found 18 orders for the specified duration and status
+2025-06-09 15:43:21.094 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 15:43:21.095 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 15:43:21.095 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 15:43:21.106 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:01:59.377 +03:00 [INF] Starting web host
+2025-06-09 16:02:00.613 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-09 16:02:00.615 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-09 16:02:00.687 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 16:02:00.687 +03:00 [INF] Hosting environment: Development
+2025-06-09 16:02:00.687 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-09 16:02:10.261 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 16:02:10.267 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 16:02:10.316 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 16:02:11.667 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:02:15.503 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:02:15.504 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:02:15.506 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:02:15.521 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:02:15.521 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:02:15.521 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:02:15.711 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:02:15.711 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:02:17.451 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisMonth, status: All
+2025-06-09 16:02:17.452 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisMonth, status: All
+2025-06-09 16:02:17.452 +03:00 [INF] OrderDA Fetching orders for duration: ThisMonth and status: All
+2025-06-09 16:02:17.489 +03:00 [INF] OrderDA Found 1 orders for the specified duration and status
+2025-06-09 16:02:19.480 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisMonth, status: Delivered
+2025-06-09 16:02:19.480 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisMonth, status: Delivered
+2025-06-09 16:02:19.480 +03:00 [INF] OrderDA Fetching orders for duration: ThisMonth and status: Delivered
+2025-06-09 16:02:19.518 +03:00 [WRN] OrderDA No orders found for the specified duration and status
+2025-06-09 16:02:19.518 +03:00 [WRN] OrdersAPI No orders found for the specified duration and status
+2025-06-09 16:02:22.193 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisMonth, status: Cancelled
+2025-06-09 16:02:22.194 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisMonth, status: Cancelled
+2025-06-09 16:02:22.194 +03:00 [INF] OrderDA Fetching orders for duration: ThisMonth and status: Cancelled
+2025-06-09 16:02:22.199 +03:00 [WRN] OrderDA No orders found for the specified duration and status
+2025-06-09 16:02:22.199 +03:00 [WRN] OrdersAPI No orders found for the specified duration and status
+2025-06-09 16:02:23.840 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisMonth, status: Processing
+2025-06-09 16:02:23.840 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisMonth, status: Processing
+2025-06-09 16:02:23.840 +03:00 [INF] OrderDA Fetching orders for duration: ThisMonth and status: Processing
+2025-06-09 16:02:23.847 +03:00 [WRN] OrderDA No orders found for the specified duration and status
+2025-06-09 16:02:23.847 +03:00 [WRN] OrdersAPI No orders found for the specified duration and status
+2025-06-09 16:02:25.340 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisMonth, status: Pending
+2025-06-09 16:02:25.340 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisMonth, status: Pending
+2025-06-09 16:02:25.340 +03:00 [INF] OrderDA Fetching orders for duration: ThisMonth and status: Pending
+2025-06-09 16:02:25.347 +03:00 [INF] OrderDA Found 1 orders for the specified duration and status
+2025-06-09 16:02:27.695 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: Pending
+2025-06-09 16:02:27.695 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: Pending
+2025-06-09 16:02:27.695 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: Pending
+2025-06-09 16:02:27.710 +03:00 [INF] OrderDA Found 33 orders for the specified duration and status
+2025-06-09 16:02:29.018 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: Cancelled
+2025-06-09 16:02:29.018 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: Cancelled
+2025-06-09 16:02:29.018 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: Cancelled
+2025-06-09 16:02:29.026 +03:00 [INF] OrderDA Found 17 orders for the specified duration and status
+2025-06-09 16:02:30.685 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: Processing
+2025-06-09 16:02:30.685 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: Processing
+2025-06-09 16:02:30.685 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: Processing
+2025-06-09 16:02:30.696 +03:00 [INF] OrderDA Found 24 orders for the specified duration and status
+2025-06-09 16:02:38.478 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 16:02:38.479 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 16:02:38.480 +03:00 [INF] UserDA Getting all users
+2025-06-09 16:02:38.489 +03:00 [INF] UserDA Found 103 users
+2025-06-09 16:02:41.974 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 16:02:41.974 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 16:02:41.974 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 16:02:41.978 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:02:50.976 +03:00 [INF] CartsAPI GetCartsCount called
+2025-06-09 16:02:50.977 +03:00 [INF] CartsBL GetCartsCountAsync called
+2025-06-09 16:02:50.978 +03:00 [INF] CartDA Fetching total carts count
+2025-06-09 16:02:50.995 +03:00 [INF] CartDA Total carts count: 90
+2025-06-09 16:26:13.217 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 16:26:13.218 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 16:26:13.218 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 16:26:13.264 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:26:17.396 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:26:17.396 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:26:17.396 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:26:17.401 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:26:17.401 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:26:17.401 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:26:17.441 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:26:17.448 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:29:41.420 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 16:29:41.420 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 16:29:41.420 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 16:29:41.435 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:29:45.777 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:29:45.778 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:29:45.778 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:29:45.788 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:29:45.788 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:29:45.788 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:29:45.836 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:29:45.838 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:30:35.198 +03:00 [INF] Starting web host
+2025-06-09 16:30:36.042 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-09 16:30:36.044 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-09 16:30:36.114 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 16:30:36.115 +03:00 [INF] Hosting environment: Development
+2025-06-09 16:30:36.115 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-09 16:30:39.306 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 16:30:39.308 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 16:30:39.325 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 16:30:40.653 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:30:43.326 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:30:43.326 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:30:43.327 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:30:43.327 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:30:43.330 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:30:43.330 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:30:43.536 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:30:43.536 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:30:45.721 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 863
+2025-06-09 16:30:45.722 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 863
+2025-06-09 16:30:45.722 +03:00 [INF] OrderDA Delivering order with id 863
+2025-06-09 16:30:45.948 +03:00 [INF] OrderDA Order 863 has been delivered
+2025-06-09 16:30:45.950 +03:00 [INF] GetOrderStatus: 863
+2025-06-09 16:30:45.958 +03:00 [INF] Can't proccess order because it is not pending
+2025-06-09 16:54:16.895 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 16:54:16.897 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 16:54:16.897 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 16:54:16.933 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:54:19.500 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:54:19.502 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:54:19.502 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:54:19.503 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:54:19.503 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:54:19.503 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:54:19.560 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:54:19.561 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:54:23.153 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 866
+2025-06-09 16:54:23.153 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 866
+2025-06-09 16:54:23.154 +03:00 [INF] OrderDA Delivering order with id 866
+2025-06-09 16:54:23.165 +03:00 [INF] OrderDA Order 866 has been delivered
+2025-06-09 16:54:23.165 +03:00 [INF] GetOrderStatus: 866
+2025-06-09 16:54:23.168 +03:00 [INF] Can't proccess order because it is not pending
+2025-06-09 16:55:14.137 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 16:55:14.137 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 16:55:14.137 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 16:55:14.147 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:55:16.473 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:55:16.473 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:55:16.473 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:55:16.479 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:55:16.480 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:55:16.480 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:55:16.524 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:55:16.535 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:55:37.070 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 862
+2025-06-09 16:55:37.071 +03:00 [INF] OrdersBL ShipOrderAsync called for orderId: 862
+2025-06-09 16:55:37.071 +03:00 [INF] OrderDA Shipping order with id 862
+2025-06-09 16:55:37.080 +03:00 [INF] OrderDA Order 862 has been shipped
+2025-06-09 16:55:37.080 +03:00 [INF] GetOrderStatus: 862
+2025-06-09 16:55:37.087 +03:00 [INF] Can't ship order because it is not processed
+2025-06-09 16:55:57.722 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 862
+2025-06-09 16:55:57.722 +03:00 [INF] OrdersBL ShipOrderAsync called for orderId: 862
+2025-06-09 16:55:57.722 +03:00 [INF] OrderDA Shipping order with id 862
+2025-06-09 16:55:57.762 +03:00 [INF] OrderDA Order 862 has been shipped
+2025-06-09 16:55:57.762 +03:00 [INF] GetOrderStatus: 862
+2025-06-09 16:55:57.766 +03:00 [INF] Can't ship order because it is not processed
+2025-06-09 16:58:02.280 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 16:58:02.280 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 16:58:02.280 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 16:58:02.287 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 16:58:04.498 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:58:04.498 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:58:04.498 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:58:04.534 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 16:58:04.534 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 16:58:04.534 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 16:58:04.582 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:58:04.583 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 16:58:07.662 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 862
+2025-06-09 16:58:07.662 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 862
+2025-06-09 16:58:07.662 +03:00 [INF] OrderDA Delivering order with id 862
+2025-06-09 16:58:07.669 +03:00 [INF] OrderDA Order 862 has been delivered
+2025-06-09 16:58:07.669 +03:00 [INF] GetOrderStatus: 862
+2025-06-09 16:58:07.672 +03:00 [INF] Can't proccess order because it is not pending
+2025-06-09 17:00:33.138 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:00:33.139 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:00:33.141 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:00:33.158 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:00:36.710 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:00:36.710 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:00:36.710 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:00:36.716 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:00:36.716 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:00:36.716 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:00:36.768 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:00:36.768 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:00:41.655 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 868
+2025-06-09 17:00:41.655 +03:00 [INF] OrdersBL ShipOrderAsync called for orderId: 868
+2025-06-09 17:00:41.655 +03:00 [INF] OrderDA Shipping order with id 868
+2025-06-09 17:00:41.663 +03:00 [INF] OrderDA Order 868 has been shipped
+2025-06-09 17:00:41.663 +03:00 [INF] GetOrderStatus: 868
+2025-06-09 17:00:41.666 +03:00 [INF] Can't ship order because it is not processed
+2025-06-09 17:01:08.954 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 870
+2025-06-09 17:01:08.955 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 870
+2025-06-09 17:01:08.955 +03:00 [INF] OrderDA Delivering order with id 870
+2025-06-09 17:01:08.967 +03:00 [INF] OrderDA Order 870 has been delivered
+2025-06-09 17:01:08.967 +03:00 [INF] GetOrderStatus: 870
+2025-06-09 17:01:08.969 +03:00 [INF] Can't proccess order because it is not pending
+2025-06-09 17:01:34.988 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:01:34.988 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:01:34.988 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:01:34.996 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:01:37.419 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:01:37.419 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:01:37.419 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:01:37.437 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:01:37.437 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:01:37.438 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:01:37.471 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:01:37.475 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:01:40.823 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 868
+2025-06-09 17:01:40.823 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 868
+2025-06-09 17:01:40.823 +03:00 [INF] OrderDA Delivering order with id 868
+2025-06-09 17:01:40.832 +03:00 [INF] OrderDA Order 868 has been delivered
+2025-06-09 17:01:40.832 +03:00 [INF] GetOrderStatus: 868
+2025-06-09 17:01:40.835 +03:00 [INF] Can't proccess order because it is not pending
+2025-06-09 17:02:00.092 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:02:00.092 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:02:00.092 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:02:00.097 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:02:02.117 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:02:02.117 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:02:02.117 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:02:02.124 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:02:02.124 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:02:02.124 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:02:02.150 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:02:02.154 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:02:06.333 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 873
+2025-06-09 17:02:06.333 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 873
+2025-06-09 17:02:06.333 +03:00 [INF] OrderDA Delivering order with id 873
+2025-06-09 17:02:06.339 +03:00 [INF] OrderDA Order 873 has been delivered
+2025-06-09 17:02:06.339 +03:00 [INF] GetOrderStatus: 873
+2025-06-09 17:02:06.341 +03:00 [INF] Can't proccess order because it is not pending
+2025-06-09 17:03:33.181 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 872
+2025-06-09 17:03:33.181 +03:00 [INF] OrdersBL ShipOrderAsync called for orderId: 872
+2025-06-09 17:03:33.181 +03:00 [INF] OrderDA Shipping order with id 872
+2025-06-09 17:03:33.197 +03:00 [INF] OrderDA Order 872 has been shipped
+2025-06-09 17:03:33.197 +03:00 [INF] GetOrderStatus: 872
+2025-06-09 17:03:33.201 +03:00 [INF] Can't ship order because it is not processed
+2025-06-09 17:03:41.188 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 872
+2025-06-09 17:03:41.189 +03:00 [INF] OrdersBL ShipOrderAsync called for orderId: 872
+2025-06-09 17:03:41.189 +03:00 [INF] OrderDA Shipping order with id 872
+2025-06-09 17:03:41.192 +03:00 [INF] OrderDA Order 872 has been shipped
+2025-06-09 17:03:41.192 +03:00 [INF] GetOrderStatus: 872
+2025-06-09 17:03:41.193 +03:00 [INF] Can't ship order because it is not processed
+2025-06-09 17:05:33.831 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:05:33.831 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:05:33.832 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:05:33.876 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:07:26.519 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 872
+2025-06-09 17:07:26.520 +03:00 [INF] OrdersBL ShipOrderAsync called for orderId: 872
+2025-06-09 17:07:26.520 +03:00 [INF] OrderDA Shipping order with id 872
+2025-06-09 17:07:26.525 +03:00 [INF] OrderDA Order 872 has been shipped
+2025-06-09 17:07:26.526 +03:00 [INF] GetOrderStatus: 872
+2025-06-09 17:07:26.528 +03:00 [INF] Can't ship order because it is not processed
+2025-06-09 17:07:56.469 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:07:56.472 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:07:56.472 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:07:56.489 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:07:56.489 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:07:56.489 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:07:56.489 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:07:56.489 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:07:56.489 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:07:56.541 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:07:56.541 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:07:56.542 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:09:15.774 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:09:15.775 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:09:15.775 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:09:15.798 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:09:17.499 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:09:17.499 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:09:17.499 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:09:17.506 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:09:17.506 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:09:17.506 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:09:17.535 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:09:17.550 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:09:56.206 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 872
+2025-06-09 17:09:56.208 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 872
+2025-06-09 17:09:56.208 +03:00 [INF] OrderDA Delivering order with id 872
+2025-06-09 17:09:56.225 +03:00 [INF] OrderDA Order 872 has been delivered
+2025-06-09 17:09:56.225 +03:00 [INF] GetOrderStatus: 872
+2025-06-09 17:09:56.229 +03:00 [INF] Can't proccess order because it is not pending
+2025-06-09 17:10:59.541 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:10:59.541 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:10:59.541 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:10:59.563 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:10:59.564 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:10:59.564 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:10:59.564 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:10:59.564 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:10:59.564 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:10:59.606 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:10:59.606 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:10:59.615 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:11:07.732 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:11:07.732 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:11:07.732 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:11:07.738 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:11:07.738 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:11:07.738 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:11:07.738 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:11:07.739 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:11:07.739 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:11:07.757 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:11:07.762 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:11:07.763 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:11:22.317 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:11:22.317 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:11:22.317 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:11:22.325 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:11:23.961 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:11:23.961 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:11:23.961 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:11:23.969 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:11:23.969 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:11:23.969 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:11:23.985 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:11:23.991 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:11:36.700 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 881
+2025-06-09 17:11:36.700 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 881
+2025-06-09 17:11:36.700 +03:00 [INF] OrderDA Delivering order with id 881
+2025-06-09 17:11:36.717 +03:00 [INF] OrderDA Order 881 has been delivered
+2025-06-09 17:11:36.717 +03:00 [INF] GetOrderStatus: 881
+2025-06-09 17:11:36.720 +03:00 [INF] Can't proccess order because it is not pending
+2025-06-09 17:14:19.314 +03:00 [INF] Starting web host
+2025-06-09 17:14:20.291 +03:00 [INF] Now listening on: https://localhost:7093
+2025-06-09 17:14:20.293 +03:00 [INF] Now listening on: http://localhost:5002
+2025-06-09 17:14:20.363 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 17:14:20.363 +03:00 [INF] Hosting environment: Development
+2025-06-09 17:14:20.363 +03:00 [INF] Content root path: C:\Users\ENG Ahmed\source\repos\ShoppingApp\BackEnd\ShoppingAppAPI
+2025-06-09 17:14:28.733 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:14:28.736 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:14:28.756 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:14:30.103 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:14:34.001 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:14:34.001 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:14:34.001 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:14:34.001 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:14:34.003 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:14:34.003 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:14:34.188 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:14:34.188 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:14:44.136 +03:00 [INF] OrdersAPI ProcessOrder called for orderId: 867
+2025-06-09 17:14:44.138 +03:00 [INF] GetOrderStatus: 867
+2025-06-09 17:14:44.251 +03:00 [INF] OrdersBL ProcessOrderAsync called for orderId: 867
+2025-06-09 17:14:44.252 +03:00 [INF] OrderDA Processing order with id 867
+2025-06-09 17:14:44.329 +03:00 [INF] OrderDA Order 867 has been processed
+2025-06-09 17:14:45.812 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:14:45.812 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:14:45.812 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:14:45.844 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:15:07.735 +03:00 [INF] OrdersAPI DeliverOrder called for orderId: 946
+2025-06-09 17:15:07.735 +03:00 [INF] GetOrderStatus: 946
+2025-06-09 17:15:07.747 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 946
+2025-06-09 17:15:07.748 +03:00 [INF] OrderDA Delivering order with id 946
+2025-06-09 17:15:07.755 +03:00 [INF] OrderDA Order 946 has been delivered
+2025-06-09 17:15:09.900 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:15:09.900 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:15:09.900 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:15:09.939 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:15:21.527 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: All
+2025-06-09 17:15:21.527 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: All
+2025-06-09 17:15:21.527 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: All
+2025-06-09 17:15:21.542 +03:00 [INF] OrderDA Found 104 orders for the specified duration and status
+2025-06-09 17:15:24.416 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: Shipped
+2025-06-09 17:15:24.416 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: Shipped
+2025-06-09 17:15:24.416 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: Shipped
+2025-06-09 17:15:24.448 +03:00 [INF] OrderDA Found 15 orders for the specified duration and status
+2025-06-09 17:15:32.418 +03:00 [INF] OrdersAPI DeliverOrder called for orderId: 1070
+2025-06-09 17:15:32.418 +03:00 [INF] GetOrderStatus: 1070
+2025-06-09 17:15:32.428 +03:00 [INF] OrdersBL DeliverOrderAsync called for orderId: 1070
+2025-06-09 17:15:32.428 +03:00 [INF] OrderDA Delivering order with id 1070
+2025-06-09 17:15:32.434 +03:00 [INF] OrderDA Order 1070 has been delivered
+2025-06-09 17:15:33.245 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:15:33.245 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:15:33.245 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:15:33.270 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:15:37.231 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: Delivered
+2025-06-09 17:15:37.231 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: Delivered
+2025-06-09 17:15:37.231 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: Delivered
+2025-06-09 17:15:37.236 +03:00 [INF] OrderDA Found 16 orders for the specified duration and status
+2025-06-09 17:17:08.068 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:17:08.068 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:17:08.068 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:17:08.083 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:17:09.938 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:17:09.938 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:17:09.938 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:17:09.957 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:17:09.957 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:17:09.957 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:17:09.999 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:17:09.999 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:17:12.587 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: All
+2025-06-09 17:17:12.587 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: All
+2025-06-09 17:17:12.587 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: All
+2025-06-09 17:17:12.631 +03:00 [INF] OrderDA Found 104 orders for the specified duration and status
+2025-06-09 17:17:14.802 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: Pending
+2025-06-09 17:17:14.802 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: Pending
+2025-06-09 17:17:14.802 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: Pending
+2025-06-09 17:17:14.816 +03:00 [INF] OrderDA Found 32 orders for the specified duration and status
+2025-06-09 17:17:21.553 +03:00 [INF] OrdersAPI ProcessOrder called for orderId: 1075
+2025-06-09 17:17:21.553 +03:00 [INF] GetOrderStatus: 1075
+2025-06-09 17:17:21.558 +03:00 [INF] OrdersBL ProcessOrderAsync called for orderId: 1075
+2025-06-09 17:17:21.558 +03:00 [INF] OrderDA Processing order with id 1075
+2025-06-09 17:17:21.563 +03:00 [INF] OrderDA Order 1075 has been processed
+2025-06-09 17:17:29.213 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: Pending
+2025-06-09 17:17:29.213 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: Pending
+2025-06-09 17:17:29.213 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: Pending
+2025-06-09 17:17:29.218 +03:00 [INF] OrderDA Found 31 orders for the specified duration and status
+2025-06-09 17:18:22.020 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:18:22.020 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:18:22.020 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:18:22.034 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:18:25.382 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:18:25.382 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:18:25.382 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:18:25.399 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:18:25.400 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:18:25.400 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:18:25.446 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:18:25.446 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:18:27.804 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisDay, status: All
+2025-06-09 17:18:27.804 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisDay, status: All
+2025-06-09 17:18:27.804 +03:00 [INF] OrderDA Fetching orders for duration: ThisDay and status: All
+2025-06-09 17:18:27.813 +03:00 [INF] OrderDA Found 1 orders for the specified duration and status
+2025-06-09 17:18:35.219 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisDay, status: Processing
+2025-06-09 17:18:35.219 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisDay, status: Processing
+2025-06-09 17:18:35.219 +03:00 [INF] OrderDA Fetching orders for duration: ThisDay and status: Processing
+2025-06-09 17:18:35.228 +03:00 [WRN] OrderDA No orders found for the specified duration and status
+2025-06-09 17:18:35.228 +03:00 [WRN] OrdersAPI No orders found for the specified duration and status
+2025-06-09 17:18:37.972 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: ThisYear, status: Processing
+2025-06-09 17:18:37.972 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: ThisYear, status: Processing
+2025-06-09 17:18:37.972 +03:00 [INF] OrderDA Fetching orders for duration: ThisYear and status: Processing
+2025-06-09 17:18:37.984 +03:00 [INF] OrderDA Found 26 orders for the specified duration and status
+2025-06-09 17:18:40.820 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: Last90Days, status: Processing
+2025-06-09 17:18:40.820 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: Last90Days, status: Processing
+2025-06-09 17:18:40.820 +03:00 [INF] OrderDA Fetching orders for duration: Last90Days and status: Processing
+2025-06-09 17:18:40.827 +03:00 [INF] OrderDA Found 11 orders for the specified duration and status
+2025-06-09 17:18:46.018 +03:00 [INF] OrdersAPI ShipOrder called for orderId: 1043
+2025-06-09 17:18:46.019 +03:00 [INF] GetOrderStatus: 1043
+2025-06-09 17:18:46.024 +03:00 [INF] OrdersBL ShipOrderAsync called for orderId: 1043
+2025-06-09 17:18:46.025 +03:00 [INF] OrderDA Shipping order with id 1043
+2025-06-09 17:18:46.030 +03:00 [INF] OrderDA Order 1043 has been shipped
+2025-06-09 17:18:52.140 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: Last90Days, status: Processing
+2025-06-09 17:18:52.140 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: Last90Days, status: Processing
+2025-06-09 17:18:52.140 +03:00 [INF] OrderDA Fetching orders for duration: Last90Days and status: Processing
+2025-06-09 17:18:52.147 +03:00 [INF] OrderDA Found 10 orders for the specified duration and status
+2025-06-09 17:28:27.679 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:28:27.679 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:28:27.679 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:28:27.708 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:29:29.758 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:29:29.758 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:29:29.758 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:29:29.764 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:29:33.554 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 17:29:33.555 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 17:29:33.558 +03:00 [INF] UserDA Getting all users
+2025-06-09 17:29:33.568 +03:00 [INF] UserDA Found 103 users
+2025-06-09 17:29:35.254 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:29:35.254 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:29:35.254 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:29:35.261 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:29:35.261 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:29:35.261 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:29:35.311 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:29:35.311 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:30:49.321 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:30:49.321 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:30:49.321 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:30:49.326 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:30:54.689 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:30:54.689 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:30:54.689 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:30:54.693 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:30:55.789 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:30:55.790 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:30:55.792 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:30:55.817 +03:00 [INF] ProductDA Found 155 low stock products
+2025-06-09 17:31:03.150 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:31:03.150 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:31:03.151 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:31:03.163 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:31:50.629 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:31:50.629 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:31:50.629 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:31:50.642 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:31:55.053 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:31:55.054 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:31:55.054 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:31:55.075 +03:00 [INF] ProductDA Found 155 low stock products
+2025-06-09 17:31:57.530 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 17:31:57.530 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 17:31:57.530 +03:00 [INF] UserDA Getting all users
+2025-06-09 17:31:57.535 +03:00 [INF] UserDA Found 103 users
+2025-06-09 17:31:58.762 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:31:58.762 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:31:58.762 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:31:58.768 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:31:58.768 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:31:58.768 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:31:58.818 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:31:58.818 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:32:02.758 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:32:02.758 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:32:02.759 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:32:02.766 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:32:02.766 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:32:02.766 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:32:02.773 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:32:02.773 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:32:02.773 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:32:02.787 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:32:02.792 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:32:02.814 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:32:04.713 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:32:04.713 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:32:04.713 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:32:04.720 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:32:04.720 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:32:04.720 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:32:04.725 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:32:04.725 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:32:04.725 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:32:04.738 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:32:04.750 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:32:04.755 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:34:03.428 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:34:03.428 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:34:03.428 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:34:03.441 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:34:05.464 +03:00 [INF] UsersAPI GetAllUsers called
+2025-06-09 17:34:05.464 +03:00 [INF] UsersBL GetAllUsersAsync called
+2025-06-09 17:34:05.464 +03:00 [INF] UserDA Getting all users
+2025-06-09 17:34:05.468 +03:00 [INF] UserDA Found 103 users
+2025-06-09 17:34:06.790 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:34:06.790 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:34:06.790 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:34:06.797 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: AllTime, status: All
+2025-06-09 17:34:06.797 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: AllTime, status: All
+2025-06-09 17:34:06.797 +03:00 [INF] OrderDA Fetching orders for duration: AllTime and status: All
+2025-06-09 17:34:06.860 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:34:06.861 +03:00 [INF] OrderDA Found 246 orders for the specified duration and status
+2025-06-09 17:34:10.802 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: Last30Days, status: All
+2025-06-09 17:34:10.802 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: Last30Days, status: All
+2025-06-09 17:34:10.802 +03:00 [INF] OrderDA Fetching orders for duration: Last30Days and status: All
+2025-06-09 17:34:10.812 +03:00 [INF] OrderDA Found 18 orders for the specified duration and status
+2025-06-09 17:34:13.159 +03:00 [INF] OrdersAPI GetOrdersByDurationAndStatus called with duration: Last30Days, status: Shipped
+2025-06-09 17:34:13.159 +03:00 [INF] OrdersBL GetOrdersByDurationAndStatusAsync called with duration: Last30Days, status: Shipped
+2025-06-09 17:34:13.159 +03:00 [INF] OrderDA Fetching orders for duration: Last30Days and status: Shipped
+2025-06-09 17:34:13.169 +03:00 [WRN] OrderDA No orders found for the specified duration and status
+2025-06-09 17:34:13.169 +03:00 [WRN] OrdersAPI No orders found for the specified duration and status
+2025-06-09 17:34:15.973 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:34:15.973 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:34:15.973 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:34:15.985 +03:00 [INF] ProductDA Found 155 low stock products
+2025-06-09 17:34:18.234 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:34:18.234 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:34:18.234 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:34:18.240 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:49:56.689 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:49:56.690 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:49:56.690 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:49:56.720 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:49:59.147 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:49:59.147 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:49:59.147 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:49:59.189 +03:00 [INF] ProductDA Found 155 low stock products
+2025-06-09 17:50:07.987 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:50:07.988 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:50:07.988 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:50:08.007 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:50:21.597 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:50:21.597 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:50:21.597 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:50:21.602 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:51:46.708 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:51:46.708 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:51:46.708 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:51:46.717 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:51:50.238 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:51:50.238 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:51:50.238 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:51:50.244 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:51:55.044 +03:00 [INF] ProductsAPI UpdateProductStock called for productId: 1447
+2025-06-09 17:51:55.044 +03:00 [INF] ProductsBL UpdateProductStockAsync called for productId: 1447 , quantity:  0
+2025-06-09 17:51:55.045 +03:00 [INF] ProductDA Stocking product with id 1447  with quantity  0
+2025-06-09 17:51:55.087 +03:00 [INF] ProductDA Product 1447 stocked with quantity 0
+2025-06-09 17:51:57.728 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:51:57.728 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:51:57.728 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:51:57.733 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:52:02.334 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:52:02.334 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:52:02.334 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:52:02.343 +03:00 [INF] ProductDA Found 155 low stock products
+2025-06-09 17:52:17.629 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:52:17.629 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:52:17.629 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:52:17.644 +03:00 [INF] ProductDA Found 155 low stock products
+2025-06-09 17:52:19.358 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:52:19.358 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:52:19.358 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:52:19.366 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:52:43.039 +03:00 [INF] ProductsAPI UpdateProductStock called for productId: 1447
+2025-06-09 17:52:43.040 +03:00 [INF] ProductsBL UpdateProductStockAsync called for productId: 1447 , quantity:  0
+2025-06-09 17:52:43.040 +03:00 [INF] ProductDA Stocking product with id 1447  with quantity  0
+2025-06-09 17:52:43.046 +03:00 [INF] ProductDA Product 1447 stocked with quantity 0
+2025-06-09 17:52:47.816 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:52:47.816 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:52:47.816 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:52:47.824 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:52:51.493 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:52:51.493 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:52:51.493 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:52:51.497 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:53:50.521 +03:00 [INF] AuthAPI ListAdmins called
+2025-06-09 17:53:50.521 +03:00 [INF] AdminBL ListAdminsAsync called
+2025-06-09 17:53:50.521 +03:00 [INF] AdminDA Listing all admins
+2025-06-09 17:53:50.527 +03:00 [INF] AdminDA Found 3 admins
+2025-06-09 17:53:52.428 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:53:52.428 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:53:52.428 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:53:52.438 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:53:57.696 +03:00 [INF] ProductsAPI UpdateProductStock called for productId: 1447
+2025-06-09 17:53:57.696 +03:00 [INF] ProductsBL UpdateProductStockAsync called for productId: 1447 , quantity:  0
+2025-06-09 17:53:57.696 +03:00 [INF] ProductDA Stocking product with id 1447  with quantity  0
+2025-06-09 17:53:57.700 +03:00 [INF] ProductDA Product 1447 stocked with quantity 0
+2025-06-09 17:53:59.967 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:53:59.967 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:53:59.967 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:53:59.972 +03:00 [INF] ProductDA Found 37 out of stock products
+2025-06-09 17:55:20.965 +03:00 [INF] ProductsAPI UpdateProductStock called for productId: 1447
+2025-06-09 17:55:20.965 +03:00 [INF] ProductsBL UpdateProductStockAsync called for productId: 1447 , quantity:  3
+2025-06-09 17:55:20.965 +03:00 [INF] ProductDA Stocking product with id 1447  with quantity  3
+2025-06-09 17:55:20.975 +03:00 [INF] ProductDA Product 1447 stocked with quantity 3
+2025-06-09 17:55:36.944 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:55:36.945 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:55:36.945 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:55:36.958 +03:00 [INF] ProductDA Found 36 out of stock products
+2025-06-09 17:55:40.472 +03:00 [INF] ProductsAPI Get Out Of Stock Products
+2025-06-09 17:55:40.472 +03:00 [INF] ProductsBL GetOutOfStockProductsAsync called
+2025-06-09 17:55:40.472 +03:00 [INF] ProductDA Fetching out of stock products
+2025-06-09 17:55:40.479 +03:00 [INF] ProductDA Found 36 out of stock products
+2025-06-09 17:55:41.522 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:55:41.522 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:55:41.522 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:55:41.529 +03:00 [INF] ProductDA Found 156 low stock products
+2025-06-09 17:56:04.307 +03:00 [INF] ProductsAPI UpdateProductStock called for productId: 317
+2025-06-09 17:56:04.307 +03:00 [INF] ProductsBL UpdateProductStockAsync called for productId: 317 , quantity:  0
+2025-06-09 17:56:04.307 +03:00 [INF] ProductDA Stocking product with id 317  with quantity  0
+2025-06-09 17:56:04.311 +03:00 [INF] ProductDA Product 317 stocked with quantity 0
+2025-06-09 17:56:08.080 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:56:08.080 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:56:08.080 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:56:08.095 +03:00 [INF] ProductDA Found 156 low stock products
+2025-06-09 17:56:12.489 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:56:12.490 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:56:12.490 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:56:12.495 +03:00 [INF] ProductDA Found 156 low stock products
+2025-06-09 17:56:23.410 +03:00 [INF] ProductsAPI UpdateProductStock called for productId: 342
+2025-06-09 17:56:23.411 +03:00 [INF] ProductsBL UpdateProductStockAsync called for productId: 342 , quantity:  0
+2025-06-09 17:56:23.411 +03:00 [INF] ProductDA Stocking product with id 342  with quantity  0
+2025-06-09 17:56:23.413 +03:00 [INF] ProductDA Product 342 stocked with quantity 0
+2025-06-09 17:56:25.146 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:56:25.146 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:56:25.146 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:56:25.152 +03:00 [INF] ProductDA Found 156 low stock products
+2025-06-09 17:56:28.028 +03:00 [INF] ProductsAPI Get Low Stock Products with threshold: 5
+2025-06-09 17:56:28.028 +03:00 [INF] ProductsBL GetLowStockProductsAsync called with threshold: 5
+2025-06-09 17:56:28.028 +03:00 [INF] ProductDA Fetching low stock products with threshold 5
+2025-06-09 17:56:28.033 +03:00 [INF] ProductDA Found 156 low stock products

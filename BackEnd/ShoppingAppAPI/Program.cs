@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using Serilog.Events;
@@ -42,14 +43,19 @@ public class Program
             builder.Services.AddScoped<OrdersService>();
             builder.Services.AddScoped<CartsService>();
             builder.Services.AddScoped<AuthService>();
+            builder.Services.AddScoped<AdminService>();
 
             builder.Services.AddScoped<UserData>();
             builder.Services.AddScoped<ProductData>();
             builder.Services.AddScoped<OrderData>();
             builder.Services.AddScoped<CartData>();
+            builder.Services.AddScoped<AdminData>();
 
             builder.Services.AddScoped<Auth>();
             builder.Services.AddScoped<Password>();
+
+
+            //builder.Services.AddProblemDetails();
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
@@ -75,6 +81,9 @@ public class Program
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI();
+
+                //app.UseExceptionHandler();
+                //app.UseStatusCodePages();
             }
 
 

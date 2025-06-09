@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
+using ShoppingAppDB;
 using ShoppingAppDB.Models;
 using ShoppingAppDB.Services;
+using static ShoppingAppDB.Enums.Enums;
 
 namespace ShoppingAppBussiness
 {
@@ -33,5 +35,18 @@ namespace ShoppingAppBussiness
             _logger.LogInformation($"{_prefix}RefreshToken");
             return _authService.RefreshToken(refreshToken);
         }
+
+        public async Task<int> GetLoginCountByDurationAsync(TimeDuration duration)
+        {
+            _logger.LogInformation($"{_prefix}GetLoginCountByDurationAsync called with duration: {duration}");
+            return await _authService.GetLoginCountByDurationAsync(duration);
+        }
+
+        public async Task<int> GetRegisterationCountByDurationAsync(TimeDuration duration)
+        {
+            _logger.LogInformation($"{_prefix}GetRegisterationCountByDurationAsync called with duration: {duration}");
+            return await _authService.GetRegisterationCountByDurationAsync(duration);
+        }
+
     }
 }

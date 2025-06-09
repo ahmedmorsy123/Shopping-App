@@ -22,7 +22,6 @@ namespace Shopping_App.ViewData
             });
         }
 
-        // ckech if the role of the user is admin in the access token
         public static bool IsUserAdmin(string jwt)
         {
             Log.Information("Checking if user is admin");
@@ -36,8 +35,8 @@ namespace Shopping_App.ViewData
                 string payloadBase64Url = parts[1];
                 string payloadJson = Base64UrlDecode(payloadBase64Url);
                 JObject payload = JObject.Parse(payloadJson);
-                JArray roles = (JArray)payload["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
-                return roles != null && roles.Any(role => role.ToString().Equals("Admin", StringComparison.OrdinalIgnoreCase));
+                JValue roleClaim = (JValue)payload["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
+                return roleClaim.ToString().Equals("Admin", StringComparison.OrdinalIgnoreCase);
             }
             catch (Exception ex)
             {
@@ -68,6 +67,7 @@ namespace Shopping_App.ViewData
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "Error extracting user ID from JWT");
                 return null;
             }
         }

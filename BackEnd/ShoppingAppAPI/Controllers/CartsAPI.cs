@@ -6,7 +6,6 @@ using ShoppingAppDB.Models;
 namespace ShoppingAppAPI.Controllers
 {
     [Route("api/Carts")]
-    [Authorize]
     [ApiController]
     public class CartsAPI : ControllerBase
     {
@@ -20,6 +19,7 @@ namespace ShoppingAppAPI.Controllers
             _cartsService = cartsService;
         }
 
+        [Authorize]
         [HttpGet("GetUserCart")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CartDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
@@ -43,6 +43,7 @@ namespace ShoppingAppAPI.Controllers
             return Ok(cart);
         }
 
+        [Authorize]
         [HttpPut("UpdateCart")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CartDto))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -65,6 +66,7 @@ namespace ShoppingAppAPI.Controllers
             return Ok(cart);
         }
 
+        [Authorize]
         [HttpPost("AddCart")]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CartDto))]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -78,6 +80,7 @@ namespace ShoppingAppAPI.Controllers
             return CreatedAtAction(nameof(GetUserCart), new { UserId = cart.UserId }, cart);
         }
 
+        [Authorize]
         [HttpDelete("DeleteCart")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
@@ -99,6 +102,17 @@ namespace ShoppingAppAPI.Controllers
             }
             _logger.LogInformation($"{_prefix}Cart was deleted successfully");
             return Ok();
+        }
+
+        //[Authorize(Roles = "Admin")]
+        [HttpGet("GetCartsCount")]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(int))]
+        public async Task<ActionResult<int>> GetCartsCount()
+        {
+            _logger.LogInformation($"{_prefix}GetCartsCount called");
+            return Ok(await _cartsService.GetCartsCountAsync());
         }
     }
 }

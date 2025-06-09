@@ -140,5 +140,17 @@ namespace ShoppingAppDB
                 return context.Carts.AsNoTracking().Where(c => c.UserId == UserId).Select(c => c.Id).FirstOrDefault();
             }
         }
+
+        public async Task<int> GetCartsCountAsync()
+        {
+            _logger.LogInformation($"{_prefix}Fetching total carts count");
+            using (var context = new AppDbContext())
+            {
+                int cartsCount = await context.Carts.AsNoTracking().CountAsync();
+                _logger.LogInformation($"{_prefix}Total carts count: {cartsCount}");
+                return cartsCount;
+            }
+        }
+
     }
 }

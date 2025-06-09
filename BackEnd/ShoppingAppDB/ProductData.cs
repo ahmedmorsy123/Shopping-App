@@ -62,6 +62,89 @@ namespace ShoppingAppDB
             }
         }
 
+        public async Task<List<ProductDto>> GetOutOfStockProductsAsync()
+        {
+            _logger.LogInformation($"{_prefix}Fetching out of stock products");
+            using (var context = new AppDbContext())
+            {
+                var outOfStockProducts = await context.Products.AsNoTracking()
+                    .IgnoreQueryFilters() // Ignore any global filters
+                    .Where(p => p.Quantity <= 0)
+                    .Include(p => p.Category)
+                    .Select(p => new ProductDto()
+                    {
+                        Id = p.Id,
+                        productName = p.Name,
+                        productCategory = p.Category.CategoryName,
+                        productDescription = p.Description,
+                        maxQuantity = p.Quantity,
+                        Weight = p.Weight,
+                        price = p.Price
+                    })
+                    .ToListAsync();
+                if (outOfStockProducts.Count == 0)
+                {
+                    _logger.LogWarning($"{_prefix}No out of stock products found");
+                    return new List<ProductDto>();
+                }
+                _logger.LogInformation($"{_prefix}Found {outOfStockProducts.Count} out of stock products");
+                return outOfStockProducts;
+            }
+        }
+
+        public async Task<List<ProductDto>> GetLowStockProductsAsync(int threshold)
+        {
+            _logger.LogInformation($"{_prefix}Fetching low stock products with threshold {threshold}");
+            using (var context = new AppDbContext())
+            {
+                var lowStockProducts = await context.Products.AsNoTracking()
+                    .IgnoreQueryFilters() // Ignore any global filters
+                    .Where(p => p.Quantity > 0 && p.Quantity < threshold)
+                    .Include(p => p.Category)
+                    .Select(p => new ProductDto()
+                    {
+                        Id = p.Id,
+                        productName = p.Name,
+                        productCategory = p.Category.CategoryName,
+                        productDescription = p.Description,
+                        maxQuantity = p.Quantity,
+                        Weight = p.Weight,
+                        price = p.Price
+                    })
+                    .ToListAsync();
+                if (lowStockProducts.Count == 0)
+                {
+                    _logger.LogWarning($"{_prefix}No low stock products found");
+                    return new List<ProductDto>();
+                }
+                _logger.LogInformation($"{_prefix}Found {lowStockProducts.Count} low stock products");
+                return lowStockProducts;
+            }
+        }
+
+        public async Task<bool> UpdateProductStockAsync(UpdateProductStockRequest stockRequest)
+        {
+            _logger.LogInformation($"{_prefix}Stocking product with id {stockRequest.ProductId}  with quantity  {stockRequest.Quentity}");
+            using (var context = new AppDbContext())
+            {
+                var product = await context.Products.FindAsync(stockRequest.ProductId);
+                if (product != null)
+                {
+                    product.Quantity += stockRequest.Quentity;
+                    if (product.Quantity > 0) product.IsActive = true; // Activate product if quantity is greater than 0
+                    await context.SaveChangesAsync();
+                    _logger.LogInformation($"{_prefix}Product {stockRequest.ProductId} stocked with quantity {stockRequest.Quentity}");
+                    return true;
+                }
+                else
+                {
+                    _logger.LogWarning($"{_prefix}Product with id {stockRequest.ProductId} not found");
+                    return false;
+                }
+            }
+        }
+
+
         private static Expression<Func<Product, object>> GetSortProperty(string? SortColumn)
         {
              return SortColumn?.ToLower() switch

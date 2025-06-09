@@ -8,7 +8,6 @@ using System.Security.Claims;
 namespace ShoppingAppAPI.Controllers
 {
     [Route("api/Users")]
-    [Authorize]
     [ApiController]
     public class UsersAPI : ControllerBase
     {
@@ -22,6 +21,7 @@ namespace ShoppingAppAPI.Controllers
             _logger = logger;
         }
 
+        //[Authorize]
         [HttpGet("getUser")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
@@ -44,6 +44,7 @@ namespace ShoppingAppAPI.Controllers
             return Ok(user);
         }
 
+        [Authorize]
         [HttpPut("UpdateUser")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
@@ -67,6 +68,7 @@ namespace ShoppingAppAPI.Controllers
             return Ok(UpdatedUser);
         }
 
+        [Authorize]
         [HttpDelete("DeleteUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
@@ -90,7 +92,6 @@ namespace ShoppingAppAPI.Controllers
             return Ok();
         }
 
-        [AllowAnonymous]
         [HttpPost("AddUser")]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(UserDto))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ProblemDetails))]
@@ -113,6 +114,30 @@ namespace ShoppingAppAPI.Controllers
             }
             _logger.LogInformation($"{_prefix}Added user with id: {user.Id}");
             return CreatedAtAction(nameof(GetUser), new { id = newUser.Id }, newUser);
+        }
+
+        //[Authorize(Roles = "Admin")]
+        [HttpGet("GetAllUsers")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<UserDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ProblemDetails))]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetAllUsers()
+        {
+            _logger.LogInformation($"{_prefix}GetAllUsers called");
+            var users = await _usersService.GetAllUsersAsync();
+            if (users == null || !users.Any())
+            {
+                _logger.LogWarning($"{_prefix}No users found");
+                return NotFound(new ProblemDetails()
+                {
+                    Status = StatusCodes.Status404NotFound,
+                    Title = "No Users Found",
+                    Detail = "There are no users in the system.",
+                    Instance = HttpContext.Request.Path
+                });
+            }
+            return Ok(users);
         }
     }
 }
